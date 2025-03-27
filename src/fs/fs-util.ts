@@ -67,7 +67,7 @@ export const asciiToBytes = (str: string): Uint8Array => {
   return bytes;
 };
 
-const magicModuleComment = "# microbit-module:";
+const magicModuleComment = "# calliopemini-module:";
 
 const findMagicModuleComment = (code: string): string | undefined => {
   const codeLines = code.split(/\r?\n/);
