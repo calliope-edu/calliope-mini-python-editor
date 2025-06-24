@@ -324,7 +324,7 @@ export class ProjectActions {
                           <Link
                             target="_blank"
                             rel="noopener"
-                            href="https://makecode.microbit.org/"
+                            href="https://makecode.calliope.cc/"
                           >
                             {chunks}
                           </Link>
