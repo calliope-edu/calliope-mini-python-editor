@@ -32,24 +32,6 @@ const allLanguages: Language[] = [
     enName: "German",
   },
   {
-    id: "ca",
-    name: "Català",
-    enName: "Catalan",
-    preview: true
-  },
-  {
-    id: "zh-cn",
-    name: "简体中文",
-    enName: "Chinese (Simplified)",
-    preview: true
-  },
-  {
-    id: "zh-tw",
-    name: "繁體中文",
-    enName: "Chinese (Traditional)",
-    preview: true
-  },
-  {
     id: "nl",
     name: "Nederlands",
     enName: "Dutch",
@@ -62,19 +44,7 @@ const allLanguages: Language[] = [
     preview: true
   },
   {
-    id: "ja",
-    name: "日本語",
-    enName: "Japanese",
-    preview: true
-  },
-  {
-    id: "ko",
-    name: "한국어",
-    enName: "Korean",
-    preview: true
-  },
-  {
-    id: "es-es",
+    id: "es",
     name: "Español",
     enName: "Spanish",
     preview: true

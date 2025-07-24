@@ -16,7 +16,7 @@ if [ $# -eq 0 ]; then
 fi
 
 #languages=(ca de es-ES fr ja ko nl zh-cn zh-cn)
-languages=(de)
+languages=(de fr nl es-ES)
 
 mkdir -p crowdin/translated
 for language in $languages; do
@@ -40,4 +40,4 @@ npm run i18n:compile
 ./bin/update-typeshed.sh
 # We sometimes have newer English stubs than translations and don't want to
 # regress them as part of a translations update.
-git checkout -- src/micropython/main/typeshed.en.json
+#git checkout -- src/micropython/main/typeshed.en.json
