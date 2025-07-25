@@ -23,6 +23,18 @@
     "defaultMessage": "Mehr über MicroPython lesen",
     "description": "Aria label to expand a collapsed section about MicroPython"
   },
+  "add-module-action": {
+    "defaultMessage": "Modul hinzufügen",
+    "description": "Button text for action that adds a module to the current project"
+  },
+  "add-module": {
+    "defaultMessage": "Wähle Module um sie zum Projekt hinzuzufügen",
+    "description": "Tooltip for add module button"
+  },
+  "add-module-text": {
+    "defaultMessage": "Du kannst ein oder mehrere Module zu deinem Projekt hinzufügen, indem du die Kästchen unten anklickst.",
+    "description": "Text for add module button"
+  },
   "added-change": {
     "defaultMessage": "Hinzugefügte Datei {changeName}",
     "description": "Change made to file"

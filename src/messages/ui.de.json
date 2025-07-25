@@ -49,6 +49,24 @@
       "value": "Mehr über MicroPython lesen"
     }
   ],
+  "add-module": [
+    {
+      "type": 0,
+      "value": "Wähle Module um sie zum Projekt hinzuzufügen"
+    }
+  ],
+  "add-module-action": [
+    {
+      "type": 0,
+      "value": "Modul hinzufügen"
+    }
+  ],
+  "add-module-text": [
+    {
+      "type": 0,
+      "value": "Du kannst ein oder mehrere Module zu deinem Projekt hinzufügen, indem du die Kästchen unten anklickst."
+    }
+  ],
   "added-change": [
     {
       "type": 0,
