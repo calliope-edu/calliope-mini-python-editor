@@ -22,6 +22,7 @@ import { ConnectionAction, ConnectionStatus } from "../device/device";
 import { useConnectionStatus } from "../device/device-hooks";
 import MoreMenuButton from "./MoreMenuButton";
 import { useProjectActions } from "./project-hooks";
+import { useUrl } from "../common/use-url";
 
 interface SendButtonProps {
   size?: ThemeTypings["components"]["Button"]["sizes"];
@@ -36,6 +37,7 @@ const SendButton = React.forwardRef(
     const status = useConnectionStatus();
     const connected = status === ConnectionStatus.CONNECTED;
     const actions = useProjectActions();
+    const { isMobile } = useUrl();
     const handleToggleConnected = useCallback(async () => {
       if (connected) {
         await actions.disconnect(menuButtonRef);
@@ -79,6 +81,11 @@ const SendButton = React.forwardRef(
       [flashing]
     );
     const menuButtonRef = useRef<HTMLButtonElement>(null);
+
+    if (isMobile) {
+      return null;
+    }
+
     return (
       <HStack>
         <Menu>

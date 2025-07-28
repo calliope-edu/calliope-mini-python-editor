@@ -11,6 +11,7 @@ import CollapsibleButton, {
   CollapsibleButtonProps,
 } from "../common/CollapsibleButton";
 import { useProjectActions } from "./project-hooks";
+import { useUrl } from "../common/use-url";
 
 interface SaveButtonProps
   extends Omit<CollapsibleButtonProps, "onClick" | "text" | "icon"> {}
@@ -26,6 +27,8 @@ interface SaveButtonProps
 const SaveButton = (props: SaveButtonProps) => {
   const actions = useProjectActions();
   const intl = useIntl();
+  const { isMobile } = useUrl();
+  const { isCampus } = useUrl();
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   return (
     <Tooltip
@@ -39,7 +42,7 @@ const SaveButton = (props: SaveButtonProps) => {
         ref={menuButtonRef}
         {...props}
         icon={<RiDownload2Line />}
-        onClick={() => actions.save(menuButtonRef)}
+        onClick={() => actions.save(menuButtonRef, false, isMobile, isCampus)}
         text={intl.formatMessage({
           id: "save-action",
         })}

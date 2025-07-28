@@ -15,6 +15,7 @@ import { WorkbenchSelection } from "../workbench/use-selection";
 import ActiveFileInfo from "./ActiveFileInfo";
 import EditorContainer from "./EditorContainer";
 import UndoRedoControls from "./UndoRedoControls";
+import { useUrl } from "../common/use-url";
 
 interface EditorAreaProps extends BoxProps {
   selection: WorkbenchSelection;
@@ -40,6 +41,8 @@ const EditorArea = React.forwardRef(
   ) => {
     const intl = useIntl();
     const [isWideScreen] = useMediaQuery(widthXl);
+    const { isCampus } = useUrl();
+    
     return (
       <Flex
         height="100%"
@@ -58,13 +61,13 @@ const EditorArea = React.forwardRef(
           py={2}
           height={topBarHeight}
         >
-          <ProjectNameEditable
+          {!isCampus && <><ProjectNameEditable
             color="gray.700"
             opacity="80%"
             fontSize="xl"
             data-testid="project-name"
             clickToEdit
-          />
+          /></>}
           <ActiveFileInfo
             filename={selection.file}
             onSelectedFileChanged={onSelectedFileChanged}

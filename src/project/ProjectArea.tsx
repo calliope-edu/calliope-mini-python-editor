@@ -10,6 +10,7 @@ import { useProject } from "./project-hooks";
 import { isEditableFile } from "./project-utils";
 import ProjectAreaNav from "./ProjectAreaNav";
 import ProjectNameEditable from "./ProjectNameEditable";
+import { useUrl } from "../common/use-url";
 
 interface ProjectAreaProps {
   selectedFile: string | undefined;
@@ -24,9 +25,11 @@ const ProjectArea = ({
   onSelectedFileChanged,
 }: ProjectAreaProps) => {
   const { files, name: projectName } = useProject();
+  const { isCampus } = useUrl();
   return (
     <VStack spacing={5} pt={2} flex="1 0 auto" height={0} alignItems="stretch">
-      <Box flex="0 0 auto" px={5} pt={3}>
+      {!isCampus && <>
+        <Box flex="0 0 auto" px={5} pt={3}>
         <Text fontSize="xs">
           <FormattedMessage id="project-name" />
         </Text>
@@ -42,7 +45,7 @@ const ProjectArea = ({
           pt={0.5}
         />
       </Box>
-
+      </>}
       <List flex="1 1 auto" pl={1} pr={1.5} overflowY="auto">
         {files.map((f) => {
           const selected = selectedFile === f.name;
