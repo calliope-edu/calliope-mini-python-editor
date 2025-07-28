@@ -11,7 +11,7 @@
 # No IRR filter
 # Warning: this code demands memory allocation close to the limits!
 
-from microbit import i2c, running_time
+from calliopemini import i2c, running_time
 
 # BME 280 system addresses and values
 # Registers
