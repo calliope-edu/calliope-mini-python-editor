@@ -552,14 +552,16 @@ export class ProjectActions {
    */
   save = async (
     finalFocusRef: React.RefObject<HTMLButtonElement>,
-    saveViaWebUsbNotSupported?: boolean
+    saveViaWebUsbNotSupported: boolean = false,
+    isMobile: boolean = false,
+    isCampus: boolean = false
   ) => {
     this.logging.event({
       type: "save",
       detail: await this.projectStats(),
     });
 
-    if (!(await this.ensureProjectName(finalFocusRef))) {
+    if (!(await this.ensureProjectName(finalFocusRef, isCampus))) {
       return;
     }
 
@@ -582,7 +584,9 @@ export class ProjectActions {
     if (saveViaWebUsbNotSupported) {
       this.handleTransferHexDialog(false, finalFocusRef);
     } else {
-      this.handlePostSaveDialog(finalFocusRef);
+      if (!isMobile) {
+        this.handlePostSaveDialog(finalFocusRef);
+      }
     }
   };
 
@@ -768,9 +772,10 @@ export class ProjectActions {
   isDefaultProjectName = (): boolean => this.fs.project.name === undefined;
 
   ensureProjectName = async (
-    finalFocusRef: React.RefObject<HTMLButtonElement>
+    finalFocusRef: React.RefObject<HTMLButtonElement>,
+    isCampus: boolean = false
   ): Promise<boolean | undefined> => {
-    if (this.isDefaultProjectName()) {
+    if (this.isDefaultProjectName() && !isCampus) {
       return await this.editProjectName(true, finalFocusRef);
     }
     return true;
