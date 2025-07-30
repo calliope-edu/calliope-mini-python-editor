@@ -37,7 +37,7 @@ jobs:
       - run: npm ci
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: npm install --no-save @calliope-edu/calliope-theme @calliope-edu/website-deploy-aws-config #@microbit-foundation/website-deploy-aws@0.7.1 @microbit-foundation/circleci-npm-package-versioner@1
+      - run: npm install --no-save @calliope-edu/calliope-theme@latest @calliope-edu/website-deploy-aws-config@latest #@microbit-foundation/website-deploy-aws@0.7.1 @microbit-foundation/circleci-npm-package-versioner@1
         if: github.repository_owner == 'calliope-edu'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
