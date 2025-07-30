@@ -49,6 +49,24 @@
       "value": "Read more about MicroPython"
     }
   ],
+  "add-module": [
+    {
+      "type": 0,
+      "value": "Select modules to add to the project"
+    }
+  ],
+  "add-module-action": [
+    {
+      "type": 0,
+      "value": "Add module"
+    }
+  ],
+  "add-module-text": [
+    {
+      "type": 0,
+      "value": "You can add one or more modules to your project by checking the boxes below."
+    }
+  ],
   "added-change": [
     {
       "type": 0,
@@ -68,7 +86,7 @@
       "children": [
         {
           "type": 0,
-          "value": "Toolkit"
+          "value": "Reference"
         }
       ],
       "type": 8,
@@ -1394,7 +1412,7 @@
   "reference-tab": [
     {
       "type": 0,
-      "value": "Toolkit"
+      "value": "Reference"
     }
   ],
   "replace-action-label": [
