@@ -34,7 +34,7 @@ jobs:
           cache: "npm"
           registry-url: "https://npm.pkg.github.com"
           scope: "@calliope-edu"
-      - run: npm install
+      - run: npm ci
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm install --no-save @calliope-edu/calliope-theme @calliope-edu/website-deploy-aws-config #@microbit-foundation/website-deploy-aws@0.7.1 @microbit-foundation/circleci-npm-package-versioner@1
