@@ -52,13 +52,13 @@
   "add-module": [
     {
       "type": 0,
-      "value": "Wähle Module um sie zum Projekt hinzuzufügen"
+      "value": "Wähle Module aus, um sie dem Projekt hinzuzufügen"
     }
   ],
   "add-module-action": [
     {
       "type": 0,
-      "value": "Modul hinzufügen"
+      "value": "Module hinzufügen"
     }
   ],
   "add-module-text": [
@@ -86,7 +86,7 @@
       "children": [
         {
           "type": 0,
-          "value": "Bibliothek"
+          "value": "Referenz"
         }
       ],
       "type": 8,
@@ -1432,7 +1432,7 @@
   "reference-tab": [
     {
       "type": 0,
-      "value": "Bibliothek"
+      "value": "Referenz"
     }
   ],
   "replace-action-label": [
