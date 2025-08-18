@@ -54,7 +54,7 @@ jobs:
         if: env.STAGE == 'REVIEW' || env.STAGE == 'STAGING'
       - run: curl --insecure -4 --retry 7 --retry-connrefused http://localhost:3000 1>/dev/null
         if: env.STAGE == 'REVIEW' || env.STAGE == 'STAGING'
-      - run: npm run test:e2e:headless
+      - run: npm run test:e2e:headless -- --no-sandbox
         if: env.STAGE == 'REVIEW' || env.STAGE == 'STAGING'
       - name: Store reports
         if: (env.STAGE == 'REVIEW' || env.STAGE == 'STAGING') && failure()
