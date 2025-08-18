@@ -72,8 +72,6 @@ import {
 } from "./project-utils";
 import ProjectNameQuestion from "./ProjectNameQuestion";
 
-import content from '../assets/source/modules/example.py'
-
 /**
  * Distinguishes the different ways to trigger the load action.
  */

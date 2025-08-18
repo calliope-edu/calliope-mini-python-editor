@@ -5,17 +5,13 @@
  */
 import {
   FormControl,
-  FormErrorMessage,
   FormHelperText,
   FormLabel,
 } from "@chakra-ui/form-control";
-import { Input } from "@chakra-ui/input";
-import { Button, Text, Checkbox, CheckboxGroup } from "@chakra-ui/react";
+import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import { FormattedMessage } from "react-intl";
 import { InputDialogBody } from "../common/InputDialog";
-
-import exampleModule from '../assets/source/modules/example.py'
 
 interface AddModuleQuestionProps extends InputDialogBody<string[]> {}
 
