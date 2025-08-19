@@ -34,13 +34,13 @@ describe("isPythonMicrobitModule", () => {
   const example = "from calliopemini import *\ndisplay.scroll('Hi')\n";
 
   it("identifies our modules but not other Python", () => {
-    expect(isPythonMicrobitModule("# microbit-module:")).toEqual(true);
-    expect(isPythonMicrobitModule("# microbit-module: something\n")).toEqual(
+    expect(isPythonMicrobitModule("# calliopemini-module:")).toEqual(true);
+    expect(isPythonMicrobitModule("# calliopemini-module: something\n")).toEqual(
       true
     );
 
     expect(
-      isPythonMicrobitModule("# microbit-module: something\n" + example)
+      isPythonMicrobitModule("# calliopemini-module: something\n" + example)
     ).toEqual(true);
     expect(isPythonMicrobitModule("")).toEqual(false);
     expect(isPythonMicrobitModule(example)).toEqual(false);
@@ -48,20 +48,20 @@ describe("isPythonMicrobitModule", () => {
 
   it("works with windows line endings", () => {
     expect(
-      isPythonMicrobitModule("\r\n# microbit-module: something\r\n")
+      isPythonMicrobitModule("\r\n# calliopemini-module: something\r\n")
     ).toEqual(true);
   });
 
   it("checks only first three lines", () => {
-    expect(isPythonMicrobitModule("# microbit-module:")).toEqual(true);
-    expect(isPythonMicrobitModule("\n# microbit-module:")).toEqual(true);
-    expect(isPythonMicrobitModule("\n\n# microbit-module:")).toEqual(true);
-    expect(isPythonMicrobitModule("\n\n\n# microbit-module:")).toEqual(false);
+    expect(isPythonMicrobitModule("# calliopemini-module:")).toEqual(true);
+    expect(isPythonMicrobitModule("\n# calliopemini-module:")).toEqual(true);
+    expect(isPythonMicrobitModule("\n\n# calliopemini-module:")).toEqual(true);
+    expect(isPythonMicrobitModule("\n\n\n# calliopemini-module:")).toEqual(false);
   });
 
   it("decodes UTF-8", () => {
     expect(
-      isPythonMicrobitModule(new TextEncoder().encode("# microbit-module:"))
+      isPythonMicrobitModule(new TextEncoder().encode("# calliopemini-module:"))
     ).toEqual(true);
   });
 });

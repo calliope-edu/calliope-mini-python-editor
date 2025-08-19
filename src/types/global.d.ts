@@ -1,0 +1,1 @@
+declare const MODULE_FILE_LIST: { name: string; content: string }[]; 

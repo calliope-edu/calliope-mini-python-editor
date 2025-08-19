@@ -240,7 +240,7 @@ describe("Filesystem", () => {
     const data = new Uint8Array(512);
     data.fill(128);
     await ufs.write("other.dat", data, VersionAction.INCREMENT);
-    const moduleData = "# microbit-module: empty@1.0.0";
+    const moduleData = "# calliopemini-module: empty@1.0.0";
     await ufs.write("magic_module.py", moduleData, VersionAction.INCREMENT);
     expect(await ufs.statistics()).toEqual({
       files: 3,

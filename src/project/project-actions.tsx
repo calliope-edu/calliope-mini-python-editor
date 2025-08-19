@@ -62,6 +62,7 @@ import {
   FileOperation,
 } from "./changes";
 import ChooseMainScriptQuestion from "./ChooseMainScriptQuestion";
+import AddModuleQuestion from "./AddModuleQuestion";
 import NewFileNameQuestion from "./NewFileNameQuestion";
 import { DefaultedProject } from "./project-hooks";
 import {
@@ -693,6 +694,41 @@ export class ProjectActions {
       }
     }
   };
+
+  addModule = async () => {
+    console.log("addModule");
+    const filenames = await this.dialogs.show<string[] | undefined>((callback) => (
+      <InputDialog
+        callback={callback}
+        header={this.intl.formatMessage({ id: "add-module" })}
+        initialValue={[]}
+        actionLabel={this.intl.formatMessage({ id: "add-module-action" })}
+        Body={AddModuleQuestion}
+      />
+    ));
+
+    if (filenames && filenames.length > 0) {
+      this.logging.event({
+        type: "create-file",
+      });
+      try {
+        for (const filename of filenames) {
+          const moduleFilename = ensurePythonExtension(filename);
+          await this.fs.write(
+            moduleFilename,
+            MODULE_FILE_LIST.find((m) => m.name === filename)?.content || "",
+            VersionAction.INCREMENT
+          );
+          this.actionFeedback.success({
+            title: this.intl.formatMessage({ id: "created-file" }, { filename:moduleFilename }),
+          });
+        }
+      } catch (e) {
+        this.actionFeedback.unexpectedError(e);
+      }
+    }
+  };
+
   /**
    * Delete a file.
    *

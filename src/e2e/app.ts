@@ -79,6 +79,7 @@ export class App {
       headless: process.env.E2E_HEADLESS !== "0",
       // Needs to be large enough to display Reference + Simulator or tests need to show/hide them.
       defaultViewport: { width: 1920, height: 1440 },
+      args: process.env.CI ? ['--no-sandbox', '--disable-setuid-sandbox'] : [],
     });
     this.page = this.createPage();
   }

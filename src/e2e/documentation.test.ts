@@ -24,9 +24,9 @@ describe("documentaion", () => {
     await app.selectAllInEditor();
     await app.typeInEditor("# Initial document");
     await app.switchTab(tab);
-    await app.selectDocumentationSection("Display");
+    await app.selectDocumentationSection("Basics");
     await app.triggerScroll(tab);
-    await app.toggleCodeActionButton("Images: built-in");
+    await app.toggleCodeActionButton("Built-in images");
     await app.copyCode();
     await app.pasteToolkitCode();
     await app.findVisibleEditorContents("display.show(Image.HEART)");
@@ -37,17 +37,17 @@ describe("documentaion", () => {
     await app.selectAllInEditor();
     await app.typeInEditor("# Initial document");
     await app.switchTab(tab);
-    await app.selectDocumentationSection("Display");
+    await app.selectDocumentationSection("Basics");
     await app.triggerScroll(tab);
     await app.selectToolkitDropDownOption(
       "Select image:",
-      "silly" // "Image.SILLY"
+      "happy" // "Image.HAPPY"
     );
     await app.waitForTimeout(500);
-    await app.toggleCodeActionButton("Images: built-in");
+    await app.toggleCodeActionButton("Built-in images");
     await app.copyCode();
     await app.pasteToolkitCode();
-    await app.findVisibleEditorContents("display.show(Image.SILLY)");
+    await app.findVisibleEditorContents("display.show(Image.HAPPY)");
   });
 
   it("Insert code via drag and drop", async () => {
@@ -55,13 +55,13 @@ describe("documentaion", () => {
     await app.typeInEditor("#1\n#2\n#3\n");
     await app.findVisibleEditorContents("#2");
     await app.switchTab("Reference");
-    await app.selectDocumentationSection("Display");
+    await app.selectDocumentationSection("Basics");
 
-    await app.dragDropCodeEmbed("Scroll", 2);
+    await app.dragDropCodeEmbed("Scroll text", 2);
 
     // There's some weird trailing whitespace in this snippet that needs fixing in the content.
     const expected =
-      "from calliopemini import *\n\n\ndisplay.scroll('Number: ')    \ndisplay.scroll(42)\n#1\n#2\n#3\n";
+      "from calliopemini import *\n\n\ndisplay.scroll('Emma is: ')    \ndisplay.scroll(16)\n#1\n#2\n#3\n";
 
     await app.findVisibleEditorContents(expected);
   });
@@ -71,7 +71,7 @@ describe("documentaion", () => {
     await app.selectFirstSearchResult();
     await app.findDocumentationTopLevelHeading(
       "Loops",
-      "Count and repeat sets of instructions"
+      "Execute sets of instructions repeatedly."
     );
   });
 
