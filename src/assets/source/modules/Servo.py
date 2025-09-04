@@ -1,3 +1,5 @@
+from calliopemini import *
+
 # 180° Servo
 def set_servo_angle(pin, angle): #angle 0° - 180°
     angle = max(0, min(180, angle))
