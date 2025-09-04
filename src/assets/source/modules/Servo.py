@@ -1,41 +1,24 @@
-# calliopemini-module: Servo@1.0.0
+# 180° Servo
+def set_servo_angle(pin, angle): #angle 0° - 180°
+    angle = max(0, min(180, angle))
+    min_val = 26   # 0°
+    max_val = 128  # 180°
+    value = int(min_val + (max_val - min_val) * angle / 180)
+    pin.write_analog(value)
 
-class Servo:
+# 360° Servo
+def set_servo_speed(pin, speed): #speed -100 - 100 (0 = Stopp)
+    speed = max(-100, min(100, speed))
+    stop_val = 77      # Stopp-Punkt
+    max_offset = 51    # max. Pulsänderung
+    value = int(stop_val + (max_offset * speed / 100))
+    pin.write_analog(value)
 
-    """
-    A simple class for controlling hobby servos.
+# 180°-Servo an C14 auf 90° setzen
+set_servo_angle(pin14, 0)
+sleep(1000)
 
-    Args:
-        pin (pin0 .. pin3): The pin where servo is connected.
-        freq (int): The frequency of the signal, in hertz.
-        min_us (int): The minimum signal length supported by the servo.
-        max_us (int): The maximum signal length supported by the servo.
-        angle (int): The angle between minimum and maximum positions.
-
-    Usage:
-        SG90 @ 3.3v servo connected to pin0
-        = Servo(pin0).write_angle(90)
-    """
-
-    def __init__(self, pin, freq=50, min_us=600, max_us=2400, angle=180):
-        self.min_us = min_us
-        self.max_us = max_us
-        self.us = 0
-        self.freq = freq
-        self.angle = angle
-        self.analog_period = 0
-        self.pin = pin
-        analog_period = round((1/self.freq) * 1000)  # hertz to miliseconds
-        self.pin.set_analog_period(analog_period)
-
-    def write_us(self, us):
-        us = min(self.max_us, max(self.min_us, us))
-        duty = round(us * 1024 * self.freq // 1000000)
-        self.pin.write_analog(duty)
-        self.pin.write_digital(0)  # turn the pin off
-
-    def write_angle(self, degrees=None):
-        degrees = degrees % 360
-        total_range = self.max_us - self.min_us
-        us = self.min_us + total_range * degrees // self.angle
-        self.write_us(us)
+# 360°-Servo an C15 volle Geschwindigkeit vorwärts
+set_servo_speed(pin15, 100)
+sleep(2000)
+set_servo_speed(pin15, 0)  # Stopp
