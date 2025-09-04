@@ -2,7 +2,7 @@
 
 from calliopemini import*
 
-#Initialisiere das MotionKit
+#Initialisiere das MotionKit V2
 i2c.init()
 
 def motorR(dir, speed):
