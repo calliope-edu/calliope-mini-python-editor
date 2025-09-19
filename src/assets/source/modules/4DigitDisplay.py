@@ -159,22 +159,17 @@ class TM1637:
         # Update display to reflect the change
         self.show_number(0)  # Show 0 to refresh the display and apply the colon state
 
-# Initialize the display
-display = TM1637(pin_A1_RX, pin_A1_TX)
+# Initialize the 4-digit display
+digit_display = TM1637(pin_A1_RX, pin_A1_TX)
 
-# Beispiel zur Verwendung von show_letter_at
-
+# Beispiel zur Verwendung
 while True:
-    display.clear_display()
-    display.show_letter_at('C', 0)
-    display.show_letter_at('O', 1)
-    display.show_letter_at('2', 2)
-    display.show_letter_at('-', 3)
+    digit_display.clear_display()
+    digit_display.show_letter_at('C', 0)
+    digit_display.show_letter_at('O', 1)
+    digit_display.show_letter_at('2', 2)
+    digit_display.show_letter_at('-', 3)
     sleep(1000)
-    display.clear_display()
-    display.show_number(1234)
+    digit_display.clear_display()
+    digit_display.show_number(1234)
     sleep(1000)
-
-
-
-
