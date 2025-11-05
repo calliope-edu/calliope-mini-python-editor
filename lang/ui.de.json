@@ -159,7 +159,7 @@
     "description": "Confirm and save action label"
   },
   "confirm-save-hint": {
-    "defaultMessage": "Cancelar luego use Save para guardar una copia de su proyecto.",
+    "defaultMessage": "Abbrechen und dann mit „Speichern“ eine Kopie des Projekts speichern.",
     "description": "Hint shown when the user has unsaved changes that they might lose if they continue with an action"
   },
   "connect-action": {
