@@ -4,7 +4,7 @@
     "description": "About action"
   },
   "about-comic": {
-    "defaultMessage": "由 Mike Rowbit 所製作且標題為「MicroPython Rocks」的三幅漫畫。一條卡通蛇介紹了 Damien，並說「認識 Damien…他創造了 MicroPython。」。兩條蛇討論 MicroPython。黃蛇說：「MicroPython 是設計為運用在非常小型的電腦上工作。」「就像你的 BBC Calliope mini 一樣」，紫蛇回覆。黃蛇繼續說，「但是 Python 可以在任何地方運行。」紫蛇表示同意，並且說「就如同在這個運行大型網站的伺服器機架上」。在蛇背後的背景顯示了一個伺服器機架。",
+    "defaultMessage": "由 Mike Rowbit 所製作且標題為「MicroPython Rocks」的三幅漫畫。一條卡通蛇介紹了 Damien，並說「認識 Damien…他創造了 MicroPython。」。兩條蛇討論 MicroPython。黃蛇說：「MicroPython 是設計為運用在非常小型的電腦上工作。」「就像你的 Calliope mini 一樣」，紫蛇回覆。黃蛇繼續說，「但是 Python 可以在任何地方運行。」紫蛇表示同意，並且說「就如同在這個運行大型網站的伺服器機架上」。在蛇背後的背景顯示了一個伺服器機架。",
     "description": "Alt text for comic in the about dialog"
   },
   "about-microbit": {
@@ -172,7 +172,7 @@
     "description": "Title for the connect cable dialog"
   },
   "connect-help-alt": {
-    "defaultMessage": "WebUSB 連線對話框，帶有標記為 1 的 BBC Calliope mini 項目和標記為 2 的「連線」按鈕",
+    "defaultMessage": "WebUSB 連線對話框，帶有標記為 1 的 Calliope mini 項目和標記為 2 的「連線」按鈕",
     "description": "Alt text for image in connect help dialog"
   },
   "connect-help-message": {
