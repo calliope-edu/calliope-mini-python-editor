@@ -117,7 +117,7 @@ const NotFoundDialogBody = ({
                       alignItems="center"
                       target="_blank"
                       rel="noreferrer"
-                      href="https://microbit.org/get-started/user-guide/firmware/"
+                      href="https://https://calliope.cc/faq#firmware"
                     >
                       {chunks}
                       <Icon as={RiExternalLinkLine} ml={1} />
@@ -138,7 +138,7 @@ const NotFoundDialogBody = ({
             alignItems="center"
             target="_blank"
             rel="noreferrer"
-            href="https://support.microbit.org/support/solutions/articles/19000105428-webusb-troubleshooting"
+            href="https://https://calliope.cc/faq"
           >
             <FormattedMessage id="connect-troubleshoot" />
             <Icon as={RiExternalLinkLine} ml={1} />
