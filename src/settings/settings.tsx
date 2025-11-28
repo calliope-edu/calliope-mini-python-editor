@@ -35,19 +35,16 @@ const allLanguages: Language[] = [
     id: "nl",
     name: "Nederlands",
     enName: "Dutch",
-    preview: true
   },
   {
     id: "fr",
     name: "Français",
     enName: "French",
-    preview: true
   },
   {
     id: "es",
     name: "Español",
     enName: "Spanish",
-    preview: true
   },
 ];
 export const supportedLanguages: Language[] = allLanguages.filter(
