@@ -1,18 +1,18 @@
 {
   "about": {
-    "defaultMessage": "About",
+    "defaultMessage": "Over",
     "description": "About action"
   },
   "about-comic": {
-    "defaultMessage": "Three panel comic titled \"MicroPython Rocks\" by Mike Rowbit. A cartoon snake introduces Damien, saying \"Meet Damien... He created MicroPython.\". Two snakes discuss MicroPython. The yellow snake says \"MicroPython is designed to work on very small computers.\" \"Like your Calliope mini\" the purple snake replies.\" The yellows snake continues \"But Python can run anywhere.\". The purple snake agrees, saying \"Like on this rack of servers that run huge websites\". The background behind the snakes shows a server rack.",
+    "defaultMessage": "Driepanelige strip getiteld \"MicroPython Rocks\" door Mike Rowbit. Een tekenfilmslang stelt Damien voor met de woorden \"Dit is Damien... Hij heeft MicroPython gemaakt.\". Twee slangen bespreken MicroPython. De gele slang zegt: \"MicroPython is ontworpen om te werken op zeer kleine computers.\" \"Zoals je Calliope mini,\" antwoordt de paarse slang. De gele slang vervolgt: \"Maar Python kan overal draaien.\" De paarse slang stemt toe: \"Zoals op dit rek met servers die enorme websites draaien.\" Op de achtergrond achter de slangen is een serverrek te zien.",
     "description": "Alt text for comic in the about dialog"
   },
   "about-microbit": {
-    "defaultMessage": "Made with love by the Micro:bit Educational Foundation and contributors, enhanced for the Calliope mini by Calliope and Lulububu.",
+    "defaultMessage": "Gemaakt door de Micro:bit Educational Foundation en bijdragers, verbeterd voor de Calliope mini door Calliope en Lulububu.",
     "description": "Text in about dialog"
   },
   "about-micropython": {
-    "defaultMessage": "The editor depends on <link>MicroPython</link> which is made by Damien George and a community of developers around the world.",
+    "defaultMessage": "De editor is afhankelijk van <link>MicroPython</link>, gemaakt door Damien George en een gemeenschap van ontwikkelaars wereldwijd.",
     "description": "Text in about dialog"
   },
   "about-read-less-micropython": {
@@ -20,23 +20,22 @@
     "description": "Aria label to collapse an expanded section about MicroPython"
   },
   "about-read-more-micropython": {
-    "defaultMessage": "Read more about MicroPython",
+    "defaultMessage": "Lees meer over MicroPython",
     "description": "Aria label to expand a collapsed section about MicroPython"
   },
   "add-module": {
-    "defaultMessage": "Select modules to add to the project",
-    "description": "Tooltip for add module dialog"
+    "defaultMessage": "Selecteer modules om aan het project toe te voegen",
+    "description": "Tooltip for add module button"
   },
   "add-module-action": {
-    "defaultMessage": "Add module",
+    "defaultMessage": "Module toevoegen",
     "description": "Button text for action that adds a module to the current project"
   },
   "add-module-text": {
-    "defaultMessage": "You can add one or more modules to your project by checking the boxes below.",
-    "description": "Text for add module dialog"
+    "defaultMessage": "Je kunt een of meer modules aan je project toevoegen door de onderstaande selectievakjes aan te vinken."
   },
   "added-change": {
-    "defaultMessage": "Toegevoegd bestand {changeName}",
+    "defaultMessage": "Bestand toegevoegd {changeName}",
     "description": "Change made to file"
   },
   "api-description": {
@@ -48,11 +47,11 @@
     "description": "API tab button text"
   },
   "apidocs-baseclass": {
-    "defaultMessage": "{baseClassCount, plural, one {base class} other {base classes: }}",
+    "defaultMessage": "{baseClassCount, plural, one {basisklasse} other {basisklassen: }}",
     "description": "Prefix for a single base class or a list of base classes. Uses ICU syntax for pluralisation: https://formatjs.io/docs/core-concepts/icu-syntax/#plural-format."
   },
   "apidocs-classes": {
-    "defaultMessage": "Classes",
+    "defaultMessage": "Klassen",
     "description": "Heading in API documentation for the classes in a Python module"
   },
   "apidocs-fields": {
@@ -60,195 +59,195 @@
     "description": "Heading in API documentation for the fields in a Python module"
   },
   "apidocs-functions": {
-    "defaultMessage": "Functions",
+    "defaultMessage": "Functies",
     "description": "Heading in API documentation for the functions in a Python module"
   },
   "apidocs-methods": {
-    "defaultMessage": "Methods",
+    "defaultMessage": "Methoden",
     "description": "Heading in API documentation for the methods in a Python class"
   },
   "back-action": {
-    "defaultMessage": "Back",
+    "defaultMessage": "Terug",
     "description": "Back button text"
   },
   "back-to-main": {
-    "defaultMessage": "back to the main code",
+    "defaultMessage": "terug naar de hoofdcode",
     "description": "Text button, takes back to main code"
   },
   "cancel-action": {
-    "defaultMessage": "Cancel",
+    "defaultMessage": "Annuleren",
     "description": "Cancel button text"
   },
   "change-files": {
-    "defaultMessage": "Change files?",
+    "defaultMessage": "Bestanden wijzigen?",
     "description": "Header for dialog of confirmation of files changed"
   },
   "choose-main-add-file": {
-    "defaultMessage": "Add file {name}",
+    "defaultMessage": "Bestand toevoegen {name}",
     "description": "Shown in load dialog to confirm actions"
   },
   "choose-main-add-module": {
-    "defaultMessage": "Add module {name}",
+    "defaultMessage": "Module toevoegen {name}",
     "description": "Shown in load dialog to confirm actions"
   },
   "choose-main-replace-file": {
-    "defaultMessage": "Replace file {name}",
+    "defaultMessage": "Bestand vervangen {name}",
     "description": "Shown in load dialog to confirm actions"
   },
   "choose-main-replace-module": {
-    "defaultMessage": "Replace module {name}",
+    "defaultMessage": "Module vervangen {name}",
     "description": "Shown in load dialog to confirm actions"
   },
   "choose-main-source-add-file": {
-    "defaultMessage": "Add file {target} from {source}",
+    "defaultMessage": "Bestand toevoegen {target} van {source}",
     "description": "Shown in load dialog to confirm actions"
   },
   "choose-main-source-add-main-code": {
-    "defaultMessage": "Add main code from {source}",
+    "defaultMessage": "Hoofdcode toevoegen van {source}",
     "description": "Shown in load dialog to confirm actions"
   },
   "choose-main-source-replace-file": {
-    "defaultMessage": "Replace file {target} with {source}",
+    "defaultMessage": "Bestand {target} vervangen door {source}",
     "description": "Shown in load dialog to confirm actions"
   },
   "choose-main-source-replace-main-code": {
-    "defaultMessage": "Replace main code with {source}",
+    "defaultMessage": "Hoofdcode vervangen door {source}",
     "description": "Shown in load dialog to confirm actions"
   },
   "clear": {
-    "defaultMessage": "Clear",
+    "defaultMessage": "Wissen",
     "description": "Aria label for the search input"
   },
   "close-action": {
-    "defaultMessage": "Close",
+    "defaultMessage": "Sluiten",
     "description": "Close button text"
   },
   "code-editor": {
-    "defaultMessage": "Code editor",
+    "defaultMessage": "Code-editor",
     "description": "Aria label for the code editor"
   },
   "code-example": {
-    "defaultMessage": "Code example:",
+    "defaultMessage": "Codevoorbeeld:",
     "description": "Visually hidden text to announce code examples in the toolkit documentation"
   },
   "confirm-action": {
-    "defaultMessage": "Confirm",
+    "defaultMessage": "Bevestigen",
     "description": "Confirm action label"
   },
   "confirm-delete": {
-    "defaultMessage": "Confirm delete",
+    "defaultMessage": "Verwijderen bevestigen",
     "description": "Confirmation header of deletion of a file"
   },
   "confirm-replace-body": {
-    "defaultMessage": "Replace all files with those in the hex?",
+    "defaultMessage": "Alle bestanden vervangen door die in de hex?",
     "description": "Confirmation message body for replacing project dialog"
   },
   "confirm-replace-reset": {
-    "defaultMessage": "Replace all files with the default starter code?",
+    "defaultMessage": "Alle bestanden vervangen door de standaard startcode?",
     "description": "Confirmation message for the reset action"
   },
   "confirm-replace-title": {
-    "defaultMessage": "Confirm replace project",
+    "defaultMessage": "Vervangen van project bevestigen",
     "description": "Confirmation message title for replacing project dialog"
   },
   "confirm-replace-with-idea": {
-    "defaultMessage": "Replace all files with {ideaName}?",
+    "defaultMessage": "Alle bestanden vervangen door {ideaName}?",
     "description": "Confirmation message body for replacing project dialog with an idea"
   },
   "confirm-save-action": {
-    "defaultMessage": "Confirm and save",
+    "defaultMessage": "Bevestigen en opslaan",
     "description": "Confirm and save action label"
   },
   "confirm-save-hint": {
-    "defaultMessage": "Cancel then use Save to keep a copy of your project.",
+    "defaultMessage": "Annuleer en gebruik vervolgens Opslaan om een kopie van je project te bewaren.",
     "description": "Hint shown when the user has unsaved changes that they might lose if they continue with an action"
   },
   "connect-action": {
-    "defaultMessage": "Connect",
+    "defaultMessage": "Verbinden",
     "description": "Connect button text"
   },
   "connect-cable-title": {
-    "defaultMessage": "Connect cable",
+    "defaultMessage": "Kabel aansluiten",
     "description": "Title for the connect cable dialog"
   },
   "connect-help-alt": {
-    "defaultMessage": "WebUSB connection dialog with Calliope mini entry labelled 1 and Connect button labelled 2",
+    "defaultMessage": "WebUSB-verbindingdialoog met Calliope mini-invoer gemarkeerd als 1 en 'Verbinden'-knop gemarkeerd als 2",
     "description": "Alt text for image in connect help dialog"
   },
   "connect-help-message": {
-    "defaultMessage": "In next popup:",
+    "defaultMessage": "In het volgende pop-upvenster:",
     "description": "Text in the connect help dialog"
   },
   "connect-help-one": {
-    "defaultMessage": "Choose your Calliope mini",
+    "defaultMessage": "Kies je Calliope mini",
     "description": "Legend text for the connect help dialog image"
   },
   "connect-help-title": {
-    "defaultMessage": "Select Calliope mini",
+    "defaultMessage": "Selecteer Calliope mini",
     "description": "Title for the connect help dialog"
   },
   "connect-help-two": {
-    "defaultMessage": "Select ‘Connect’",
+    "defaultMessage": "Selecteer ‘Verbinden’",
     "description": "Legend text for the connect help dialog image"
   },
   "connect-hover": {
-    "defaultMessage": "Connect to your Calliope mini over WebUSB",
+    "defaultMessage": "Verbind met je Calliope mini via WebUSB",
     "description": "Connect button hover text"
   },
   "connect-microbit": {
-    "defaultMessage": "Connect to your Calliope mini to see serial output here",
+    "defaultMessage": "Verbind met je Calliope mini om hier seriële uitvoer te zien",
     "description": "Text in serial area"
   },
   "connect-troubleshoot": {
-    "defaultMessage": "Troubleshoot problems with connecting to your Calliope mini",
+    "defaultMessage": "Problemen met verbinden met je Calliope mini oplossen",
     "description": "Text in no the Calliope mini found and firmware update dialogs"
   },
   "content-load-error": {
-    "defaultMessage": "Something went wrong. Download your hex file for safe keeping, then refresh the page to reload.",
+    "defaultMessage": "Er is iets misgegaan. Download je hex-bestand voor de zekerheid en vernieuw de pagina om opnieuw te laden.",
     "description": "Text displayed when content fails to load"
   },
   "copied": {
-    "defaultMessage": "Copied",
+    "defaultMessage": "Gekopieerd",
     "description": "Text shown after copy to clipboard"
   },
   "copy-action": {
-    "defaultMessage": "Copy",
+    "defaultMessage": "Kopiëren",
     "description": "Copy to clipboard action text"
   },
   "copy-code-action": {
-    "defaultMessage": "Copy code",
+    "defaultMessage": "Code kopiëren",
     "description": "Copy code to clipboard action text"
   },
   "create-action": {
-    "defaultMessage": "Create",
+    "defaultMessage": "Aanmaken",
     "description": "Create action label (e.g. in create file dialog)"
   },
   "create-file-action": {
-    "defaultMessage": "Create file",
+    "defaultMessage": "Bestand aanmaken",
     "description": "Button text for action that creates a new blank Python file in the current project"
   },
   "create-python": {
-    "defaultMessage": "Create a new Python file in this project",
+    "defaultMessage": "Maak een nieuw Python-bestand in dit project",
     "description": "Hover and dialog title when creating a new Python file"
   },
   "created-file": {
-    "defaultMessage": "Created {filename}",
+    "defaultMessage": "Bestand aangemaakt {filename}",
     "description": "Action feedback for creating a file"
   },
   "data-protection": {
-    "defaultMessage": "Data protection",
+    "defaultMessage": "Gegevensbescherming",
     "description": "Data protection simulator panel title"
   },
   "delete-action": {
-    "defaultMessage": "Delete",
+    "defaultMessage": "Verwijderen",
     "description": "Button text for delete action"
   },
   "delete-file-action": {
-    "defaultMessage": "Delete {name}",
+    "defaultMessage": "Verwijder {name}",
     "description": "Menu option to delete file"
   },
   "deleted-file": {
-    "defaultMessage": "Deleted {filename}",
+    "defaultMessage": "Bestand verwijderd {filename}",
     "description": "Confirmation message that file got deleted"
   },
   "disclaimer": {
@@ -256,35 +255,35 @@
     "description": "Disclaimer menu option text"
   },
   "disconnect-action": {
-    "defaultMessage": "Disconnect",
+    "defaultMessage": "Verbreken",
     "description": "Disconnect button text"
   },
   "disconnect-hover": {
-    "defaultMessage": "Disconnect from the Calliope mini",
+    "defaultMessage": "Verbreek verbinding met de Calliope mini",
     "description": "Disconnect button hover text"
   },
   "dont-show-again": {
-    "defaultMessage": "Don't show this again",
+    "defaultMessage": "Niet meer weergeven",
     "description": "Text to never show a dialog again"
   },
   "drag-hover": {
-    "defaultMessage": "Drag and drop",
+    "defaultMessage": "Slepen en neerzetten",
     "description": "Draggable code hover text"
   },
   "edit-file-action": {
-    "defaultMessage": "Edit {name}",
+    "defaultMessage": "Bewerk {name}",
     "description": "Menu option to edit file"
   },
   "edit-name-project-hover": {
-    "defaultMessage": "Edit the name of your project",
+    "defaultMessage": "Bewerk de naam van je project",
     "description": "Text for user to edit the name of the project"
   },
   "edit-project-name-action": {
-    "defaultMessage": "Edit project name",
+    "defaultMessage": "Projectnaam bewerken",
     "description": "Text for user to edit the name of the project"
   },
   "failed-to-build-hex": {
-    "defaultMessage": "Failed to build the hex file",
+    "defaultMessage": "Hex-bestand maken mislukt",
     "description": "Error title when we cannot build the hex file, for example because no storage space. Additional detail is shown separately."
   },
   "feedback": {
@@ -292,75 +291,75 @@
     "description": "Feedback action"
   },
   "file-actions": {
-    "defaultMessage": "{name} file actions",
+    "defaultMessage": "{name} bestandsacties",
     "description": "Header of file actions for file"
   },
   "file-already-exists": {
-    "defaultMessage": "This file already exists",
+    "defaultMessage": "Dit bestand bestaat al",
     "description": "File already exists notification text"
   },
   "file-name-invalid-character": {
-    "defaultMessage": "The name contains an invalid character: {invalid}",
+    "defaultMessage": "De naam bevat een ongeldig teken: {invalid}",
     "description": "Warning text for new Python file name with an invalid character"
   },
   "file-name-length": {
-    "defaultMessage": "The name is too long",
+    "defaultMessage": "De naam is te lang",
     "description": "Warning text for overly long file names (file system limitation)"
   },
   "file-name-lowercase-only": {
-    "defaultMessage": "The name should be all lowercase",
+    "defaultMessage": "De naam moet volledig in kleine letters zijn",
     "description": "Warning text for new Python file with uppercase"
   },
   "file-name-not-empty": {
-    "defaultMessage": "The name cannot be empty",
+    "defaultMessage": "De naam mag niet leeg zijn",
     "description": "Warning text for new Python file with empty name"
   },
   "file-name-start-number": {
-    "defaultMessage": "The name cannot start with a number",
+    "defaultMessage": "De naam mag niet beginnen met een cijfer",
     "description": "Warning text for new Python file names starting with a number"
   },
   "file-name-whitespace": {
-    "defaultMessage": "The name cannot contain spaces",
+    "defaultMessage": "De naam mag geen spaties bevatten",
     "description": "Warning text for new Python file name with whitespace"
   },
   "firmware-update-link": {
-    "defaultMessage": "You must <link>update your firmware</link> before you can connect to this Calliope mini.",
+    "defaultMessage": "Je moet <link>je firmware bijwerken</link> voordat je verbinding kunt maken met deze Calliope mini.",
     "description": "Text in the firmware update dialog"
   },
   "firmware-update-message": {
-    "defaultMessage": "Connecting to the Calliope mini failed because the firmware on your Calliope mini is too old.",
+    "defaultMessage": "Verbinding maken met de Calliope mini is mislukt omdat de firmware op je Calliope mini te oud is.",
     "description": "Text in the firmware update dialog"
   },
   "firmware-update-title": {
-    "defaultMessage": "Firmware update required",
+    "defaultMessage": "Firmware-update vereist",
     "description": "Title for the firmware update dialog"
   },
   "flash-action": {
-    "defaultMessage": "Flash",
+    "defaultMessage": "Flashen",
     "description": "Text for flash button"
   },
   "flash-hover": {
-    "defaultMessage": "Flash the project directly to the Calliope mini",
+    "defaultMessage": "Flash het project rechtstreeks naar de Calliope mini",
     "description": "Hover text over flash button"
   },
   "flashing-code": {
-    "defaultMessage": "Sending code (flashing)",
+    "defaultMessage": "Code verzenden (flashen)",
     "description": "Progress dialog text for partial flashes (quick)"
   },
   "flashing-full-flash-detail": {
-    "defaultMessage": "Your code is being sent (flashed) to your Calliope mini. This can take a while the first time but it will be quicker after that.",
+    "defaultMessage": "Je code wordt verzonden (geflasht) naar je Calliope mini. Dit kan de eerste keer even duren, maar gaat daarna sneller.",
     "description": "Message shown after the title in the progress dialog for a full flash"
   },
   "flashing-micropython": {
-    "defaultMessage": "Flashing MicroPython",
+    "defaultMessage": "MicroPython flashen",
     "description": "Progress dialog text for full flashes (slower)"
   },
   "font-size": {
-    "defaultMessage": "Font size",
+    "defaultMessage": "Lettergrootte",
     "description": "Font size option text"
   },
   "guide-link": {
-    "defaultMessage": "For more support, see the <link>Python Editor guide</link>",
+    "defaultMessage": "Voor meer ondersteuning, zie de <link>Python Editor-handleiding</link>",
     "description": "Text with an external link to support/help content"
   },
   "help": {
@@ -368,238 +367,238 @@
     "description": "Help menu label"
   },
   "help-support": {
-    "defaultMessage": "Help & support",
+    "defaultMessage": "Help & ondersteuning",
     "description": "Menu item for link to support site"
   },
   "help-translate": {
-    "defaultMessage": "Help translate",
+    "defaultMessage": "Help vertalen",
     "description": "Help translate  menu option text"
   },
   "highlight-code-structure": {
-    "defaultMessage": "Highlight code structure",
+    "defaultMessage": "Code-structuur markeren",
     "description": "Code structure setting label"
   },
   "highlight-code-structure-full": {
-    "defaultMessage": "Full",
+    "defaultMessage": "Volledig",
     "description": "Highlight code structure option"
   },
   "highlight-code-structure-none": {
-    "defaultMessage": "None",
+    "defaultMessage": "Geen",
     "description": "Highlight code structure option"
   },
   "highlight-code-structure-simple": {
-    "defaultMessage": "Simple",
+    "defaultMessage": "Eenvoudig",
     "description": "Highlight code structure option"
   },
   "ideas-tab": {
-    "defaultMessage": "Ideas",
+    "defaultMessage": "Ideeën",
     "description": "Ideas tab button text. Tab shows programs to give students ideas."
   },
   "ideas-tab-description": {
-    "defaultMessage": "Try out these projects, modify them and get inspired",
+    "defaultMessage": "Probeer deze projecten, pas ze aan en laat je inspireren",
     "description": "Ideas tab description text. Tab shows programs to give students ideas."
   },
   "imprint": {
-    "defaultMessage": "Imprint",
+    "defaultMessage": "Colofon",
     "description": "Imprint menu option text"
   },
   "insert-code-action": {
-    "defaultMessage": "Insert code"
+    "defaultMessage": "Code invoegen"
   },
   "language": {
-    "defaultMessage": "Language",
+    "defaultMessage": "Taal",
     "description": "Language option text"
   },
   "less-action": {
-    "defaultMessage": "Less",
+    "defaultMessage": "Minder",
     "description": "Less button text (showing less content)"
   },
   "load-error-makecode-info": {
-    "defaultMessage": "This hex file cannot be loaded in the Python Editor. The Python Editor cannot open hex files created with Microsoft MakeCode.",
+    "defaultMessage": "Dit hex-bestand kan niet worden geladen in de Python Editor. De Python Editor kan geen hex-bestanden openen die met Microsoft MakeCode zijn gemaakt.",
     "description": "Load error message"
   },
   "load-error-makecode-link": {
-    "defaultMessage": "Please visit <link>https://makecode.calliope.cc/</link> to use this hex file.",
+    "defaultMessage": "Bezoek <link>https://makecode.calliope.cc/</link> om dit hex-bestand te gebruiken.",
     "description": "Load error message"
   },
   "load-error-mixed": {
-    "defaultMessage": "A hex file can only be loaded on its own. It replaces all files in the project.",
+    "defaultMessage": "Een hex-bestand kan alleen op zichzelf worden geladen. Het vervangt alle bestanden in het project.",
     "description": "Load error message"
   },
   "load-error-mpy": {
-    "defaultMessage": "This version of the Python Editor doesn't currently support adding .mpy files.",
+    "defaultMessage": "Deze versie van de Python Editor ondersteunt momenteel geen .mpy-bestanden.",
     "description": "Load error message"
   },
   "load-error-title": {
-    "defaultMessage": "Cannot load {fileCount, plural, one {file} other {files}}",
+    "defaultMessage": "Kan {fileCount, plural, one {bestand} other {bestanden}} niet laden",
     "description": "Title of error dialog when we cannot load files. Uses ICU syntax for pluralisation: https://formatjs.io/docs/core-concepts/icu-syntax/#plural-format."
   },
   "loaded-file-feedback": {
-    "defaultMessage": "Loaded {filename}",
+    "defaultMessage": "Bestand geladen {filename}",
     "description": "Success feedback for loading file"
   },
   "loading": {
-    "defaultMessage": "Loading…",
+    "defaultMessage": "Laden…",
     "description": "Shown on loading indicators"
   },
   "microbit-hearts-alt": {
-    "defaultMessage": "Calliope mini board with the 5 by 5 LED grid showing a heart",
+    "defaultMessage": "Calliope mini-bord met een 5x5 LED-raster dat een hart toont",
     "description": "Alt text for Calliope mini image in About dialog"
   },
   "micropython-documentation": {
-    "defaultMessage": "MicroPython documentation",
+    "defaultMessage": "MicroPython-documentatie",
     "description": "MicroPython documentation menu option text"
   },
   "micropython-history": {
-    "defaultMessage": "Learn how MicroPython on the Calliope mini came to be",
+    "defaultMessage": "Lees hoe MicroPython op de Calliope mini is ontstaan",
     "description": "Links to MicroPython history in the about dialog"
   },
   "micropython-source-code": {
-    "defaultMessage": "MicroPython <linkV1>source code for the Calliope mini V1</linkV1> and <linkV2>Calliope mini V2</linkV2>",
+    "defaultMessage": "MicroPython <linkV1>broncode voor de Calliope mini V1/V2</linkV1> en <linkV2>Calliope mini V3</linkV2>",
     "description": "Links to the MicroPython source code in the about dialog"
   },
   "more-action": {
-    "defaultMessage": "More",
+    "defaultMessage": "Meer",
     "description": "More button text (showing more/further content)"
   },
   "more-connect-options": {
-    "defaultMessage": "More connect options",
+    "defaultMessage": "Meer verbindingsopties",
     "description": "Aria label for the additional actions menu to the right of the Send to Calliope mini button"
   },
   "more-ideas": {
-    "defaultMessage": "<link>More ideas</link>",
+    "defaultMessage": "<link>Meer ideeën</link>",
     "description": "Link to more ideas on the calliope.cc website at the end of the ideas section"
   },
   "more-save-options": {
-    "defaultMessage": "More save options",
+    "defaultMessage": "Meer opslagopties",
     "description": "Aria label for the additional actions menu to the right of the Save button"
   },
   "multiple-files-message-one": {
-    "defaultMessage": "This project contains {fileCount, plural, other {{fileCount} files}} but only <strong>main.py</strong> has been downloaded.",
+    "defaultMessage": "Dit project bevat {fileCount, plural, other {{fileCount} bestanden}}, maar alleen <strong>main.py</strong> is gedownload.",
     "description": "Message in dialog shown when multiple files are available for download. Uses ICU syntax for pluralisation: https://formatjs.io/docs/core-concepts/icu-syntax/#plural-format. In practice, fileCount will always be two or more."
   },
   "multiple-files-message-two": {
-    "defaultMessage": "Use the <strong>Save</strong> button to download your whole project as a hex file. You can <strong>Open</strong> the hex file to restore your project. If you prefer to download individual Python files, use the <strong>Project</strong> tab.",
+    "defaultMessage": "Gebruik de knop <strong>Opslaan</strong> om je hele project als hex-bestand te downloaden. Je kunt het hex-bestand openen om je project te herstellen. Wil je liever losse Python-bestanden downloaden, gebruik dan het tabblad <strong>Project</strong>.",
     "description": "Message in dialog shown when multiple files are available for download"
   },
   "multiple-files-title": {
-    "defaultMessage": "Warning: Only main.py downloaded",
+    "defaultMessage": "Waarschuwing: Alleen main.py gedownload",
     "description": "Title of dialog shown when multiple files are available for download but only the main file downloaded."
   },
   "name-project": {
-    "defaultMessage": "Name your project",
+    "defaultMessage": "Geef je project een naam",
     "description": "Name your project header"
   },
   "name-text": {
-    "defaultMessage": "Name",
+    "defaultMessage": "Naam",
     "description": "Header for name field"
   },
   "name-used-when": {
-    "defaultMessage": "The name is used when you save a file.",
+    "defaultMessage": "De naam wordt gebruikt wanneer je een bestand opslaat.",
     "description": "Text under project name field"
   },
   "new-file-hint": {
-    "defaultMessage": "We'll add the <code>.py</code> extension for you.",
+    "defaultMessage": "We voegen automatisch de extensie <code>.py</code> toe.",
     "description": "Hint shown in the new Python file dialog"
   },
   "next-action": {
-    "defaultMessage": "Next",
+    "defaultMessage": "Volgende",
     "description": "Next button text"
   },
   "not-found-checklist-one": {
-    "defaultMessage": "Is your <strong>Calliope mini plugged in</strong>? Did you <link>follow these steps</link>?",
+    "defaultMessage": "Is je <strong>Calliope mini aangesloten</strong>? Heb je <link>deze stappen gevolgd</link>?",
     "description": "Checklist text in the no Calliope mini found dialog"
   },
   "not-found-checklist-two": {
-    "defaultMessage": "If you have a <strong>Calliope mini V1</strong> you may need to <link>update the firmware</link>",
+    "defaultMessage": "Als je een <strong>Calliope mini V1</strong> hebt, moet je mogelijk de <link>firmware bijwerken</link>",
     "description": "Checklist text in the no Calliope mini found dialog"
   },
   "not-found-message": {
-    "defaultMessage": "You didn’t select a Calliope mini, or there was a problem connecting to it.",
+    "defaultMessage": "Je hebt geen Calliope mini geselecteerd, of er was een probleem met verbinden.",
     "description": "Text in the no Calliope mini found dialog"
   },
   "not-found-save-message": {
-    "defaultMessage": "Alternative method: choose Save then follow steps to transfer",
+    "defaultMessage": "Alternatieve methode: kies Opslaan en volg de overdrachtsstappen",
     "description": "Save prompt in the no Calliope mini found dialog"
   },
   "not-found-title": {
-    "defaultMessage": "No Calliope mini found",
+    "defaultMessage": "Geen Calliope mini gevonden",
     "description": "Title for the Calliope mini found dialog"
   },
   "not-found-update-link": {
-    "defaultMessage": "You must <link>update your firmware before</link> you can connect to this Calliope mini.",
+    "defaultMessage": "Je moet <link>je firmware bijwerken</link> voordat je verbinding kunt maken met deze Calliope mini.",
     "description": "Text in the no Calliope mini found dialog"
   },
   "open-action": {
-    "defaultMessage": "Open",
+    "defaultMessage": "Openen",
     "description": "Open button text"
   },
   "open-file-action": {
-    "defaultMessage": "Open…",
+    "defaultMessage": "Bestand openen…",
     "description": "Open file button text"
   },
   "open-file-dropped": {
-    "defaultMessage": "Open file when dropped",
+    "defaultMessage": "Bestand openen bij neerzetten",
     "description": "Aria label for file drop target"
   },
   "open-hover": {
-    "defaultMessage": "Open a hex or Python file or add other files",
+    "defaultMessage": "Open een hex- of Python-bestand of voeg andere bestanden toe",
     "description": "Hover text over load button"
   },
   "options": {
-    "defaultMessage": "Options",
+    "defaultMessage": "Opties",
     "description": "Label for an options menu"
   },
   "parameter-help": {
-    "defaultMessage": "Parameter help",
+    "defaultMessage": "Parameterhulp",
     "description": "Setting label to control whether pop-up documentation for function/method parameters is automatically shown."
   },
   "parameter-help-automatic": {
-    "defaultMessage": "Automatic",
+    "defaultMessage": "Automatisch",
     "description": "Parameter help setting for when the parameter documentation is shown automatically"
   },
   "parameter-help-manual": {
-    "defaultMessage": "Manual ({shortcut})",
+    "defaultMessage": "Handmatig ({shortcut})",
     "description": "Parameter help setting for when the user must press a key combination to open the parameter documentation"
   },
   "permanently-delete": {
-    "defaultMessage": "Permanently delete {filename}?",
+    "defaultMessage": "Bestand {filename} permanent verwijderen?",
     "description": "Confirmation question to permanently delete file"
   },
   "post-save-message-files": {
-    "defaultMessage": "This contains all files in this project (including any additional files, e.g. to run accessories, listed in the <strong>Project</strong> tab).",
+    "defaultMessage": "Dit bevat alle bestanden in dit project (inclusief eventuele extra bestanden, bijv. voor accessoires, vermeld in het tabblad <strong>Project</strong>).",
     "description": "Message in dialog shown after the user saves the project as a hex file."
   },
   "post-save-message-one": {
-    "defaultMessage": "You will find your hex file in this computer’s <strong>Downloads</strong> folder.",
+    "defaultMessage": "Je vindt je hex-bestand in de map <strong>Downloads</strong> van deze computer.",
     "description": "Message in dialog shown after the user saves the project as a hex file."
   },
   "post-save-message-two": {
-    "defaultMessage": "You can move it to another folder for storage and use <strong>Open</strong> to continue editing later.",
+    "defaultMessage": "Je kunt het verplaatsen naar een andere map voor opslag en <strong>Openen</strong> gebruiken om later verder te werken.",
     "description": "Message in dialog shown after the user saves the project as a hex file."
   },
   "post-save-title": {
-    "defaultMessage": "Project saved",
+    "defaultMessage": "Project opgeslagen",
     "description": "Title of dialog shown after the user saves the project as a hex file."
   },
   "post-save-transfer-hex": {
-    "defaultMessage": "To run this hex file on your Calliope mini <link>follow these steps</link>.",
+    "defaultMessage": "Om dit hex-bestand op je Calliope mini uit te voeren, <link>volg deze stappen</link>.",
     "description": "Message in dialog shown after the user saves the project as a hex file."
   },
   "project-actions": {
-    "defaultMessage": "Project actions",
+    "defaultMessage": "Projectacties",
     "description": "Aria label for the bar with project actions"
   },
   "project-header": {
-    "defaultMessage": "Project header",
+    "defaultMessage": "Projectkop",
     "description": "Aria label for the project header area"
   },
   "project-name": {
-    "defaultMessage": "Project name",
+    "defaultMessage": "Projectnaam",
     "description": "Text used to indicate the project name"
   },
   "project-name-not-empty": {
-    "defaultMessage": "The project name cannot be empty",
+    "defaultMessage": "De projectnaam mag niet leeg zijn",
     "description": "Validation message for project name"
   },
   "project-tab": {
@@ -607,11 +606,11 @@
     "description": "Project tab button text"
   },
   "project-tab-description": {
-    "defaultMessage": "View, create, add and edit the files in your project",
+    "defaultMessage": "Bekijk, maak, voeg toe en bewerk de bestanden in je project",
     "description": "Project tab description"
   },
   "python-powered": {
-    "defaultMessage": "Python powered",
+    "defaultMessage": "Aangedreven door Python",
     "description": "Python powered logo alt text"
   },
   "python-tab": {
@@ -619,255 +618,255 @@
     "description": "Python tab text"
   },
   "quit-anyway": {
-    "defaultMessage": "Some of your changes have not been saved. Quit anyway?",
+    "defaultMessage": "Sommige wijzigingen zijn niet opgeslagen. Toch afsluiten?",
     "description": "Quit anyway text"
   },
   "read-less": {
-    "defaultMessage": "Read less",
+    "defaultMessage": "Minder lezen",
     "description": "Action text to collapse an expanded section"
   },
   "read-more": {
-    "defaultMessage": "Read more",
+    "defaultMessage": "Meer lezen",
     "description": "Action text to expand a collapsed section"
   },
   "redo": {
-    "defaultMessage": "Redo",
+    "defaultMessage": "Opnieuw",
     "description": "Aria label for the redo button"
   },
   "reference-tab": {
-    "defaultMessage": "Reference",
+    "defaultMessage": "Referentie",
     "description": "Reference tab button text"
   },
   "replace-action-label": {
-    "defaultMessage": "Replace",
+    "defaultMessage": "Vervangen",
     "description": "Action label for replacing project dialog"
   },
   "reset-project-action": {
-    "defaultMessage": "Reset project",
+    "defaultMessage": "Project resetten",
     "description": "Action to reset the project to its default state"
   },
   "reset-project-feedback": {
-    "defaultMessage": "Project reset to the default starter code",
+    "defaultMessage": "Project teruggezet naar standaard startcode",
     "description": "Confirmation message after resetting the project"
   },
   "reset-project-hover": {
-    "defaultMessage": "Resets the project to the default starter code, discarding your work",
+    "defaultMessage": "Zet project terug naar standaard startcode en verwijder je werk",
     "description": "Reset action hover text"
   },
   "results-count": {
-    "defaultMessage": "{count, plural, =0 {No results} one {# result} other {# results}}",
+    "defaultMessage": "{count, plural, =0 {Geen resultaten} one {# resultaat} other {# resultaten}}",
     "description": "Number of results from a search. Uses ICU syntax for pluralisation: https://formatjs.io/docs/core-concepts/icu-syntax/#plural-format."
   },
   "save-action": {
-    "defaultMessage": "Save",
+    "defaultMessage": "Opslaan",
     "description": "Save button text"
   },
   "save-file-action": {
-    "defaultMessage": "Save {name}",
+    "defaultMessage": "Bestand opslaan {name}",
     "description": "Menu option to save a file"
   },
   "save-hex-action": {
-    "defaultMessage": "Save project hex",
+    "defaultMessage": "Project hex opslaan",
     "description": "Text for menu item for saving a project hex file"
   },
   "save-hover": {
-    "defaultMessage": "Save the project hex file to your computer",
+    "defaultMessage": "Sla het projecthex-bestand op je computer op",
     "description": "Hover text over save button"
   },
   "save-python-action": {
-    "defaultMessage": "Save Python script",
+    "defaultMessage": "Python-script opslaan",
     "description": "Save button menu option to save the Python script"
   },
   "search": {
-    "defaultMessage": "Search",
+    "defaultMessage": "Zoeken",
     "description": "Aria label for searching documentation"
   },
   "send-action": {
-    "defaultMessage": "Send to Calliope mini",
+    "defaultMessage": "Versturen naar Calliope mini",
     "description": "Send to Calliope mini button text"
   },
   "send-hover": {
-    "defaultMessage": "Connect via WebUSB then flash code onto Calliope mini",
+    "defaultMessage": "Verbind via WebUSB en flash de code naar de Calliope mini",
     "description": "Send button hover text"
   },
   "serial-collapse": {
-    "defaultMessage": "Hide serial",
+    "defaultMessage": "Serieel verbergen",
     "description": "Action label to collapse the serial console/REPL area"
   },
   "serial-ctrl-c-action": {
-    "defaultMessage": "Send Ctrl+C for REPL",
+    "defaultMessage": "Stuur Ctrl+C naar REPL",
     "description": "Button to trigger the Python REPL from the serial area"
   },
   "serial-ctrl-d-action": {
-    "defaultMessage": "Send Ctrl+D to reset",
+    "defaultMessage": "Stuur Ctrl+D om te resetten",
     "description": "Button to reset the Calliope mini from the serial area"
   },
   "serial-expand": {
-    "defaultMessage": "Show serial",
+    "defaultMessage": "Serieel tonen",
     "description": "Action label to expand the serial console/REPL area"
   },
   "serial-flashed": {
-    "defaultMessage": "Calliope mini flashed",
+    "defaultMessage": "Calliope mini geflasht",
     "description": "Shown when your program is in sync with the Calliope mini"
   },
   "serial-help-ctrl-c": {
-    "defaultMessage": "Use the keyboard shortcut <kbd>Ctrl</kbd> + <kbd>C</kbd> to interrupt your program. Then you can type Python commands for MicroPython to run. It's a great way to experiment with something new.",
+    "defaultMessage": "Gebruik de sneltoets <kbd>Ctrl</kbd> + <kbd>C</kbd> om je programma te onderbreken. Daarna kun je Python-opdrachten typen voor MicroPython. Handig om iets nieuws uit te proberen.",
     "description": "Text from the serial hints and tips dialog. kbd tag shows a keyboard key style."
   },
   "serial-help-ctrl-d": {
-    "defaultMessage": "To start your program running again use <kbd>Ctrl</kbd> + <kbd>D</kbd>.",
+    "defaultMessage": "Gebruik <kbd>Ctrl</kbd> + <kbd>D</kbd> om je programma opnieuw te starten.",
     "description": "Text from the serial hints and tips dialog.  kbd tag shows a keyboard key style."
   },
   "serial-help-intro": {
-    "defaultMessage": "The serial terminal shows errors and other output from the program running on your Calliope mini. By default, it shows the most recent error from the program. Expand it to see all the output.",
+    "defaultMessage": "De seriële terminal toont fouten en andere uitvoer van het programma dat op je Calliope mini draait. Standaard wordt de meest recente fout getoond. Klap uit om alle uitvoer te zien.",
     "description": "Text from the serial hints and tips dialog"
   },
   "serial-help-print": {
-    "defaultMessage": "Your program can print messages using the <code>print</code> function. Try adding <code>print('Calliope mini is awesome')</code> to your program.",
+    "defaultMessage": "Je programma kan berichten afdrukken met de functie <code>print</code>. Probeer <code>print('Calliope mini is geweldig')</code> toe te voegen.",
     "description": "Text from the serial hints and tips dialog. code tag shows monospaced font."
   },
   "serial-help-title": {
-    "defaultMessage": "Serial hints and tips",
+    "defaultMessage": "Seriële tips",
     "description": "Title for the serial hints and tips dialog"
   },
   "serial-hints-and-tips": {
-    "defaultMessage": "Serial hints and tips",
+    "defaultMessage": "Seriële tips",
     "description": "Link/button to open the serial hints and tips dialog"
   },
   "serial-menu": {
-    "defaultMessage": "Serial menu",
+    "defaultMessage": "Serieel menu",
     "description": "Aria label for serial area menu"
   },
   "serial-ready-to-flash": {
-    "defaultMessage": "Calliope mini ready to flash",
+    "defaultMessage": "Calliope mini klaar om te flashen",
     "description": "Shown when your program is out of sync with the Calliope mini"
   },
   "serial-running": {
-    "defaultMessage": "Running…",
+    "defaultMessage": "Bezig…",
     "description": "Indicator text when the Calliope mini is running a program"
   },
   "serial-terminal": {
-    "defaultMessage": "Serial terminal",
+    "defaultMessage": "Seriële terminal",
     "description": "Aria label for the serial terminal"
   },
   "setting-allow-editing-third-party": {
-    "defaultMessage": "Allow editing third-party modules",
+    "defaultMessage": "Bewerken van externe modules toestaan",
     "description": "Checkbox setting label"
   },
   "setting-allow-editing-third-party-info": {
-    "defaultMessage": "Changing third-party modules may mean they don’t work as intended.",
+    "defaultMessage": "Het wijzigen van externe modules kan ervoor zorgen dat ze niet meer werken zoals bedoeld.",
     "description": "Checkbox setting label"
   },
   "settings": {
-    "defaultMessage": "Settings",
+    "defaultMessage": "Instellingen",
     "description": "Settings text"
   },
   "show-api-documentation": {
-    "defaultMessage": "Show API documentation",
+    "defaultMessage": "API-documentatie tonen",
     "description": "Shown on link from editor autocomplete and signature help to the API docs."
   },
   "show-less": {
-    "defaultMessage": "Show less",
+    "defaultMessage": "Minder tonen",
     "description": "Show less for general progressive disclosure"
   },
   "show-less-for": {
-    "defaultMessage": "Show less for {item}",
+    "defaultMessage": "Minder tonen voor {item}",
     "description": "Show less with item usually for aria label"
   },
   "show-more": {
-    "defaultMessage": "Show more",
+    "defaultMessage": "Meer tonen",
     "description": "Show more for general progressive disclosure"
   },
   "show-more-for": {
-    "defaultMessage": "Show more for {item}",
+    "defaultMessage": "Meer tonen voor {item}",
     "description": "Show more with item usually for aria label"
   },
   "sidebar": {
-    "defaultMessage": "Sidebar",
+    "defaultMessage": "Zijbalk",
     "description": "Aria label for the area on the left"
   },
   "sidebar-collapse": {
-    "defaultMessage": "Collapse sidebar",
+    "defaultMessage": "Zijbalk inklappen",
     "description": "Aria label for the collapse sidebar button"
   },
   "sidebar-expand": {
-    "defaultMessage": "Expand sidebar",
+    "defaultMessage": "Zijbalk uitklappen",
     "description": "Aria label for the expand sidebar button"
   },
   "simulator-accelerometer": {
-    "defaultMessage": "Accelerometer",
+    "defaultMessage": "Versnellingsmeter",
     "description": "Simulator Accelerometer panel title"
   },
   "simulator-actions": {
-    "defaultMessage": "Simulator actions",
+    "defaultMessage": "Simulatoracties",
     "description": "Aria label for the bar with simulator actions (stop, mute etc)"
   },
   "simulator-button-a": {
-    "defaultMessage": "Button A",
+    "defaultMessage": "Knop A",
     "description": "Button A aria label on the simulator board"
   },
   "simulator-button-b": {
-    "defaultMessage": "Button B",
+    "defaultMessage": "Knop B",
     "description": "Button B aria label on the simulator board"
   },
   "simulator-button-hold-label": {
-    "defaultMessage": "Hold button {button}",
+    "defaultMessage": "Houd knop {button} ingedrukt",
     "description": "Aria label for simulator toggle button"
   },
   "simulator-button-press-label": {
-    "defaultMessage": "Press button {button}",
+    "defaultMessage": "Druk op knop {button}",
     "description": "Aria label for simulator push button"
   },
   "simulator-buttons": {
-    "defaultMessage": "Buttons",
+    "defaultMessage": "Knoppen",
     "description": "Buttons simulator panel title"
   },
   "simulator-collapse": {
-    "defaultMessage": "Collapse simulator",
+    "defaultMessage": "Simulator inklappen",
     "description": "Aria label for the collapse simulator button"
   },
   "simulator-collapse-module": {
-    "defaultMessage": "Collapse {title} module",
+    "defaultMessage": "Module {title} inklappen",
     "description": "Aria label for collapse simulator module button"
   },
   "simulator-compass": {
-    "defaultMessage": "Compass",
+    "defaultMessage": "Kompas",
     "description": "Compass simulator panel title"
   },
   "simulator-compass-heading-one": {
-    "defaultMessage": "Heading",
+    "defaultMessage": "Richting",
     "description": "Sub heading for simulator Compass panel"
   },
   "simulator-compass-heading-two": {
-    "defaultMessage": "Magnetic field strength",
+    "defaultMessage": "Magnetische veldsterkte",
     "description": "Sub heading for simulator Compass panel"
   },
   "simulator-data-logging-empty": {
-    "defaultMessage": "No log entries.",
+    "defaultMessage": "Geen logboekitems.",
     "description": "Shown in the simulator Data logging table when there are no rows"
   },
   "simulator-data-logging-full": {
-    "defaultMessage": "Log full",
+    "defaultMessage": "Logboek vol",
     "description": "Shown below the simulator Data logging table to warn that the log is full"
   },
   "simulator-data-logging-rows": {
-    "defaultMessage": "{count, plural, =0 {No rows logged} one {# row logged} other {# rows logged}}",
+    "defaultMessage": "{count, plural, =0 {Geen rijen gelogd} one {# rij gelogd} other {# rijen gelogd}}",
     "description": "Indicator of the number of rows logged in the simulator Data logging table. Uses ICU syntax for pluralisation: https://formatjs.io/docs/core-concepts/icu-syntax/#plural-format."
   },
   "simulator-data-logging-save-log": {
-    "defaultMessage": "Save log",
+    "defaultMessage": "Logboek opslaan",
     "description": "Action label to save the data log as a file from the Data logging simulator panel"
   },
   "simulator-data-logging-truncated": {
-    "defaultMessage": "Older rows not shown",
+    "defaultMessage": "Oudere rijen niet getoond",
     "description": "Text shown in the simulator Data logging table to indicate that old rows have been omitted"
   },
   "simulator-expand": {
-    "defaultMessage": "Expand simulator",
+    "defaultMessage": "Simulator uitklappen",
     "description": "Aria label for the expand simulator button"
   },
   "simulator-expand-module": {
-    "defaultMessage": "Expand {title} module",
+    "defaultMessage": "Module {title} uitklappen",
     "description": "Aria label for expand simulator module button"
   },
   "simulator-gesture-3g": {
@@ -883,87 +882,87 @@
     "description": "Simulator gesture option"
   },
   "simulator-gesture-down": {
-    "defaultMessage": "down",
+    "defaultMessage": "omlaag",
     "description": "Simulator gesture option"
   },
   "simulator-gesture-face-down": {
-    "defaultMessage": "face down",
+    "defaultMessage": "met voorkant omlaag",
     "description": "Simulator gesture option"
   },
   "simulator-gesture-face-up": {
-    "defaultMessage": "face up",
+    "defaultMessage": "met voorkant omhoog",
     "description": "Simulator gesture option"
   },
   "simulator-gesture-freefall": {
-    "defaultMessage": "freefall",
+    "defaultMessage": "vrije val",
     "description": "Simulator gesture option"
   },
   "simulator-gesture-left": {
-    "defaultMessage": "left",
+    "defaultMessage": "links",
     "description": "Simulator gesture option"
   },
   "simulator-gesture-right": {
-    "defaultMessage": "right",
+    "defaultMessage": "rechts",
     "description": "Simulator gesture option"
   },
   "simulator-gesture-select": {
-    "defaultMessage": "Select gesture",
+    "defaultMessage": "Beweging selecteren",
     "description": "Aria label for the simulator gesture select input"
   },
   "simulator-gesture-send": {
-    "defaultMessage": "Send gesture",
+    "defaultMessage": "Beweging verzenden",
     "description": "Aria label for the simulator gesture send button"
   },
   "simulator-gesture-shake": {
-    "defaultMessage": "shake",
+    "defaultMessage": "schudden",
     "description": "Simulator gesture option"
   },
   "simulator-gesture-up": {
-    "defaultMessage": "up",
+    "defaultMessage": "omhoog",
     "description": "Simulator gesture option"
   },
   "simulator-hide": {
-    "defaultMessage": "Hide simulator",
+    "defaultMessage": "Simulator verbergen",
     "description": "Hide simulator action"
   },
   "simulator-input-hold": {
-    "defaultMessage": "Hold",
+    "defaultMessage": "Ingedrukt houden",
     "description": "Label for UI toggles to hold simulator buttons or pins"
   },
   "simulator-input-press": {
-    "defaultMessage": "Press",
+    "defaultMessage": "Indrukken",
     "description": "Label for UI buttons to press simulator buttons or pins"
   },
   "simulator-light-level": {
-    "defaultMessage": "Light level",
+    "defaultMessage": "Lichtniveau",
     "description": "Light level simulator panel title"
   },
   "simulator-log": {
-    "defaultMessage": "Data log",
+    "defaultMessage": "Datalog",
     "description": "Data log simulator panel title"
   },
   "simulator-loud": {
-    "defaultMessage": "Loud",
+    "defaultMessage": "Hard",
     "description": "Simulator sound level high threshold marker hover text. This should match the translation of microbit.SoundEvent.LOUD in the api.en.json file but with differing case."
   },
   "simulator-mute": {
-    "defaultMessage": "Mute",
+    "defaultMessage": "Dempen",
     "description": "Aria label for the mute simulator button"
   },
   "simulator-pin-hold-label": {
-    "defaultMessage": "Hold pin {pin}",
+    "defaultMessage": "Pin {pin} ingedrukt houden",
     "description": "Aria label for simulator pin control"
   },
   "simulator-pin-press-label": {
-    "defaultMessage": "Press pin {pin}",
+    "defaultMessage": "Pin {pin} indrukken",
     "description": "Aria label for simulator pin control"
   },
   "simulator-pins": {
-    "defaultMessage": "Pins",
+    "defaultMessage": "Pinnen",
     "description": "Pins simulator panel title"
   },
   "simulator-quiet": {
-    "defaultMessage": "Quiet",
+    "defaultMessage": "Zacht",
     "description": "Simulator sound level low threshold marker hover text. This should match the translation of microbit.SoundEvent.QUIET in the api.en.json file but with differing case."
   },
   "simulator-radio": {
@@ -971,63 +970,63 @@
     "description": "Radio simulator panel title"
   },
   "simulator-radio-code": {
-    "defaultMessage": "Calliope mini sent:",
+    "defaultMessage": "Calliope mini verzond:",
     "description": "Visually hidden text for a radio message sent from the simulated Calliope mini. Text of the message follows."
   },
   "simulator-radio-group-notice": {
-    "defaultMessage": "Radio group set to {groupNumber}",
+    "defaultMessage": "Radiogroep ingesteld op {groupNumber}",
     "description": "Message in radio simulator area when the radio group changes"
   },
   "simulator-radio-message": {
-    "defaultMessage": "Radio message",
+    "defaultMessage": "Radiobericht",
     "description": "Label and placeholder for the simulator radio message input field"
   },
   "simulator-radio-message-limit-notice": {
-    "defaultMessage": "Older messages not shown",
+    "defaultMessage": "Oudere berichten niet getoond",
     "description": "Text shown when the number of radio messages has been capped in the simulator user interface"
   },
   "simulator-radio-no-messages": {
-    "defaultMessage": "No messages to show",
+    "defaultMessage": "Geen berichten om te tonen",
     "description": "Text shown when there are no radio messages to display in the simulator user interface"
   },
   "simulator-radio-off": {
-    "defaultMessage": "The radio is off",
+    "defaultMessage": "De radio is uitgeschakeld",
     "description": "Text shown when there are no radio messages because the radio is off in the simulator user interface"
   },
   "simulator-radio-send": {
-    "defaultMessage": "Send message",
+    "defaultMessage": "Bericht verzenden",
     "description": "Aria label for the simulator radio send button"
   },
   "simulator-radio-user": {
-    "defaultMessage": "You sent:",
+    "defaultMessage": "Je verzond:",
     "description": "Visually hidden text for a radio message sent from the user to the simulated Calliope mini. Text of the message follows."
   },
   "simulator-reference-link": {
-    "defaultMessage": "Link to Reference section",
+    "defaultMessage": "Link naar referentie-sectie",
     "description": "Aria label for simulator Reference link button"
   },
   "simulator-reset": {
-    "defaultMessage": "Reset",
+    "defaultMessage": "Resetten",
     "description": "Aria label for the reset simulator button"
   },
   "simulator-serial-terminal": {
-    "defaultMessage": "Simulator serial terminal",
+    "defaultMessage": "Simulator seriële terminal",
     "description": "Aria label for the simulator serial terminal"
   },
   "simulator-sound-level": {
-    "defaultMessage": "Sound level",
+    "defaultMessage": "Geluidsniveau",
     "description": "Sound level simulator panel title"
   },
   "simulator-start-simulator": {
-    "defaultMessage": "Start simulator",
+    "defaultMessage": "Simulator starten",
     "description": "Aria label for the large play button on the simulator board"
   },
   "simulator-stop": {
-    "defaultMessage": "Stop simulator",
+    "defaultMessage": "Simulator stoppen",
     "description": "Aria label for the stop simulator button"
   },
   "simulator-temperature": {
-    "defaultMessage": "Temperature",
+    "defaultMessage": "Temperatuur",
     "description": "Temperature simulator panel title"
   },
   "simulator-title": {
@@ -1035,151 +1034,151 @@
     "description": "Simulator title"
   },
   "simulator-touch-logo": {
-    "defaultMessage": "Touch logo",
+    "defaultMessage": "Touch-logo",
     "description": "Name for the touch logo pin on the V2 Calliope mini board. Used in the simulator."
   },
   "simulator-unmute": {
-    "defaultMessage": "Unmute",
+    "defaultMessage": "Dempen opheffen",
     "description": "Aria label for the unmute simulator button"
   },
   "software-versions": {
-    "defaultMessage": "Software versions",
+    "defaultMessage": "Softwareversies",
     "description": "Heading for a table of software versions in the about dialog"
   },
   "start-coding-action": {
-    "defaultMessage": "Start coding",
+    "defaultMessage": "Beginnen met coderen",
     "description": "Start coding button text"
   },
   "support": {
-    "defaultMessage": "Support",
+    "defaultMessage": "Ondersteuning",
     "description": "Support menu option text"
   },
   "terms-of-use": {
-    "defaultMessage": "Terms of use",
+    "defaultMessage": "Gebruiksvoorwaarden",
     "description": "Terms of use menu option text"
   },
   "third-party-module-explanation": {
-    "defaultMessage": "This file is a third-party module and is not intended to be edited.",
+    "defaultMessage": "Dit bestand is een externe module en is niet bedoeld om te worden bewerkt.",
     "description": "Explanation shown instead of the code editor for third-party modules."
   },
   "third-party-module-how-to": {
-    "defaultMessage": "Allow editing third-party modules in <link>Settings</link> to modify this module.",
+    "defaultMessage": "Sta bewerken van externe modules toe in <link>Instellingen</link> om deze module te wijzigen.",
     "description": "Explanation of how to allow editing for third-party modules."
   },
   "timeout-error-description": {
-    "defaultMessage": "Unable to connect to the Calliope mini",
+    "defaultMessage": "Kan geen verbinding maken met de Calliope mini",
     "description": "Description for error messages relating to WebUSB timeout"
   },
   "timeout-error-title": {
-    "defaultMessage": "Connection timed out",
+    "defaultMessage": "Verbinding verlopen",
     "description": "Title for error messages relating to WebUSB timeout"
   },
   "toolkit-error-loading": {
-    "defaultMessage": "An error occurred loading the toolkit.",
+    "defaultMessage": "Er is een fout opgetreden bij het laden van de toolkit.",
     "description": "Error shown if we failed to load toolkit content"
   },
   "toolkit-view-documentation": {
-    "defaultMessage": "View {name} documentation",
+    "defaultMessage": "Bekijk {name}-documentatie",
     "description": "Aria label for the toolkit topic right arrow"
   },
   "transfer-hex-message-one": {
-    "defaultMessage": "Drag the hex file from your <strong>Downloads folder</strong> to the <strong>MINI drive</strong>.",
+    "defaultMessage": "Sleep het hex-bestand uit je <strong>Downloads-map</strong> naar het <strong>MINI-station</strong>.",
     "description": "Text in the transfer hex dialog"
   },
   "transfer-hex-message-two": {
-    "defaultMessage": "You can <strong>Open</strong> the hex file later to continue editing.",
+    "defaultMessage": "Je kunt het hex-bestand later <strong>Openen</strong> om verder te werken.",
     "description": "Text in the transfer hex dialog"
   },
   "transfer-hex-title": {
-    "defaultMessage": "Transfer saved hex file to Calliope mini",
+    "defaultMessage": "Overdraag opgeslagen hex-bestand naar Calliope mini",
     "description": "Title for the transfer hex dialog"
   },
   "try-again-action": {
-    "defaultMessage": "Try again",
+    "defaultMessage": "Opnieuw proberen",
     "description": "Try again button text"
   },
   "undo": {
-    "defaultMessage": "Undo",
+    "defaultMessage": "Ongedaan maken",
     "description": "Aria label for the undo button"
   },
   "unexpected-error-description": {
-    "defaultMessage": "Please try again or <link>raise a support request</link>",
+    "defaultMessage": "Probeer het opnieuw of <link>vraag ondersteuning aan</link>",
     "description": "Text shown for unexpected error scenarios"
   },
   "unexpected-error-title": {
-    "defaultMessage": "Please try again or <link>raise a support request</link>",
+    "defaultMessage": "Probeer het opnieuw of <link>vraag ondersteuning aan</link>",
     "description": "Text shown for unexpected error scenarios"
   },
   "untitled-project": {
-    "defaultMessage": "Untitled project",
+    "defaultMessage": "Naamloos project",
     "description": "Title for a new project"
   },
   "update-firmware-action": {
-    "defaultMessage": "Update firmware",
+    "defaultMessage": "Firmware bijwerken",
     "description": "Update firmware button text"
   },
   "updated-change": {
-    "defaultMessage": "Updated file {changeName}",
+    "defaultMessage": "Bestand bijgewerkt {changeName}",
     "description": "Change made to file"
   },
   "visit-dot-org": {
-    "defaultMessage": "visit calliope.cc (opens in a new tab)",
+    "defaultMessage": "bezoek calliope.cc (opent in een nieuw tabblad)",
     "description": "alt text for logo link to .org"
   },
   "webusb-error-clear-connect-description-1": {
-    "defaultMessage": "Another process is connected to this device.",
+    "defaultMessage": "Een ander proces is verbonden met dit apparaat.",
     "description": "Part of WebUSB error message"
   },
   "webusb-error-clear-connect-description-2": {
-    "defaultMessage": "Close any other tabs that may be using WebUSB (e.g. MakeCode, Python Editor), or unplug and replug the Calliope mini before trying again.",
+    "defaultMessage": "Sluit andere tabbladen die WebUSB gebruiken (bijv. MakeCode, Python Editor) of koppel de Calliope mini los en sluit opnieuw aan voordat je het opnieuw probeert.",
     "description": "Part of WebUSB error message"
   },
   "webusb-error-clear-connect-title": {
-    "defaultMessage": "Unable to claim interface",
+    "defaultMessage": "Kan interface niet claimen",
     "description": "Title of error for WebUsb connection"
   },
   "webusb-error-default-title": {
-    "defaultMessage": "WebUSB error",
+    "defaultMessage": "WebUSB-fout",
     "description": "Default title for error messages relating to WebUSB"
   },
   "webusb-error-reconnect-microbit-description": {
-    "defaultMessage": "Please reconnect your Calliope mini and try again.",
+    "defaultMessage": "Sluit je Calliope mini opnieuw aan en probeer het opnieuw.",
     "description": "Part of WebUSB error message"
   },
   "webusb-error-update-req-description": {
-    "defaultMessage": "You need to <link>update your Calliope mini firmware</link> to make use of this feature.",
+    "defaultMessage": "Je moet <link>de firmware van je Calliope mini bijwerken</link> om deze functie te gebruiken.",
     "description": "WebUSB error telling user to update firmware"
   },
   "webusb-error-update-req-title": {
-    "defaultMessage": "Please update the Calliope mini firmware",
+    "defaultMessage": "Werk de firmware van de Calliope mini bij",
     "description": "Error text telling user to update firmware"
   },
   "webusb-not-supported": {
-    "defaultMessage": "Unfortunately, WebUSB is not supported in this browser and your program will be saved to your computer instead. Follow the steps on the next screen to transfer it to your Calliope mini. We recommend Google Chrome or Microsoft Edge so you can connect directly to your Calliope mini.",
+    "defaultMessage": "Helaas wordt WebUSB niet ondersteund in deze browser en wordt je programma in plaats daarvan op je computer opgeslagen. Volg de stappen op het volgende scherm om het over te dragen naar je Calliope mini. We raden Google Chrome of Microsoft Edge aan, zodat je direct verbinding kunt maken met je Calliope mini.",
     "description": "Explantion shown when user's browser doesn't support WebUSB"
   },
   "webusb-not-supported-title": {
-    "defaultMessage": "This browser does not support WebUSB",
+    "defaultMessage": "Deze browser ondersteunt geen WebUSB",
     "description": "Title of dialog shown when user's browser doesn't support WebUSB"
   },
   "webusb-why-use": {
-    "defaultMessage": "With WebUSB you can program your Calliope mini and connect to the serial console directly from the online editor.",
+    "defaultMessage": "Met WebUSB kun je je Calliope mini programmeren en direct verbinden met de seriële console vanuit de online editor.",
     "description": "Shown to encourage use of browser that supports WebUSB"
   },
   "welcome-message": {
-    "defaultMessage": "Watch our short guide to some of the key features, or get coding right away.",
+    "defaultMessage": "Bekijk onze korte gids met enkele belangrijke functies of begin direct met coderen.",
     "description": "Text in the welcome dialogn"
   },
   "welcome-title": {
-    "defaultMessage": "Welcome to the Calliope mini Python Editor",
+    "defaultMessage": "Welkom bij de Calliope mini Python Editor",
     "description": "Title for the welcome dialog"
   },
   "zoom-in-action": {
-    "defaultMessage": "Zoom in",
+    "defaultMessage": "Inzoomen",
     "description": "Text label for zoom in button"
   },
   "zoom-out-action": {
-    "defaultMessage": "Zoom out",
+    "defaultMessage": "Uitzoomen",
     "description": "Text label for zoom out button"
   }
 }
