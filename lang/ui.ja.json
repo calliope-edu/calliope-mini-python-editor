@@ -172,7 +172,7 @@
     "description": "Title for the connect cable dialog"
   },
   "connect-help-alt": {
-    "defaultMessage": "WebUSB connection dialog with BBC Calliope mini entry labelled 1 and Connect button labelled 2",
+    "defaultMessage": "WebUSB connection dialog with Calliope mini entry labelled 1 and Connect button labelled 2",
     "description": "Alt text for image in connect help dialog"
   },
   "connect-help-message": {

@@ -18,7 +18,7 @@ async function loadLocaleData (locale: string) {
       return (await import("./ui.de.json")).default;
     case "fr":
       return (await import("./ui.fr.json")).default;
-    case "es-es":
+    case "es":
       return (await import("./ui.es-es.json")).default;
     case "ja":
       return (await import("./ui.ja.json")).default;

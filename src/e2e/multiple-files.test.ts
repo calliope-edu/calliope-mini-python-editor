@@ -75,7 +75,7 @@ describe("multiple-files", () => {
 
     await app.deleteFile("module.py");
 
-    await app.findVisibleEditorContents(/Hello/);
+    await app.findVisibleEditorContents(/Hi!/);
   });
 
   it("Muddles through if given non-UTF-8 main.py", async () => {

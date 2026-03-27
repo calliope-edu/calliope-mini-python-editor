@@ -15,17 +15,20 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
-#languages=(ca de es-ES fr ja ko nl zh-cn zh-cn)
-languages=(de fr nl es-ES)
+# Format: "crowdin_folder:internal_code"
+# Crowdin exports to folder names like "es-ES", but internally we use "es"
+#languages=(ca:ca de:de es-ES:es fr:fr ja:ja ko:ko nl:nl zh-cn:zh-cn zh-tw:zh-tw)
+languages=(de:de fr:fr nl:nl es-ES:es)
 
 mkdir -p crowdin/translated
-for language in $languages; do
-    lower_language=$(echo "${language}" | tr '[:upper:]' '[:lower:]')
-    prefix="${1}/${language}"
+for mapping in "${languages[@]}"; do
+    crowdin_folder="${mapping%%:*}"
+    internal_code="${mapping##*:}"
+    prefix="${1}/${crowdin_folder}"
 
-    cp "${prefix}/ui.en.json" "crowdin/translated/ui.${lower_language}.json"
-#    cp "${prefix}/errors.en.json" "../pyright/packages/pyright-internal/src/localization/simplified.nls.${lower_language}.json"
-    cp "${prefix}/api.en.json" "../micropython-calliope-stubs/crowdin/translated/api.${lower_language}.json"
+    cp "${prefix}/ui.en.json" "crowdin/translated/ui.${internal_code}.json"
+#    cp "${prefix}/errors.en.json" "../pyright/packages/pyright-internal/src/localization/simplified.nls.${internal_code}.json"
+    cp "${prefix}/api.en.json" "../micropython-calliope-stubs/crowdin/translated/api.${internal_code}.json"
 done
 
 npm run i18n:convert

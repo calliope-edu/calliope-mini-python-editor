@@ -2,25 +2,25 @@
   "about": [
     {
       "type": 0,
-      "value": "About"
+      "value": "Over"
     }
   ],
   "about-comic": [
     {
       "type": 0,
-      "value": "Three panel comic titled \"MicroPython Rocks\" by Mike Rowbit. A cartoon snake introduces Damien, saying \"Meet Damien... He created MicroPython.\". Two snakes discuss MicroPython. The yellow snake says \"MicroPython is designed to work on very small computers.\" \"Like your BBC Calliope mini\" the purple snake replies.\" The yellows snake continues \"But Python can run anywhere.\". The purple snake agrees, saying \"Like on this rack of servers that run huge websites\". The background behind the snakes shows a server rack."
+      "value": "Driepanelige strip getiteld \"MicroPython Rocks\" door Mike Rowbit. Een tekenfilmslang stelt Damien voor met de woorden \"Dit is Damien... Hij heeft MicroPython gemaakt.\". Twee slangen bespreken MicroPython. De gele slang zegt: \"MicroPython is ontworpen om te werken op zeer kleine computers.\" \"Zoals je Calliope mini,\" antwoordt de paarse slang. De gele slang vervolgt: \"Maar Python kan overal draaien.\" De paarse slang stemt toe: \"Zoals op dit rek met servers die enorme websites draaien.\" Op de achtergrond achter de slangen is een serverrek te zien."
     }
   ],
   "about-microbit": [
     {
       "type": 0,
-      "value": "Made with love by the Micro:bit Educational Foundation and contributors, enhanced for the Calliope mini by Calliope and Lulububu."
+      "value": "Gemaakt door de Micro:bit Educational Foundation en bijdragers, verbeterd voor de Calliope mini door Calliope en Lulububu."
     }
   ],
   "about-micropython": [
     {
       "type": 0,
-      "value": "The editor depends on "
+      "value": "De editor is afhankelijk van "
     },
     {
       "children": [
@@ -34,7 +34,7 @@
     },
     {
       "type": 0,
-      "value": " which is made by Damien George and a community of developers around the world."
+      "value": ", gemaakt door Damien George en een gemeenschap van ontwikkelaars wereldwijd."
     }
   ],
   "about-read-less-micropython": [
@@ -46,31 +46,31 @@
   "about-read-more-micropython": [
     {
       "type": 0,
-      "value": "Read more about MicroPython"
+      "value": "Lees meer over MicroPython"
     }
   ],
   "add-module": [
     {
       "type": 0,
-      "value": "Select modules to add to the project"
+      "value": "Selecteer modules om aan het project toe te voegen"
     }
   ],
   "add-module-action": [
     {
       "type": 0,
-      "value": "Add module"
+      "value": "Module toevoegen"
     }
   ],
   "add-module-text": [
     {
       "type": 0,
-      "value": "You can add one or more modules to your project by checking the boxes below."
+      "value": "Je kunt een of meer modules aan je project toevoegen door de onderstaande selectievakjes aan te vinken."
     }
   ],
   "added-change": [
     {
       "type": 0,
-      "value": "Toegevoegd bestand "
+      "value": "Bestand toegevoegd "
     },
     {
       "type": 1,
@@ -107,7 +107,7 @@
           "value": [
             {
               "type": 0,
-              "value": "base class"
+              "value": "basisklasse"
             }
           ]
         },
@@ -115,7 +115,7 @@
           "value": [
             {
               "type": 0,
-              "value": "base classes: "
+              "value": "basisklassen: "
             }
           ]
         }
@@ -128,7 +128,7 @@
   "apidocs-classes": [
     {
       "type": 0,
-      "value": "Classes"
+      "value": "Klassen"
     }
   ],
   "apidocs-fields": [
@@ -140,43 +140,43 @@
   "apidocs-functions": [
     {
       "type": 0,
-      "value": "Functions"
+      "value": "Functies"
     }
   ],
   "apidocs-methods": [
     {
       "type": 0,
-      "value": "Methods"
+      "value": "Methoden"
     }
   ],
   "back-action": [
     {
       "type": 0,
-      "value": "Back"
+      "value": "Terug"
     }
   ],
   "back-to-main": [
     {
       "type": 0,
-      "value": "back to the main code"
+      "value": "terug naar de hoofdcode"
     }
   ],
   "cancel-action": [
     {
       "type": 0,
-      "value": "Cancel"
+      "value": "Annuleren"
     }
   ],
   "change-files": [
     {
       "type": 0,
-      "value": "Change files?"
+      "value": "Bestanden wijzigen?"
     }
   ],
   "choose-main-add-file": [
     {
       "type": 0,
-      "value": "Add file "
+      "value": "Bestand toevoegen "
     },
     {
       "type": 1,
@@ -186,7 +186,7 @@
   "choose-main-add-module": [
     {
       "type": 0,
-      "value": "Add module "
+      "value": "Module toevoegen "
     },
     {
       "type": 1,
@@ -196,7 +196,7 @@
   "choose-main-replace-file": [
     {
       "type": 0,
-      "value": "Replace file "
+      "value": "Bestand vervangen "
     },
     {
       "type": 1,
@@ -206,7 +206,7 @@
   "choose-main-replace-module": [
     {
       "type": 0,
-      "value": "Replace module "
+      "value": "Module vervangen "
     },
     {
       "type": 1,
@@ -216,7 +216,7 @@
   "choose-main-source-add-file": [
     {
       "type": 0,
-      "value": "Add file "
+      "value": "Bestand toevoegen "
     },
     {
       "type": 1,
@@ -224,7 +224,7 @@
     },
     {
       "type": 0,
-      "value": " from "
+      "value": " van "
     },
     {
       "type": 1,
@@ -234,7 +234,7 @@
   "choose-main-source-add-main-code": [
     {
       "type": 0,
-      "value": "Add main code from "
+      "value": "Hoofdcode toevoegen van "
     },
     {
       "type": 1,
@@ -244,7 +244,7 @@
   "choose-main-source-replace-file": [
     {
       "type": 0,
-      "value": "Replace file "
+      "value": "Bestand "
     },
     {
       "type": 1,
@@ -252,7 +252,7 @@
     },
     {
       "type": 0,
-      "value": " with "
+      "value": " vervangen door "
     },
     {
       "type": 1,
@@ -262,7 +262,7 @@
   "choose-main-source-replace-main-code": [
     {
       "type": 0,
-      "value": "Replace main code with "
+      "value": "Hoofdcode vervangen door "
     },
     {
       "type": 1,
@@ -272,61 +272,61 @@
   "clear": [
     {
       "type": 0,
-      "value": "Clear"
+      "value": "Wissen"
     }
   ],
   "close-action": [
     {
       "type": 0,
-      "value": "Close"
+      "value": "Sluiten"
     }
   ],
   "code-editor": [
     {
       "type": 0,
-      "value": "Code editor"
+      "value": "Code-editor"
     }
   ],
   "code-example": [
     {
       "type": 0,
-      "value": "Code example:"
+      "value": "Codevoorbeeld:"
     }
   ],
   "confirm-action": [
     {
       "type": 0,
-      "value": "Confirm"
+      "value": "Bevestigen"
     }
   ],
   "confirm-delete": [
     {
       "type": 0,
-      "value": "Confirm delete"
+      "value": "Verwijderen bevestigen"
     }
   ],
   "confirm-replace-body": [
     {
       "type": 0,
-      "value": "Replace all files with those in the hex?"
+      "value": "Alle bestanden vervangen door die in de hex?"
     }
   ],
   "confirm-replace-reset": [
     {
       "type": 0,
-      "value": "Replace all files with the default starter code?"
+      "value": "Alle bestanden vervangen door de standaard startcode?"
     }
   ],
   "confirm-replace-title": [
     {
       "type": 0,
-      "value": "Confirm replace project"
+      "value": "Vervangen van project bevestigen"
     }
   ],
   "confirm-replace-with-idea": [
     {
       "type": 0,
-      "value": "Replace all files with "
+      "value": "Alle bestanden vervangen door "
     },
     {
       "type": 1,
@@ -340,121 +340,121 @@
   "confirm-save-action": [
     {
       "type": 0,
-      "value": "Confirm and save"
+      "value": "Bevestigen en opslaan"
     }
   ],
   "confirm-save-hint": [
     {
       "type": 0,
-      "value": "Cancel then use Save to keep a copy of your project."
+      "value": "Annuleer en gebruik vervolgens Opslaan om een kopie van je project te bewaren."
     }
   ],
   "connect-action": [
     {
       "type": 0,
-      "value": "Connect"
+      "value": "Verbinden"
     }
   ],
   "connect-cable-title": [
     {
       "type": 0,
-      "value": "Connect cable"
+      "value": "Kabel aansluiten"
     }
   ],
   "connect-help-alt": [
     {
       "type": 0,
-      "value": "WebUSB connection dialog with BBC Calliope mini entry labelled 1 and Connect button labelled 2"
+      "value": "WebUSB-verbindingdialoog met Calliope mini-invoer gemarkeerd als 1 en 'Verbinden'-knop gemarkeerd als 2"
     }
   ],
   "connect-help-message": [
     {
       "type": 0,
-      "value": "In next popup:"
+      "value": "In het volgende pop-upvenster:"
     }
   ],
   "connect-help-one": [
     {
       "type": 0,
-      "value": "Choose your Calliope mini"
+      "value": "Kies je Calliope mini"
     }
   ],
   "connect-help-title": [
     {
       "type": 0,
-      "value": "Select Calliope mini"
+      "value": "Selecteer Calliope mini"
     }
   ],
   "connect-help-two": [
     {
       "type": 0,
-      "value": "Select ‘Connect’"
+      "value": "Selecteer ‘Verbinden’"
     }
   ],
   "connect-hover": [
     {
       "type": 0,
-      "value": "Connect to your Calliope mini over WebUSB"
+      "value": "Verbind met je Calliope mini via WebUSB"
     }
   ],
   "connect-microbit": [
     {
       "type": 0,
-      "value": "Connect to your Calliope mini to see serial output here"
+      "value": "Verbind met je Calliope mini om hier seriële uitvoer te zien"
     }
   ],
   "connect-troubleshoot": [
     {
       "type": 0,
-      "value": "Troubleshoot problems with connecting to your Calliope mini"
+      "value": "Problemen met verbinden met je Calliope mini oplossen"
     }
   ],
   "content-load-error": [
     {
       "type": 0,
-      "value": "Something went wrong. Download your hex file for safe keeping, then refresh the page to reload."
+      "value": "Er is iets misgegaan. Download je hex-bestand voor de zekerheid en vernieuw de pagina om opnieuw te laden."
     }
   ],
   "copied": [
     {
       "type": 0,
-      "value": "Copied"
+      "value": "Gekopieerd"
     }
   ],
   "copy-action": [
     {
       "type": 0,
-      "value": "Copy"
+      "value": "Kopiëren"
     }
   ],
   "copy-code-action": [
     {
       "type": 0,
-      "value": "Copy code"
+      "value": "Code kopiëren"
     }
   ],
   "create-action": [
     {
       "type": 0,
-      "value": "Create"
+      "value": "Aanmaken"
     }
   ],
   "create-file-action": [
     {
       "type": 0,
-      "value": "Create file"
+      "value": "Bestand aanmaken"
     }
   ],
   "create-python": [
     {
       "type": 0,
-      "value": "Create a new Python file in this project"
+      "value": "Maak een nieuw Python-bestand in dit project"
     }
   ],
   "created-file": [
     {
       "type": 0,
-      "value": "Created "
+      "value": "Bestand aangemaakt "
     },
     {
       "type": 1,
@@ -464,19 +464,19 @@
   "data-protection": [
     {
       "type": 0,
-      "value": "Data protection"
+      "value": "Gegevensbescherming"
     }
   ],
   "delete-action": [
     {
       "type": 0,
-      "value": "Delete"
+      "value": "Verwijderen"
     }
   ],
   "delete-file-action": [
     {
       "type": 0,
-      "value": "Delete "
+      "value": "Verwijder "
     },
     {
       "type": 1,
@@ -486,7 +486,7 @@
   "deleted-file": [
     {
       "type": 0,
-      "value": "Deleted "
+      "value": "Bestand verwijderd "
     },
     {
       "type": 1,
@@ -502,31 +502,31 @@
   "disconnect-action": [
     {
       "type": 0,
-      "value": "Disconnect"
+      "value": "Verbreken"
     }
   ],
   "disconnect-hover": [
     {
       "type": 0,
-      "value": "Disconnect from the Calliope mini"
+      "value": "Verbreek verbinding met de Calliope mini"
     }
   ],
   "dont-show-again": [
     {
       "type": 0,
-      "value": "Don't show this again"
+      "value": "Niet meer weergeven"
     }
   ],
   "drag-hover": [
     {
       "type": 0,
-      "value": "Drag and drop"
+      "value": "Slepen en neerzetten"
     }
   ],
   "edit-file-action": [
     {
       "type": 0,
-      "value": "Edit "
+      "value": "Bewerk "
     },
     {
       "type": 1,
@@ -536,19 +536,19 @@
   "edit-name-project-hover": [
     {
       "type": 0,
-      "value": "Edit the name of your project"
+      "value": "Bewerk de naam van je project"
     }
   ],
   "edit-project-name-action": [
     {
       "type": 0,
-      "value": "Edit project name"
+      "value": "Projectnaam bewerken"
     }
   ],
   "failed-to-build-hex": [
     {
       "type": 0,
-      "value": "Failed to build the hex file"
+      "value": "Hex-bestand maken mislukt"
     }
   ],
   "feedback": [
@@ -564,19 +564,19 @@
     },
     {
       "type": 0,
-      "value": " file actions"
+      "value": " bestandsacties"
     }
   ],
   "file-already-exists": [
     {
       "type": 0,
-      "value": "This file already exists"
+      "value": "Dit bestand bestaat al"
     }
   ],
   "file-name-invalid-character": [
     {
       "type": 0,
-      "value": "The name contains an invalid character: "
+      "value": "De naam bevat een ongeldig teken: "
     },
     {
       "type": 1,
@@ -586,43 +586,43 @@
   "file-name-length": [
     {
       "type": 0,
-      "value": "The name is too long"
+      "value": "De naam is te lang"
     }
   ],
   "file-name-lowercase-only": [
     {
       "type": 0,
-      "value": "The name should be all lowercase"
+      "value": "De naam moet volledig in kleine letters zijn"
     }
   ],
   "file-name-not-empty": [
     {
       "type": 0,
-      "value": "The name cannot be empty"
+      "value": "De naam mag niet leeg zijn"
     }
   ],
   "file-name-start-number": [
     {
       "type": 0,
-      "value": "The name cannot start with a number"
+      "value": "De naam mag niet beginnen met een cijfer"
     }
   ],
   "file-name-whitespace": [
     {
       "type": 0,
-      "value": "The name cannot contain spaces"
+      "value": "De naam mag geen spaties bevatten"
     }
   ],
   "firmware-update-link": [
     {
       "type": 0,
-      "value": "You must "
+      "value": "Je moet "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "update your firmware"
+          "value": "je firmware bijwerken"
         }
       ],
       "type": 8,
@@ -630,67 +630,67 @@
     },
     {
       "type": 0,
-      "value": " before you can connect to this Calliope mini."
+      "value": " voordat je verbinding kunt maken met deze Calliope mini."
     }
   ],
   "firmware-update-message": [
     {
       "type": 0,
-      "value": "Connecting to the Calliope mini failed because the firmware on your Calliope mini is too old."
+      "value": "Verbinding maken met de Calliope mini is mislukt omdat de firmware op je Calliope mini te oud is."
     }
   ],
   "firmware-update-title": [
     {
       "type": 0,
-      "value": "Firmware update required"
+      "value": "Firmware-update vereist"
     }
   ],
   "flash-action": [
     {
       "type": 0,
-      "value": "Flash"
+      "value": "Flashen"
     }
   ],
   "flash-hover": [
     {
       "type": 0,
-      "value": "Flash the project directly to the Calliope mini"
+      "value": "Flash het project rechtstreeks naar de Calliope mini"
     }
   ],
   "flashing-code": [
     {
       "type": 0,
-      "value": "Sending code (flashing)"
+      "value": "Code verzenden (flashen)"
     }
   ],
   "flashing-full-flash-detail": [
     {
       "type": 0,
-      "value": "Your code is being sent (flashed) to your Calliope mini. This can take a while the first time but it will be quicker after that."
+      "value": "Je code wordt verzonden (geflasht) naar je Calliope mini. Dit kan de eerste keer even duren, maar gaat daarna sneller."
     }
   ],
   "flashing-micropython": [
     {
       "type": 0,
-      "value": "Flashing MicroPython"
+      "value": "MicroPython flashen"
     }
   ],
   "font-size": [
     {
       "type": 0,
-      "value": "Font size"
+      "value": "Lettergrootte"
     }
   ],
   "guide-link": [
     {
       "type": 0,
-      "value": "For more support, see the "
+      "value": "Voor meer ondersteuning, zie de "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "Python Editor guide"
+          "value": "Python Editor-handleiding"
         }
       ],
       "type": 8,
@@ -706,85 +706,85 @@
   "help-support": [
     {
       "type": 0,
-      "value": "Help & support"
+      "value": "Help & ondersteuning"
     }
   ],
   "help-translate": [
     {
       "type": 0,
-      "value": "Help translate"
+      "value": "Help vertalen"
     }
   ],
   "highlight-code-structure": [
     {
       "type": 0,
-      "value": "Highlight code structure"
+      "value": "Code-structuur markeren"
     }
   ],
   "highlight-code-structure-full": [
     {
       "type": 0,
-      "value": "Full"
+      "value": "Volledig"
     }
   ],
   "highlight-code-structure-none": [
     {
       "type": 0,
-      "value": "None"
+      "value": "Geen"
     }
   ],
   "highlight-code-structure-simple": [
     {
       "type": 0,
-      "value": "Simple"
+      "value": "Eenvoudig"
     }
   ],
   "ideas-tab": [
     {
       "type": 0,
-      "value": "Ideas"
+      "value": "Ideeën"
     }
   ],
   "ideas-tab-description": [
     {
       "type": 0,
-      "value": "Try out these projects, modify them and get inspired"
+      "value": "Probeer deze projecten, pas ze aan en laat je inspireren"
     }
   ],
   "imprint": [
     {
       "type": 0,
-      "value": "Imprint"
+      "value": "Colofon"
     }
   ],
   "insert-code-action": [
     {
       "type": 0,
-      "value": "Insert code"
+      "value": "Code invoegen"
     }
   ],
   "language": [
     {
       "type": 0,
-      "value": "Language"
+      "value": "Taal"
     }
   ],
   "less-action": [
     {
       "type": 0,
-      "value": "Less"
+      "value": "Minder"
     }
   ],
   "load-error-makecode-info": [
     {
       "type": 0,
-      "value": "This hex file cannot be loaded in the Python Editor. The Python Editor cannot open hex files created with Microsoft MakeCode."
+      "value": "Dit hex-bestand kan niet worden geladen in de Python Editor. De Python Editor kan geen hex-bestanden openen die met Microsoft MakeCode zijn gemaakt."
     }
   ],
   "load-error-makecode-link": [
     {
       "type": 0,
-      "value": "Please visit "
+      "value": "Bezoek "
     },
     {
       "children": [
@@ -798,25 +798,25 @@
     },
     {
       "type": 0,
-      "value": " to use this hex file."
+      "value": " om dit hex-bestand te gebruiken."
     }
   ],
   "load-error-mixed": [
     {
       "type": 0,
-      "value": "A hex file can only be loaded on its own. It replaces all files in the project."
+      "value": "Een hex-bestand kan alleen op zichzelf worden geladen. Het vervangt alle bestanden in het project."
     }
   ],
   "load-error-mpy": [
     {
       "type": 0,
-      "value": "This version of the Python Editor doesn't currently support adding .mpy files."
+      "value": "Deze versie van de Python Editor ondersteunt momenteel geen .mpy-bestanden."
     }
   ],
   "load-error-title": [
     {
       "type": 0,
-      "value": "Cannot load "
+      "value": "Kan "
     },
     {
       "offset": 0,
@@ -825,7 +825,7 @@
           "value": [
             {
               "type": 0,
-              "value": "file"
+              "value": "bestand"
             }
           ]
         },
@@ -833,7 +833,7 @@
           "value": [
             {
               "type": 0,
-              "value": "files"
+              "value": "bestanden"
             }
           ]
         }
@@ -841,12 +841,16 @@
       "pluralType": "cardinal",
       "type": 6,
       "value": "fileCount"
+    },
+    {
+      "type": 0,
+      "value": " niet laden"
     }
   ],
   "loaded-file-feedback": [
     {
       "type": 0,
-      "value": "Loaded "
+      "value": "Bestand geladen "
     },
     {
       "type": 1,
@@ -856,25 +860,25 @@
   "loading": [
     {
       "type": 0,
-      "value": "Loading…"
+      "value": "Laden…"
     }
   ],
   "microbit-hearts-alt": [
     {
       "type": 0,
-      "value": "Calliope mini board with the 5 by 5 LED grid showing a heart"
+      "value": "Calliope mini-bord met een 5x5 LED-raster dat een hart toont"
     }
   ],
   "micropython-documentation": [
     {
       "type": 0,
-      "value": "MicroPython documentation"
+      "value": "MicroPython-documentatie"
     }
   ],
   "micropython-history": [
     {
       "type": 0,
-      "value": "Learn how MicroPython on the Calliope mini came to be"
+      "value": "Lees hoe MicroPython op de Calliope mini is ontstaan"
     }
   ],
   "micropython-source-code": [
@@ -886,7 +890,7 @@
       "children": [
         {
           "type": 0,
-          "value": "source code for the Calliope mini V1"
+          "value": "broncode voor de Calliope mini V1/V2"
         }
       ],
       "type": 8,
@@ -894,13 +898,13 @@
     },
     {
       "type": 0,
-      "value": " and "
+      "value": " en "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "Calliope mini V2"
+          "value": "Calliope mini V3"
         }
       ],
       "type": 8,
@@ -910,13 +914,13 @@
   "more-action": [
     {
       "type": 0,
-      "value": "More"
+      "value": "Meer"
     }
   ],
   "more-connect-options": [
     {
       "type": 0,
-      "value": "More connect options"
+      "value": "Meer verbindingsopties"
     }
   ],
   "more-ideas": [
@@ -924,7 +928,7 @@
       "children": [
         {
           "type": 0,
-          "value": "More ideas"
+          "value": "Meer ideeën"
         }
       ],
       "type": 8,
@@ -934,13 +938,13 @@
   "more-save-options": [
     {
       "type": 0,
-      "value": "More save options"
+      "value": "Meer opslagopties"
     }
   ],
   "multiple-files-message-one": [
     {
       "type": 0,
-      "value": "This project contains "
+      "value": "Dit project bevat "
     },
     {
       "offset": 0,
@@ -953,7 +957,7 @@
             },
             {
               "type": 0,
-              "value": " files"
+              "value": " bestanden"
             }
           ]
         }
@@ -964,7 +968,7 @@
     },
     {
       "type": 0,
-      "value": " but only "
+      "value": ", maar alleen "
     },
     {
       "children": [
@@ -978,19 +982,19 @@
     },
     {
       "type": 0,
-      "value": " has been downloaded."
+      "value": " is gedownload."
     }
   ],
   "multiple-files-message-two": [
     {
       "type": 0,
-      "value": "Use the "
+      "value": "Gebruik de knop "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "Save"
+          "value": "Opslaan"
         }
       ],
       "type": 8,
@@ -998,21 +1002,7 @@
     },
     {
       "type": 0,
-      "value": " button to download your whole project as a hex file. You can "
-    },
-    {
-      "children": [
-        {
-          "type": 0,
-          "value": "Open"
-        }
-      ],
-      "type": 8,
-      "value": "strong"
-    },
-    {
-      "type": 0,
-      "value": " the hex file to restore your project. If you prefer to download individual Python files, use the "
+      "value": " om je hele project als hex-bestand te downloaden. Je kunt het hex-bestand openen om je project te herstellen. Wil je liever losse Python-bestanden downloaden, gebruik dan het tabblad "
     },
     {
       "children": [
@@ -1026,37 +1016,37 @@
     },
     {
       "type": 0,
-      "value": " tab."
+      "value": "."
     }
   ],
   "multiple-files-title": [
     {
       "type": 0,
-      "value": "Warning: Only main.py downloaded"
+      "value": "Waarschuwing: Alleen main.py gedownload"
     }
   ],
   "name-project": [
     {
       "type": 0,
-      "value": "Name your project"
+      "value": "Geef je project een naam"
     }
   ],
   "name-text": [
     {
       "type": 0,
-      "value": "Name"
+      "value": "Naam"
     }
   ],
   "name-used-when": [
     {
       "type": 0,
-      "value": "The name is used when you save a file."
+      "value": "De naam wordt gebruikt wanneer je een bestand opslaat."
     }
   ],
   "new-file-hint": [
     {
       "type": 0,
-      "value": "We'll add the "
+      "value": "We voegen automatisch de extensie "
     },
     {
       "children": [
@@ -1070,25 +1060,25 @@
     },
     {
       "type": 0,
-      "value": " extension for you."
+      "value": " toe."
     }
   ],
   "next-action": [
     {
       "type": 0,
-      "value": "Next"
+      "value": "Volgende"
     }
   ],
   "not-found-checklist-one": [
     {
       "type": 0,
-      "value": "Is your "
+      "value": "Is je "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "Calliope mini plugged in"
+          "value": "Calliope mini aangesloten"
         }
       ],
       "type": 8,
@@ -1096,13 +1086,13 @@
     },
     {
       "type": 0,
-      "value": "? Did you "
+      "value": "? Heb je "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "follow these steps"
+          "value": "deze stappen gevolgd"
         }
       ],
       "type": 8,
@@ -1116,7 +1106,7 @@
   "not-found-checklist-two": [
     {
       "type": 0,
-      "value": "If you have a "
+      "value": "Als je een "
     },
     {
       "children": [
@@ -1130,13 +1120,13 @@
     },
     {
       "type": 0,
-      "value": " you may need to "
+      "value": " hebt, moet je mogelijk de "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "update the firmware"
+          "value": "firmware bijwerken"
         }
       ],
       "type": 8,
@@ -1146,31 +1136,31 @@
   "not-found-message": [
     {
       "type": 0,
-      "value": "You didn’t select a Calliope mini, or there was a problem connecting to it."
+      "value": "Je hebt geen Calliope mini geselecteerd, of er was een probleem met verbinden."
     }
   ],
   "not-found-save-message": [
     {
       "type": 0,
-      "value": "Alternative method: choose Save then follow steps to transfer"
+      "value": "Alternatieve methode: kies Opslaan en volg de overdrachtsstappen"
     }
   ],
   "not-found-title": [
     {
       "type": 0,
-      "value": "No Calliope mini found"
+      "value": "Geen Calliope mini gevonden"
     }
   ],
   "not-found-update-link": [
     {
       "type": 0,
-      "value": "You must "
+      "value": "Je moet "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "update your firmware before"
+          "value": "je firmware bijwerken"
         }
       ],
       "type": 8,
@@ -1178,55 +1168,55 @@
     },
     {
       "type": 0,
-      "value": " you can connect to this Calliope mini."
+      "value": " voordat je verbinding kunt maken met deze Calliope mini."
     }
   ],
   "open-action": [
     {
       "type": 0,
-      "value": "Open"
+      "value": "Openen"
     }
   ],
   "open-file-action": [
     {
       "type": 0,
-      "value": "Open…"
+      "value": "Bestand openen…"
     }
   ],
   "open-file-dropped": [
     {
       "type": 0,
-      "value": "Open file when dropped"
+      "value": "Bestand openen bij neerzetten"
     }
   ],
   "open-hover": [
     {
       "type": 0,
-      "value": "Open a hex or Python file or add other files"
+      "value": "Open een hex- of Python-bestand of voeg andere bestanden toe"
     }
   ],
   "options": [
     {
       "type": 0,
-      "value": "Options"
+      "value": "Opties"
     }
   ],
   "parameter-help": [
     {
       "type": 0,
-      "value": "Parameter help"
+      "value": "Parameterhulp"
     }
   ],
   "parameter-help-automatic": [
     {
       "type": 0,
-      "value": "Automatic"
+      "value": "Automatisch"
     }
   ],
   "parameter-help-manual": [
     {
       "type": 0,
-      "value": "Manual ("
+      "value": "Handmatig ("
     },
     {
       "type": 1,
@@ -1240,7 +1230,7 @@
   "permanently-delete": [
     {
       "type": 0,
-      "value": "Permanently delete "
+      "value": "Bestand "
     },
     {
       "type": 1,
@@ -1248,13 +1238,13 @@
     },
     {
       "type": 0,
-      "value": "?"
+      "value": " permanent verwijderen?"
     }
   ],
   "post-save-message-files": [
     {
       "type": 0,
-      "value": "This contains all files in this project (including any additional files, e.g. to run accessories, listed in the "
+      "value": "Dit bevat alle bestanden in dit project (inclusief eventuele extra bestanden, bijv. voor accessoires, vermeld in het tabblad "
     },
     {
       "children": [
@@ -1268,13 +1258,13 @@
     },
     {
       "type": 0,
-      "value": " tab)."
+      "value": ")."
     }
   ],
   "post-save-message-one": [
     {
       "type": 0,
-      "value": "You will find your hex file in this computer’s "
+      "value": "Je vindt je hex-bestand in de map "
     },
     {
       "children": [
@@ -1288,19 +1278,19 @@
     },
     {
       "type": 0,
-      "value": " folder."
+      "value": " van deze computer."
     }
   ],
   "post-save-message-two": [
     {
       "type": 0,
-      "value": "You can move it to another folder for storage and use "
+      "value": "Je kunt het verplaatsen naar een andere map voor opslag en "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "Open"
+          "value": "Openen"
         }
       ],
       "type": 8,
@@ -1308,25 +1298,25 @@
     },
     {
       "type": 0,
-      "value": " to continue editing later."
+      "value": " gebruiken om later verder te werken."
     }
   ],
   "post-save-title": [
     {
       "type": 0,
-      "value": "Project saved"
+      "value": "Project opgeslagen"
     }
   ],
   "post-save-transfer-hex": [
     {
       "type": 0,
-      "value": "To run this hex file on your Calliope mini "
+      "value": "Om dit hex-bestand op je Calliope mini uit te voeren, "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "follow these steps"
+          "value": "volg deze stappen"
         }
       ],
       "type": 8,
@@ -1340,25 +1330,25 @@
   "project-actions": [
     {
       "type": 0,
-      "value": "Project actions"
+      "value": "Projectacties"
     }
   ],
   "project-header": [
     {
       "type": 0,
-      "value": "Project header"
+      "value": "Projectkop"
     }
   ],
   "project-name": [
     {
       "type": 0,
-      "value": "Project name"
+      "value": "Projectnaam"
     }
   ],
   "project-name-not-empty": [
     {
       "type": 0,
-      "value": "The project name cannot be empty"
+      "value": "De projectnaam mag niet leeg zijn"
     }
   ],
   "project-tab": [
@@ -1370,13 +1360,13 @@
   "project-tab-description": [
     {
       "type": 0,
-      "value": "View, create, add and edit the files in your project"
+      "value": "Bekijk, maak, voeg toe en bewerk de bestanden in je project"
     }
   ],
   "python-powered": [
     {
       "type": 0,
-      "value": "Python powered"
+      "value": "Aangedreven door Python"
     }
   ],
   "python-tab": [
@@ -1388,55 +1378,55 @@
   "quit-anyway": [
     {
       "type": 0,
-      "value": "Some of your changes have not been saved. Quit anyway?"
+      "value": "Sommige wijzigingen zijn niet opgeslagen. Toch afsluiten?"
     }
   ],
   "read-less": [
     {
       "type": 0,
-      "value": "Read less"
+      "value": "Minder lezen"
     }
   ],
   "read-more": [
     {
       "type": 0,
-      "value": "Read more"
+      "value": "Meer lezen"
     }
   ],
   "redo": [
     {
       "type": 0,
-      "value": "Redo"
+      "value": "Opnieuw"
     }
   ],
   "reference-tab": [
     {
       "type": 0,
-      "value": "Reference"
+      "value": "Referentie"
     }
   ],
   "replace-action-label": [
     {
       "type": 0,
-      "value": "Replace"
+      "value": "Vervangen"
     }
   ],
   "reset-project-action": [
     {
       "type": 0,
-      "value": "Reset project"
+      "value": "Project resetten"
     }
   ],
   "reset-project-feedback": [
     {
       "type": 0,
-      "value": "Project reset to the default starter code"
+      "value": "Project teruggezet naar standaard startcode"
     }
   ],
   "reset-project-hover": [
     {
       "type": 0,
-      "value": "Resets the project to the default starter code, discarding your work"
+      "value": "Zet project terug naar standaard startcode en verwijder je werk"
     }
   ],
   "results-count": [
@@ -1447,7 +1437,7 @@
           "value": [
             {
               "type": 0,
-              "value": "No results"
+              "value": "Geen resultaten"
             }
           ]
         },
@@ -1458,7 +1448,7 @@
             },
             {
               "type": 0,
-              "value": " result"
+              "value": " resultaat"
             }
           ]
         },
@@ -1469,7 +1459,7 @@
             },
             {
               "type": 0,
-              "value": " results"
+              "value": " resultaten"
             }
           ]
         }
@@ -1482,13 +1472,13 @@
   "save-action": [
     {
       "type": 0,
-      "value": "Save"
+      "value": "Opslaan"
     }
   ],
   "save-file-action": [
     {
       "type": 0,
-      "value": "Save "
+      "value": "Bestand opslaan "
     },
     {
       "type": 1,
@@ -1498,73 +1488,73 @@
   "save-hex-action": [
     {
       "type": 0,
-      "value": "Save project hex"
+      "value": "Project hex opslaan"
     }
   ],
   "save-hover": [
     {
       "type": 0,
-      "value": "Save the project hex file to your computer"
+      "value": "Sla het projecthex-bestand op je computer op"
     }
   ],
   "save-python-action": [
     {
       "type": 0,
-      "value": "Save Python script"
+      "value": "Python-script opslaan"
     }
   ],
   "search": [
     {
       "type": 0,
-      "value": "Search"
+      "value": "Zoeken"
     }
   ],
   "send-action": [
     {
       "type": 0,
-      "value": "Send to Calliope mini"
+      "value": "Versturen naar Calliope mini"
     }
   ],
   "send-hover": [
     {
       "type": 0,
-      "value": "Connect via WebUSB then flash code onto Calliope mini"
+      "value": "Verbind via WebUSB en flash de code naar de Calliope mini"
     }
   ],
   "serial-collapse": [
     {
       "type": 0,
-      "value": "Hide serial"
+      "value": "Serieel verbergen"
     }
   ],
   "serial-ctrl-c-action": [
     {
       "type": 0,
-      "value": "Send Ctrl+C for REPL"
+      "value": "Stuur Ctrl+C naar REPL"
     }
   ],
   "serial-ctrl-d-action": [
     {
       "type": 0,
-      "value": "Send Ctrl+D to reset"
+      "value": "Stuur Ctrl+D om te resetten"
     }
   ],
   "serial-expand": [
     {
       "type": 0,
-      "value": "Show serial"
+      "value": "Serieel tonen"
     }
   ],
   "serial-flashed": [
     {
       "type": 0,
-      "value": "Calliope mini flashed"
+      "value": "Calliope mini geflasht"
     }
   ],
   "serial-help-ctrl-c": [
     {
       "type": 0,
-      "value": "Use the keyboard shortcut "
+      "value": "Gebruik de sneltoets "
     },
     {
       "children": [
@@ -1592,13 +1582,13 @@
     },
     {
       "type": 0,
-      "value": " to interrupt your program. Then you can type Python commands for MicroPython to run. It's a great way to experiment with something new."
+      "value": " om je programma te onderbreken. Daarna kun je Python-opdrachten typen voor MicroPython. Handig om iets nieuws uit te proberen."
     }
   ],
   "serial-help-ctrl-d": [
     {
       "type": 0,
-      "value": "To start your program running again use "
+      "value": "Gebruik "
     },
     {
       "children": [
@@ -1626,19 +1616,19 @@
     },
     {
       "type": 0,
-      "value": "."
+      "value": " om je programma opnieuw te starten."
     }
   ],
   "serial-help-intro": [
     {
       "type": 0,
-      "value": "The serial terminal shows errors and other output from the program running on your Calliope mini. By default, it shows the most recent error from the program. Expand it to see all the output."
+      "value": "De seriële terminal toont fouten en andere uitvoer van het programma dat op je Calliope mini draait. Standaard wordt de meest recente fout getoond. Klap uit om alle uitvoer te zien."
     }
   ],
   "serial-help-print": [
     {
       "type": 0,
-      "value": "Your program can print messages using the "
+      "value": "Je programma kan berichten afdrukken met de functie "
     },
     {
       "children": [
@@ -1652,13 +1642,13 @@
     },
     {
       "type": 0,
-      "value": " function. Try adding "
+      "value": ". Probeer "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "print('Calliope mini is awesome')"
+          "value": "print('Calliope mini is geweldig')"
         }
       ],
       "type": 8,
@@ -1666,79 +1656,79 @@
     },
     {
       "type": 0,
-      "value": " to your program."
+      "value": " toe te voegen."
     }
   ],
   "serial-help-title": [
     {
       "type": 0,
-      "value": "Serial hints and tips"
+      "value": "Seriële tips"
     }
   ],
   "serial-hints-and-tips": [
     {
       "type": 0,
-      "value": "Serial hints and tips"
+      "value": "Seriële tips"
     }
   ],
   "serial-menu": [
     {
       "type": 0,
-      "value": "Serial menu"
+      "value": "Serieel menu"
     }
   ],
   "serial-ready-to-flash": [
     {
       "type": 0,
-      "value": "Calliope mini ready to flash"
+      "value": "Calliope mini klaar om te flashen"
     }
   ],
   "serial-running": [
     {
       "type": 0,
-      "value": "Running…"
+      "value": "Bezig…"
     }
   ],
   "serial-terminal": [
     {
       "type": 0,
-      "value": "Serial terminal"
+      "value": "Seriële terminal"
     }
   ],
   "setting-allow-editing-third-party": [
     {
       "type": 0,
-      "value": "Allow editing third-party modules"
+      "value": "Bewerken van externe modules toestaan"
     }
   ],
   "setting-allow-editing-third-party-info": [
     {
       "type": 0,
-      "value": "Changing third-party modules may mean they don’t work as intended."
+      "value": "Het wijzigen van externe modules kan ervoor zorgen dat ze niet meer werken zoals bedoeld."
     }
   ],
   "settings": [
     {
       "type": 0,
-      "value": "Settings"
+      "value": "Instellingen"
     }
   ],
   "show-api-documentation": [
     {
       "type": 0,
-      "value": "Show API documentation"
+      "value": "API-documentatie tonen"
     }
   ],
   "show-less": [
     {
       "type": 0,
-      "value": "Show less"
+      "value": "Minder tonen"
     }
   ],
   "show-less-for": [
     {
       "type": 0,
-      "value": "Show less for "
+      "value": "Minder tonen voor "
     },
     {
       "type": 1,
@@ -1748,13 +1738,13 @@
   "show-more": [
     {
       "type": 0,
-      "value": "Show more"
+      "value": "Meer tonen"
     }
   ],
   "show-more-for": [
     {
       "type": 0,
-      "value": "Show more for "
+      "value": "Meer tonen voor "
     },
     {
       "type": 1,
@@ -1764,59 +1754,63 @@
   "sidebar": [
     {
       "type": 0,
-      "value": "Sidebar"
+      "value": "Zijbalk"
     }
   ],
   "sidebar-collapse": [
     {
       "type": 0,
-      "value": "Collapse sidebar"
+      "value": "Zijbalk inklappen"
     }
   ],
   "sidebar-expand": [
     {
       "type": 0,
-      "value": "Expand sidebar"
+      "value": "Zijbalk uitklappen"
     }
   ],
   "simulator-accelerometer": [
     {
       "type": 0,
-      "value": "Accelerometer"
+      "value": "Versnellingsmeter"
     }
   ],
   "simulator-actions": [
     {
       "type": 0,
-      "value": "Simulator actions"
+      "value": "Simulatoracties"
     }
   ],
   "simulator-button-a": [
     {
       "type": 0,
-      "value": "Button A"
+      "value": "Knop A"
     }
   ],
   "simulator-button-b": [
     {
       "type": 0,
-      "value": "Button B"
+      "value": "Knop B"
     }
   ],
   "simulator-button-hold-label": [
     {
       "type": 0,
-      "value": "Hold button "
+      "value": "Houd knop "
     },
     {
       "type": 1,
       "value": "button"
+    },
+    {
+      "type": 0,
+      "value": " ingedrukt"
     }
   ],
   "simulator-button-press-label": [
     {
       "type": 0,
-      "value": "Press button "
+      "value": "Druk op knop "
     },
     {
       "type": 1,
@@ -1826,19 +1820,19 @@
   "simulator-buttons": [
     {
       "type": 0,
-      "value": "Buttons"
+      "value": "Knoppen"
     }
   ],
   "simulator-collapse": [
     {
       "type": 0,
-      "value": "Collapse simulator"
+      "value": "Simulator inklappen"
     }
   ],
   "simulator-collapse-module": [
     {
       "type": 0,
-      "value": "Collapse "
+      "value": "Module "
     },
     {
       "type": 1,
@@ -1846,37 +1840,37 @@
     },
     {
       "type": 0,
-      "value": " module"
+      "value": " inklappen"
     }
   ],
   "simulator-compass": [
     {
       "type": 0,
-      "value": "Compass"
+      "value": "Kompas"
     }
   ],
   "simulator-compass-heading-one": [
     {
       "type": 0,
-      "value": "Heading"
+      "value": "Richting"
     }
   ],
   "simulator-compass-heading-two": [
     {
       "type": 0,
-      "value": "Magnetic field strength"
+      "value": "Magnetische veldsterkte"
     }
   ],
   "simulator-data-logging-empty": [
     {
       "type": 0,
-      "value": "No log entries."
+      "value": "Geen logboekitems."
     }
   ],
   "simulator-data-logging-full": [
     {
       "type": 0,
-      "value": "Log full"
+      "value": "Logboek vol"
     }
   ],
   "simulator-data-logging-rows": [
@@ -1887,7 +1881,7 @@
           "value": [
             {
               "type": 0,
-              "value": "No rows logged"
+              "value": "Geen rijen gelogd"
             }
           ]
         },
@@ -1898,7 +1892,7 @@
             },
             {
               "type": 0,
-              "value": " row logged"
+              "value": " rij gelogd"
             }
           ]
         },
@@ -1909,7 +1903,7 @@
             },
             {
               "type": 0,
-              "value": " rows logged"
+              "value": " rijen gelogd"
             }
           ]
         }
@@ -1922,25 +1916,25 @@
   "simulator-data-logging-save-log": [
     {
       "type": 0,
-      "value": "Save log"
+      "value": "Logboek opslaan"
     }
   ],
   "simulator-data-logging-truncated": [
     {
       "type": 0,
-      "value": "Older rows not shown"
+      "value": "Oudere rijen niet getoond"
     }
   ],
   "simulator-expand": [
     {
       "type": 0,
-      "value": "Expand simulator"
+      "value": "Simulator uitklappen"
     }
   ],
   "simulator-expand-module": [
     {
       "type": 0,
-      "value": "Expand "
+      "value": "Module "
     },
     {
       "type": 1,
@@ -1948,7 +1942,7 @@
     },
     {
       "type": 0,
-      "value": " module"
+      "value": " uitklappen"
     }
   ],
   "simulator-gesture-3g": [
@@ -1972,135 +1966,143 @@
   "simulator-gesture-down": [
     {
       "type": 0,
-      "value": "down"
+      "value": "omlaag"
     }
   ],
   "simulator-gesture-face-down": [
     {
       "type": 0,
-      "value": "face down"
+      "value": "met voorkant omlaag"
     }
   ],
   "simulator-gesture-face-up": [
     {
       "type": 0,
-      "value": "face up"
+      "value": "met voorkant omhoog"
     }
   ],
   "simulator-gesture-freefall": [
     {
       "type": 0,
-      "value": "freefall"
+      "value": "vrije val"
     }
   ],
   "simulator-gesture-left": [
     {
       "type": 0,
-      "value": "left"
+      "value": "links"
     }
   ],
   "simulator-gesture-right": [
     {
       "type": 0,
-      "value": "right"
+      "value": "rechts"
     }
   ],
   "simulator-gesture-select": [
     {
       "type": 0,
-      "value": "Select gesture"
+      "value": "Beweging selecteren"
     }
   ],
   "simulator-gesture-send": [
     {
       "type": 0,
-      "value": "Send gesture"
+      "value": "Beweging verzenden"
     }
   ],
   "simulator-gesture-shake": [
     {
       "type": 0,
-      "value": "shake"
+      "value": "schudden"
     }
   ],
   "simulator-gesture-up": [
     {
       "type": 0,
-      "value": "up"
+      "value": "omhoog"
     }
   ],
   "simulator-hide": [
     {
       "type": 0,
-      "value": "Hide simulator"
+      "value": "Simulator verbergen"
     }
   ],
   "simulator-input-hold": [
     {
       "type": 0,
-      "value": "Hold"
+      "value": "Ingedrukt houden"
     }
   ],
   "simulator-input-press": [
     {
       "type": 0,
-      "value": "Press"
+      "value": "Indrukken"
     }
   ],
   "simulator-light-level": [
     {
       "type": 0,
-      "value": "Light level"
+      "value": "Lichtniveau"
     }
   ],
   "simulator-log": [
     {
       "type": 0,
-      "value": "Data log"
+      "value": "Datalog"
     }
   ],
   "simulator-loud": [
     {
       "type": 0,
-      "value": "Loud"
+      "value": "Hard"
     }
   ],
   "simulator-mute": [
     {
       "type": 0,
-      "value": "Mute"
+      "value": "Dempen"
     }
   ],
   "simulator-pin-hold-label": [
     {
       "type": 0,
-      "value": "Hold pin "
+      "value": "Pin "
     },
     {
       "type": 1,
       "value": "pin"
+    },
+    {
+      "type": 0,
+      "value": " ingedrukt houden"
     }
   ],
   "simulator-pin-press-label": [
     {
       "type": 0,
-      "value": "Press pin "
+      "value": "Pin "
     },
     {
       "type": 1,
       "value": "pin"
+    },
+    {
+      "type": 0,
+      "value": " indrukken"
     }
   ],
   "simulator-pins": [
     {
       "type": 0,
-      "value": "Pins"
+      "value": "Pinnen"
     }
   ],
   "simulator-quiet": [
     {
       "type": 0,
-      "value": "Quiet"
+      "value": "Zacht"
     }
   ],
   "simulator-radio": [
@@ -2112,13 +2114,13 @@
   "simulator-radio-code": [
     {
       "type": 0,
-      "value": "Calliope mini sent:"
+      "value": "Calliope mini verzond:"
     }
   ],
   "simulator-radio-group-notice": [
     {
       "type": 0,
-      "value": "Radio group set to "
+      "value": "Radiogroep ingesteld op "
     },
     {
       "type": 1,
@@ -2128,79 +2130,79 @@
   "simulator-radio-message": [
     {
       "type": 0,
-      "value": "Radio message"
+      "value": "Radiobericht"
     }
   ],
   "simulator-radio-message-limit-notice": [
     {
       "type": 0,
-      "value": "Older messages not shown"
+      "value": "Oudere berichten niet getoond"
     }
   ],
   "simulator-radio-no-messages": [
     {
       "type": 0,
-      "value": "No messages to show"
+      "value": "Geen berichten om te tonen"
     }
   ],
   "simulator-radio-off": [
     {
       "type": 0,
-      "value": "The radio is off"
+      "value": "De radio is uitgeschakeld"
     }
   ],
   "simulator-radio-send": [
     {
       "type": 0,
-      "value": "Send message"
+      "value": "Bericht verzenden"
     }
   ],
   "simulator-radio-user": [
     {
       "type": 0,
-      "value": "You sent:"
+      "value": "Je verzond:"
     }
   ],
   "simulator-reference-link": [
     {
       "type": 0,
-      "value": "Link to Reference section"
+      "value": "Link naar referentie-sectie"
     }
   ],
   "simulator-reset": [
     {
       "type": 0,
-      "value": "Reset"
+      "value": "Resetten"
     }
   ],
   "simulator-serial-terminal": [
     {
       "type": 0,
-      "value": "Simulator serial terminal"
+      "value": "Simulator seriële terminal"
     }
   ],
   "simulator-sound-level": [
     {
       "type": 0,
-      "value": "Sound level"
+      "value": "Geluidsniveau"
     }
   ],
   "simulator-start-simulator": [
     {
       "type": 0,
-      "value": "Start simulator"
+      "value": "Simulator starten"
     }
   ],
   "simulator-stop": [
     {
       "type": 0,
-      "value": "Stop simulator"
+      "value": "Simulator stoppen"
     }
   ],
   "simulator-temperature": [
     {
       "type": 0,
-      "value": "Temperature"
+      "value": "Temperatuur"
     }
   ],
   "simulator-title": [
@@ -2212,55 +2214,55 @@
   "simulator-touch-logo": [
     {
       "type": 0,
-      "value": "Touch logo"
+      "value": "Touch-logo"
     }
   ],
   "simulator-unmute": [
     {
       "type": 0,
-      "value": "Unmute"
+      "value": "Dempen opheffen"
     }
   ],
   "software-versions": [
     {
       "type": 0,
-      "value": "Software versions"
+      "value": "Softwareversies"
     }
   ],
   "start-coding-action": [
     {
       "type": 0,
-      "value": "Start coding"
+      "value": "Beginnen met coderen"
     }
   ],
   "support": [
     {
       "type": 0,
-      "value": "Support"
+      "value": "Ondersteuning"
     }
   ],
   "terms-of-use": [
     {
       "type": 0,
-      "value": "Terms of use"
+      "value": "Gebruiksvoorwaarden"
     }
   ],
   "third-party-module-explanation": [
     {
       "type": 0,
-      "value": "This file is a third-party module and is not intended to be edited."
+      "value": "Dit bestand is een externe module en is niet bedoeld om te worden bewerkt."
     }
   ],
   "third-party-module-how-to": [
     {
       "type": 0,
-      "value": "Allow editing third-party modules in "
+      "value": "Sta bewerken van externe modules toe in "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "Settings"
+          "value": "Instellingen"
         }
       ],
       "type": 8,
@@ -2268,31 +2270,31 @@
     },
     {
       "type": 0,
-      "value": " to modify this module."
+      "value": " om deze module te wijzigen."
     }
   ],
   "timeout-error-description": [
     {
       "type": 0,
-      "value": "Unable to connect to the Calliope mini"
+      "value": "Kan geen verbinding maken met de Calliope mini"
     }
   ],
   "timeout-error-title": [
     {
       "type": 0,
-      "value": "Connection timed out"
+      "value": "Verbinding verlopen"
     }
   ],
   "toolkit-error-loading": [
     {
       "type": 0,
-      "value": "An error occurred loading the toolkit."
+      "value": "Er is een fout opgetreden bij het laden van de toolkit."
     }
   ],
   "toolkit-view-documentation": [
     {
       "type": 0,
-      "value": "View "
+      "value": "Bekijk "
     },
     {
       "type": 1,
@@ -2300,19 +2302,19 @@
     },
     {
       "type": 0,
-      "value": " documentation"
+      "value": "-documentatie"
     }
   ],
   "transfer-hex-message-one": [
     {
       "type": 0,
-      "value": "Drag the hex file from your "
+      "value": "Sleep het hex-bestand uit je "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "Downloads folder"
+          "value": "Downloads-map"
         }
       ],
       "type": 8,
@@ -2320,13 +2322,13 @@
     },
     {
       "type": 0,
-      "value": " to the "
+      "value": " naar het "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "MINI drive"
+          "value": "MINI-station"
         }
       ],
       "type": 8,
@@ -2340,13 +2342,13 @@
   "transfer-hex-message-two": [
     {
       "type": 0,
-      "value": "You can "
+      "value": "Je kunt het hex-bestand later "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "Open"
+          "value": "Openen"
         }
       ],
       "type": 8,
@@ -2354,37 +2356,37 @@
     },
     {
       "type": 0,
-      "value": " the hex file later to continue editing."
+      "value": " om verder te werken."
     }
   ],
   "transfer-hex-title": [
     {
       "type": 0,
-      "value": "Transfer saved hex file to Calliope mini"
+      "value": "Overdraag opgeslagen hex-bestand naar Calliope mini"
     }
   ],
   "try-again-action": [
     {
       "type": 0,
-      "value": "Try again"
+      "value": "Opnieuw proberen"
     }
   ],
   "undo": [
     {
       "type": 0,
-      "value": "Undo"
+      "value": "Ongedaan maken"
     }
   ],
   "unexpected-error-description": [
     {
       "type": 0,
-      "value": "Please try again or "
+      "value": "Probeer het opnieuw of "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "raise a support request"
+          "value": "vraag ondersteuning aan"
         }
       ],
       "type": 8,
@@ -2394,13 +2396,13 @@
   "unexpected-error-title": [
     {
       "type": 0,
-      "value": "Please try again or "
+      "value": "Probeer het opnieuw of "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "raise a support request"
+          "value": "vraag ondersteuning aan"
         }
       ],
       "type": 8,
@@ -2410,19 +2412,19 @@
   "untitled-project": [
     {
       "type": 0,
-      "value": "Untitled project"
+      "value": "Naamloos project"
     }
   ],
   "update-firmware-action": [
     {
       "type": 0,
-      "value": "Update firmware"
+      "value": "Firmware bijwerken"
     }
   ],
   "updated-change": [
     {
       "type": 0,
-      "value": "Updated file "
+      "value": "Bestand bijgewerkt "
     },
     {
       "type": 1,
@@ -2432,49 +2434,49 @@
   "visit-dot-org": [
     {
       "type": 0,
-      "value": "visit calliope.cc (opens in a new tab)"
+      "value": "bezoek calliope.cc (opent in een nieuw tabblad)"
     }
   ],
   "webusb-error-clear-connect-description-1": [
     {
       "type": 0,
-      "value": "Another process is connected to this device."
+      "value": "Een ander proces is verbonden met dit apparaat."
     }
   ],
   "webusb-error-clear-connect-description-2": [
     {
       "type": 0,
-      "value": "Close any other tabs that may be using WebUSB (e.g. MakeCode, Python Editor), or unplug and replug the Calliope mini before trying again."
+      "value": "Sluit andere tabbladen die WebUSB gebruiken (bijv. MakeCode, Python Editor) of koppel de Calliope mini los en sluit opnieuw aan voordat je het opnieuw probeert."
     }
   ],
   "webusb-error-clear-connect-title": [
     {
       "type": 0,
-      "value": "Unable to claim interface"
+      "value": "Kan interface niet claimen"
     }
   ],
   "webusb-error-default-title": [
     {
       "type": 0,
-      "value": "WebUSB error"
+      "value": "WebUSB-fout"
     }
   ],
   "webusb-error-reconnect-microbit-description": [
     {
       "type": 0,
-      "value": "Please reconnect your Calliope mini and try again."
+      "value": "Sluit je Calliope mini opnieuw aan en probeer het opnieuw."
     }
   ],
   "webusb-error-update-req-description": [
     {
       "type": 0,
-      "value": "You need to "
+      "value": "Je moet "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "update your Calliope mini firmware"
+          "value": "de firmware van je Calliope mini bijwerken"
         }
       ],
       "type": 8,
@@ -2482,55 +2484,55 @@
     },
     {
       "type": 0,
-      "value": " to make use of this feature."
+      "value": " om deze functie te gebruiken."
     }
   ],
   "webusb-error-update-req-title": [
     {
       "type": 0,
-      "value": "Please update the Calliope mini firmware"
+      "value": "Werk de firmware van de Calliope mini bij"
     }
   ],
   "webusb-not-supported": [
     {
       "type": 0,
-      "value": "Unfortunately, WebUSB is not supported in this browser and your program will be saved to your computer instead. Follow the steps on the next screen to transfer it to your Calliope mini. We recommend Google Chrome or Microsoft Edge so you can connect directly to your Calliope mini."
+      "value": "Helaas wordt WebUSB niet ondersteund in deze browser en wordt je programma in plaats daarvan op je computer opgeslagen. Volg de stappen op het volgende scherm om het over te dragen naar je Calliope mini. We raden Google Chrome of Microsoft Edge aan, zodat je direct verbinding kunt maken met je Calliope mini."
     }
   ],
   "webusb-not-supported-title": [
     {
       "type": 0,
-      "value": "This browser does not support WebUSB"
+      "value": "Deze browser ondersteunt geen WebUSB"
     }
   ],
   "webusb-why-use": [
     {
       "type": 0,
-      "value": "With WebUSB you can program your Calliope mini and connect to the serial console directly from the online editor."
+      "value": "Met WebUSB kun je je Calliope mini programmeren en direct verbinden met de seriële console vanuit de online editor."
     }
   ],
   "welcome-message": [
     {
       "type": 0,
-      "value": "Watch our short guide to some of the key features, or get coding right away."
+      "value": "Bekijk onze korte gids met enkele belangrijke functies of begin direct met coderen."
     }
   ],
   "welcome-title": [
     {
       "type": 0,
-      "value": "Welcome to the Calliope mini Python Editor"
+      "value": "Welkom bij de Calliope mini Python Editor"
     }
   ],
   "zoom-in-action": [
     {
       "type": 0,
-      "value": "Zoom in"
+      "value": "Inzoomen"
     }
   ],
   "zoom-out-action": [
     {
       "type": 0,
-      "value": "Zoom out"
+      "value": "Uitzoomen"
     }
   ]
 }
