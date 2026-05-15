@@ -11,6 +11,79 @@ Try it out at https://python.microbit.org/
   <figcaption>The image shows the micro:bit-branded deployment</figcaption>  
 </figure>
 
+## Calliope fork — self-contained build
+
+This fork bundles everything the editor needs so a deploy is just
+`npm ci && npm run build`. No auth-gated package installs, no external
+CMS at runtime, no `REACT_APP_STAGE` / `NODE_AUTH_TOKEN` env vars,
+no `.npmrc`. Suitable for Cloudflare Pages out of the box.
+
+### What's vendored
+
+| Asset | Lives at | Refresh with |
+|---|---|---|
+| Branding (logos, Chakra theme, colors) | [`src/deployment/calliope/`](src/deployment/calliope/) | Source-copy from `calliope-edu/calliope-theme`; set `THEME=default` to swap back to upstream branding |
+| Documentation JSON (Explore, Reference, Ideas, mapping, editor-config) | [`src/documentation/cms-snapshot/`](src/documentation/cms-snapshot/) | `node bin/extract-cms.js` |
+| Documentation images | [`public/cms/images/`](public/cms/images/) | `node bin/extract-cms-images.js` |
+| Welcome video (HLS, played via [`hls.js`](https://github.com/video-dev/hls.js)) | [`public/cms/videos/welcome/`](public/cms/videos/welcome/) | `node bin/extract-cms-video.js <youtubeId> welcome` (needs `ffmpeg` + `yt-dlp`) |
+| MicroPython simulator (committed prebuilt) | [`public/simulator/`](public/simulator/) | `bin/build-simulator.sh` (needs Emscripten) |
+| MicroPython simulator source | [`simulator-src/`](simulator-src/) (git submodule of [`calliope-edu/micropython-simulator`](https://github.com/calliope-edu/micropython-simulator)) | `git submodule update --recursive --remote simulator-src` |
+
+The Sanity Studio at project `hmru2910` stays the editorial source. The
+runtime never talks to Sanity — content changes go via the extractor
+scripts and a commit.
+
+### Controller mode (campus integration)
+
+When loaded with `?controller=2`, the editor delegates flashing, saving
+and device connection to the parent window via `postMessage` — used by
+[`calliope-campus`](https://github.com/calliope-edu/calliope-campus)
+when embedding the editor in an iframe. Project sync (`?controller=1`)
+is unchanged and remains backward-compatible.
+
+Protocol (all messages are `{type: "pyeditor", action, ...}`):
+
+- Editor → host: `workspacesync`, `workspaceloaded`, `workspacesave`,
+  `flash {name, hex}` *(controller>=2)*, `save {name, hex}` *(controller>=2)*
+- Host → editor: `workspacesync {projects}`, `importproject {project}`
+
+In `controller=2` the project-name UI, the WebUSB connect/disconnect
+menu and the browser-download save path are hidden — the campus owns
+those flows via `mini-connection-widget`. See [`src/fs/host.ts`](src/fs/host.ts)
+and [`src/project/project-actions.tsx`](src/project/project-actions.tsx).
+
+### Cloning for development
+
+```bash
+git clone https://github.com/calliope-edu/calliope-mini-python-editor.git
+cd calliope-mini-python-editor
+npm ci
+npm start
+```
+
+The simulator submodule is **not** required for `npm run build` — the
+committed prebuilt under `public/simulator/` is what ships. Only init
+it when changing simulator source:
+
+```bash
+git submodule update --init --recursive simulator-src
+source ~/.emsdk/emsdk_env.sh   # see bin/build-simulator.sh for setup
+bin/build-simulator.sh
+git add simulator-src public/simulator/
+```
+
+### Refreshing CMS content
+
+```bash
+node bin/extract-cms.js          # ideas / reference / mapping / editor-config JSON
+node bin/extract-cms-images.js   # images referenced by the snapshots
+git add bin/ src/documentation/cms-snapshot/ public/cms/images/
+git commit -m "Refresh CMS snapshot"
+```
+
+Adding a new deployment origin (e.g. a Cloudflare preview branch) no
+longer requires touching Sanity CORS settings.
+
 ## Previous versions
 
 For more background about how this editor relates to the original Python Editor project, see [this explanation](https://github.com/bbcmicrobit/PythonEditor/issues/391).
