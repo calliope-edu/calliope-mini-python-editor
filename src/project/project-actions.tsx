@@ -27,6 +27,7 @@ import {
   WebUSBError,
   WebUSBErrorCode,
 } from "../device/device";
+import { BoardId } from "../device/board-id";
 import { FileSystem, MAIN_FILE, Statistics, VersionAction } from "../fs/fs";
 import {
   isControllerAppMode,
@@ -504,10 +505,15 @@ export class ProjectActions {
     });
 
     if (isControllerAppMode()) {
-      // The host (campus) owns the device connection. Build the hex and
-      // post it to the parent window; mini-connection-widget handles flashing.
+      // The host (campus) owns the device connection. Build a single-board
+      // Intel HEX (V2/V3-compatible) and post it to the parent window;
+      // mini-connection-widget handles flashing.
+      // Note: toHexForSave() returns a universal hex with custom record
+      // types (0x0A) that vanilla Intel HEX parsers reject.
       try {
-        const hex = await this.fs.toHexForSave();
+        const boardId = BoardId.parse("9903");
+        const hexBytes = await this.fs.fullFlashData(boardId);
+        const hex = new TextDecoder("ascii").decode(hexBytes);
         notifyHostFlash(this.project.name ?? "main", hex);
       } catch (e: any) {
         this.actionFeedback.expectedError({
