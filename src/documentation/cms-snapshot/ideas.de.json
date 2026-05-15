@@ -1,0 +1,1149 @@
+{
+  "pythonIdeasOrder": [
+    {
+      "content": [
+        {
+          "_type": "python",
+          "main": "from calliopemini import *\ndisplay.scroll('Name')",
+          "_key": "abc6ca1356dd"
+        },
+        {
+          "markDefs": [
+            {
+              "_type": "toolkitInternalLink",
+              "_key": "1cd877f0e0fe",
+              "reference": {
+                "_ref": "23eae222-2905-4491-9b1d-63b8dca4083e",
+                "_type": "reference"
+              },
+              "slug": {
+                "current": "scroll",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopicEntry"
+            }
+          ],
+          "children": [
+            {
+              "_key": "fcce33de5471",
+              "_type": "span",
+              "marks": [],
+              "text": "Mit "
+            },
+            {
+              "marks": [
+                "code",
+                "1cd877f0e0fe"
+              ],
+              "text": "display.scroll()",
+              "_key": "bc7810d2642a",
+              "_type": "span"
+            },
+            {
+              "_key": "9022a621dc52",
+              "_type": "span",
+              "marks": [],
+              "text": " Text auf der LED-Matrix anzeigen lassen."
+            }
+          ],
+          "_type": "block",
+          "style": "normal",
+          "_key": "50daf823e364"
+        },
+        {
+          "style": "h3",
+          "_key": "3f6cc18b09a2",
+          "markDefs": [],
+          "children": [
+            {
+              "_key": "29fcb870aeb5",
+              "_type": "span",
+              "marks": [],
+              "text": "So geht's"
+            }
+          ],
+          "_type": "block"
+        },
+        {
+          "style": "normal",
+          "_key": "ce4f11ce676b",
+          "listItem": "bullet",
+          "markDefs": [
+            {
+              "_key": "94cefc6f0df6",
+              "slug": {
+                "_type": "slug",
+                "current": "assigning-strings"
+              },
+              "targetType": "toolkitTopicEntry",
+              "reference": {
+                "_ref": "019e5ec1-1aff-4280-b54e-a0419f63b15c",
+                "_type": "reference"
+              },
+              "_type": "toolkitInternalLink"
+            }
+          ],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "In diesem kurzen Programm kann die ",
+              "_key": "c3fa457ff5e0"
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "94cefc6f0df6"
+              ],
+              "text": "Variable",
+              "_key": "e19cf727511b"
+            },
+            {
+              "_key": "4e92c099fbd7",
+              "_type": "span",
+              "marks": [],
+              "text": " 'Name' durch den eigenen Namen erstetzt werden, damit dieser über die LED-Matrix läuft."
+            }
+          ],
+          "level": 1,
+          "_type": "block"
+        },
+        {
+          "children": [
+            {
+              "_key": "de3b1588f9fb",
+              "_type": "span",
+              "marks": [],
+              "text": "Herausforderung"
+            }
+          ],
+          "_type": "block",
+          "style": "h3",
+          "_key": "4c056e59b2c7",
+          "markDefs": []
+        },
+        {
+          "markDefs": [
+            {
+              "reference": {
+                "_type": "reference",
+                "_ref": "3e257032-2da0-4ef2-8ca5-31e6100987ad"
+              },
+              "_type": "toolkitInternalLink",
+              "_key": "45e60b472b0b",
+              "slug": {
+                "current": "scroll",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopicEntry"
+            }
+          ],
+          "children": [
+            {
+              "_key": "7d510f6a8bbf",
+              "_type": "span",
+              "marks": [],
+              "text": "Damit der Name dauerhaft über die LED-Matrix läuft, muss ein "
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "45e60b472b0b"
+              ],
+              "text": "Loop",
+              "_key": "caef0501f1ac"
+            },
+            {
+              "marks": [],
+              "text": " (also eine Schleife) hinzugefügt werden. Diese Schleife muss auf '",
+              "_key": "06c2d2576e7a",
+              "_type": "span"
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "code"
+              ],
+              "text": "True",
+              "_key": "8f674a941f17"
+            },
+            {
+              "text": "' (wahr) gesetzt werden. Dies kann direkt dem Befehl display.scroll als Attribut hinzugefügt werden. Das ganze sieht dann so aus: ",
+              "_key": "d732b9ec033b",
+              "_type": "span",
+              "marks": []
+            },
+            {
+              "_key": "b01cbeef2c4c",
+              "_type": "span",
+              "marks": [
+                "code"
+              ],
+              "text": "display.scroll('Name',loop = True)"
+            },
+            {
+              "_key": "41206b524f55",
+              "_type": "span",
+              "marks": [],
+              "text": "."
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "f24f687c3365",
+          "listItem": "number"
+        },
+        {
+          "listItem": "number",
+          "markDefs": [],
+          "children": [
+            {
+              "_key": "e2555d090ce0",
+              "_type": "span",
+              "marks": [],
+              "text": "Mit dem Parameter "
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "code"
+              ],
+              "text": "delay",
+              "_key": "125ce0442301"
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": " kannst die Geschwindigkeit der Laufschrift gesteuert werden. 150ms ist die normale Geschwindigkeit, was passiert, wenn dieser deutlich größer oder kleiner ist?",
+              "_key": "24fe985a8961"
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "8eec9fbc0129"
+        }
+      ],
+      "_id": "a62bc140-2fdd-4c51-999a-3a209c0e0898",
+      "name": "Namensschild",
+      "language": "de",
+      "image": {
+        "asset": {
+          "_ref": "image-d3e5b477000cc5619276f5c681baee1e273cc852-720x360-jpg",
+          "_type": "reference"
+        },
+        "_type": "image"
+      },
+      "slug": {
+        "_type": "slug",
+        "current": "frère-jacques"
+      }
+    },
+    {
+      "name": "Herzschlag",
+      "language": "de",
+      "image": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-c319aa4d5bbebea9a7cda68f216ed98a3ffc2ce5-720x360-jpg",
+          "_type": "reference"
+        }
+      },
+      "slug": {
+        "current": "step-counter",
+        "_type": "slug"
+      },
+      "content": [
+        {
+          "_type": "python",
+          "main": "from calliopemini import *\n\nwhile True:\n    display.show(Image.HEART)\n    sleep(400)\n    display.clear()\n    sleep(400)",
+          "_key": "aeeda4221d5a"
+        },
+        {
+          "_key": "02e5d0bc66e1",
+          "markDefs": [
+            {
+              "reference": {
+                "_type": "reference",
+                "_ref": "00379a88-b2cf-48f1-80f9-02cb3122b8b9"
+              },
+              "_type": "toolkitInternalLink",
+              "_key": "002072ec7839",
+              "slug": {
+                "current": "while-loops-infinite",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopicEntry"
+            }
+          ],
+          "children": [
+            {
+              "text": "Nutze ",
+              "_key": "5395976512fe",
+              "_type": "span",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "002072ec7839"
+              ],
+              "text": "Schleifen",
+              "_key": "67136f1fe7cd"
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": ", um dauerhaft eine Animation anzeigen zu lassen",
+              "_key": "46cafae113a5"
+            }
+          ],
+          "_type": "block",
+          "style": "normal"
+        },
+        {
+          "children": [
+            {
+              "text": "So geht's",
+              "_key": "fe90c0a47772",
+              "_type": "span",
+              "marks": []
+            }
+          ],
+          "_type": "block",
+          "style": "h3",
+          "_key": "31614d050f7e",
+          "markDefs": []
+        },
+        {
+          "style": "normal",
+          "_key": "f354f9ba502f",
+          "listItem": "bullet",
+          "markDefs": [],
+          "children": [
+            {
+              "marks": [],
+              "text": "Mit ",
+              "_key": "d9a10c60910c",
+              "_type": "span"
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "code"
+              ],
+              "text": "while True:",
+              "_key": "27b4e1d8725e"
+            },
+            {
+              "_key": "cc00007d4bce",
+              "_type": "span",
+              "marks": [],
+              "text": " startet eine dauerhafte Schleife."
+            }
+          ],
+          "level": 1,
+          "_type": "block"
+        },
+        {
+          "_type": "block",
+          "style": "normal",
+          "_key": "15a00661b2f0",
+          "listItem": "bullet",
+          "markDefs": [],
+          "children": [
+            {
+              "marks": [],
+              "text": "Zuerst soll ein Herz-Symbol angezeigt werden.",
+              "_key": "402d41b41028",
+              "_type": "span"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "children": [
+            {
+              "_key": "704f5a3d2e80",
+              "_type": "span",
+              "marks": [],
+              "text": "Nach einer kurzen Pause soll die LED-Matrix gelöscht werden."
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "68e6fd42811b",
+          "listItem": "bullet",
+          "markDefs": []
+        },
+        {
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "1ef2c713e4fd",
+          "listItem": "bullet",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Danach soll eine genauso lange Pause ohne Anzeige laufen.",
+              "_key": "be94e641bc49"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Herausforderung",
+              "_key": "4524bdfe4b15"
+            }
+          ],
+          "_type": "block",
+          "style": "h3",
+          "_key": "b3d3071ff34d",
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "style": "normal",
+          "_key": "e00180ecb2d7",
+          "listItem": "number",
+          "markDefs": [],
+          "children": [
+            {
+              "text": "Eine weitere Grafik hinzufügen.",
+              "_key": "5161a667a100",
+              "_type": "span",
+              "marks": []
+            }
+          ],
+          "level": 1
+        },
+        {
+          "_key": "2111f57a1b28",
+          "listItem": "number",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Wie kann eine Animation aus mehreren Bildern aussehen?",
+              "_key": "4ffd4c051476"
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal"
+        }
+      ],
+      "_id": "fd7b39a1-aa21-4dc4-8d0e-b53472eefccf"
+    },
+    {
+      "name": "Smiley anzeigen",
+      "language": "de",
+      "image": {
+        "asset": {
+          "_ref": "image-4fb38ba52c046335b912470412a5a58bcac6e5ec-720x360-jpg",
+          "_type": "reference"
+        },
+        "_type": "image"
+      },
+      "slug": {
+        "current": "emotion-badge",
+        "_type": "slug"
+      },
+      "content": [
+        {
+          "_key": "bd90070b41b6",
+          "_type": "python",
+          "main": "from calliopemini import *\r\n\r\nwhile True:\r\n    if button_a.is_pressed():\r\n        display.show(Image.HAPPY)\r\n    if button_b.is_pressed():\r\n        display.show(Image.SAD)"
+        },
+        {
+          "markDefs": [
+            {
+              "targetType": "toolkitTopicEntry",
+              "_key": "04549b82f0a4",
+              "reference": {
+                "_ref": "55961fbf-9ec3-4f45-b7f1-3b2e5660acfc",
+                "_type": "reference"
+              },
+              "_type": "toolkitInternalLink",
+              "slug": {
+                "_type": "slug",
+                "current": "button-is-pressed"
+              }
+            },
+            {
+              "reference": {
+                "_ref": "a7d90e40-0fe9-4bf7-ac66-ec5b5de1c793",
+                "_type": "reference"
+              },
+              "_type": "toolkitInternalLink",
+              "slug": {
+                "current": "logical-operators",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopicEntry",
+              "_key": "c27310d4564d"
+            }
+          ],
+          "children": [
+            {
+              "_key": "912d18320950",
+              "_type": "span",
+              "marks": [],
+              "text": "Verwende die "
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "04549b82f0a4"
+              ],
+              "text": "Tasten",
+              "_key": "5f5d1ac5f1b2"
+            },
+            {
+              "text": ", die Displayausgabe und ",
+              "_key": "b25dad2d6d9e",
+              "_type": "span",
+              "marks": []
+            },
+            {
+              "marks": [
+                "c27310d4564d"
+              ],
+              "text": "logic",
+              "_key": "7973ace0095b",
+              "_type": "span"
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": " des Calliope mini, um Gefühle auszudrücken.",
+              "_key": "987ebf403b00"
+            }
+          ],
+          "_type": "block",
+          "style": "normal",
+          "_key": "2fed964c2b19"
+        },
+        {
+          "_type": "block",
+          "style": "h3",
+          "_key": "f329c9632ea6",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "So geht's",
+              "_key": "4b0bb84bb0ad"
+            }
+          ]
+        },
+        {
+          "listItem": "bullet",
+          "markDefs": [
+            {
+              "targetType": "toolkitTopicEntry",
+              "_type": "toolkitInternalLink",
+              "_key": "4c23bc2caf56",
+              "reference": {
+                "_ref": "00379a88-b2cf-48f1-80f9-02cb3122b8b9",
+                "_type": "reference"
+              },
+              "slug": {
+                "current": "while-loops-infinite",
+                "_type": "slug"
+              }
+            }
+          ],
+          "children": [
+            {
+              "_key": "c2346c7589670",
+              "_type": "span",
+              "marks": [],
+              "text": "Eine "
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "4c23bc2caf56"
+              ],
+              "text": "Endlosschleife",
+              "_key": "bbf9a60566c7"
+            },
+            {
+              "_key": "4aeb715df25a",
+              "_type": "span",
+              "marks": [],
+              "text": ", "
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "code"
+              ],
+              "text": "while True",
+              "_key": "33989fa326f1"
+            },
+            {
+              "_key": "e7eb6760aa85",
+              "_type": "span",
+              "marks": [],
+              "text": ", hält den Code am Laufen."
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "4c66d60951f5"
+        },
+        {
+          "_key": "f06dfbea1755",
+          "listItem": "bullet",
+          "markDefs": [
+            {
+              "_key": "d6a6be2cf6b0",
+              "slug": {
+                "current": "button-is-pressed",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopicEntry",
+              "reference": {
+                "_ref": "55961fbf-9ec3-4f45-b7f1-3b2e5660acfc",
+                "_type": "reference"
+              },
+              "_type": "toolkitInternalLink"
+            }
+          ],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Wenn die ",
+              "_key": "22282a25bff40"
+            },
+            {
+              "text": "Taste A gedrückt",
+              "_key": "ed1f6df07bb3",
+              "_type": "span",
+              "marks": [
+                "d6a6be2cf6b0"
+              ]
+            },
+            {
+              "text": " wird, zeigt das Programm ein fröhliches Gesicht auf der LED-Matrix an.",
+              "_key": "ec48f786b912",
+              "_type": "span",
+              "marks": []
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal"
+        },
+        {
+          "listItem": "bullet",
+          "markDefs": [
+            {
+              "slug": {
+                "current": "button-is-pressed",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopicEntry",
+              "reference": {
+                "_type": "reference",
+                "_ref": "55961fbf-9ec3-4f45-b7f1-3b2e5660acfc"
+              },
+              "_type": "toolkitInternalLink",
+              "_key": "d5811a9f9266"
+            }
+          ],
+          "children": [
+            {
+              "text": "Wenn die ",
+              "_key": "b45974081e150",
+              "_type": "span",
+              "marks": []
+            },
+            {
+              "text": "Taste B gedrückt",
+              "_key": "185dca9d60ba",
+              "_type": "span",
+              "marks": [
+                "d5811a9f9266"
+              ]
+            },
+            {
+              "text": " wird, wird ein trauriges Gesicht angezeigt.",
+              "_key": "25254937abfa",
+              "_type": "span",
+              "marks": []
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "8e4155b34fa0"
+        },
+        {
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Herausforderung",
+              "_key": "da11a5df4f61"
+            }
+          ],
+          "_type": "block",
+          "style": "h3",
+          "_key": "37b5689280ad",
+          "markDefs": []
+        },
+        {
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Ändere den Code, um verschiedene Emotionsbilder anzuzeigen.",
+              "_key": "7e24e5a5deb50"
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "a9f3e6c04c53",
+          "listItem": "number"
+        },
+        {
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "5598bff132dd",
+          "listItem": "number",
+          "markDefs": [
+            {
+              "_key": "4ca0147c10ec",
+              "slug": {
+                "current": "logo",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopicEntry",
+              "reference": {
+                "_ref": "7550366a-89a4-4e37-8371-2ae105ade954",
+                "_type": "reference"
+              },
+              "_type": "toolkitInternalLink"
+            }
+          ],
+          "children": [
+            {
+              "text": "Zeige ein anderes Symbol an, wenn das ",
+              "_key": "f980f59837530",
+              "_type": "span",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "4ca0147c10ec"
+              ],
+              "text": "Touch-Logo",
+              "_key": "4dfc99e75bfc"
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": " auf dem Calliope mini berührt wird.",
+              "_key": "b3b36252d781"
+            }
+          ]
+        },
+        {
+          "markDefs": [
+            {
+              "targetType": "toolkitTopicEntry",
+              "reference": {
+                "_type": "reference",
+                "_ref": "55961fbf-9ec3-4f45-b7f1-3b2e5660acfc"
+              },
+              "_type": "toolkitInternalLink",
+              "_key": "3d4f6706ec9b",
+              "slug": {
+                "current": "button-is-pressed",
+                "_type": "slug"
+              }
+            }
+          ],
+          "children": [
+            {
+              "text": "Zeige ein weiteres Bilder an, wenn die ",
+              "_key": "0a2a983401050",
+              "_type": "span",
+              "marks": []
+            },
+            {
+              "text": "Tasten A und B zusammen",
+              "_key": "3ac969214037",
+              "_type": "span",
+              "marks": [
+                "3d4f6706ec9b"
+              ]
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": " gedrückt werden.",
+              "_key": "85b7ce18c4e8"
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "d74d0c1df178",
+          "listItem": "number"
+        }
+      ],
+      "_id": "c1fc9022-37e0-4ec5-8a38-62a93d042ecc"
+    },
+    {
+      "image": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-91be7d459154d07244e52e446729edf3ba11fc42-720x360-jpg",
+          "_type": "reference"
+        }
+      },
+      "slug": {
+        "current": "activity-picker",
+        "_type": "slug"
+      },
+      "content": [
+        {
+          "_key": "4260877cf43e",
+          "_type": "python",
+          "main": "from calliopemini import *\nimport random\n\naktivitaeten = ['putzen', 'glotzen', 'malen', 'spielen', 'singen']\ndisplay.scroll(random.choice(aktivitaeten))"
+        },
+        {
+          "children": [
+            {
+              "text": "Du kannst dich nicht entscheiden, was du machen willst? Benutze eine ",
+              "_key": "31a11fdb54f9",
+              "_type": "span",
+              "marks": []
+            },
+            {
+              "marks": [
+                "7795ee62392c"
+              ],
+              "text": "Liste",
+              "_key": "aaf10917c832",
+              "_type": "span"
+            },
+            {
+              "_key": "d56fad4252db",
+              "_type": "span",
+              "marks": [],
+              "text": " mit deinen Lieblingsaktivitäten, damit dein Calliope mini eine für dich aussuchen kann!"
+            }
+          ],
+          "_type": "block",
+          "style": "normal",
+          "_key": "eec793d79d7a",
+          "markDefs": [
+            {
+              "_key": "7795ee62392c",
+              "reference": {
+                "_type": "reference",
+                "_ref": "35d5b790-3690-4641-8a41-4f799b21ef68"
+              },
+              "slug": {
+                "current": "make-a-list",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopicEntry",
+              "_type": "toolkitInternalLink"
+            }
+          ]
+        },
+        {
+          "style": "h3",
+          "_key": "bf41ba8ea245",
+          "markDefs": [],
+          "children": [
+            {
+              "text": "So geht's",
+              "_key": "81675642360f",
+              "_type": "span",
+              "marks": []
+            }
+          ],
+          "_type": "block"
+        },
+        {
+          "listItem": "bullet",
+          "markDefs": [
+            {
+              "_key": "da8ccbae6ebc",
+              "slug": {
+                "current": "random-numbers",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopicEntry",
+              "reference": {
+                "_type": "reference",
+                "_ref": "76cb4b73-1b1a-484e-8059-a14747f48896"
+              },
+              "_type": "toolkitInternalLink"
+            }
+          ],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Dieses Programm importiert die ",
+              "_key": "4c8dd923fc180"
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "code",
+                "da8ccbae6ebc"
+              ],
+              "text": "random",
+              "_key": "becd202571af"
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": " Funktion.",
+              "_key": "4a0fe2056b6a"
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "14141d01ea9c"
+        },
+        {
+          "_type": "block",
+          "style": "normal",
+          "_key": "e4273a919632",
+          "listItem": "bullet",
+          "markDefs": [
+            {
+              "reference": {
+                "_ref": "35d5b790-3690-4641-8a41-4f799b21ef68",
+                "_type": "reference"
+              },
+              "_type": "toolkitInternalLink",
+              "_key": "db2cdd8d8e94",
+              "targetType": "toolkitTopicEntry",
+              "slug": {
+                "current": "make-a-list",
+                "_type": "slug"
+              }
+            }
+          ],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Es erstellt eine ",
+              "_key": "ce4ce624d1de0"
+            },
+            {
+              "_key": "a5ebce236fa3",
+              "_type": "span",
+              "marks": [
+                "db2cdd8d8e94"
+              ],
+              "text": "Liste"
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": " mit dem Namen \"aktivitaeten\", die verschiedene Ideen für Aktivitäten enthält.",
+              "_key": "4652fe2e07f7"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "dd997f38f373",
+          "listItem": "bullet",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Es wählt mit ",
+              "_key": "bb19fe272acf0"
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "code"
+              ],
+              "text": "random.choice",
+              "_key": "b6a8cebc764e"
+            },
+            {
+              "marks": [],
+              "text": " eine Aktivität aus der Liste aus und zeigt sie auf der LED-Matrix an.",
+              "_key": "f03a65ae5ec8",
+              "_type": "span"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "style": "normal",
+          "_key": "173798041b77",
+          "listItem": "bullet",
+          "markDefs": [],
+          "children": [
+            {
+              "text": "Drücke die Reset-Taste deines Calliope mini oder schließe die Stromversorgung erneut an, um einen neuen Vorschlag zu sehen.",
+              "_key": "e2d3b7a13c690",
+              "_type": "span",
+              "marks": []
+            }
+          ],
+          "level": 1
+        },
+        {
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Herausforderungen",
+              "_key": "2c7d6232399f"
+            }
+          ],
+          "_type": "block",
+          "style": "h3",
+          "_key": "ada1232b1bd2",
+          "markDefs": []
+        },
+        {
+          "markDefs": [],
+          "children": [
+            {
+              "marks": [],
+              "text": "Erweitere die Liste um weitere Aktivitäten. Jede Aktivität sollte in Anführungszeichen stehen und jedes Element in der Liste sollte durch ein Komma getrennt werden.",
+              "_key": "bc23cb7a236a0",
+              "_type": "span"
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "951610c08e83",
+          "listItem": "number"
+        },
+        {
+          "listItem": "number",
+          "markDefs": [
+            {
+              "_type": "toolkitInternalLink",
+              "slug": {
+                "_type": "slug",
+                "current": "button-is-pressed"
+              },
+              "targetType": "toolkitTopicEntry",
+              "_key": "b361258eb404",
+              "reference": {
+                "_ref": "55961fbf-9ec3-4f45-b7f1-3b2e5660acfc",
+                "_type": "reference"
+              }
+            }
+          ],
+          "children": [
+            {
+              "marks": [],
+              "text": "Zeige eine neue Aktivität an, wenn eine ",
+              "_key": "133dc7805ab80",
+              "_type": "span"
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "b361258eb404"
+              ],
+              "text": "Taste",
+              "_key": "ba18eca6cb1e"
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": " gedrückt wird.",
+              "_key": "e3b3051dcf38"
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "6a6d30ac35ce"
+        },
+        {
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "0bff76c0b2e4",
+          "listItem": "number",
+          "markDefs": [
+            {
+              "slug": {
+                "current": "gestures",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopicEntry",
+              "reference": {
+                "_type": "reference",
+                "_ref": "fbe7af0b-0bbc-49db-a47f-fbee5684e50e"
+              },
+              "_type": "toolkitInternalLink",
+              "_key": "8a33d2521349"
+            }
+          ],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Zeige eine neue Aktivität an, wenn der Calliope mini ",
+              "_key": "2121fd96862a0"
+            },
+            {
+              "marks": [
+                "8a33d2521349"
+              ],
+              "text": "geschüttelt",
+              "_key": "4f8901d31ab4",
+              "_type": "span"
+            },
+            {
+              "text": " wird.",
+              "_key": "0e8951a54b5e",
+              "_type": "span",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "_id": "9b6eee39-beac-4f26-b979-837befef2ea5",
+      "name": "Entscheidungshilfe",
+      "language": "de"
+    }
+  ]
+}

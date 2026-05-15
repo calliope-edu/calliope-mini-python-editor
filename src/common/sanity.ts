@@ -1,5 +1,10 @@
 /**
- * Common sanity types.
+ * Common types for content originally authored in Sanity.
+ *
+ * The editor no longer fetches Sanity at runtime; documentation content
+ * lives as JSON snapshots under src/documentation/cms-snapshot/. See
+ * bin/extract-cms.js to refresh them. Images are still served from the
+ * Sanity image CDN via <img src> (no CORS involvement).
  */
 
 export interface PortableTextBlock {
@@ -32,62 +37,3 @@ export interface Slug {
   _type: "slug";
   current: string;
 }
-
-/**
- * Query CMS content preferring the given language but
- * falling back to "en" if it is not present.
- *
- * @param languageId The preferred language.
- * @param adaptContent Validates and converts the result.
- * @returns The content.
- */
-export const fetchContent = async <T> (
-  languageId: string,
-  query: (languageId: string) => string,
-  adaptContent: (result: any) => T | undefined
-): Promise<T> => {
-  const preferred = adaptContent(
-    await fetchContentInternal(query(sanityLanguageId(languageId)))
-  );
-  if (preferred) {
-    return preferred;
-  }
-  const fallback = adaptContent(await fetchContentInternal(query("en")));
-  if (!fallback) {
-    throw new Error("English content must exist");
-  }
-  return fallback;
-};
-
-const fetchContentInternal = async (query: string): Promise<any> => {
-  const response = await fetch(queryUrl(query));
-  if (response.ok) {
-    const { result } = await response.json();
-    if (!result) {
-      throw new Error("Unexpected response format");
-    }
-    return result;
-  }
-  throw new Error("Error fetching content: " + response.status);
-};
-
-export const sanityLanguageId = (locale: string): string => {
-  if (!locale) {
-    return "";
-  }
-  if (locale && !locale.match(/^[A-Za-z-]+$/g)) {
-    throw new Error(`Invalid language id: ${locale}`);
-  }
-  const parts = locale.split("-");
-  if (parts.length !== 2) {
-    return locale;
-  }
-  return `${parts[0]}-${parts[1].toUpperCase()}`;
-};
-
-const queryUrl = (query: string): string => {
-  return (
-    "https://hmru2910.apicdn.sanity.io/v1/data/query/production?query=" +
-    encodeURIComponent(query)
-  );
-};

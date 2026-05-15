@@ -1,0 +1,892 @@
+{
+  "pythonIdeasOrder": [
+    {
+      "content": [
+        {
+          "_type": "python",
+          "main": "from calliopemini import *\n\nwhile True:\n    display.show(Image.HEART)\n    sleep(400)\n    display.clear()",
+          "_key": "aeeda4221d5a"
+        },
+        {
+          "_type": "block",
+          "style": "normal",
+          "_key": "02e5d0bc66e1",
+          "markDefs": [
+            {
+              "_type": "toolkitInternalLink",
+              "_key": "fd9d82ee7a67",
+              "slug": {
+                "_type": "slug",
+                "current": "while-loops-infinite"
+              },
+              "targetType": "toolkitTopicEntry",
+              "reference": {
+                "_ref": "9a5a7cfa-5c0e-4deb-aaf4-5277971e4307",
+                "_type": "reference"
+              }
+            }
+          ],
+          "children": [
+            {
+              "_key": "5395976512fe",
+              "_type": "span",
+              "marks": [],
+              "text": "Use "
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "fd9d82ee7a67"
+              ],
+              "text": "loops",
+              "_key": "ed8118f6481e"
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": " to permanently display an animation",
+              "_key": "c274e8b1718d"
+            }
+          ]
+        },
+        {
+          "style": "h3",
+          "_key": "31614d050f7e",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "How it works",
+              "_key": "fe90c0a47772"
+            }
+          ],
+          "_type": "block"
+        },
+        {
+          "children": [
+            {
+              "_key": "eee57b6471f7",
+              "_type": "span",
+              "marks": [],
+              "text": "With "
+            },
+            {
+              "_key": "319f8d032315",
+              "_type": "span",
+              "marks": [
+                "code"
+              ],
+              "text": "while True:"
+            },
+            {
+              "marks": [],
+              "text": " a permanent loop starts.",
+              "_key": "52c66c468db3",
+              "_type": "span"
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "69c3860c0583",
+          "listItem": "bullet",
+          "markDefs": []
+        },
+        {
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "First, a heart icon should be displayed.",
+              "_key": "713b1538fcfc"
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "5cd5b5220069",
+          "listItem": "bullet",
+          "markDefs": []
+        },
+        {
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "After a short pause, the Display is to be cleared.",
+              "_key": "59685739c115"
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "62f5e49a5d4d",
+          "listItem": "bullet"
+        },
+        {
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Challenges",
+              "_key": "ff8e7ca7e869"
+            }
+          ],
+          "_type": "block",
+          "style": "h3",
+          "_key": "63862ea1378e"
+        },
+        {
+          "style": "normal",
+          "_key": "c2a3a33b8ca2",
+          "listItem": "number",
+          "markDefs": [],
+          "children": [
+            {
+              "_key": "5161a667a100",
+              "_type": "span",
+              "marks": [],
+              "text": "Add another graphic."
+            }
+          ],
+          "level": 1,
+          "_type": "block"
+        },
+        {
+          "_key": "830caf76aa8f",
+          "listItem": "number",
+          "markDefs": [],
+          "children": [
+            {
+              "text": "How to create a smooth animation with multiple images?",
+              "_key": "1637c05e22d5",
+              "_type": "span",
+              "marks": []
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal"
+        }
+      ],
+      "_id": "38082ed8-2912-4672-96f6-d1e38798fa17",
+      "name": "Heartbeat",
+      "language": "en",
+      "image": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-c319aa4d5bbebea9a7cda68f216ed98a3ffc2ce5-720x360-jpg",
+          "_type": "reference"
+        }
+      },
+      "slug": {
+        "_type": "slug",
+        "current": "step-counter"
+      }
+    },
+    {
+      "slug": {
+        "_type": "slug",
+        "current": "emotion-badge"
+      },
+      "content": [
+        {
+          "_key": "bd90070b41b6",
+          "_type": "python",
+          "main": "from calliopemini import *\r\n\r\nwhile True:\r\n    if button_a.is_pressed():\r\n        display.show(Image.HAPPY)\r\n    if button_b.is_pressed():\r\n        display.show(Image.SAD)"
+        },
+        {
+          "_key": "2fed964c2b19",
+          "markDefs": [
+            {
+              "_key": "ed69faa1f3e6",
+              "slug": {
+                "current": "button-is-pressed",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopicEntry",
+              "reference": {
+                "_type": "reference",
+                "_ref": "c4848ae0-8813-4b4b-b58e-85a538ca1324"
+              },
+              "_type": "toolkitInternalLink"
+            }
+          ],
+          "children": [
+            {
+              "text": "Use the Calliope mini ",
+              "_key": "912d18320950",
+              "_type": "span",
+              "marks": []
+            },
+            {
+              "text": "button inputs",
+              "_key": "7ccb770ba168",
+              "_type": "span",
+              "marks": [
+                "ed69faa1f3e6"
+              ]
+            },
+            {
+              "text": ", display output and logic to show how you feel.",
+              "_key": "6fa99de81c0a",
+              "_type": "span",
+              "marks": []
+            }
+          ],
+          "_type": "block",
+          "style": "normal"
+        },
+        {
+          "markDefs": [],
+          "children": [
+            {
+              "_key": "4b0bb84bb0ad",
+              "_type": "span",
+              "marks": [],
+              "text": "How it works"
+            }
+          ],
+          "_type": "block",
+          "style": "h3",
+          "_key": "f329c9632ea6"
+        },
+        {
+          "_key": "4c66d60951f5",
+          "listItem": "bullet",
+          "markDefs": [
+            {
+              "_key": "a2f06eb0a51c",
+              "slug": {
+                "current": "while-loops-infinite",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopicEntry",
+              "reference": {
+                "_ref": "9a5a7cfa-5c0e-4deb-aaf4-5277971e4307",
+                "_type": "reference"
+              },
+              "_type": "toolkitInternalLink"
+            }
+          ],
+          "children": [
+            {
+              "marks": [],
+              "text": "An ",
+              "_key": "c2346c7589670",
+              "_type": "span"
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "a2f06eb0a51c"
+              ],
+              "text": "infinite loop",
+              "_key": "ea03ad1b8cf3"
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": ", ",
+              "_key": "e214fe982dd3"
+            },
+            {
+              "text": "while True",
+              "_key": "43582e38472a",
+              "_type": "span",
+              "marks": [
+                "code"
+              ]
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": ", keeps the code running.",
+              "_key": "940253f17487"
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal"
+        },
+        {
+          "_key": "f06dfbea1755",
+          "listItem": "bullet",
+          "markDefs": [
+            {
+              "reference": {
+                "_type": "reference",
+                "_ref": "c4848ae0-8813-4b4b-b58e-85a538ca1324"
+              },
+              "_type": "toolkitInternalLink",
+              "_key": "6fcfafa136c1",
+              "targetType": "toolkitTopicEntry",
+              "slug": {
+                "current": "button-is-pressed",
+                "_type": "slug"
+              }
+            }
+          ],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "If you press input ",
+              "_key": "22282a25bff40"
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "6fcfafa136c1"
+              ],
+              "text": "button A",
+              "_key": "5e26235725c2"
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": ", the program shows a happy face image on the LED display output.",
+              "_key": "fd33f65415af"
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal"
+        },
+        {
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "8e4155b34fa0",
+          "listItem": "bullet",
+          "markDefs": [
+            {
+              "slug": {
+                "current": "button-is-pressed",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopicEntry",
+              "reference": {
+                "_ref": "c4848ae0-8813-4b4b-b58e-85a538ca1324",
+                "_type": "reference"
+              },
+              "_type": "toolkitInternalLink",
+              "_key": "4a6c650bfe1f"
+            }
+          ],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "If you ",
+              "_key": "b45974081e150"
+            },
+            {
+              "marks": [
+                "4a6c650bfe1f"
+              ],
+              "text": "press button B",
+              "_key": "3f7f766960d2",
+              "_type": "span"
+            },
+            {
+              "marks": [],
+              "text": ", it shows a sad face.",
+              "_key": "f2c3ceccf5ba",
+              "_type": "span"
+            }
+          ]
+        },
+        {
+          "_key": "37b5689280ad",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Challenges",
+              "_key": "da11a5df4f61"
+            }
+          ],
+          "_type": "block",
+          "style": "h3"
+        },
+        {
+          "_key": "0d099ea4a6c2",
+          "listItem": "number",
+          "markDefs": [
+            {
+              "_type": "toolkitInternalLink",
+              "targetType": "toolkitTopicEntry",
+              "slug": {
+                "current": "images-make-your-own",
+                "_type": "slug"
+              },
+              "_key": "eb896659cc78",
+              "reference": {
+                "_ref": "cc9bf62f-8545-452f-b0ee-bf2d20b6778d",
+                "_type": "reference"
+              }
+            }
+          ],
+          "children": [
+            {
+              "marks": [],
+              "text": "Modify the code to show different emotion ",
+              "_key": "37f7f96a33fd0",
+              "_type": "span"
+            },
+            {
+              "marks": [
+                "eb896659cc78"
+              ],
+              "text": "images",
+              "_key": "1148e5ce7cb9",
+              "_type": "span"
+            },
+            {
+              "_key": "e15dd46bc4b0",
+              "_type": "span",
+              "marks": [],
+              "text": "."
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal"
+        },
+        {
+          "_key": "9194c69bb662",
+          "listItem": "number",
+          "markDefs": [
+            {
+              "_key": "b641a37a65f9",
+              "targetType": "toolkitTopicEntry",
+              "slug": {
+                "current": "logo",
+                "_type": "slug"
+              },
+              "reference": {
+                "_ref": "78d7c729-5663-4ef2-a31d-318e68011044",
+                "_type": "reference"
+              },
+              "_type": "toolkitInternalLink"
+            }
+          ],
+          "children": [
+            {
+              "text": "Show another emotion image when you press the ",
+              "_key": "f3857bb8f7770",
+              "_type": "span",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "b641a37a65f9"
+              ],
+              "text": "Touch logo ",
+              "_key": "01c0e111fd65"
+            },
+            {
+              "text": "on the Calliope mini V3.",
+              "_key": "dc4ccb770470",
+              "_type": "span",
+              "marks": []
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal"
+        },
+        {
+          "listItem": "number",
+          "markDefs": [
+            {
+              "_key": "0dbbe25cd632",
+              "slug": {
+                "current": "button-is-pressed",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopicEntry",
+              "reference": {
+                "_type": "reference",
+                "_ref": "c4848ae0-8813-4b4b-b58e-85a538ca1324"
+              },
+              "_type": "toolkitInternalLink"
+            }
+          ],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Show another image when ",
+              "_key": "6f9a4943a7430"
+            },
+            {
+              "_key": "af416a999c96",
+              "_type": "span",
+              "marks": [
+                "0dbbe25cd632"
+              ],
+              "text": "buttons A and B"
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": " are pressed together.",
+              "_key": "e43545e617ae"
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "6042628271b6"
+        }
+      ],
+      "_id": "5930d039-4d7b-468d-9cfd-ccc3cf5a034e",
+      "name": "Show emotions",
+      "language": "en",
+      "image": {
+        "asset": {
+          "_ref": "image-4fb38ba52c046335b912470412a5a58bcac6e5ec-720x360-jpg",
+          "_type": "reference"
+        },
+        "_type": "image"
+      }
+    },
+    {
+      "content": [
+        {
+          "_type": "python",
+          "main": "from calliopemini import *\nimport random\n\nactivities = ['tidy', 'movie', 'paint', 'card game', 'sing']\ndisplay.scroll(random.choice(activities))",
+          "_key": "4260877cf43e"
+        },
+        {
+          "_key": "eec793d79d7a",
+          "markDefs": [
+            {
+              "_key": "c57d99ae264d",
+              "slug": {
+                "current": "lists-arrays",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopic",
+              "reference": {
+                "_ref": "47cd8e43-0c5d-422d-867c-5cb80ee643d3",
+                "_type": "reference"
+              },
+              "_type": "toolkitInternalLink"
+            }
+          ],
+          "children": [
+            {
+              "marks": [],
+              "text": "Can't agree on what to do? Use a ",
+              "_key": "31a11fdb54f9",
+              "_type": "span"
+            },
+            {
+              "marks": [
+                "c57d99ae264d"
+              ],
+              "text": "list",
+              "_key": "cfaad3658da2",
+              "_type": "span"
+            },
+            {
+              "text": " to let your Calliope mini pick one for you! ",
+              "_key": "d2df16eaa217",
+              "_type": "span",
+              "marks": []
+            }
+          ],
+          "_type": "block",
+          "style": "normal"
+        },
+        {
+          "_key": "bf41ba8ea245",
+          "markDefs": [],
+          "children": [
+            {
+              "marks": [],
+              "text": "How it works",
+              "_key": "81675642360f",
+              "_type": "span"
+            }
+          ],
+          "_type": "block",
+          "style": "h3"
+        },
+        {
+          "markDefs": [],
+          "children": [
+            {
+              "marks": [],
+              "text": "This program imports the ",
+              "_key": "106316cb5957",
+              "_type": "span"
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "code"
+              ],
+              "text": "random",
+              "_key": "9acb713f2cfa"
+            },
+            {
+              "_key": "5d6e876518af",
+              "_type": "span",
+              "marks": [],
+              "text": " function."
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "4f4c835ef8ca",
+          "listItem": "bullet"
+        },
+        {
+          "_type": "block",
+          "style": "normal",
+          "_key": "06126f1baed9",
+          "listItem": "bullet",
+          "markDefs": [],
+          "children": [
+            {
+              "text": "It makes a list called ",
+              "_key": "83edad641b73",
+              "_type": "span",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "code"
+              ],
+              "text": "activities",
+              "_key": "9b5e86f8e204"
+            },
+            {
+              "marks": [],
+              "text": " containing different ideas for things to do.",
+              "_key": "1062e6b0179c",
+              "_type": "span"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "style": "normal",
+          "_key": "10ed6cbcc590",
+          "listItem": "bullet",
+          "markDefs": [],
+          "children": [
+            {
+              "_key": "9499a5e2a307",
+              "_type": "span",
+              "marks": [],
+              "text": "It picks one from the list using "
+            },
+            {
+              "_type": "span",
+              "marks": [
+                "code"
+              ],
+              "text": "random.choice",
+              "_key": "de0b258850fd"
+            },
+            {
+              "text": " and shows it on the LED display.",
+              "_key": "f061f7d29993",
+              "_type": "span",
+              "marks": []
+            }
+          ],
+          "level": 1,
+          "_type": "block"
+        },
+        {
+          "listItem": "bullet",
+          "markDefs": [],
+          "children": [
+            {
+              "_key": "95f6f4498c83",
+              "_type": "span",
+              "marks": [],
+              "text": "Press the reset button on the back of your Calliope mini or reconnect the power to see a new idea."
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "4fbb493e4a88"
+        },
+        {
+          "markDefs": [
+            {
+              "slug": {
+                "current": "buttons",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopic",
+              "_key": "8c84fe6c6ccb",
+              "reference": {
+                "_ref": "d9f09033-688f-4fed-8ad6-1f14e58375cd",
+                "_type": "reference"
+              },
+              "_type": "toolkitInternalLink"
+            },
+            {
+              "slug": {
+                "_type": "slug",
+                "current": "accelerometer"
+              },
+              "targetType": "toolkitTopic",
+              "_type": "toolkitInternalLink",
+              "_key": "7d92c4ab4984",
+              "reference": {
+                "_type": "reference",
+                "_ref": "684869b3-65dc-4959-90cf-6dee762fa016"
+              }
+            }
+          ],
+          "children": [
+            {
+              "_key": "2c7d6232399f",
+              "_type": "span",
+              "marks": [],
+              "text": "Challenges"
+            }
+          ],
+          "_type": "block",
+          "style": "h3",
+          "_key": "ada1232b1bd2"
+        },
+        {
+          "_type": "block",
+          "style": "normal",
+          "_key": "b0923ddf9a48",
+          "listItem": "number",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Modify the list with your own activities. Each idea should be surrounded by quotation marks, and separate each item in the list with a comma.",
+              "_key": "2c97134666b3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "children": [
+            {
+              "text": "Make it show new ideas when you press a ",
+              "_key": "53ab25b21d27",
+              "_type": "span",
+              "marks": []
+            },
+            {
+              "marks": [
+                "8c84fe6c6ccb"
+              ],
+              "text": "button",
+              "_key": "8ab03e4167e0",
+              "_type": "span"
+            },
+            {
+              "_key": "0aaa464a574b",
+              "_type": "span",
+              "marks": [],
+              "text": "."
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal",
+          "_key": "142753aa0b33",
+          "listItem": "number",
+          "markDefs": [
+            {
+              "targetType": "toolkitTopic",
+              "reference": {
+                "_ref": "d9f09033-688f-4fed-8ad6-1f14e58375cd",
+                "_type": "reference"
+              },
+              "_type": "toolkitInternalLink",
+              "_key": "8c84fe6c6ccb",
+              "slug": {
+                "_type": "slug",
+                "current": "buttons"
+              }
+            }
+          ]
+        },
+        {
+          "_key": "862ec4a6ad6e",
+          "listItem": "number",
+          "markDefs": [
+            {
+              "slug": {
+                "current": "accelerometer",
+                "_type": "slug"
+              },
+              "targetType": "toolkitTopic",
+              "reference": {
+                "_ref": "684869b3-65dc-4959-90cf-6dee762fa016",
+                "_type": "reference"
+              },
+              "_type": "toolkitInternalLink",
+              "_key": "7d92c4ab4984"
+            }
+          ],
+          "children": [
+            {
+              "_key": "8eaec884ffe8",
+              "_type": "span",
+              "marks": [],
+              "text": "Show new ideas when you "
+            },
+            {
+              "text": "shake",
+              "_key": "7164c4286e9f",
+              "_type": "span",
+              "marks": [
+                "7d92c4ab4984"
+              ]
+            },
+            {
+              "_type": "span",
+              "marks": [],
+              "text": " your Calliope mini. ",
+              "_key": "6790f697b6e3"
+            }
+          ],
+          "level": 1,
+          "_type": "block",
+          "style": "normal"
+        }
+      ],
+      "_id": "6f9d6767-787f-4022-89d3-eacabb146fa7",
+      "name": "Activity picker",
+      "language": "en",
+      "image": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-91be7d459154d07244e52e446729edf3ba11fc42-720x360-jpg",
+          "_type": "reference"
+        }
+      },
+      "slug": {
+        "_type": "slug",
+        "current": "activity-picker"
+      }
+    }
+  ]
+}

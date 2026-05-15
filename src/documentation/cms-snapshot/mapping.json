@@ -1,0 +1,4139 @@
+[
+  {
+    "pythonModuleName": "gc",
+    "pythonModuleItem": [
+      {
+        "pythonApiEntry": "collect"
+      },
+      {
+        "pythonApiEntry": "disable"
+      },
+      {
+        "pythonApiEntry": "enable"
+      },
+      {
+        "pythonApiEntry": "mem_alloc"
+      },
+      {
+        "pythonApiEntry": "mem_free"
+      },
+      {
+        "pythonApiEntry": "threshold-1"
+      },
+      {
+        "pythonApiEntry": "threshold-2"
+      }
+    ]
+  },
+  {
+    "pythonModuleName": "music",
+    "pythonModuleItem": [
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "builtin-music"
+          }
+        },
+        "pythonAlternativeContentLink": "baddy",
+        "pythonApiEntry": "BADDY"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "builtin-music"
+          }
+        },
+        "pythonAlternativeContentLink": "bading",
+        "pythonApiEntry": "BA_DING"
+      },
+      {
+        "pythonAlternativeContentLink": "birthday",
+        "pythonApiEntry": "BIRTHDAY",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "builtin-music"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "builtin-music",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "blues",
+        "pythonApiEntry": "BLUES"
+      },
+      {
+        "pythonApiEntry": "CHASE",
+        "referenceLink": {
+          "slug": {
+            "current": "builtin-music",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "chase"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "builtin-music",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "dadadadum",
+        "pythonApiEntry": "DADADADUM"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "builtin-music",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "entertainer",
+        "pythonApiEntry": "ENTERTAINER"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "builtin-music",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "funeral",
+        "pythonApiEntry": "FUNERAL"
+      },
+      {
+        "pythonAlternativeContentLink": "funk",
+        "pythonApiEntry": "FUNK",
+        "referenceLink": {
+          "slug": {
+            "current": "builtin-music",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "jumpdown",
+        "pythonApiEntry": "JUMP_DOWN",
+        "referenceLink": {
+          "slug": {
+            "current": "builtin-music",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "JUMP_UP",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "builtin-music"
+          }
+        },
+        "pythonAlternativeContentLink": "jumpup"
+      },
+      {
+        "pythonAlternativeContentLink": "nyan",
+        "pythonApiEntry": "NYAN",
+        "referenceLink": {
+          "slug": {
+            "current": "builtin-music",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "builtin-music",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "ode",
+        "pythonApiEntry": "ODE"
+      },
+      {
+        "pythonAlternativeContentLink": "powerdown",
+        "pythonApiEntry": "POWER_DOWN",
+        "referenceLink": {
+          "slug": {
+            "current": "builtin-music",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "POWER_UP",
+        "referenceLink": {
+          "slug": {
+            "current": "builtin-music",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "powerup"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "builtin-music"
+          }
+        },
+        "pythonAlternativeContentLink": "prelude",
+        "pythonApiEntry": "PRELUDE"
+      },
+      {
+        "pythonAlternativeContentLink": "punchline",
+        "pythonApiEntry": "PUNCHLINE",
+        "referenceLink": {
+          "slug": {
+            "current": "builtin-music",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "python",
+        "pythonApiEntry": "PYTHON",
+        "referenceLink": {
+          "slug": {
+            "current": "builtin-music",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "builtin-music"
+          }
+        },
+        "pythonAlternativeContentLink": "ringtone",
+        "pythonApiEntry": "RINGTONE"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "builtin-music"
+          }
+        },
+        "pythonAlternativeContentLink": "wawawawaa",
+        "pythonApiEntry": "WAWAWAWAA"
+      },
+      {
+        "pythonApiEntry": "WEDDING",
+        "referenceLink": {
+          "slug": {
+            "current": "builtin-music",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "wedding"
+      },
+      {
+        "pythonApiEntry": "get_tempo"
+      },
+      {
+        "pythonApiEntry": "pitch",
+        "referenceLink": {
+          "slug": {
+            "current": "pitch",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "play-notes"
+          }
+        },
+        "pythonApiEntry": "play"
+      },
+      {
+        "pythonApiEntry": "reset"
+      },
+      {
+        "pythonApiEntry": "set_tempo",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "tempo"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "pitch",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "stop"
+      }
+    ]
+  },
+  {
+    "pythonModuleName": "os",
+    "pythonModuleItem": [
+      {
+        "pythonApiEntry": "listdir"
+      },
+      {
+        "pythonApiEntry": "remove"
+      },
+      {
+        "pythonApiEntry": "size"
+      },
+      {
+        "pythonApiEntry": "uname"
+      },
+      {
+        "pythonApiEntry": "uname_result"
+      },
+      {
+        "pythonApiEntry": "uname_result.machine"
+      },
+      {
+        "pythonApiEntry": "uname_result.nodename"
+      },
+      {
+        "pythonApiEntry": "uname_result.release"
+      },
+      {
+        "pythonApiEntry": "uname_result.sysname"
+      },
+      {
+        "pythonApiEntry": "uname_result.version"
+      }
+    ]
+  },
+  {
+    "pythonModuleItem": [
+      {
+        "pythonApiEntry": "RATE_1MBIT"
+      },
+      {
+        "pythonApiEntry": "RATE_2MBIT"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "groups",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "config"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "on-and-off",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "off"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "on-and-off",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "on"
+      },
+      {
+        "pythonApiEntry": "receive",
+        "referenceLink": {
+          "slug": {
+            "current": "receive-a-message",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "receive_bytes"
+      },
+      {
+        "pythonApiEntry": "receive_bytes_into"
+      },
+      {
+        "pythonApiEntry": "receive_full"
+      },
+      {
+        "pythonApiEntry": "reset"
+      },
+      {
+        "pythonApiEntry": "send",
+        "referenceLink": {
+          "slug": {
+            "current": "send-a-message",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "send_bytes"
+      }
+    ],
+    "pythonModuleName": "radio"
+  },
+  {
+    "pythonModuleItem": [
+      {
+        "pythonApiEntry": "sleep"
+      },
+      {
+        "pythonApiEntry": "sleep_ms"
+      },
+      {
+        "pythonApiEntry": "sleep_us"
+      },
+      {
+        "pythonApiEntry": "ticks_add"
+      },
+      {
+        "pythonApiEntry": "ticks_diff"
+      },
+      {
+        "pythonApiEntry": "ticks_ms"
+      },
+      {
+        "pythonApiEntry": "ticks_us"
+      }
+    ],
+    "pythonModuleName": "time"
+  },
+  {
+    "pythonModuleName": "math",
+    "pythonModuleItem": [
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "trigonometric-functions",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "acos",
+        "pythonApiEntry": "acos"
+      },
+      {
+        "pythonAlternativeContentLink": "asin",
+        "pythonApiEntry": "asin",
+        "referenceLink": {
+          "slug": {
+            "current": "trigonometric-functions",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "atan",
+        "referenceLink": {
+          "slug": {
+            "current": "trigonometric-functions",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "atan"
+      },
+      {
+        "pythonApiEntry": "atan2",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "trigonometric-functions"
+          }
+        },
+        "pythonAlternativeContentLink": "atan2"
+      },
+      {
+        "pythonApiEntry": "ceil",
+        "referenceLink": {
+          "slug": {
+            "current": "rounding",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "ceiling"
+      },
+      {
+        "pythonApiEntry": "copysign"
+      },
+      {
+        "pythonAlternativeContentLink": "cos",
+        "pythonApiEntry": "cos",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "trigonometric-functions"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "radians-to-degrees",
+        "pythonApiEntry": "degrees",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "convert-degrees-and-radians"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "e",
+        "referenceLink": {
+          "slug": {
+            "current": "constants",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "exp"
+      },
+      {
+        "pythonApiEntry": "fabs"
+      },
+      {
+        "pythonAlternativeContentLink": "floor",
+        "pythonApiEntry": "floor",
+        "referenceLink": {
+          "slug": {
+            "current": "rounding",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "fmod"
+      },
+      {
+        "pythonApiEntry": "frexp"
+      },
+      {
+        "pythonApiEntry": "isfinite"
+      },
+      {
+        "pythonApiEntry": "isinf"
+      },
+      {
+        "pythonApiEntry": "isnan"
+      },
+      {
+        "pythonApiEntry": "ldexp"
+      },
+      {
+        "pythonApiEntry": "log",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "logarithms"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "modf"
+      },
+      {
+        "pythonApiEntry": "pi",
+        "referenceLink": {
+          "slug": {
+            "current": "constants",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "pow"
+      },
+      {
+        "pythonAlternativeContentLink": "degrees-to-radians",
+        "pythonApiEntry": "radians",
+        "referenceLink": {
+          "slug": {
+            "current": "convert-degrees-and-radians",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "sin",
+        "pythonApiEntry": "sin",
+        "referenceLink": {
+          "slug": {
+            "current": "trigonometric-functions",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "square-root",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "sqrt"
+      },
+      {
+        "pythonApiEntry": "tan",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "trigonometric-functions"
+          }
+        },
+        "pythonAlternativeContentLink": "tan"
+      },
+      {
+        "pythonApiEntry": "trunc"
+      }
+    ]
+  },
+  {
+    "pythonModuleName": "calliopemini",
+    "pythonModuleItem": [
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "buttons",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "Button"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "count-button-presses",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "Button.get_presses"
+      },
+      {
+        "pythonApiEntry": "Button.is_pressed",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "button-is-pressed"
+          }
+        },
+        "pythonAlternativeContentLink": "a"
+      },
+      {
+        "pythonApiEntry": "Button.was_pressed",
+        "referenceLink": {
+          "slug": {
+            "current": "button-was-pressed",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "a"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "images-make-your-own"
+          }
+        },
+        "pythonApiEntry": "Image"
+      },
+      {
+        "pythonApiEntry": "Image.ALL_ARROWS"
+      },
+      {
+        "pythonApiEntry": "Image.ALL_CLOCKS"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "angry",
+        "pythonApiEntry": "Image.ANGRY"
+      },
+      {
+        "pythonApiEntry": "Image.ARROW_E"
+      },
+      {
+        "pythonApiEntry": "Image.ARROW_N"
+      },
+      {
+        "pythonApiEntry": "Image.ARROW_NE"
+      },
+      {
+        "pythonApiEntry": "Image.ARROW_NW"
+      },
+      {
+        "pythonApiEntry": "Image.ARROW_S"
+      },
+      {
+        "pythonApiEntry": "Image.ARROW_SE"
+      },
+      {
+        "pythonApiEntry": "Image.ARROW_SW"
+      },
+      {
+        "pythonApiEntry": "Image.ARROW_W"
+      },
+      {
+        "pythonAlternativeContentLink": "asleep",
+        "pythonApiEntry": "Image.ASLEEP",
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "Image.BUTTERFLY"
+      },
+      {
+        "pythonApiEntry": "Image.CHESSBOARD"
+      },
+      {
+        "pythonApiEntry": "Image.CLOCK1"
+      },
+      {
+        "pythonApiEntry": "Image.CLOCK10"
+      },
+      {
+        "pythonApiEntry": "Image.CLOCK11"
+      },
+      {
+        "pythonApiEntry": "Image.CLOCK12"
+      },
+      {
+        "pythonApiEntry": "Image.CLOCK2"
+      },
+      {
+        "pythonApiEntry": "Image.CLOCK3"
+      },
+      {
+        "pythonApiEntry": "Image.CLOCK4"
+      },
+      {
+        "pythonApiEntry": "Image.CLOCK5"
+      },
+      {
+        "pythonApiEntry": "Image.CLOCK6"
+      },
+      {
+        "pythonApiEntry": "Image.CLOCK7"
+      },
+      {
+        "pythonApiEntry": "Image.CLOCK8"
+      },
+      {
+        "pythonApiEntry": "Image.CLOCK9"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "confused",
+        "pythonApiEntry": "Image.CONFUSED"
+      },
+      {
+        "pythonApiEntry": "Image.COW"
+      },
+      {
+        "pythonApiEntry": "Image.DIAMOND"
+      },
+      {
+        "pythonApiEntry": "Image.DIAMOND_SMALL"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "duck",
+        "pythonApiEntry": "Image.DUCK"
+      },
+      {
+        "pythonApiEntry": "Image.FABULOUS",
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "fabulous"
+      },
+      {
+        "pythonApiEntry": "Image.GHOST",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "images-builtin"
+          }
+        },
+        "pythonAlternativeContentLink": "ghost"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "giraffe",
+        "pythonApiEntry": "Image.GIRAFFE"
+      },
+      {
+        "pythonApiEntry": "Image.HAPPY",
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "happy"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "heart",
+        "pythonApiEntry": "Image.HEART"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "heartsmall",
+        "pythonApiEntry": "Image.HEART_SMALL"
+      },
+      {
+        "pythonApiEntry": "Image.HOUSE"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "meh",
+        "pythonApiEntry": "Image.MEH"
+      },
+      {
+        "pythonApiEntry": "Image.MUSIC_CROTCHET"
+      },
+      {
+        "pythonApiEntry": "Image.MUSIC_QUAVER"
+      },
+      {
+        "pythonApiEntry": "Image.MUSIC_QUAVERS"
+      },
+      {
+        "pythonAlternativeContentLink": "no",
+        "pythonApiEntry": "Image.NO",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "images-builtin"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "images-builtin"
+          }
+        },
+        "pythonAlternativeContentLink": "pacman",
+        "pythonApiEntry": "Image.PACMAN"
+      },
+      {
+        "pythonApiEntry": "Image.PITCHFORK"
+      },
+      {
+        "pythonApiEntry": "Image.RABBIT"
+      },
+      {
+        "pythonApiEntry": "Image.ROLLERSKATE"
+      },
+      {
+        "pythonApiEntry": "Image.SAD",
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "sad"
+      },
+      {
+        "pythonAlternativeContentLink": "silly",
+        "pythonApiEntry": "Image.SILLY",
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "Image.SKULL",
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "skull"
+      },
+      {
+        "pythonAlternativeContentLink": "smile",
+        "pythonApiEntry": "Image.SMILE",
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "Image.SNAKE"
+      },
+      {
+        "pythonApiEntry": "Image.SQUARE"
+      },
+      {
+        "pythonApiEntry": "Image.SQUARE_SMALL"
+      },
+      {
+        "pythonApiEntry": "Image.STICKFIGURE"
+      },
+      {
+        "pythonAlternativeContentLink": "surprised",
+        "pythonApiEntry": "Image.SURPRISED",
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "Image.SWORD"
+      },
+      {
+        "pythonApiEntry": "Image.TARGET"
+      },
+      {
+        "pythonApiEntry": "Image.TORTOISE"
+      },
+      {
+        "pythonApiEntry": "Image.TRIANGLE"
+      },
+      {
+        "pythonApiEntry": "Image.TRIANGLE_LEFT"
+      },
+      {
+        "pythonApiEntry": "Image.TSHIRT"
+      },
+      {
+        "pythonApiEntry": "Image.UMBRELLA"
+      },
+      {
+        "pythonApiEntry": "Image.XMAS"
+      },
+      {
+        "pythonApiEntry": "Image.YES",
+        "referenceLink": {
+          "slug": {
+            "current": "images-builtin",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "yes"
+      },
+      {
+        "pythonApiEntry": "Image.__add__"
+      },
+      {
+        "pythonApiEntry": "Image.__init__-1"
+      },
+      {
+        "pythonApiEntry": "Image.__init__-2"
+      },
+      {
+        "pythonApiEntry": "Image.__mul__"
+      },
+      {
+        "pythonApiEntry": "Image.__repr__"
+      },
+      {
+        "pythonApiEntry": "Image.__str__"
+      },
+      {
+        "pythonApiEntry": "Image.__sub__"
+      },
+      {
+        "pythonApiEntry": "Image.__truediv__"
+      },
+      {
+        "pythonApiEntry": "Image.blit"
+      },
+      {
+        "pythonApiEntry": "Image.copy"
+      },
+      {
+        "pythonApiEntry": "Image.crop"
+      },
+      {
+        "pythonApiEntry": "Image.fill"
+      },
+      {
+        "pythonApiEntry": "Image.get_pixel"
+      },
+      {
+        "pythonApiEntry": "Image.height"
+      },
+      {
+        "pythonApiEntry": "Image.invert"
+      },
+      {
+        "pythonApiEntry": "Image.set_pixel"
+      },
+      {
+        "pythonApiEntry": "Image.shift_down"
+      },
+      {
+        "pythonApiEntry": "Image.shift_left"
+      },
+      {
+        "pythonApiEntry": "Image.shift_right"
+      },
+      {
+        "pythonApiEntry": "Image.shift_up"
+      },
+      {
+        "pythonApiEntry": "Image.width"
+      },
+      {
+        "pythonApiEntry": "MicroBitAnalogDigitalPin"
+      },
+      {
+        "pythonAlternativeContentLink": "input-read",
+        "pythonApiEntry": "MicroBitAnalogDigitalPin.read_analog",
+        "referenceLink": {
+          "slug": {
+            "current": "analogue-input-output",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "MicroBitDigitalPin"
+      },
+      {
+        "pythonApiEntry": "MicroBitDigitalPin.get_mode"
+      },
+      {
+        "pythonApiEntry": "MicroBitDigitalPin.get_pull"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "digital-input-output",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "input-read",
+        "pythonApiEntry": "MicroBitDigitalPin.read_digital"
+      },
+      {
+        "pythonApiEntry": "MicroBitDigitalPin.set_analog_period"
+      },
+      {
+        "pythonApiEntry": "MicroBitDigitalPin.set_analog_period_microseconds"
+      },
+      {
+        "pythonApiEntry": "MicroBitDigitalPin.set_pull"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "analogue-input-output"
+          }
+        },
+        "pythonAlternativeContentLink": "output-write",
+        "pythonApiEntry": "MicroBitDigitalPin.write_analog"
+      },
+      {
+        "pythonAlternativeContentLink": "output-write",
+        "pythonApiEntry": "MicroBitDigitalPin.write_digital",
+        "referenceLink": {
+          "slug": {
+            "current": "digital-input-output",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "MicroBitTouchPin"
+      },
+      {
+        "pythonAlternativeContentLink": "pin-0",
+        "pythonApiEntry": "MicroBitTouchPin.is_touched",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "touch-pins"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "MicroBitTouchPin.set_touch_mode",
+        "referenceLink": {
+          "slug": {
+            "current": "touch-pins",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "pin-0"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "sound",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "Sound"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "expressive-sounds"
+          }
+        },
+        "pythonAlternativeContentLink": "giggle",
+        "pythonApiEntry": "Sound.GIGGLE"
+      },
+      {
+        "pythonAlternativeContentLink": "happy",
+        "pythonApiEntry": "Sound.HAPPY",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "expressive-sounds"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "hello",
+        "pythonApiEntry": "Sound.HELLO",
+        "referenceLink": {
+          "slug": {
+            "current": "expressive-sounds",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "mysterious",
+        "pythonApiEntry": "Sound.MYSTERIOUS",
+        "referenceLink": {
+          "slug": {
+            "current": "expressive-sounds",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "expressive-sounds",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "sad",
+        "pythonApiEntry": "Sound.SAD"
+      },
+      {
+        "pythonApiEntry": "Sound.SLIDE",
+        "referenceLink": {
+          "slug": {
+            "current": "expressive-sounds",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "slide"
+      },
+      {
+        "pythonApiEntry": "Sound.SOARING",
+        "referenceLink": {
+          "slug": {
+            "current": "expressive-sounds",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "soaring"
+      },
+      {
+        "pythonAlternativeContentLink": "spring",
+        "pythonApiEntry": "Sound.SPRING",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "expressive-sounds"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "twinkle",
+        "pythonApiEntry": "Sound.TWINKLE",
+        "referenceLink": {
+          "slug": {
+            "current": "expressive-sounds",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "Sound.YAWN",
+        "referenceLink": {
+          "slug": {
+            "current": "expressive-sounds",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "yawn"
+      },
+      {
+        "pythonApiEntry": "SoundEvent"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "sound-events"
+          }
+        },
+        "pythonApiEntry": "SoundEvent.LOUD"
+      },
+      {
+        "pythonApiEntry": "SoundEvent.QUIET",
+        "referenceLink": {
+          "slug": {
+            "current": "sound-events",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "accelerometer"
+      },
+      {
+        "pythonApiEntry": "accelerometer.current_gesture"
+      },
+      {
+        "pythonApiEntry": "accelerometer.get_gestures"
+      },
+      {
+        "pythonApiEntry": "accelerometer.get_values"
+      },
+      {
+        "pythonApiEntry": "accelerometer.get_x",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "measuring-acceleration"
+          }
+        },
+        "pythonAlternativeContentLink": "x"
+      },
+      {
+        "pythonAlternativeContentLink": "y",
+        "pythonApiEntry": "accelerometer.get_y",
+        "referenceLink": {
+          "slug": {
+            "current": "measuring-acceleration",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "z",
+        "pythonApiEntry": "accelerometer.get_z",
+        "referenceLink": {
+          "slug": {
+            "current": "measuring-acceleration",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "shake",
+        "pythonApiEntry": "accelerometer.is_gesture",
+        "referenceLink": {
+          "slug": {
+            "current": "gestures",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "accelerometer.was_gesture",
+        "referenceLink": {
+          "slug": {
+            "current": "gestures",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "shake"
+      },
+      {
+        "pythonApiEntry": "audio"
+      },
+      {
+        "pythonApiEntry": "audio.AudioFrame"
+      },
+      {
+        "pythonApiEntry": "audio.AudioFrame.__getitem__"
+      },
+      {
+        "pythonApiEntry": "audio.AudioFrame.__len__"
+      },
+      {
+        "pythonApiEntry": "audio.AudioFrame.__setitem__"
+      },
+      {
+        "pythonApiEntry": "audio.is_playing"
+      },
+      {
+        "pythonAlternativeContentLink": "giggle",
+        "pythonApiEntry": "audio.play",
+        "referenceLink": {
+          "slug": {
+            "current": "expressive-sounds",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "audio.stop"
+      },
+      {
+        "pythonApiEntry": "button_a"
+      },
+      {
+        "pythonApiEntry": "button_b"
+      },
+      {
+        "pythonApiEntry": "compass",
+        "referenceLink": {
+          "slug": {
+            "current": "compass",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "compass.calibrate",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "heading"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "compass.clear_calibration"
+      },
+      {
+        "pythonAlternativeContentLink": "overall-strength",
+        "pythonApiEntry": "compass.get_field_strength",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "magnetic-field-strength"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "x",
+        "pythonApiEntry": "compass.get_x",
+        "referenceLink": {
+          "slug": {
+            "current": "magnetic-field-strength",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "magnetic-field-strength"
+          }
+        },
+        "pythonAlternativeContentLink": "y",
+        "pythonApiEntry": "compass.get_y"
+      },
+      {
+        "pythonAlternativeContentLink": "z",
+        "pythonApiEntry": "compass.get_z",
+        "referenceLink": {
+          "slug": {
+            "current": "magnetic-field-strength",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "compass.heading",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "heading"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "compass.is_calibrated"
+      },
+      {
+        "pythonApiEntry": "display",
+        "referenceLink": {
+          "slug": {
+            "current": "display",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "display.clear",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "clear-the-display"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "get-pixels",
+        "pythonApiEntry": "display.get_pixel",
+        "referenceLink": {
+          "slug": {
+            "current": "pixels",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "display.is_on"
+      },
+      {
+        "pythonApiEntry": "display.off"
+      },
+      {
+        "pythonApiEntry": "display.on"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "light-levels",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "display.read_light_level"
+      },
+      {
+        "pythonApiEntry": "display.scroll",
+        "referenceLink": {
+          "slug": {
+            "current": "scroll",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "pixels",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "set-pixels",
+        "pythonApiEntry": "display.set_pixel"
+      },
+      {
+        "pythonApiEntry": "display.show",
+        "referenceLink": {
+          "slug": {
+            "current": "show",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "i2c"
+      },
+      {
+        "pythonApiEntry": "i2c.init"
+      },
+      {
+        "pythonApiEntry": "i2c.read"
+      },
+      {
+        "pythonApiEntry": "i2c.scan"
+      },
+      {
+        "pythonApiEntry": "i2c.write"
+      },
+      {
+        "pythonApiEntry": "microphone",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "microphone"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "sound-events",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "microphone.current_event"
+      },
+      {
+        "pythonApiEntry": "microphone.get_events"
+      },
+      {
+        "pythonApiEntry": "microphone.is_event"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "sound-events",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "microphone.set_threshold"
+      },
+      {
+        "pythonApiEntry": "microphone.sound_level",
+        "referenceLink": {
+          "slug": {
+            "current": "measuring-sound-levels",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "microphone.was_event"
+      },
+      {
+        "pythonApiEntry": "panic"
+      },
+      {
+        "pythonApiEntry": "pin0",
+        "referenceLink": {
+          "slug": {
+            "current": "touch-pins",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "pin-0"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "touch-pins",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "pin-1",
+        "pythonApiEntry": "pin1"
+      },
+      {
+        "pythonApiEntry": "pin10"
+      },
+      {
+        "pythonApiEntry": "pin11"
+      },
+      {
+        "pythonApiEntry": "pin12"
+      },
+      {
+        "pythonApiEntry": "pin13"
+      },
+      {
+        "pythonApiEntry": "pin14"
+      },
+      {
+        "pythonApiEntry": "pin15"
+      },
+      {
+        "pythonApiEntry": "pin16"
+      },
+      {
+        "pythonApiEntry": "pin19"
+      },
+      {
+        "pythonApiEntry": "pin2",
+        "referenceLink": {
+          "slug": {
+            "current": "touch-pins",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "pin-2"
+      },
+      {
+        "pythonApiEntry": "pin20"
+      },
+      {
+        "pythonApiEntry": "pin3",
+        "referenceLink": {
+          "slug": {
+            "current": "touch-pins",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "pin-3"
+      },
+      {
+        "pythonApiEntry": "pin4"
+      },
+      {
+        "pythonApiEntry": "pin5"
+      },
+      {
+        "pythonApiEntry": "pin6"
+      },
+      {
+        "pythonApiEntry": "pin7"
+      },
+      {
+        "pythonApiEntry": "pin8"
+      },
+      {
+        "pythonApiEntry": "pin9"
+      },
+      {
+        "pythonApiEntry": "pin_logo",
+        "referenceLink": {
+          "slug": {
+            "current": "logo",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "pin_speaker"
+      },
+      {
+        "pythonApiEntry": "reset"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "schedule-log-entries"
+          }
+        },
+        "pythonApiEntry": "run_every"
+      },
+      {
+        "pythonApiEntry": "running_time"
+      },
+      {
+        "pythonApiEntry": "set_volume",
+        "referenceLink": {
+          "slug": {
+            "current": "volume",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "sleep"
+      },
+      {
+        "pythonApiEntry": "speaker"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "turn-the-speaker-off",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "speaker.off"
+      },
+      {
+        "pythonApiEntry": "speaker.on",
+        "referenceLink": {
+          "slug": {
+            "current": "turn-the-speaker-off",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "spi"
+      },
+      {
+        "pythonApiEntry": "spi.init"
+      },
+      {
+        "pythonApiEntry": "spi.read"
+      },
+      {
+        "pythonApiEntry": "spi.write"
+      },
+      {
+        "pythonApiEntry": "spi.write_readinto"
+      },
+      {
+        "pythonApiEntry": "temperature",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "temperature-input"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "uart"
+      },
+      {
+        "pythonApiEntry": "uart.EVEN"
+      },
+      {
+        "pythonApiEntry": "uart.ODD"
+      },
+      {
+        "pythonApiEntry": "uart.any"
+      },
+      {
+        "pythonApiEntry": "uart.init"
+      },
+      {
+        "pythonApiEntry": "uart.read"
+      },
+      {
+        "pythonApiEntry": "uart.readinto"
+      },
+      {
+        "pythonApiEntry": "uart.readline"
+      },
+      {
+        "pythonApiEntry": "uart.write"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "create-rgb-leds",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "pin_RGB"
+      }
+    ]
+  },
+  {
+    "pythonModuleName": "micropython",
+    "pythonModuleItem": [
+      {
+        "pythonApiEntry": "const"
+      },
+      {
+        "pythonApiEntry": "heap_lock"
+      },
+      {
+        "pythonApiEntry": "heap_unlock"
+      },
+      {
+        "pythonApiEntry": "kbd_intr"
+      },
+      {
+        "pythonApiEntry": "mem_info"
+      },
+      {
+        "pythonApiEntry": "opt_level-1"
+      },
+      {
+        "pythonApiEntry": "opt_level-2"
+      },
+      {
+        "pythonApiEntry": "qstr_info"
+      },
+      {
+        "pythonApiEntry": "stack_use"
+      }
+    ]
+  },
+  {
+    "pythonModuleName": "neopixel",
+    "pythonModuleItem": [
+      {
+        "pythonApiEntry": "NeoPixel"
+      },
+      {
+        "pythonApiEntry": "NeoPixel.__getitem__"
+      },
+      {
+        "pythonApiEntry": "NeoPixel.__init__"
+      },
+      {
+        "pythonApiEntry": "NeoPixel.__len__"
+      },
+      {
+        "pythonApiEntry": "NeoPixel.__setitem__"
+      },
+      {
+        "pythonApiEntry": "NeoPixel.clear"
+      },
+      {
+        "pythonApiEntry": "NeoPixel.fill"
+      },
+      {
+        "pythonApiEntry": "NeoPixel.show"
+      },
+      {
+        "pythonApiEntry": "NeoPixel.write"
+      }
+    ]
+  },
+  {
+    "pythonModuleName": "sys",
+    "pythonModuleItem": [
+      {
+        "pythonApiEntry": "_implementation"
+      },
+      {
+        "pythonApiEntry": "argv"
+      },
+      {
+        "pythonApiEntry": "byteorder"
+      },
+      {
+        "pythonApiEntry": "exit"
+      },
+      {
+        "pythonApiEntry": "implementation"
+      },
+      {
+        "pythonApiEntry": "maxsize"
+      },
+      {
+        "pythonApiEntry": "modules"
+      },
+      {
+        "pythonApiEntry": "path"
+      },
+      {
+        "pythonApiEntry": "platform"
+      },
+      {
+        "pythonApiEntry": "print_exception"
+      },
+      {
+        "pythonApiEntry": "version"
+      },
+      {
+        "pythonApiEntry": "version_info"
+      }
+    ]
+  },
+  {
+    "pythonModuleItem": [
+      {
+        "pythonApiEntry": "ArithmeticError"
+      },
+      {
+        "pythonApiEntry": "AssertionError"
+      },
+      {
+        "pythonApiEntry": "AttributeError"
+      },
+      {
+        "pythonApiEntry": "BaseException"
+      },
+      {
+        "pythonApiEntry": "BaseException.__init__"
+      },
+      {
+        "pythonApiEntry": "BaseException.__repr__"
+      },
+      {
+        "pythonApiEntry": "BaseException.__str__"
+      },
+      {
+        "pythonApiEntry": "BaseException.with_traceback"
+      },
+      {
+        "pythonApiEntry": "EOFError"
+      },
+      {
+        "pythonApiEntry": "Exception"
+      },
+      {
+        "pythonApiEntry": "FloatingPointError"
+      },
+      {
+        "pythonApiEntry": "GeneratorExit"
+      },
+      {
+        "pythonApiEntry": "ImportError"
+      },
+      {
+        "pythonApiEntry": "ImportError.__init__"
+      },
+      {
+        "pythonApiEntry": "IndentationError"
+      },
+      {
+        "pythonApiEntry": "IndexError"
+      },
+      {
+        "pythonApiEntry": "KeyError"
+      },
+      {
+        "pythonApiEntry": "KeyboardInterrupt"
+      },
+      {
+        "pythonApiEntry": "LookupError"
+      },
+      {
+        "pythonApiEntry": "MemoryError"
+      },
+      {
+        "pythonApiEntry": "NameError"
+      },
+      {
+        "pythonApiEntry": "NotImplementedError"
+      },
+      {
+        "pythonApiEntry": "OSError"
+      },
+      {
+        "pythonApiEntry": "OverflowError"
+      },
+      {
+        "pythonApiEntry": "RuntimeError"
+      },
+      {
+        "pythonApiEntry": "StopAsyncIteration"
+      },
+      {
+        "pythonApiEntry": "StopIteration"
+      },
+      {
+        "pythonApiEntry": "SyntaxError"
+      },
+      {
+        "pythonApiEntry": "SystemExit"
+      },
+      {
+        "pythonApiEntry": "TabError"
+      },
+      {
+        "pythonApiEntry": "TypeError"
+      },
+      {
+        "pythonApiEntry": "ValueError"
+      },
+      {
+        "pythonApiEntry": "ZeroDivisionError"
+      },
+      {
+        "pythonApiEntry": "_NotImplementedType"
+      },
+      {
+        "pythonApiEntry": "_PathLike"
+      },
+      {
+        "pythonApiEntry": "_PathLike.__fspath__"
+      },
+      {
+        "pythonApiEntry": "_SupportsPow2"
+      },
+      {
+        "pythonApiEntry": "_SupportsPow2.__pow__"
+      },
+      {
+        "pythonApiEntry": "_SupportsPow3"
+      },
+      {
+        "pythonApiEntry": "_SupportsPow3.__pow__"
+      },
+      {
+        "pythonApiEntry": "_SupportsTrunc"
+      },
+      {
+        "pythonApiEntry": "_SupportsTrunc.__trunc__"
+      },
+      {
+        "pythonApiEntry": "__import__"
+      },
+      {
+        "pythonApiEntry": "abs",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "absolute"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "aiter"
+      },
+      {
+        "pythonApiEntry": "all"
+      },
+      {
+        "pythonApiEntry": "any"
+      },
+      {
+        "pythonApiEntry": "bin"
+      },
+      {
+        "pythonApiEntry": "bool"
+      },
+      {
+        "pythonApiEntry": "bool.__and__-1"
+      },
+      {
+        "pythonApiEntry": "bool.__and__-2"
+      },
+      {
+        "pythonApiEntry": "bool.__getnewargs__"
+      },
+      {
+        "pythonApiEntry": "bool.__new__"
+      },
+      {
+        "pythonApiEntry": "bool.__or__-1"
+      },
+      {
+        "pythonApiEntry": "bool.__or__-2"
+      },
+      {
+        "pythonApiEntry": "bool.__rand__-1"
+      },
+      {
+        "pythonApiEntry": "bool.__rand__-2"
+      },
+      {
+        "pythonApiEntry": "bool.__ror__-1"
+      },
+      {
+        "pythonApiEntry": "bool.__ror__-2"
+      },
+      {
+        "pythonApiEntry": "bool.__rxor__-1"
+      },
+      {
+        "pythonApiEntry": "bool.__rxor__-2"
+      },
+      {
+        "pythonApiEntry": "bool.__xor__-1"
+      },
+      {
+        "pythonApiEntry": "bool.__xor__-2"
+      },
+      {
+        "pythonApiEntry": "breakpoint"
+      },
+      {
+        "pythonApiEntry": "bytearray"
+      },
+      {
+        "pythonApiEntry": "bytearray.__add__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__contains__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__delitem__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__eq__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__ge__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__getitem__-1"
+      },
+      {
+        "pythonApiEntry": "bytearray.__getitem__-2"
+      },
+      {
+        "pythonApiEntry": "bytearray.__gt__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__iadd__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__imul__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__init__-1"
+      },
+      {
+        "pythonApiEntry": "bytearray.__init__-2"
+      },
+      {
+        "pythonApiEntry": "bytearray.__init__-3"
+      },
+      {
+        "pythonApiEntry": "bytearray.__init__-4"
+      },
+      {
+        "pythonApiEntry": "bytearray.__iter__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__le__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__len__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__lt__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__mod__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__mul__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__ne__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__repr__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__rmul__"
+      },
+      {
+        "pythonApiEntry": "bytearray.__setitem__-1"
+      },
+      {
+        "pythonApiEntry": "bytearray.__setitem__-2"
+      },
+      {
+        "pythonApiEntry": "bytearray.__str__"
+      },
+      {
+        "pythonApiEntry": "bytearray.append"
+      },
+      {
+        "pythonApiEntry": "bytearray.decode"
+      },
+      {
+        "pythonApiEntry": "bytearray.extend"
+      },
+      {
+        "pythonApiEntry": "bytes"
+      },
+      {
+        "pythonApiEntry": "bytes.__add__"
+      },
+      {
+        "pythonApiEntry": "bytes.__contains__"
+      },
+      {
+        "pythonApiEntry": "bytes.__eq__"
+      },
+      {
+        "pythonApiEntry": "bytes.__ge__"
+      },
+      {
+        "pythonApiEntry": "bytes.__getitem__-1"
+      },
+      {
+        "pythonApiEntry": "bytes.__getitem__-2"
+      },
+      {
+        "pythonApiEntry": "bytes.__getnewargs__"
+      },
+      {
+        "pythonApiEntry": "bytes.__gt__"
+      },
+      {
+        "pythonApiEntry": "bytes.__hash__"
+      },
+      {
+        "pythonApiEntry": "bytes.__iter__"
+      },
+      {
+        "pythonApiEntry": "bytes.__le__"
+      },
+      {
+        "pythonApiEntry": "bytes.__len__"
+      },
+      {
+        "pythonApiEntry": "bytes.__lt__"
+      },
+      {
+        "pythonApiEntry": "bytes.__mod__"
+      },
+      {
+        "pythonApiEntry": "bytes.__mul__"
+      },
+      {
+        "pythonApiEntry": "bytes.__ne__"
+      },
+      {
+        "pythonApiEntry": "bytes.__new__-1"
+      },
+      {
+        "pythonApiEntry": "bytes.__new__-2"
+      },
+      {
+        "pythonApiEntry": "bytes.__new__-3"
+      },
+      {
+        "pythonApiEntry": "bytes.__new__-4"
+      },
+      {
+        "pythonApiEntry": "bytes.__new__-5"
+      },
+      {
+        "pythonApiEntry": "bytes.__repr__"
+      },
+      {
+        "pythonApiEntry": "bytes.__rmul__"
+      },
+      {
+        "pythonApiEntry": "bytes.__str__"
+      },
+      {
+        "pythonApiEntry": "bytes.count"
+      },
+      {
+        "pythonApiEntry": "bytes.decode"
+      },
+      {
+        "pythonApiEntry": "bytes.endswith"
+      },
+      {
+        "pythonApiEntry": "bytes.find"
+      },
+      {
+        "pythonApiEntry": "bytes.index"
+      },
+      {
+        "pythonApiEntry": "bytes.isalpha"
+      },
+      {
+        "pythonApiEntry": "bytes.isdigit"
+      },
+      {
+        "pythonApiEntry": "bytes.islower"
+      },
+      {
+        "pythonApiEntry": "bytes.isspace"
+      },
+      {
+        "pythonApiEntry": "bytes.isupper"
+      },
+      {
+        "pythonApiEntry": "bytes.join"
+      },
+      {
+        "pythonApiEntry": "bytes.lower"
+      },
+      {
+        "pythonApiEntry": "bytes.lstrip"
+      },
+      {
+        "pythonApiEntry": "bytes.replace"
+      },
+      {
+        "pythonApiEntry": "bytes.rfind"
+      },
+      {
+        "pythonApiEntry": "bytes.rindex"
+      },
+      {
+        "pythonApiEntry": "bytes.rsplit"
+      },
+      {
+        "pythonApiEntry": "bytes.rstrip"
+      },
+      {
+        "pythonApiEntry": "bytes.split"
+      },
+      {
+        "pythonApiEntry": "bytes.startswith"
+      },
+      {
+        "pythonApiEntry": "bytes.strip"
+      },
+      {
+        "pythonApiEntry": "bytes.upper"
+      },
+      {
+        "pythonApiEntry": "callable"
+      },
+      {
+        "pythonApiEntry": "chr",
+        "referenceLink": {
+          "slug": {
+            "current": "print-character-from-ascii-value",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "classmethod"
+      },
+      {
+        "pythonApiEntry": "classmethod.__get__"
+      },
+      {
+        "pythonApiEntry": "classmethod.__init__"
+      },
+      {
+        "pythonApiEntry": "classmethod.__new__"
+      },
+      {
+        "pythonApiEntry": "complex"
+      },
+      {
+        "pythonApiEntry": "complex.__abs__"
+      },
+      {
+        "pythonApiEntry": "complex.__add__"
+      },
+      {
+        "pythonApiEntry": "complex.__bool__"
+      },
+      {
+        "pythonApiEntry": "complex.__eq__"
+      },
+      {
+        "pythonApiEntry": "complex.__hash__"
+      },
+      {
+        "pythonApiEntry": "complex.__mul__"
+      },
+      {
+        "pythonApiEntry": "complex.__ne__"
+      },
+      {
+        "pythonApiEntry": "complex.__neg__"
+      },
+      {
+        "pythonApiEntry": "complex.__new__-1"
+      },
+      {
+        "pythonApiEntry": "complex.__new__-2"
+      },
+      {
+        "pythonApiEntry": "complex.__pos__"
+      },
+      {
+        "pythonApiEntry": "complex.__pow__"
+      },
+      {
+        "pythonApiEntry": "complex.__radd__"
+      },
+      {
+        "pythonApiEntry": "complex.__rmul__"
+      },
+      {
+        "pythonApiEntry": "complex.__rpow__"
+      },
+      {
+        "pythonApiEntry": "complex.__rsub__"
+      },
+      {
+        "pythonApiEntry": "complex.__rtruediv__"
+      },
+      {
+        "pythonApiEntry": "complex.__str__"
+      },
+      {
+        "pythonApiEntry": "complex.__sub__"
+      },
+      {
+        "pythonApiEntry": "complex.__truediv__"
+      },
+      {
+        "pythonApiEntry": "complex.imag"
+      },
+      {
+        "pythonApiEntry": "complex.real"
+      },
+      {
+        "pythonApiEntry": "delattr"
+      },
+      {
+        "pythonApiEntry": "dict"
+      },
+      {
+        "pythonApiEntry": "dict.__class_getitem__"
+      },
+      {
+        "pythonApiEntry": "dict.__delitem__"
+      },
+      {
+        "pythonApiEntry": "dict.__getitem__"
+      },
+      {
+        "pythonApiEntry": "dict.__init__-1"
+      },
+      {
+        "pythonApiEntry": "dict.__init__-2"
+      },
+      {
+        "pythonApiEntry": "dict.__init__-3"
+      },
+      {
+        "pythonApiEntry": "dict.__init__-4"
+      },
+      {
+        "pythonApiEntry": "dict.__ior__"
+      },
+      {
+        "pythonApiEntry": "dict.__iter__"
+      },
+      {
+        "pythonApiEntry": "dict.__len__"
+      },
+      {
+        "pythonApiEntry": "dict.__new__"
+      },
+      {
+        "pythonApiEntry": "dict.__or__"
+      },
+      {
+        "pythonApiEntry": "dict.__reversed__"
+      },
+      {
+        "pythonApiEntry": "dict.__ror__"
+      },
+      {
+        "pythonApiEntry": "dict.__setitem__"
+      },
+      {
+        "pythonApiEntry": "dict.__str__"
+      },
+      {
+        "pythonApiEntry": "dict.clear"
+      },
+      {
+        "pythonApiEntry": "dict.copy"
+      },
+      {
+        "pythonApiEntry": "dict.fromkeys-1"
+      },
+      {
+        "pythonApiEntry": "dict.fromkeys-2"
+      },
+      {
+        "pythonApiEntry": "dict.items"
+      },
+      {
+        "pythonApiEntry": "dict.keys"
+      },
+      {
+        "pythonApiEntry": "dict.popitem"
+      },
+      {
+        "pythonApiEntry": "dict.setdefault"
+      },
+      {
+        "pythonApiEntry": "dict.update-1"
+      },
+      {
+        "pythonApiEntry": "dict.update-2"
+      },
+      {
+        "pythonApiEntry": "dict.update-3"
+      },
+      {
+        "pythonApiEntry": "dict.values"
+      },
+      {
+        "pythonApiEntry": "dir"
+      },
+      {
+        "pythonApiEntry": "divmod-1"
+      },
+      {
+        "pythonApiEntry": "divmod-2"
+      },
+      {
+        "pythonApiEntry": "ellipsis"
+      },
+      {
+        "pythonApiEntry": "enumerate"
+      },
+      {
+        "pythonApiEntry": "enumerate.__class_getitem__"
+      },
+      {
+        "pythonApiEntry": "enumerate.__init__"
+      },
+      {
+        "pythonApiEntry": "enumerate.__iter__"
+      },
+      {
+        "pythonApiEntry": "enumerate.__next__"
+      },
+      {
+        "pythonApiEntry": "eval"
+      },
+      {
+        "pythonApiEntry": "exec"
+      },
+      {
+        "pythonApiEntry": "filter"
+      },
+      {
+        "pythonApiEntry": "filter.__init__-1"
+      },
+      {
+        "pythonApiEntry": "filter.__init__-2"
+      },
+      {
+        "pythonApiEntry": "filter.__iter__"
+      },
+      {
+        "pythonApiEntry": "filter.__next__"
+      },
+      {
+        "pythonAlternativeContentLink": "string-to-float",
+        "pythonApiEntry": "float",
+        "referenceLink": {
+          "slug": {
+            "current": "converting-data-types",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "float.__abs__"
+      },
+      {
+        "pythonApiEntry": "float.__add__"
+      },
+      {
+        "pythonApiEntry": "float.__bool__"
+      },
+      {
+        "pythonApiEntry": "float.__ceil__"
+      },
+      {
+        "pythonApiEntry": "float.__divmod__"
+      },
+      {
+        "pythonApiEntry": "float.__eq__"
+      },
+      {
+        "pythonApiEntry": "float.__float__"
+      },
+      {
+        "pythonApiEntry": "float.__floor__"
+      },
+      {
+        "pythonApiEntry": "float.__floordiv__"
+      },
+      {
+        "pythonApiEntry": "float.__ge__"
+      },
+      {
+        "pythonApiEntry": "float.__getnewargs__"
+      },
+      {
+        "pythonApiEntry": "float.__gt__"
+      },
+      {
+        "pythonApiEntry": "float.__hash__"
+      },
+      {
+        "pythonApiEntry": "float.__int__"
+      },
+      {
+        "pythonApiEntry": "float.__le__"
+      },
+      {
+        "pythonApiEntry": "float.__lt__"
+      },
+      {
+        "pythonApiEntry": "float.__mod__"
+      },
+      {
+        "pythonApiEntry": "float.__mul__"
+      },
+      {
+        "pythonApiEntry": "float.__ne__"
+      },
+      {
+        "pythonApiEntry": "float.__neg__"
+      },
+      {
+        "pythonApiEntry": "float.__new__"
+      },
+      {
+        "pythonApiEntry": "float.__pos__"
+      },
+      {
+        "pythonApiEntry": "float.__pow__"
+      },
+      {
+        "pythonApiEntry": "float.__radd__"
+      },
+      {
+        "pythonApiEntry": "float.__rdivmod__"
+      },
+      {
+        "pythonApiEntry": "float.__rfloordiv__"
+      },
+      {
+        "pythonApiEntry": "float.__rmod__"
+      },
+      {
+        "pythonApiEntry": "float.__rmul__"
+      },
+      {
+        "pythonApiEntry": "float.__round__-1"
+      },
+      {
+        "pythonApiEntry": "float.__round__-2"
+      },
+      {
+        "pythonApiEntry": "float.__rpow__"
+      },
+      {
+        "pythonApiEntry": "float.__rsub__"
+      },
+      {
+        "pythonApiEntry": "float.__rtruediv__"
+      },
+      {
+        "pythonApiEntry": "float.__str__"
+      },
+      {
+        "pythonApiEntry": "float.__sub__"
+      },
+      {
+        "pythonApiEntry": "float.__truediv__"
+      },
+      {
+        "pythonApiEntry": "float.__trunc__"
+      },
+      {
+        "pythonApiEntry": "function"
+      },
+      {
+        "pythonApiEntry": "getattr-1"
+      },
+      {
+        "pythonApiEntry": "getattr-2"
+      },
+      {
+        "pythonApiEntry": "getattr-3"
+      },
+      {
+        "pythonApiEntry": "getattr-4"
+      },
+      {
+        "pythonApiEntry": "globals"
+      },
+      {
+        "pythonApiEntry": "hasattr"
+      },
+      {
+        "pythonApiEntry": "hash"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "repl"
+          }
+        },
+        "pythonApiEntry": "help"
+      },
+      {
+        "pythonApiEntry": "hex",
+        "referenceLink": {
+          "slug": {
+            "current": "hexadecimal-numbers",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "id"
+      },
+      {
+        "pythonApiEntry": "input",
+        "referenceLink": {
+          "slug": {
+            "current": "keyboard-input",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "converting-data-types"
+          }
+        },
+        "pythonAlternativeContentLink": "string-to-integer",
+        "pythonApiEntry": "int"
+      },
+      {
+        "pythonApiEntry": "int.__abs__"
+      },
+      {
+        "pythonApiEntry": "int.__add__"
+      },
+      {
+        "pythonApiEntry": "int.__and__"
+      },
+      {
+        "pythonApiEntry": "int.__bool__"
+      },
+      {
+        "pythonApiEntry": "int.__ceil__"
+      },
+      {
+        "pythonApiEntry": "int.__divmod__"
+      },
+      {
+        "pythonApiEntry": "int.__eq__"
+      },
+      {
+        "pythonApiEntry": "int.__float__"
+      },
+      {
+        "pythonApiEntry": "int.__floor__"
+      },
+      {
+        "pythonApiEntry": "int.__floordiv__"
+      },
+      {
+        "pythonApiEntry": "int.__ge__"
+      },
+      {
+        "pythonApiEntry": "int.__getnewargs__"
+      },
+      {
+        "pythonApiEntry": "int.__gt__"
+      },
+      {
+        "pythonApiEntry": "int.__hash__"
+      },
+      {
+        "pythonApiEntry": "int.__index__"
+      },
+      {
+        "pythonApiEntry": "int.__int__"
+      },
+      {
+        "pythonApiEntry": "int.__invert__"
+      },
+      {
+        "pythonApiEntry": "int.__le__"
+      },
+      {
+        "pythonApiEntry": "int.__lshift__"
+      },
+      {
+        "pythonApiEntry": "int.__lt__"
+      },
+      {
+        "pythonApiEntry": "int.__mod__"
+      },
+      {
+        "pythonApiEntry": "int.__mul__"
+      },
+      {
+        "pythonApiEntry": "int.__ne__"
+      },
+      {
+        "pythonApiEntry": "int.__neg__"
+      },
+      {
+        "pythonApiEntry": "int.__new__-1"
+      },
+      {
+        "pythonApiEntry": "int.__new__-2"
+      },
+      {
+        "pythonApiEntry": "int.__or__"
+      },
+      {
+        "pythonApiEntry": "int.__pos__"
+      },
+      {
+        "pythonApiEntry": "int.__pow__-1"
+      },
+      {
+        "pythonApiEntry": "int.__pow__-2"
+      },
+      {
+        "pythonApiEntry": "int.__radd__"
+      },
+      {
+        "pythonApiEntry": "int.__rand__"
+      },
+      {
+        "pythonApiEntry": "int.__rdivmod__"
+      },
+      {
+        "pythonApiEntry": "int.__rfloordiv__"
+      },
+      {
+        "pythonApiEntry": "int.__rlshift__"
+      },
+      {
+        "pythonApiEntry": "int.__rmod__"
+      },
+      {
+        "pythonApiEntry": "int.__rmul__"
+      },
+      {
+        "pythonApiEntry": "int.__ror__"
+      },
+      {
+        "pythonApiEntry": "int.__round__"
+      },
+      {
+        "pythonApiEntry": "int.__rpow__"
+      },
+      {
+        "pythonApiEntry": "int.__rrshift__"
+      },
+      {
+        "pythonApiEntry": "int.__rshift__"
+      },
+      {
+        "pythonApiEntry": "int.__rsub__"
+      },
+      {
+        "pythonApiEntry": "int.__rtruediv__"
+      },
+      {
+        "pythonApiEntry": "int.__rxor__"
+      },
+      {
+        "pythonApiEntry": "int.__str__"
+      },
+      {
+        "pythonApiEntry": "int.__sub__"
+      },
+      {
+        "pythonApiEntry": "int.__truediv__"
+      },
+      {
+        "pythonApiEntry": "int.__trunc__"
+      },
+      {
+        "pythonApiEntry": "int.__xor__"
+      },
+      {
+        "pythonApiEntry": "int.from_bytes"
+      },
+      {
+        "pythonApiEntry": "int.to_bytes"
+      },
+      {
+        "pythonApiEntry": "isinstance"
+      },
+      {
+        "pythonApiEntry": "isinstance"
+      },
+      {
+        "pythonApiEntry": "issubclass"
+      },
+      {
+        "pythonApiEntry": "issubclass"
+      },
+      {
+        "pythonApiEntry": "iter-1"
+      },
+      {
+        "pythonApiEntry": "iter-2"
+      },
+      {
+        "pythonApiEntry": "iter-3"
+      },
+      {
+        "pythonApiEntry": "len"
+      },
+      {
+        "pythonApiEntry": "list"
+      },
+      {
+        "pythonApiEntry": "list.__add__"
+      },
+      {
+        "pythonApiEntry": "list.__class_getitem__"
+      },
+      {
+        "pythonApiEntry": "list.__contains__"
+      },
+      {
+        "pythonApiEntry": "list.__delitem__"
+      },
+      {
+        "pythonApiEntry": "list.__ge__"
+      },
+      {
+        "pythonApiEntry": "list.__getitem__-1"
+      },
+      {
+        "pythonApiEntry": "list.__getitem__-2"
+      },
+      {
+        "pythonApiEntry": "list.__gt__"
+      },
+      {
+        "pythonApiEntry": "list.__iadd__"
+      },
+      {
+        "pythonApiEntry": "list.__imul__"
+      },
+      {
+        "pythonApiEntry": "list.__init__-1"
+      },
+      {
+        "pythonApiEntry": "list.__init__-2"
+      },
+      {
+        "pythonApiEntry": "list.__iter__"
+      },
+      {
+        "pythonApiEntry": "list.__le__"
+      },
+      {
+        "pythonApiEntry": "list.__len__"
+      },
+      {
+        "pythonApiEntry": "list.__lt__"
+      },
+      {
+        "pythonApiEntry": "list.__mul__"
+      },
+      {
+        "pythonApiEntry": "list.__reversed__"
+      },
+      {
+        "pythonApiEntry": "list.__rmul__"
+      },
+      {
+        "pythonApiEntry": "list.__setitem__-1"
+      },
+      {
+        "pythonApiEntry": "list.__setitem__-2"
+      },
+      {
+        "pythonApiEntry": "list.__str__"
+      },
+      {
+        "pythonApiEntry": "list.append",
+        "referenceLink": {
+          "slug": {
+            "current": "add-element-to-list",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "append"
+      },
+      {
+        "pythonAlternativeContentLink": "clear-list",
+        "pythonApiEntry": "list.clear",
+        "referenceLink": {
+          "slug": {
+            "current": "remove-element-from-list",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "list.copy"
+      },
+      {
+        "pythonApiEntry": "list.count",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "count-occurrences-in-lists"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "list.extend"
+      },
+      {
+        "pythonApiEntry": "list.index"
+      },
+      {
+        "pythonAlternativeContentLink": "insert",
+        "pythonApiEntry": "list.insert",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "add-element-to-list"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "list.pop",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "remove-element-from-list"
+          }
+        },
+        "pythonAlternativeContentLink": "by-index-pop"
+      },
+      {
+        "pythonAlternativeContentLink": "by-value-remove",
+        "pythonApiEntry": "list.remove",
+        "referenceLink": {
+          "slug": {
+            "current": "remove-element-from-list",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "reverse",
+        "pythonApiEntry": "list.reverse",
+        "referenceLink": {
+          "slug": {
+            "current": "sort-list",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "sort-list",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "alphanumeric",
+        "pythonApiEntry": "list.sort-1"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "sort-list",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "alphanumeric",
+        "pythonApiEntry": "list.sort-2"
+      },
+      {
+        "pythonApiEntry": "locals"
+      },
+      {
+        "pythonApiEntry": "map"
+      },
+      {
+        "pythonApiEntry": "map.__init__-1"
+      },
+      {
+        "pythonApiEntry": "map.__init__-2"
+      },
+      {
+        "pythonApiEntry": "map.__init__-3"
+      },
+      {
+        "pythonApiEntry": "map.__init__-4"
+      },
+      {
+        "pythonApiEntry": "map.__init__-5"
+      },
+      {
+        "pythonApiEntry": "map.__init__-6"
+      },
+      {
+        "pythonApiEntry": "map.__iter__"
+      },
+      {
+        "pythonApiEntry": "map.__next__"
+      },
+      {
+        "pythonApiEntry": "max-1"
+      },
+      {
+        "pythonApiEntry": "max-2"
+      },
+      {
+        "pythonApiEntry": "max-3"
+      },
+      {
+        "pythonApiEntry": "max-4"
+      },
+      {
+        "pythonApiEntry": "max-5"
+      },
+      {
+        "pythonApiEntry": "max-6"
+      },
+      {
+        "pythonApiEntry": "memoryview"
+      },
+      {
+        "pythonApiEntry": "memoryview.__contains__"
+      },
+      {
+        "pythonApiEntry": "memoryview.__getitem__-1"
+      },
+      {
+        "pythonApiEntry": "memoryview.__getitem__-2"
+      },
+      {
+        "pythonApiEntry": "memoryview.__init__"
+      },
+      {
+        "pythonApiEntry": "memoryview.__iter__"
+      },
+      {
+        "pythonApiEntry": "memoryview.__len__"
+      },
+      {
+        "pythonApiEntry": "memoryview.__setitem__-1"
+      },
+      {
+        "pythonApiEntry": "memoryview.__setitem__-2"
+      },
+      {
+        "pythonApiEntry": "min-1"
+      },
+      {
+        "pythonApiEntry": "min-2"
+      },
+      {
+        "pythonApiEntry": "min-3"
+      },
+      {
+        "pythonApiEntry": "min-4"
+      },
+      {
+        "pythonApiEntry": "min-5"
+      },
+      {
+        "pythonApiEntry": "min-6"
+      },
+      {
+        "pythonApiEntry": "next-1"
+      },
+      {
+        "pythonApiEntry": "next-2"
+      },
+      {
+        "pythonApiEntry": "object"
+      },
+      {
+        "pythonApiEntry": "object.__class__"
+      },
+      {
+        "pythonApiEntry": "object.__class__"
+      },
+      {
+        "pythonApiEntry": "object.__delattr__"
+      },
+      {
+        "pythonApiEntry": "object.__dir__"
+      },
+      {
+        "pythonApiEntry": "object.__eq__"
+      },
+      {
+        "pythonApiEntry": "object.__format__"
+      },
+      {
+        "pythonApiEntry": "object.__getattribute__"
+      },
+      {
+        "pythonApiEntry": "object.__hash__"
+      },
+      {
+        "pythonApiEntry": "object.__init__"
+      },
+      {
+        "pythonApiEntry": "object.__init_subclass__"
+      },
+      {
+        "pythonApiEntry": "object.__ne__"
+      },
+      {
+        "pythonApiEntry": "object.__new__"
+      },
+      {
+        "pythonApiEntry": "object.__reduce__"
+      },
+      {
+        "pythonApiEntry": "object.__reduce_ex__"
+      },
+      {
+        "pythonApiEntry": "object.__reduce_ex__"
+      },
+      {
+        "pythonApiEntry": "object.__repr__"
+      },
+      {
+        "pythonApiEntry": "object.__setattr__"
+      },
+      {
+        "pythonApiEntry": "object.__sizeof__"
+      },
+      {
+        "pythonApiEntry": "object.__str__"
+      },
+      {
+        "pythonApiEntry": "oct"
+      },
+      {
+        "pythonApiEntry": "open-1"
+      },
+      {
+        "pythonApiEntry": "open-2"
+      },
+      {
+        "pythonApiEntry": "open-3"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "ascii-value-of-character",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "ord"
+      },
+      {
+        "pythonApiEntry": "pow-1"
+      },
+      {
+        "pythonApiEntry": "pow-10"
+      },
+      {
+        "pythonApiEntry": "pow-2"
+      },
+      {
+        "pythonApiEntry": "pow-3"
+      },
+      {
+        "pythonApiEntry": "pow-4"
+      },
+      {
+        "pythonApiEntry": "pow-5"
+      },
+      {
+        "pythonApiEntry": "pow-6"
+      },
+      {
+        "pythonApiEntry": "pow-7"
+      },
+      {
+        "pythonApiEntry": "pow-8"
+      },
+      {
+        "pythonApiEntry": "pow-9"
+      },
+      {
+        "pythonApiEntry": "print",
+        "referenceLink": {
+          "slug": {
+            "current": "print-output-to-the-serial-console",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "property"
+      },
+      {
+        "pythonApiEntry": "property.__delete__"
+      },
+      {
+        "pythonApiEntry": "property.__get__"
+      },
+      {
+        "pythonApiEntry": "property.__init__"
+      },
+      {
+        "pythonApiEntry": "property.__set__"
+      },
+      {
+        "pythonApiEntry": "property.deleter"
+      },
+      {
+        "pythonApiEntry": "property.getter"
+      },
+      {
+        "pythonApiEntry": "property.setter"
+      },
+      {
+        "pythonAlternativeContentLink": "repeat-with-range",
+        "pythonApiEntry": "range",
+        "referenceLink": {
+          "slug": {
+            "current": "for-loops",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "range.__contains__"
+      },
+      {
+        "pythonApiEntry": "range.__getitem__-1"
+      },
+      {
+        "pythonApiEntry": "range.__getitem__-2"
+      },
+      {
+        "pythonApiEntry": "range.__init__-1"
+      },
+      {
+        "pythonApiEntry": "range.__init__-2"
+      },
+      {
+        "pythonApiEntry": "range.__iter__"
+      },
+      {
+        "pythonApiEntry": "range.__len__"
+      },
+      {
+        "pythonApiEntry": "range.__repr__"
+      },
+      {
+        "pythonApiEntry": "range.__reversed__"
+      },
+      {
+        "pythonApiEntry": "repr"
+      },
+      {
+        "pythonApiEntry": "reversed"
+      },
+      {
+        "pythonApiEntry": "reversed.__init__-1"
+      },
+      {
+        "pythonApiEntry": "reversed.__init__-2"
+      },
+      {
+        "pythonApiEntry": "reversed.__iter__"
+      },
+      {
+        "pythonApiEntry": "reversed.__next__"
+      },
+      {
+        "pythonAlternativeContentLink": "integers",
+        "pythonApiEntry": "round-1",
+        "referenceLink": {
+          "slug": {
+            "current": "rounding",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "integers",
+        "pythonApiEntry": "round-2",
+        "referenceLink": {
+          "slug": {
+            "current": "rounding",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "rounding",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "integers",
+        "pythonApiEntry": "round-3"
+      },
+      {
+        "pythonApiEntry": "set"
+      },
+      {
+        "pythonApiEntry": "set.__and__"
+      },
+      {
+        "pythonApiEntry": "set.__class_getitem__"
+      },
+      {
+        "pythonApiEntry": "set.__contains__"
+      },
+      {
+        "pythonApiEntry": "set.__ge__"
+      },
+      {
+        "pythonApiEntry": "set.__gt__"
+      },
+      {
+        "pythonApiEntry": "set.__iand__"
+      },
+      {
+        "pythonApiEntry": "set.__init__"
+      },
+      {
+        "pythonApiEntry": "set.__ior__"
+      },
+      {
+        "pythonApiEntry": "set.__isub__"
+      },
+      {
+        "pythonApiEntry": "set.__iter__"
+      },
+      {
+        "pythonApiEntry": "set.__ixor__"
+      },
+      {
+        "pythonApiEntry": "set.__le__"
+      },
+      {
+        "pythonApiEntry": "set.__len__"
+      },
+      {
+        "pythonApiEntry": "set.__lt__"
+      },
+      {
+        "pythonApiEntry": "set.__or__"
+      },
+      {
+        "pythonApiEntry": "set.__str__"
+      },
+      {
+        "pythonApiEntry": "set.__sub__"
+      },
+      {
+        "pythonApiEntry": "set.__xor__"
+      },
+      {
+        "pythonApiEntry": "set.add"
+      },
+      {
+        "pythonApiEntry": "set.clear"
+      },
+      {
+        "pythonApiEntry": "set.copy"
+      },
+      {
+        "pythonApiEntry": "set.difference"
+      },
+      {
+        "pythonApiEntry": "set.difference_update"
+      },
+      {
+        "pythonApiEntry": "set.discard"
+      },
+      {
+        "pythonApiEntry": "set.intersection"
+      },
+      {
+        "pythonApiEntry": "set.intersection_update"
+      },
+      {
+        "pythonApiEntry": "set.isdisjoint"
+      },
+      {
+        "pythonApiEntry": "set.issubset"
+      },
+      {
+        "pythonApiEntry": "set.issuperset"
+      },
+      {
+        "pythonApiEntry": "set.pop"
+      },
+      {
+        "pythonApiEntry": "set.remove"
+      },
+      {
+        "pythonApiEntry": "set.symmetric_difference"
+      },
+      {
+        "pythonApiEntry": "set.symmetric_difference_update"
+      },
+      {
+        "pythonApiEntry": "set.union"
+      },
+      {
+        "pythonApiEntry": "set.update"
+      },
+      {
+        "pythonApiEntry": "setattr"
+      },
+      {
+        "pythonApiEntry": "slice"
+      },
+      {
+        "pythonApiEntry": "slice.indices"
+      },
+      {
+        "pythonApiEntry": "sorted-1"
+      },
+      {
+        "pythonApiEntry": "sorted-2"
+      },
+      {
+        "pythonApiEntry": "staticmethod"
+      },
+      {
+        "pythonApiEntry": "staticmethod.__get__"
+      },
+      {
+        "pythonApiEntry": "staticmethod.__init__"
+      },
+      {
+        "pythonApiEntry": "staticmethod.__new__"
+      },
+      {
+        "pythonApiEntry": "str",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "converting-data-types"
+          }
+        },
+        "pythonAlternativeContentLink": "number-to-string"
+      },
+      {
+        "pythonApiEntry": "str.__add__"
+      },
+      {
+        "pythonApiEntry": "str.__contains__"
+      },
+      {
+        "pythonApiEntry": "str.__eq__"
+      },
+      {
+        "pythonApiEntry": "str.__ge__"
+      },
+      {
+        "pythonApiEntry": "str.__getitem__"
+      },
+      {
+        "pythonApiEntry": "str.__getnewargs__"
+      },
+      {
+        "pythonApiEntry": "str.__gt__"
+      },
+      {
+        "pythonApiEntry": "str.__hash__"
+      },
+      {
+        "pythonApiEntry": "str.__iter__"
+      },
+      {
+        "pythonApiEntry": "str.__le__"
+      },
+      {
+        "pythonApiEntry": "str.__len__"
+      },
+      {
+        "pythonApiEntry": "str.__lt__"
+      },
+      {
+        "pythonApiEntry": "str.__mod__"
+      },
+      {
+        "pythonApiEntry": "str.__mul__"
+      },
+      {
+        "pythonApiEntry": "str.__ne__"
+      },
+      {
+        "pythonApiEntry": "str.__new__-1"
+      },
+      {
+        "pythonApiEntry": "str.__new__-2"
+      },
+      {
+        "pythonApiEntry": "str.__repr__"
+      },
+      {
+        "pythonApiEntry": "str.__rmul__"
+      },
+      {
+        "pythonApiEntry": "str.__str__"
+      },
+      {
+        "pythonApiEntry": "str.count",
+        "referenceLink": {
+          "slug": {
+            "current": "counting-occurrences",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "str.encode"
+      },
+      {
+        "pythonAlternativeContentLink": "ends-with",
+        "pythonApiEntry": "str.endswith",
+        "referenceLink": {
+          "slug": {
+            "current": "testing-strings",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "first-occurrence",
+        "pythonApiEntry": "str.find",
+        "referenceLink": {
+          "slug": {
+            "current": "searching-strings",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "str.format"
+      },
+      {
+        "pythonApiEntry": "str.index"
+      },
+      {
+        "pythonAlternativeContentLink": "alphabetical",
+        "pythonApiEntry": "str.isalpha",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "testing-strings"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "digits",
+        "pythonApiEntry": "str.isdigit",
+        "referenceLink": {
+          "slug": {
+            "current": "testing-strings",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "testing-strings",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "lower-case",
+        "pythonApiEntry": "str.islower"
+      },
+      {
+        "pythonAlternativeContentLink": "space",
+        "pythonApiEntry": "str.isspace",
+        "referenceLink": {
+          "slug": {
+            "current": "testing-strings",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonAlternativeContentLink": "upper-case",
+        "pythonApiEntry": "str.isupper",
+        "referenceLink": {
+          "slug": {
+            "current": "testing-strings",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "str.join"
+      },
+      {
+        "pythonApiEntry": "str.lower",
+        "referenceLink": {
+          "slug": {
+            "current": "convert-case",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "lower-case"
+      },
+      {
+        "pythonApiEntry": "str.lstrip",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "trimming-strings"
+          }
+        }
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "replacing-parts-of-strings"
+          }
+        },
+        "pythonApiEntry": "str.replace"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "searching-strings",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "last-occurrence",
+        "pythonApiEntry": "str.rfind"
+      },
+      {
+        "pythonApiEntry": "str.rindex"
+      },
+      {
+        "pythonApiEntry": "str.rsplit"
+      },
+      {
+        "pythonApiEntry": "str.rstrip",
+        "referenceLink": {
+          "slug": {
+            "current": "trimming-strings",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "str.split"
+      },
+      {
+        "pythonApiEntry": "str.startswith",
+        "referenceLink": {
+          "slug": {
+            "current": "testing-strings",
+            "_type": "slug"
+          }
+        },
+        "pythonAlternativeContentLink": "starts-with"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "trimming-strings",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "str.strip"
+      },
+      {
+        "pythonAlternativeContentLink": "upper-case",
+        "pythonApiEntry": "str.upper",
+        "referenceLink": {
+          "slug": {
+            "current": "convert-case",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "sum-1"
+      },
+      {
+        "pythonApiEntry": "sum-2"
+      },
+      {
+        "pythonApiEntry": "sum-3"
+      },
+      {
+        "pythonApiEntry": "sum-4"
+      },
+      {
+        "pythonApiEntry": "super"
+      },
+      {
+        "pythonApiEntry": "super.__init__-1"
+      },
+      {
+        "pythonApiEntry": "super.__init__-2"
+      },
+      {
+        "pythonApiEntry": "super.__init__-3"
+      },
+      {
+        "pythonApiEntry": "tuple"
+      },
+      {
+        "pythonApiEntry": "tuple.__add__-1"
+      },
+      {
+        "pythonApiEntry": "tuple.__add__-2"
+      },
+      {
+        "pythonApiEntry": "tuple.__contains__"
+      },
+      {
+        "pythonApiEntry": "tuple.__ge__"
+      },
+      {
+        "pythonApiEntry": "tuple.__getitem__-1"
+      },
+      {
+        "pythonApiEntry": "tuple.__getitem__-2"
+      },
+      {
+        "pythonApiEntry": "tuple.__gt__"
+      },
+      {
+        "pythonApiEntry": "tuple.__iter__"
+      },
+      {
+        "pythonApiEntry": "tuple.__le__"
+      },
+      {
+        "pythonApiEntry": "tuple.__len__"
+      },
+      {
+        "pythonApiEntry": "tuple.__lt__"
+      },
+      {
+        "pythonApiEntry": "tuple.__mul__"
+      },
+      {
+        "pythonApiEntry": "tuple.__new__"
+      },
+      {
+        "pythonApiEntry": "tuple.__rmul__"
+      },
+      {
+        "pythonApiEntry": "tuple.count"
+      },
+      {
+        "pythonApiEntry": "tuple.index"
+      },
+      {
+        "pythonApiEntry": "type",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "testing-data-types"
+          }
+        },
+        "pythonAlternativeContentLink": "integer"
+      },
+      {
+        "pythonApiEntry": "type.__call__"
+      },
+      {
+        "pythonApiEntry": "type.__init__-1"
+      },
+      {
+        "pythonApiEntry": "type.__init__-2"
+      },
+      {
+        "pythonApiEntry": "type.__instancecheck__"
+      },
+      {
+        "pythonApiEntry": "type.__new__-1"
+      },
+      {
+        "pythonApiEntry": "type.__new__-2"
+      },
+      {
+        "pythonApiEntry": "type.__or__"
+      },
+      {
+        "pythonApiEntry": "type.__prepare__"
+      },
+      {
+        "pythonApiEntry": "type.__ror__"
+      },
+      {
+        "pythonApiEntry": "type.__subclasscheck__"
+      },
+      {
+        "pythonApiEntry": "type.__subclasses__"
+      },
+      {
+        "pythonApiEntry": "zip"
+      },
+      {
+        "pythonApiEntry": "zip.__iter__"
+      },
+      {
+        "pythonApiEntry": "zip.__new__-1"
+      },
+      {
+        "pythonApiEntry": "zip.__new__-2"
+      },
+      {
+        "pythonApiEntry": "zip.__new__-3"
+      },
+      {
+        "pythonApiEntry": "zip.__new__-4"
+      },
+      {
+        "pythonApiEntry": "zip.__new__-5"
+      },
+      {
+        "pythonApiEntry": "zip.__new__-6"
+      },
+      {
+        "pythonApiEntry": "zip.__next__"
+      }
+    ],
+    "pythonModuleName": "builtins"
+  },
+  {
+    "pythonModuleName": "log",
+    "pythonModuleItem": [
+      {
+        "pythonApiEntry": "DAYS",
+        "referenceLink": {
+          "slug": {
+            "current": "set-column-labels",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "HOURS",
+        "referenceLink": {
+          "slug": {
+            "current": "set-column-labels",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "MILLISECONDS",
+        "referenceLink": {
+          "slug": {
+            "current": "set-column-labels",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "MINUTES",
+        "referenceLink": {
+          "slug": {
+            "current": "set-column-labels",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "SECONDS",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "set-column-labels"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "add-1",
+        "referenceLink": {
+          "slug": {
+            "current": "log-rows-of-data",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "add-2",
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "log-rows-of-data"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "delete"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "_type": "slug",
+            "current": "set-column-labels"
+          }
+        },
+        "pythonApiEntry": "set_labels"
+      },
+      {
+        "pythonApiEntry": "set_mirroring"
+      }
+    ]
+  },
+  {
+    "pythonModuleItem": [
+      {
+        "pythonApiEntry": "disable_irq"
+      },
+      {
+        "pythonApiEntry": "enable_irq"
+      },
+      {
+        "pythonApiEntry": "freq"
+      },
+      {
+        "pythonApiEntry": "mem"
+      },
+      {
+        "pythonApiEntry": "mem.__getitem__"
+      },
+      {
+        "pythonApiEntry": "mem.__setitem__"
+      },
+      {
+        "pythonApiEntry": "mem16"
+      },
+      {
+        "pythonApiEntry": "mem32"
+      },
+      {
+        "pythonApiEntry": "mem8"
+      },
+      {
+        "pythonApiEntry": "reset"
+      },
+      {
+        "pythonApiEntry": "time_pulse_us"
+      },
+      {
+        "pythonApiEntry": "unique_id"
+      }
+    ],
+    "pythonModuleName": "machine"
+  },
+  {
+    "pythonModuleName": "random",
+    "pythonModuleItem": [
+      {
+        "pythonApiEntry": "choice",
+        "referenceLink": {
+          "slug": {
+            "current": "random-numbers",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "getrandbits"
+      },
+      {
+        "referenceLink": {
+          "slug": {
+            "current": "random-numbers",
+            "_type": "slug"
+          }
+        },
+        "pythonApiEntry": "randint"
+      },
+      {
+        "pythonApiEntry": "random"
+      },
+      {
+        "pythonApiEntry": "randrange-1"
+      },
+      {
+        "pythonApiEntry": "randrange-2"
+      },
+      {
+        "pythonApiEntry": "seed"
+      },
+      {
+        "pythonApiEntry": "uniform"
+      }
+    ]
+  },
+  {
+    "pythonModuleName": "speech",
+    "pythonModuleItem": [
+      {
+        "pythonApiEntry": "pronounce"
+      },
+      {
+        "pythonApiEntry": "say",
+        "referenceLink": {
+          "slug": {
+            "current": "speech",
+            "_type": "slug"
+          }
+        }
+      },
+      {
+        "pythonApiEntry": "sing"
+      },
+      {
+        "pythonApiEntry": "translate"
+      }
+    ]
+  },
+  {
+    "pythonModuleName": "struct",
+    "pythonModuleItem": [
+      {
+        "pythonApiEntry": "calcsize"
+      },
+      {
+        "pythonApiEntry": "pack"
+      },
+      {
+        "pythonApiEntry": "pack_into"
+      },
+      {
+        "pythonApiEntry": "unpack"
+      },
+      {
+        "pythonApiEntry": "unpack_from"
+      }
+    ]
+  }
+]

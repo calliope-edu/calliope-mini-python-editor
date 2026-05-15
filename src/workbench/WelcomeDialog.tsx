@@ -17,7 +17,7 @@ import { ReactNode, useEffect, useState } from "react";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { FormattedMessage } from "react-intl";
 import ModalCloseButton from "../common/ModalCloseButton";
-import { fetchContent } from "../common/sanity";
+import editorConfigSnapshot from "../documentation/cms-snapshot/editor-config.json";
 import YoutubeVideoEmbed, { YoutubeVideo } from "../common/YoutubeVideoEmbed";
 import { useDeployment } from "../deployment";
 import { useLogging } from "../logging/logging-hooks";
@@ -35,26 +35,14 @@ const WelcomeDialog = ({ isOpen, onClose }: WelcomeDialogProps) => {
   const [{ languageId }] = useSettings();
   const logging = useLogging();
   useEffect(() => {
-    const adaptContent = (result: any): YoutubeVideo | undefined => {
-      if (result.length === 1 && result[0].welcomeVideo) {
-        return result[0].welcomeVideo;
-      }
-    };
-    const query = (): string => {
-      return `
-        *[_type == "pythonEditorConfig" && !(_id in path("drafts.**"))]{
-          welcomeVideo
-        }`;
-    };
-    const fetchWelcomeVideo = async () => {
-      try {
-        setWelcomeVideo(await fetchContent(languageId, query, adaptContent));
-      } catch (e) {
-        logging.error(e);
-        setLoadError(true);
-      }
-    };
-    fetchWelcomeVideo();
+    const snapshot = editorConfigSnapshot as any;
+    const video = snapshot?.[0]?.welcomeVideo as YoutubeVideo | undefined;
+    if (video) {
+      setWelcomeVideo(video);
+    } else {
+      logging.error("Welcome video missing from editor-config snapshot");
+      setLoadError(true);
+    }
   }, [languageId, logging]);
   return (
     <Modal isOpen={isOpen} onClose={onClose} size="2xl" scrollBehavior="inside">
