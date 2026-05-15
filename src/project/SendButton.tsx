@@ -37,7 +37,7 @@ const SendButton = React.forwardRef(
     const status = useConnectionStatus();
     const connected = status === ConnectionStatus.CONNECTED;
     const actions = useProjectActions();
-    const { isMobile } = useUrl();
+    const { isMobile, isControllerApp } = useUrl();
     const handleToggleConnected = useCallback(async () => {
       if (connected) {
         await actions.disconnect(menuButtonRef);
@@ -108,22 +108,26 @@ const SendButton = React.forwardRef(
                 <FormattedMessage id="send-action" />
               </Button>
             </Tooltip>
-            <MoreMenuButton
-              ref={menuButtonRef}
-              variant="solid"
-              aria-label={intl.formatMessage({ id: "more-connect-options" })}
-              data-testid="more-connect-options"
-              size={size}
-            />
-            <Portal>
-              <MenuList zIndex={zIndexAboveTerminal}>
-                <MenuItem icon={<RiUsbLine />} onClick={handleToggleConnected}>
-                  <FormattedMessage
-                    id={connected ? "disconnect-action" : "connect-action"}
-                  />
-                </MenuItem>
-              </MenuList>
-            </Portal>
+            {!isControllerApp && (
+              <>
+                <MoreMenuButton
+                  ref={menuButtonRef}
+                  variant="solid"
+                  aria-label={intl.formatMessage({ id: "more-connect-options" })}
+                  data-testid="more-connect-options"
+                  size={size}
+                />
+                <Portal>
+                  <MenuList zIndex={zIndexAboveTerminal}>
+                    <MenuItem icon={<RiUsbLine />} onClick={handleToggleConnected}>
+                      <FormattedMessage
+                        id={connected ? "disconnect-action" : "connect-action"}
+                      />
+                    </MenuItem>
+                  </MenuList>
+                </Portal>
+              </>
+            )}
           </ButtonGroup>
         </Menu>
       </HStack>

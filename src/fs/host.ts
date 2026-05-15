@@ -32,7 +32,61 @@ const messages = {
     workspacesave: "workspacesave",
     workspaceloaded: "workspaceloaded",
     importproject: "importproject",
+    flash: "flash",
+    save: "save",
   },
+};
+
+/**
+ * Parses the `controller` URL parameter as an integer.
+ * 0 = standalone, 1 = project sync, 2+ = host owns flash/save/connection.
+ */
+export const getControllerLevel = (): number => {
+  const raw = new URLSearchParams(window.location.search).get("controller");
+  if (!raw) return 0;
+  const n = parseInt(raw, 10);
+  return Number.isFinite(n) ? n : 0;
+};
+
+/**
+ * True when the editor is embedded as an iframe and the host has opted into
+ * `controller=2` (host handles flash, save and device connection).
+ */
+export const isControllerAppMode = (): boolean =>
+  window !== window.parent && getControllerLevel() >= 2;
+
+/**
+ * Asks the host (campus) to flash a hex to a connected calliope mini.
+ * Only meaningful in `controller >= 2` mode.
+ */
+export const notifyHostFlash = (name: string, hex: string): void => {
+  if (window === window.parent) return;
+  window.parent.postMessage(
+    {
+      type: messages.type,
+      action: messages.actions.flash,
+      name,
+      hex,
+    },
+    "*"
+  );
+};
+
+/**
+ * Asks the host (campus) to save the hex as a file download.
+ * Only meaningful in `controller >= 2` mode.
+ */
+export const notifyHostSave = (name: string, hex: string): void => {
+  if (window === window.parent) return;
+  window.parent.postMessage(
+    {
+      type: messages.type,
+      action: messages.actions.save,
+      name,
+      hex,
+    },
+    "*"
+  );
 };
 
 export interface Host {
@@ -158,12 +212,12 @@ export const createHost = (logging: Logging): Host => {
 };
 
 const getControllerHost = (logging: Logging): Window | undefined => {
-  const params = new URLSearchParams(window.location.search);
   const inIframe = window !== window.parent;
-  const iframeControllerMode = inIframe && params.get("controller") === "1";
+  const level = getControllerLevel();
+  const iframeControllerMode = inIframe && level >= 1;
   if (iframeControllerMode) {
     if (window.parent) {
-      logging.log("In iframe host mode.");
+      logging.log(`In iframe host mode (controller=${level}).`);
       return window.parent;
     }
     logging.error(

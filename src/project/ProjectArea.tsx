@@ -25,10 +25,11 @@ const ProjectArea = ({
   onSelectedFileChanged,
 }: ProjectAreaProps) => {
   const { files, name: projectName } = useProject();
-  const { isCampus } = useUrl();
+  const { isCampus, isControllerApp } = useUrl();
+  const hideProjectName = isCampus || isControllerApp;
   return (
     <VStack spacing={5} pt={2} flex="1 0 auto" height={0} alignItems="stretch">
-      {!isCampus && <>
+      {!hideProjectName && <>
         <Box flex="0 0 auto" px={5} pt={3}>
         <Text fontSize="xs">
           <FormattedMessage id="project-name" />

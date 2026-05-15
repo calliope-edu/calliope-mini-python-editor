@@ -41,7 +41,8 @@ const EditorArea = React.forwardRef(
   ) => {
     const intl = useIntl();
     const [isWideScreen] = useMediaQuery(widthXl);
-    const { isCampus } = useUrl();
+    const { isCampus, isControllerApp } = useUrl();
+    const hideProjectName = isCampus || isControllerApp;
     
     return (
       <Flex
@@ -61,7 +62,7 @@ const EditorArea = React.forwardRef(
           py={2}
           height={topBarHeight}
         >
-          {!isCampus && <><ProjectNameEditable
+          {!hideProjectName && <><ProjectNameEditable
             color="gray.700"
             opacity="80%"
             fontSize="xl"

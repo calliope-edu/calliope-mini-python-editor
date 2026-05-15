@@ -19,6 +19,7 @@ import SaveButton from "./SaveButton";
 import MoreMenuButton from "./MoreMenuButton";
 import { useProjectActions } from "./project-hooks";
 import { useRef } from "react";
+import { useUrl } from "../common/use-url";
 
 interface SaveMenuButtonProps {
   size?: ThemeTypings["components"]["Button"]["sizes"];
@@ -33,28 +34,33 @@ interface SaveMenuButtonProps {
 const SaveMenuButton = ({ size }: SaveMenuButtonProps) => {
   const intl = useIntl();
   const actions = useProjectActions();
+  const { isControllerApp } = useUrl();
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   return (
     <HStack>
       <Menu>
         <ButtonGroup isAttached>
-          <SaveButton mode="button" size={size} borderRight="1px" />
-          <MoreMenuButton
-            ref={menuButtonRef}
-            aria-label={intl.formatMessage({ id: "more-save-options" })}
-            size={size}
-            data-testid="more-save-options"
-          />
-          <Portal>
-            <MenuList zIndex={zIndexAboveTerminal}>
-              <MenuItem
-                icon={<RiDownload2Line />}
-                onClick={() => actions.saveMainFile(menuButtonRef)}
-              >
-                <FormattedMessage id="save-python-action" />
-              </MenuItem>
-            </MenuList>
-          </Portal>
+          <SaveButton mode="button" size={size} borderRight={isControllerApp ? undefined : "1px"} />
+          {!isControllerApp && (
+            <>
+              <MoreMenuButton
+                ref={menuButtonRef}
+                aria-label={intl.formatMessage({ id: "more-save-options" })}
+                size={size}
+                data-testid="more-save-options"
+              />
+              <Portal>
+                <MenuList zIndex={zIndexAboveTerminal}>
+                  <MenuItem
+                    icon={<RiDownload2Line />}
+                    onClick={() => actions.saveMainFile(menuButtonRef)}
+                  >
+                    <FormattedMessage id="save-python-action" />
+                  </MenuItem>
+                </MenuList>
+              </Portal>
+            </>
+          )}
         </ButtonGroup>
       </Menu>
     </HStack>

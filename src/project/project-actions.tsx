@@ -29,6 +29,11 @@ import {
 } from "../device/device";
 import { FileSystem, MAIN_FILE, Statistics, VersionAction } from "../fs/fs";
 import {
+  isControllerAppMode,
+  notifyHostFlash,
+  notifyHostSave,
+} from "../fs/host";
+import {
   getLowercaseFileExtension,
   isPythonMicrobitModule,
   readFileAsText,
@@ -498,6 +503,21 @@ export class ProjectActions {
       detail: await this.projectStats(),
     });
 
+    if (isControllerAppMode()) {
+      // The host (campus) owns the device connection. Build the hex and
+      // post it to the parent window; mini-connection-widget handles flashing.
+      try {
+        const hex = await this.fs.toHexForSave();
+        notifyHostFlash(this.project.name ?? "main", hex);
+      } catch (e: any) {
+        this.actionFeedback.expectedError({
+          title: this.intl.formatMessage({ id: "failed-to-build-hex" }),
+          description: e.message,
+        });
+      }
+      return;
+    }
+
     if (this.device.status === ConnectionStatus.NOT_SUPPORTED) {
       this.webusbNotSupportedError(finalFocusRef);
       return;
@@ -559,7 +579,9 @@ export class ProjectActions {
       detail: await this.projectStats(),
     });
 
-    if (!(await this.ensureProjectName(finalFocusRef, isCampus))) {
+    const controllerApp = isControllerAppMode();
+
+    if (!controllerApp && !(await this.ensureProjectName(finalFocusRef, isCampus))) {
       return;
     }
 
@@ -572,6 +594,13 @@ export class ProjectActions {
         // Not translated, see https://github.com/microbit-foundation/python-editor-v3/issues/159
         description: e.message,
       });
+      return;
+    }
+    if (controllerApp) {
+      // The host (campus) owns file IO. Hand the hex over and skip the
+      // browser download and post-save dialogs.
+      notifyHostSave(this.project.name ?? "main", download);
+      await this.fs.clearDirty();
       return;
     }
     const blob = new Blob([download], {
@@ -783,6 +812,10 @@ export class ProjectActions {
     isSave: boolean = false,
     finalFocusRef?: React.RefObject<HTMLButtonElement>
   ) => {
+    if (isControllerAppMode()) {
+      // Project naming is owned by the host (campus).
+      return true;
+    }
     const name = await this.dialogs.show<string | undefined>((callback) => (
       <InputDialog
         callback={callback}
