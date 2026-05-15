@@ -1,8 +1,8 @@
 [
   {
     "welcomeVideo": {
-      "_type": "youtubeVideo",
-      "youtubeId": "3GLASrxQ3Og"
+      "_type": "hlsVideo",
+      "src": "/cms/videos/welcome/index.m3u8"
     }
   }
 ]

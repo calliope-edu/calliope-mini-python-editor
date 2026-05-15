@@ -17,8 +17,8 @@ import { ReactNode, useEffect, useState } from "react";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { FormattedMessage } from "react-intl";
 import ModalCloseButton from "../common/ModalCloseButton";
+import HlsVideoEmbed, { HlsVideo } from "../common/HlsVideoEmbed";
 import editorConfigSnapshot from "../documentation/cms-snapshot/editor-config.json";
-import YoutubeVideoEmbed, { YoutubeVideo } from "../common/YoutubeVideoEmbed";
 import { useDeployment } from "../deployment";
 import { useLogging } from "../logging/logging-hooks";
 import { useSettings } from "../settings/settings";
@@ -30,14 +30,14 @@ interface WelcomeDialogProps {
 
 const WelcomeDialog = ({ isOpen, onClose }: WelcomeDialogProps) => {
   const { guideLink } = useDeployment();
-  const [welcomeVideo, setWelcomeVideo] = useState<YoutubeVideo | undefined>();
+  const [welcomeVideo, setWelcomeVideo] = useState<HlsVideo | undefined>();
   const [loadError, setLoadError] = useState<boolean>(false);
   const [{ languageId }] = useSettings();
   const logging = useLogging();
   useEffect(() => {
     const snapshot = editorConfigSnapshot as any;
-    const video = snapshot?.[0]?.welcomeVideo as YoutubeVideo | undefined;
-    if (video) {
+    const video = snapshot?.[0]?.welcomeVideo as HlsVideo | undefined;
+    if (video?.src) {
       setWelcomeVideo(video);
     } else {
       logging.error("Welcome video missing from editor-config snapshot");
@@ -68,7 +68,7 @@ const WelcomeDialog = ({ isOpen, onClose }: WelcomeDialogProps) => {
                     <FormattedMessage id="content-load-error" />
                   </Text>
                 ) : (
-                  <YoutubeVideoEmbed youTubeVideo={welcomeVideo} />
+                  <HlsVideoEmbed video={welcomeVideo} />
                 )}
               </Stack>
               <Text>
