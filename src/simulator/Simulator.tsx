@@ -18,7 +18,6 @@ import { useResizeObserverContentRect } from "../common/use-resize-observer";
 import { topBarHeight } from "../deployment/misc";
 import { DeviceContextProvider } from "../device/device-hooks";
 import { SimulatorDeviceConnection } from "../device/simulator";
-import { stage } from "../environment";
 import { useLogging } from "../logging/logging-hooks";
 import SimulatorActionBar from "./SimulatorActionBar";
 import SimulatorSplitView from "./SimulatorSplitView";
@@ -45,19 +44,10 @@ const Simulator = ({
   minWidth,
   simFocus,
 }: SimulatorProps) => {
-  const production =
-    "https://simulator.python.calliope.cc/simulator.html";
-  const staging =
-    "https://staging.simulator.python.calliope.cc/simulator.html";
-  let url = stage === "PRODUCTION" ? production : staging;
-  // For testing with sim branches:
-  //const branch = "upgrade-mpy";
-  //const url = `https://review-python-simulator.usermbit.org/${branch}/simulator.html`;
-
-  // if own url is localhost use the local simulator
-  if (stage === "local") {
-    url = "http://localhost:4000/simulator.html";
-  }
+  // The simulator is mirrored into public/simulator/ by
+  // bin/extract-simulator.js, so it's served from the editor's own
+  // origin regardless of deployment target. No env vars required.
+  const url = `${process.env.PUBLIC_URL || ""}/simulator/simulator.html`;
 
   const ref = useRef<HTMLIFrameElement>(null);
   const intl = useIntl();

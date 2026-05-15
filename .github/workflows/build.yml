@@ -37,7 +37,10 @@ jobs:
       - run: npm ci
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: npm install --no-save @calliope-edu/calliope-theme@latest @calliope-edu/website-deploy-aws-config@latest #@microbit-foundation/website-deploy-aws@0.7.1 @microbit-foundation/circleci-npm-package-versioner@1
+      # @calliope-edu/calliope-theme is vendored under src/deployment/calliope.
+      # @calliope-edu/website-deploy-aws-config is still required by deployment.js
+      # for resolving S3 paths during the AWS deploy step below.
+      - run: npm install --no-save @calliope-edu/website-deploy-aws-config@latest
         if: github.repository_owner == 'calliope-edu'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

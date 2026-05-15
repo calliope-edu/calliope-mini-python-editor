@@ -7,10 +7,14 @@ const path = require("path");
 const fs = require("fs");
 const webpack = require('webpack');
 
-// Support optionally pulling in external branding if the module is installed.
-const theme = "@calliope-edu/calliope-theme";
-const external = `node_modules/${theme}`;
-const internal = "src/deployment/default";
+// Calliope branding is vendored under src/deployment/calliope so the build
+// works without authenticating against GitHub Packages. Upstream micro:bit
+// branding lives at src/deployment/default and is unused by default; set
+// THEME=default to swap it back in.
+const internal =
+  process.env.THEME === "default"
+    ? "src/deployment/default"
+    : "src/deployment/calliope";
 
 // Verzeichnis mit Python-Modulen
 const moduleDir = path.resolve(__dirname, 'src/assets/source/modules');
@@ -28,9 +32,7 @@ moduleFiles = moduleFiles.map((f)=>{
 module.exports = {
   webpack: {
     alias: {
-      "theme-package": fs.existsSync(external)
-        ? theme
-        : path.resolve(__dirname, internal),
+      "theme-package": path.resolve(__dirname, internal),
     },
     configure: (webpackConfig) => {
       // Regel für .py-Dateien als Asset Source
@@ -63,9 +65,7 @@ module.exports = {
   jest: {
     configure: {
       moduleNameMapper: {
-        "^theme-package(.*)$": `<rootDir>/${
-          fs.existsSync(external) ? external : internal
-        }$1`,
+        "^theme-package(.*)$": `<rootDir>/${internal}$1`,
         "\\.worker": "<rootDir>/src/mocks/worker.js",
       },
     },
