@@ -1,0 +1,3 @@
+[submodule "simulator-src"]
+	path = simulator-src
+	url = https://github.com/calliope-edu/micropython-simulator.git
