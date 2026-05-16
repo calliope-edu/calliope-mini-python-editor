@@ -24,6 +24,7 @@ import { useIntl } from "react-intl";
 import CollapsibleButton from "../common/CollapsibleButton";
 import HideSplitViewButton from "../common/SplitView/HideSplitViewButton";
 import { useResizeObserverContentRect } from "../common/use-resize-observer";
+import { useUrl } from "../common/use-url";
 import { zIndexSidebarHeader } from "../common/zIndex";
 import { useDeployment } from "../deployment";
 import { topBarHeight } from "../deployment/misc";
@@ -46,6 +47,7 @@ const SideBarHeader = ({
   const intl = useIntl();
   const logging = useLogging();
   const brand = useDeployment();
+  const { isControllerApp } = useUrl();
   const searchModal = useDisclosure();
   const { results, query, setQuery } = useSearch();
   const [, setRouterState] = useRouterState();
@@ -193,30 +195,39 @@ const SideBarHeader = ({
           transition="height .2s"
           position="relative"
         >
-          <Link
-            display="block"
-            href="https://calliope.cc/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={intl.formatMessage({ id: "visit-dot-org" })}
-            mx="1rem"
-          >
-            <HStack spacing="0.875rem">
-              <Box
-                width="3.56875rem"
-                color="white"
-                role="img"
-                ref={faceLogoRef}
-              >
-                {brand.squareLogo}
-              </Box>
-              {!query && sidebarShown && (
-                <Box width="9.098rem" role="img" color="white">
-                  {brand.horizontalLogo}
+          {/*
+           * The Calliope logo doubles as the "open calliope.cc" link.
+           * In controller=2 (embedded in the campus iframe) the campus
+           * shell already provides Calliope branding above the iframe,
+           * so we hide this both to deduplicate and to leave the sidebar
+           * header's horizontal space to the search field.
+           */}
+          {!isControllerApp && (
+            <Link
+              display="block"
+              href="https://calliope.cc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={intl.formatMessage({ id: "visit-dot-org" })}
+              mx="1rem"
+            >
+              <HStack spacing="0.875rem">
+                <Box
+                  width="3.56875rem"
+                  color="white"
+                  role="img"
+                  ref={faceLogoRef}
+                >
+                  {brand.squareLogo}
                 </Box>
-              )}
-            </HStack>
-          </Link>
+                {!query && sidebarShown && (
+                  <Box width="9.098rem" role="img" color="white">
+                    {brand.horizontalLogo}
+                  </Box>
+                )}
+              </HStack>
+            </Link>
+          )}
           {searchAvailable && !query && sidebarShown && (
             <CollapsibleButton
               onClick={handleModalOpened}
