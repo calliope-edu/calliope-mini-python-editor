@@ -12,7 +12,9 @@ import VisualViewPortCSSVariables from "./common/VisualViewportCSSVariables";
 import { deployment, useDeployment } from "./deployment";
 import { MicrobitWebUSBConnection } from "./device/webusb";
 import { DeviceContextProvider } from "./device/device-hooks";
+import { IframeDeviceConnection } from "./device/iframe-device";
 import { MockDeviceConnection } from "./device/mock";
+import { isControllerAppMode } from "./fs/host";
 import DocumentationProvider from "./documentation/documentation-hooks";
 import SearchProvider from "./documentation/search/search-hooks";
 import { ActiveEditorProvider } from "./editor/active-editor-hooks";
@@ -39,6 +41,10 @@ const isMockDeviceMode = () =>
 const logging = deployment.logging;
 const device = isMockDeviceMode()
   ? new MockDeviceConnection()
+  : isControllerAppMode()
+  ? // Embedded in calliope-campus: serial + flash route via iframe
+    // postMessages rather than WebUSB. The host (campus) owns the device.
+    new IframeDeviceConnection()
   : new MicrobitWebUSBConnection({ logging });
 
 const host = createHost(logging);
