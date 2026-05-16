@@ -80,7 +80,7 @@ const HelpMenu = ({ size, ...props }: HelpMenuProps) => {
             )}
             <MenuItem
               as="a"
-              href="https://calliope.cc/programmieren/editoren/python/python-api"
+              href="https://calliope.cc/programmieren/editoren/python"
               target="_blank"
               rel="noopener"
               icon={<RiExternalLinkLine />}
