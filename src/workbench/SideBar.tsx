@@ -24,13 +24,10 @@ import PythonLogo from "../common/PythonLogo";
 import ApiArea from "../documentation/ApiArea";
 import IdeasArea from "../documentation/IdeasArea";
 import ReferenceArea from "../documentation/ReferenceArea";
-import { flags } from "../flags";
 import ProjectArea from "../project/ProjectArea";
 import { TabName, useRouterState } from "../router-hooks";
 import SettingsMenu from "../settings/SettingsMenu";
 import HelpMenu from "./HelpMenu";
-import PreReleaseNotice, { useReleaseDialogState } from "./PreReleaseNotice";
-import ReleaseDialogs from "./ReleaseDialogs";
 import SideBarHeader from "./SideBarHeader";
 import SideBarTab from "./SideBarTab";
 
@@ -71,7 +68,6 @@ const SideBar = ({
   ...props
 }: SideBarProps) => {
   const intl = useIntl();
-  const [releaseDialog, setReleaseDialog] = useReleaseDialogState();
   const panes: Pane[] = useMemo(() => {
     const result = [
       {
@@ -208,21 +204,12 @@ const SideBar = ({
           {panes.map((p) => (
             <TabPanel key={p.id} p={0} height="100%">
               <Flex height="100%" direction="column">
-                <ErrorBoundary>
-                  {p.contents}
-                  {flags.betaNotice && (
-                    <PreReleaseNotice onDialogChange={setReleaseDialog} />
-                  )}
-                </ErrorBoundary>
+                <ErrorBoundary>{p.contents}</ErrorBoundary>
               </Flex>
             </TabPanel>
           ))}
         </TabPanels>
       </Tabs>
-      <ReleaseDialogs
-        onDialogChange={setReleaseDialog}
-        dialog={releaseDialog}
-      />
     </Flex>
   );
 };

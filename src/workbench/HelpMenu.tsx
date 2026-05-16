@@ -15,19 +15,18 @@ import {
   ThemingProps,
   useDisclosure,
 } from "@chakra-ui/react";
-import { useCallback, useRef } from "react";
+import { useRef } from "react";
 import {
   RiExternalLinkLine,
-  RiFeedbackLine,
   RiInformationLine,
   RiQuestionLine,
+  RiVideoLine,
 } from "react-icons/ri";
 import { FormattedMessage, useIntl } from "react-intl";
-import { useDialogs } from "../common/use-dialogs";
 import { zIndexAboveTerminal } from "../common/zIndex";
 import { deployment } from "../deployment";
 import AboutDialog from "./AboutDialog/AboutDialog";
-import FeedbackForm from "./FeedbackForm";
+import WelcomeDialog from "./WelcomeDialog";
 
 interface HelpMenuProps extends ThemingProps<"Menu"> {
   size?: ThemeTypings["components"]["Button"]["sizes"];
@@ -38,17 +37,8 @@ interface HelpMenuProps extends ThemingProps<"Menu"> {
  */
 const HelpMenu = ({ size, ...props }: HelpMenuProps) => {
   const aboutDialogDisclosure = useDisclosure();
+  const welcomeDialogDisclosure = useDisclosure();
   const intl = useIntl();
-  const dialogs = useDialogs();
-  const handleFeedback = useCallback(() => {
-    dialogs.show((callback) => (
-      <FeedbackForm
-        isOpen
-        onClose={() => callback(undefined)}
-        finalFocusRef={menuButtonRef}
-      />
-    ));
-  }, [dialogs]);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   return (
     <>
@@ -57,6 +47,12 @@ const HelpMenu = ({ size, ...props }: HelpMenuProps) => {
         onClose={aboutDialogDisclosure.onClose}
         finalFocusRef={menuButtonRef}
       />
+      {welcomeDialogDisclosure.isOpen && (
+        <WelcomeDialog
+          isOpen
+          onClose={welcomeDialogDisclosure.onClose}
+        />
+      )}
       <Menu {...props}>
         <MenuButton
           ref={menuButtonRef}
@@ -91,8 +87,11 @@ const HelpMenu = ({ size, ...props }: HelpMenuProps) => {
             >
               <FormattedMessage id="micropython-documentation" />
             </MenuItem>
-            <MenuItem icon={<RiFeedbackLine />} onClick={handleFeedback}>
-              <FormattedMessage id="feedback" />
+            <MenuItem
+              icon={<RiVideoLine />}
+              onClick={welcomeDialogDisclosure.onOpen}
+            >
+              <FormattedMessage id="welcome-title" />
             </MenuItem>
             <MenuDivider />
             {deployment.termsOfUseLink && (

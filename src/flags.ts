@@ -22,11 +22,6 @@ export type Flag =
   | "dndDebug"
 
   /**
-   * Flag to add a beta notice. Enabled for staging site but not production stages.
-   */
-  | "betaNotice"
-
-  /**
    * Disables the pop-up welcome dialog.
    *
    * Added to support user-testing and has the nice side-effect of disabling
@@ -42,7 +37,6 @@ interface FlagMetadata {
 const allFlags: FlagMetadata[] = [
   // Alphabetical order.
   { name: "dndDebug", defaultOnStages: [] },
-  { name: "betaNotice", defaultOnStages: ["local", "REVIEW", "STAGING"] },
   { name: "noWelcome", defaultOnStages: ["local", "REVIEW"] },
 ];
 
