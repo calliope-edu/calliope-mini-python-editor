@@ -7,11 +7,6 @@ import {extendTheme, theme, withDefaultVariant} from "@chakra-ui/react";
 import {mode, transparentize} from "@chakra-ui/theme-tools";
 
 import colors from "./colors";
-import Alert from "./components/alert";
-import Button from "./components/button";
-import Container from "./components/container";
-import Tabs from "./components/tabs";
-import Text from "./components/text";
 import fontSizes from "./font-sizes";
 import fonts from "./fonts";
 import radii from "./radii";
