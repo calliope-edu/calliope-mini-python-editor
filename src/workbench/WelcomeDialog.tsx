@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 import { Button } from "@chakra-ui/button";
-import { HStack, Link, Stack, Text, VStack } from "@chakra-ui/layout";
+import { Stack, Text, VStack } from "@chakra-ui/layout";
 import {
   Modal,
   ModalBody,
@@ -12,14 +12,11 @@ import {
   ModalFooter,
   ModalOverlay,
 } from "@chakra-ui/modal";
-import { Icon } from "@chakra-ui/react";
-import { ReactNode, useEffect, useState } from "react";
-import { RiExternalLinkLine } from "react-icons/ri";
+import { useEffect, useState } from "react";
 import { FormattedMessage } from "react-intl";
 import ModalCloseButton from "../common/ModalCloseButton";
 import HlsVideoEmbed, { HlsVideo } from "../common/HlsVideoEmbed";
 import editorConfigSnapshot from "../documentation/cms-snapshot/editor-config.json";
-import { useDeployment } from "../deployment";
 import { useLogging } from "../logging/logging-hooks";
 import { useSettings } from "../settings/settings";
 
@@ -29,7 +26,6 @@ interface WelcomeDialogProps {
 }
 
 const WelcomeDialog = ({ isOpen, onClose }: WelcomeDialogProps) => {
-  const { guideLink } = useDeployment();
   const [welcomeVideo, setWelcomeVideo] = useState<HlsVideo | undefined>();
   const [loadError, setLoadError] = useState<boolean>(false);
   const [{ languageId }] = useSettings();
@@ -50,15 +46,7 @@ const WelcomeDialog = ({ isOpen, onClose }: WelcomeDialogProps) => {
         <ModalContent>
           <ModalCloseButton />
           <ModalBody>
-            <VStack
-              width="auto"
-              ml="auto"
-              mr="auto"
-              p={5}
-              pb={0}
-              spacing={5}
-              alignItems="stretch"
-            >
+            <VStack p={5} pb={0} spacing={5} alignItems="stretch">
               <Stack spacing={3}>
                 <Text as="h2" fontSize="xl" fontWeight="semibold">
                   <FormattedMessage id="welcome-title" />
@@ -71,35 +59,12 @@ const WelcomeDialog = ({ isOpen, onClose }: WelcomeDialogProps) => {
                   <HlsVideoEmbed video={welcomeVideo} />
                 )}
               </Stack>
-              <Text>
-                <FormattedMessage id="welcome-message" />
-              </Text>
-              <Text>
-                <FormattedMessage
-                  id="guide-link"
-                  values={{
-                    link: (chunks: ReactNode) => (
-                      <Link
-                        color="brand.500"
-                        target="_blank"
-                        rel="noreferrer"
-                        href={guideLink}
-                      >
-                        {chunks}{" "}
-                        <Icon as={RiExternalLinkLine} verticalAlign="middle" />
-                      </Link>
-                    ),
-                  }}
-                />
-              </Text>
             </VStack>
           </ModalBody>
-          <ModalFooter>
-            <HStack spacing={2.5}>
-              <Button size="lg" variant="solid" onClick={onClose}>
-                <FormattedMessage id="start-coding-action" />
-              </Button>
-            </HStack>
+          <ModalFooter justifyContent="center" pt={4}>
+            <Button size="lg" variant="solid" onClick={onClose}>
+              <FormattedMessage id="start-coding-action" />
+            </Button>
           </ModalFooter>
         </ModalContent>
       </ModalOverlay>
