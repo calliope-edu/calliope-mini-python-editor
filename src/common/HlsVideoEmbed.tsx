@@ -250,84 +250,112 @@ const HlsVideoEmbed = ({ video }: HlsVideoEmbedProps) => {
   return (
     <Box as="figure" m={0}>
       <AspectRatio ratio={16 / 9} borderRadius="lg" overflow="hidden" bg="black">
-        <Box
-          ref={containerRef}
-          position="relative"
-          role="group"
-          tabIndex={0}
-          onKeyDown={onKey}
-          onMouseMove={showControls}
-          onMouseLeave={() => isPlaying && setControlsVisible(false)}
-          onFocus={showControls}
-          sx={{
-            "&:focus": { outline: "none" },
-            "&:focus-visible": {
-              boxShadow: `inset 0 0 0 3px ${brand500}`,
-            },
-          }}
-        >
-          <video
-            ref={videoRef}
-            playsInline
-            preload="metadata"
-            poster={video.poster}
-            aria-label={video.alt}
-            onClick={togglePlay}
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "contain",
-              cursor: "pointer",
-            }}
-          />
-
-          {/* Big centred play overlay — only before playback starts. */}
-          {!started && (
-            <Flex
-              position="absolute"
-              inset={0}
-              alignItems="center"
-              justifyContent="center"
-              bg="blackAlpha.500"
-              cursor="pointer"
-              onClick={togglePlay}
-              transition="background-color 150ms"
-              _hover={{ bg: "blackAlpha.600" }}
-            >
-              <Flex
-                w="80px"
-                h="80px"
-                borderRadius="full"
-                bg={brand500}
-                color="white"
-                alignItems="center"
-                justifyContent="center"
-                boxShadow="0 6px 24px rgba(0,0,0,0.4)"
-                transition="transform 120ms, background-color 120ms"
-                _hover={{ transform: "scale(1.05)", bg: brand600 }}
-              >
-                <Box as={RiPlayFill} fontSize="44px" ml="4px" />
-              </Flex>
-            </Flex>
-          )}
-
-          {/* Bottom control bar. */}
-          <Flex
+        {/*
+         * AspectRatio applies `position: absolute` to its direct child via a
+         * CSS selector, so we don't fight that here. The inner Box gives us a
+         * real positioning context for the overlay + controls.
+         */}
+        <Box>
+          <Box
+            ref={containerRef}
             position="absolute"
+            top={0}
             left={0}
             right={0}
             bottom={0}
-            px={3}
-            pt={6}
-            pb={2}
-            alignItems="center"
-            gap={2}
-            bgGradient="linear(to-t, blackAlpha.800, blackAlpha.0)"
-            color="white"
-            opacity={controlsVisible ? 1 : 0}
-            transition="opacity 200ms"
-            pointerEvents={controlsVisible ? "auto" : "none"}
+            role="group"
+            tabIndex={0}
+            onKeyDown={onKey}
+            onMouseMove={showControls}
+            onMouseLeave={() => isPlaying && setControlsVisible(false)}
+            onFocus={showControls}
+            sx={{
+              "&:focus": { outline: "none" },
+              "&:focus-visible": { boxShadow: `inset 0 0 0 3px ${brand500}` },
+            }}
           >
+            <video
+              ref={videoRef}
+              playsInline
+              preload="metadata"
+              poster={video.poster}
+              aria-label={video.alt}
+              onClick={togglePlay}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "contain",
+                cursor: "pointer",
+                display: "block",
+              }}
+            />
+
+            {/* Big centred play overlay — only before playback starts. */}
+            {!started && (
+              <Flex
+                position="absolute"
+                top={0}
+                left={0}
+                right={0}
+                bottom={0}
+                alignItems="center"
+                justifyContent="center"
+                bg="blackAlpha.500"
+                cursor="pointer"
+                onClick={togglePlay}
+                transition="background-color 150ms"
+                _hover={{ bg: "blackAlpha.600" }}
+              >
+                <Flex
+                  w="80px"
+                  h="80px"
+                  borderRadius="full"
+                  bg={brand500}
+                  color="white"
+                  alignItems="center"
+                  justifyContent="center"
+                  boxShadow="0 6px 24px rgba(0,0,0,0.4)"
+                  transition="transform 120ms, background-color 120ms"
+                  _hover={{ transform: "scale(1.05)", bg: brand600 }}
+                >
+                  {/*
+                   * RiPlayFill's triangle has its vertex on the right; its
+                   * centroid sits at ~48% of the viewBox width, so the SVG
+                   * already centres optically with no manual offset.
+                   */}
+                  <Box as={RiPlayFill} fontSize="40px" />
+                </Flex>
+              </Flex>
+            )}
+
+            {/* Bottom control bar. */}
+            <Flex
+              position="absolute"
+              left={0}
+              right={0}
+              bottom={0}
+              px={3}
+              pt={10}
+              pb={2}
+              alignItems="center"
+              gap={2}
+              bgGradient="linear(to-t, blackAlpha.900 10%, blackAlpha.600 60%, blackAlpha.0)"
+              color="white"
+              opacity={controlsVisible ? 1 : 0}
+              transition="opacity 200ms"
+              pointerEvents={controlsVisible ? "auto" : "none"}
+              sx={{
+                // Drop-shadow on every icon + text so the bar stays legible
+                // against bright video frames (no backdrop-filter — Safari
+                // and older browsers don't always do that without jank).
+                "& svg": {
+                  filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.6))",
+                },
+                "& p, & input": {
+                  textShadow: "0 1px 2px rgba(0,0,0,0.7)",
+                },
+              }}
+            >
             <IconButton
               aria-label={isPlaying ? "Pause" : "Play"}
               icon={isPlaying ? <RiPauseFill /> : <RiPlayFill />}
@@ -382,7 +410,8 @@ const HlsVideoEmbed = ({ video }: HlsVideoEmbedProps) => {
               _hover={{ bg: "whiteAlpha.300" }}
               _active={{ bg: "whiteAlpha.400" }}
             />
-          </Flex>
+            </Flex>
+          </Box>
         </Box>
       </AspectRatio>
 

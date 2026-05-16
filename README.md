@@ -26,8 +26,7 @@ no `.npmrc`. Suitable for Cloudflare Pages out of the box.
 | Documentation JSON (Explore, Reference, Ideas, mapping, editor-config) | [`src/documentation/cms-snapshot/`](src/documentation/cms-snapshot/) | `node bin/extract-cms.js` |
 | Documentation images | [`public/cms/images/`](public/cms/images/) | `node bin/extract-cms-images.js` |
 | Welcome video (HLS, played via [`hls.js`](https://github.com/video-dev/hls.js)) | [`public/cms/videos/welcome/`](public/cms/videos/welcome/) | `node bin/extract-cms-video.js <youtubeId> welcome` (needs `ffmpeg` + `yt-dlp`) |
-| MicroPython simulator (committed prebuilt) | [`public/simulator/`](public/simulator/) | `bin/build-simulator.sh` (needs Emscripten) |
-| MicroPython simulator source | [`simulator-src/`](simulator-src/) (git submodule of [`calliope-edu/micropython-simulator`](https://github.com/calliope-edu/micropython-simulator)) | `git submodule update --recursive --remote simulator-src` |
+| MicroPython simulator (committed prebuilt) | [`public/simulator/`](public/simulator/) | `bin/build-simulator.sh` (needs Emscripten; clones [`calliope-edu/micropython-simulator`](https://github.com/calliope-edu/micropython-simulator) into a gitignored `simulator-src/` on demand) |
 
 The Sanity Studio at project `hmru2910` stays the editorial source. The
 runtime never talks to Sanity — content changes go via the extractor
@@ -61,16 +60,20 @@ npm ci
 npm start
 ```
 
-The simulator submodule is **not** required for `npm run build` — the
-committed prebuilt under `public/simulator/` is what ships. Only init
-it when changing simulator source:
+The simulator source is **not** required for `npm run build` — the
+committed prebuilt under `public/simulator/` is what ships. The clone
+is opt-in (and gitignored) so Cloudflare Pages doesn't pay the cost of
+recursively cloning the MicroPython + TinyUSB tree. Run the rebuild
+flow when you actually change simulator source:
 
 ```bash
-git submodule update --init --recursive simulator-src
 source ~/.emsdk/emsdk_env.sh   # see bin/build-simulator.sh for setup
-bin/build-simulator.sh
-git add simulator-src public/simulator/
+bin/build-simulator.sh         # clones simulator-src/ on first run, then builds
+git add public/simulator/
 ```
+
+The build script pins the simulator to a specific SHA; bump it in
+`bin/build-simulator.sh` when adopting a newer simulator version.
 
 ### Refreshing CMS content
 

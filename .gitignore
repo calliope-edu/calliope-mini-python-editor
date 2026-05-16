@@ -29,3 +29,7 @@ __pycache__
 /crowdin/*
 
 .idea
+
+# Local simulator source checkout (cloned on demand by bin/build-simulator.sh).
+# The deployable artifacts live under public/simulator/ and are committed.
+/simulator-src
