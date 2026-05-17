@@ -91,7 +91,14 @@ export const useRouterState = (): RouterContextValue => {
 export const toUrl = (state: RouterState): string => {
   const parts = [state.tab, state.slug?.id];
   const pathname = baseUrl + parts.filter((x): x is string => !!x).join("/");
-  return window.location.toString().split("/", 1)[0] + pathname;
+  // Preserve query string and hash so flags like ?controller=2 / ?l=de
+  // survive internal navigation (tab clicks, sidebar opens).
+  return (
+    window.location.origin +
+    pathname +
+    window.location.search +
+    window.location.hash
+  );
 };
 
 export const RouterProvider = ({ children }: { children: ReactNode }) => {
