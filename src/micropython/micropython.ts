@@ -21,8 +21,8 @@ export const microPythonConfig = {
       name: "MicroPython (Calliope mini V3)",
       url: microPythonCalliopeV3HexUrl,
       boardId: microbitBoardId.V2, // 39171 | 0x9903
-      version: "2.1.2b",
-      web: "https://github.com/calliope-edu/micropython-calliope-mini-v3/tree/oct24-mini3",
+      version: "2.1.2b+ble",
+      web: "https://github.com/calliope-edu/micropython-calliope-mini-v3/tree/campus",
     },
   ],
   // We've previously used this field to allow flags to affect
