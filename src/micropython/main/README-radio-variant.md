@@ -5,7 +5,7 @@ This directory bundles two MicroPython firmware variants for Calliope mini 3:
 | file                      | DEVICE_BLE | MICROBIT_BLE_ENABLED | use case                                                                |
 |---------------------------|------------|----------------------|-------------------------------------------------------------------------|
 | `calliope-v3.hex`         | 1          | 1                    | **Default.** BLE on, `import radio` will panic 071 (radio/SoftDevice conflict). Flash from campus widget works repeatedly without A+B+Reset. |
-| `calliope-v3-radio.hex`   | 0          | 0                    | Used when the user's program contains `import radio` or `from radio import …`. BLE off → next flash needs USB or A+B+Reset to enter pairing mode. |
+| `calliope-v3-radio.hex`   | 0          | 0                    | Used when the user's program contains `import radio` or `from radio import …`. BLE off in app mode → next flash via the widget needs either USB or **A+B+Reset to enter the bootloader's BLE pairing mode** (the bootloader itself is the same patched build as for the BLE variant and still does BLE-DFU; only the *app* loses BLE). |
 
 The editor picks between them in [`src/fs/fs.ts`](../../fs/fs.ts) via
 `pickRuntimeVariant()` — it greps `main.py` for `import radio` and routes
