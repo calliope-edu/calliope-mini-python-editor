@@ -19,32 +19,58 @@ installed.
 
 ## Building the radio variant
 
-Both variants share `FIRMWARE/micropython-calliope-mini-v3` source. Only
-the codal config differs.
+Both variants share `FIRMWARE/micropython-calliope-mini-v3` source. The
+radio variant needs **four small local patches** to the build setup:
 
 ```bash
-# 1. Default build (BLE variant)
-cd FIRMWARE/micropython-calliope-mini-v3/src
-make clean
-make                                                    # → src/MINI.hex (BLE variant)
-cp src/MINI.hex calliope-mini-python-editor/src/micropython/main/calliope-v3.hex
+# (Build dir: ~/mp-build, a WSL-native clone of micropython-calliope-mini-v3
+#  on the campus-open branch — building from /mnt/c is ~20× slower.)
+cd ~/mp-build
 
-# 2. Radio variant — flip the BLE flags in codal_app/codal.json and
-#    target-locked.json:
-#    codal_app/codal.json  : "MICROBIT_BLE_ENABLED": 0  (already is)
-#    target-locked.json    : "DEVICE_BLE": 0            (currently 1)
-#    Also set a different CODAL_APP_VERSION / version string so the
-#    DAL hash diverges from the BLE build — otherwise the widget
-#    thinks they're the same runtime and partial-flashes user code
-#    onto the wrong runtime (panic 071).
-make clean
-make                                                    # → src/MINI.hex (radio variant)
-cp src/MINI.hex calliope-mini-python-editor/src/micropython/main/calliope-v3-radio.hex
+# Patch 1: disable codal-level BLE
+sed -i 's/"DEVICE_BLE": 1/"DEVICE_BLE": 0/' \
+  lib/codal/libraries/codal-microbit-v2/target-locked.json
+
+# Patch 2: disable microbit-level BLE manager
+sed -i 's/"MICROBIT_BLE_ENABLED" : 1/"MICROBIT_BLE_ENABLED" : 0/' \
+  src/codal_app/codal.json
+
+# Patch 3: bump MICROBIT_RELEASE so the runtime version string (and
+# therefore the DAL hash the widget compares against) diverges from
+# the BLE build. Without this the widget would partial-flash the
+# user's FS onto the wrong runtime → panic 071 at first import.
+sed -i 's/"2.1.2b"/"2.1.2b-radio"/' src/codal_port/mpconfigport.h
+
+# Patch 4: keep the softdevice.ld linker layout (app at 0x1c000) even
+# when DEVICE_BLE=0. The stock codal CMakeLists.txt switches to
+# nrf52833.ld for non-BLE builds, which places the app at 0x0 —
+# fine for non-bootloader Lancaster builds, but the Calliope mini 3
+# v0.3.5-campus-open-1 bootloader expects the app at 0x1c000 and
+# refuses to boot one at 0x0.
+sed -i 's|ld/nrf52833\.ld|ld/nrf52833-softdevice.ld|g' \
+  lib/codal/libraries/codal-microbit-v2/CMakeLists.txt
+
+# Now build
+cd src && rm -rf build codal_port/build && make
+cp MINI.hex /mnt/c/GIT/Calliope/LLM/calliope-mini-python-editor/src/micropython/main/calliope-v3-radio.hex
+
+# Revert the four patches so the next BLE build still works
+cd ~/mp-build
+sed -i 's/"DEVICE_BLE": 0/"DEVICE_BLE": 1/' lib/codal/libraries/codal-microbit-v2/target-locked.json
+sed -i 's/"MICROBIT_BLE_ENABLED" : 0/"MICROBIT_BLE_ENABLED" : 1/' src/codal_app/codal.json
+sed -i 's/"2.1.2b-radio"/"2.1.2b"/' src/codal_port/mpconfigport.h
+git -C lib/codal/libraries/codal-microbit-v2 checkout CMakeLists.txt
 ```
 
-For a clean two-build workflow, copy `codal_app/codal.json` to
-`codal_app/codal-radio.json` and have a `make radio` Makefile target
-that swaps it in before `cmake`.
+`addlayouttable.py` already handles a missing SoftDevice region —
+that fix is in micropython-calliope-mini-v3/src on the `campus-open`
+branch (`a8700d0`).
+
+For a clean two-build CI workflow, copy the four files into per-variant
+configs (`codal_app/codal-ble.json`, `codal_app/codal-radio.json`,
+etc.) and have `make ble` / `make radio` targets that swap them in
+before `make`. The above is a one-shot recipe; nobody's wired up the
+proper Makefile targets yet.
 
 ## Current state
 
