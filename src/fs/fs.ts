@@ -14,7 +14,11 @@ import { lineNumFromUint8Array } from "../common/text-util";
 import { BoardId } from "../device/board-id";
 import { FlashDataSource, HexGenerationError } from "../device/device";
 import { Logging } from "../logging/logging";
-import { MicroPythonSource } from "../micropython/micropython";
+import {
+  detectRadioImport,
+  MicroPythonSource,
+  MicroPythonV3Variant,
+} from "../micropython/micropython";
 import { asciiToBytes, extractModuleData, generateId } from "./fs-util";
 import { Host } from "./host";
 import { PythonProject } from "./initial-project";
@@ -441,10 +445,56 @@ export class FileSystem extends EventEmitter implements FlashDataSource {
     return this.storage.clearDirty();
   }
 
+  /**
+   * Pick the MicroPython V3 variant matching the current main.py.
+   *
+   * 'radio' if main.py contains `import radio` / `from radio import …`;
+   * 'ble'   otherwise (the default — campus-open BLE-on firmware so
+   *         the widget can re-flash without A+B+Reset).
+   *
+   * Falls back to 'ble' if main.py can't be read (no file yet, decode
+   * fails, etc.). The widget's flashCalliope handles variant switches
+   * via DAL-hash mismatch → DFU fallback; nothing here needs to know.
+   */
+  async pickRuntimeVariant(): Promise<MicroPythonV3Variant> {
+    try {
+      if (!(await this.storage.exists("main.py"))) return "ble";
+      const bytes = await this.storage.read("main.py");
+      const text = new TextDecoder("utf-8", { fatal: false }).decode(bytes);
+      return detectRadioImport(text) ? "radio" : "ble";
+    } catch {
+      return "ble";
+    }
+  }
+
+  /**
+   * Build a temporary MicropythonFsHex against the right base hex set
+   * for the current main.py's runtime variant, copy every storage file
+   * into it, and return the resulting hex. We re-build instead of
+   * keeping a single long-lived `this.fs` because the user can flip
+   * the variant any time (add or remove `import radio`) and we need
+   * fresh base bytes each flash.
+   */
+  private async buildFsForVariant(): Promise<MicropythonFsHex> {
+    const variant = await this.pickRuntimeVariant();
+    const sources = await this.microPythonSource(variant);
+    const fs = new MicropythonFsHex(sources, { maxFsSize: commonFsSize });
+    // Storage already holds the canonical user files; this.fs may be
+    // stale (different variant base, or files that have since been
+    // overwritten via this.write). Re-populate from storage.
+    for (const name of await this.storage.ls()) {
+      fs.write(name, await this.storage.read(name));
+    }
+    return fs;
+  }
+
   async fullFlashData(boardId: BoardId): Promise<Uint8Array> {
     try {
-      const fs = await this.initialize();
-      return asciiToBytes(fs.getIntelHex(boardId.normalize().id));
+      // initialize() so the storage layer is up — we don't use its
+      // `this.fs` (built with the BLE variant) for the actual write.
+      await this.initialize();
+      const variantFs = await this.buildFsForVariant();
+      return asciiToBytes(variantFs.getIntelHex(boardId.normalize().id));
     } catch (e: any) {
       throw new HexGenerationError(e.message);
     }
@@ -452,8 +502,9 @@ export class FileSystem extends EventEmitter implements FlashDataSource {
 
   async partialFlashData(boardId: BoardId): Promise<Uint8Array> {
     try {
-      const fs = await this.initialize();
-      return fs.getIntelHexBytes(boardId.normalize().id);
+      await this.initialize();
+      const variantFs = await this.buildFsForVariant();
+      return variantFs.getIntelHexBytes(boardId.normalize().id);
     } catch (e: any) {
       throw new HexGenerationError(e.message);
     }
