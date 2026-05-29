@@ -69,7 +69,8 @@
     "puppeteer": "^13.4.0",
     "react-scripts": "5.0.0",
     "source-map-explorer": "^2.5.2",
-    "typescript": "^4.4.2"
+    "typescript": "^4.4.2",
+    "patch-package": "^8.0.0"
   },
   "engines": {
     "node": ">=16.0",
@@ -93,7 +94,8 @@
     "invalidate": "aws cloudfront create-invalidation --distribution-id $(printenv ${STAGE}_CLOUDFRONT_DISTRIBUTION_ID) --paths \"/*\"",
     "i18n:compile": "node bin/tidy-lang.js && formatjs compile-folder --ast lang src/messages",
     "i18n:convert": "node bin/tidy-lang.js && node bin/crowdin-convert.js",
-    "fix-licensing-headers": "node bin/fix-licensing-headers.js"
+    "fix-licensing-headers": "node bin/fix-licensing-headers.js",
+    "postinstall": "patch-package"
   },
   "eslintConfig": {
     "extends": [

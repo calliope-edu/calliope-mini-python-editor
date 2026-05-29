@@ -24,7 +24,7 @@ import { Host } from "./host";
 import { PythonProject } from "./initial-project";
 import { FSStorage } from "./storage";
 
-const commonFsSize = 20 * 1024;
+const commonFsSize = 10 * 1024;
 
 export interface FileVersion {
   name: string;
