@@ -31,6 +31,7 @@ import { BoardId } from "../device/board-id";
 import { FileSystem, MAIN_FILE, Statistics, VersionAction } from "../fs/fs";
 import {
   isControllerAppMode,
+  getControllerBoardIdString,
   notifyHostFlash,
   notifyHostSave,
 } from "../fs/host";
@@ -511,7 +512,11 @@ export class ProjectActions {
       // Note: toHexForSave() returns a universal hex with custom record
       // types (0x0A) that vanilla Intel HEX parsers reject.
       try {
-        const boardId = BoardId.parse("9903");
+        // Build for the hardware the host detected (via the `hw` URL param);
+        // Mini 1/2 (V1-class) → 9900, Mini 3 → 9903. Defaults to 9903 when the
+        // host sends no hint. A V3 hex flashed to a Mini 1/2 is unrunnable, so
+        // honouring the hint is what makes campus MicroPython work on Mini 1/2.
+        const boardId = BoardId.parse(getControllerBoardIdString());
         const hexBytes = await this.fs.fullFlashData(boardId);
         const hex = new TextDecoder("ascii").decode(hexBytes);
         notifyHostFlash(this.project.name ?? "main", hex);

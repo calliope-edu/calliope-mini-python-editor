@@ -56,6 +56,28 @@ export const isControllerAppMode = (): boolean =>
   window !== window.parent && getControllerLevel() >= 2;
 
 /**
+ * The micro:bit board id the host wants us to build for, from the optional
+ * `hw` URL param the host (campus) appends after the connection widget has
+ * detected the connected hardware.
+ *
+ * Calliope Mini 1 & 2 are V1-class silicon (DAL) → micro:bit board id `9900`.
+ * Calliope Mini 3 is V2-class (CODAL = micro:bit v2) → `9903`.
+ *
+ * Accepts the Calliope mini number (`1`/`2`/`3`), the widget's calliope
+ * version (`v1`/`v3`), or an explicit board id (`9900`/`9903`). Defaults to
+ * `9903` (Mini 3) when the host sends no hint, so a host that hasn't been
+ * updated keeps its previous behaviour. Both `9900` and `9903` are registered
+ * MicroPython fs sources, so either is buildable.
+ */
+export const getControllerBoardIdString = (): "9900" | "9903" => {
+  const hw = (new URLSearchParams(window.location.search).get("hw") ?? "")
+    .toLowerCase()
+    .trim();
+  const v1Class = ["9900", "v1", "1", "2", "mini1", "mini2", "mini 1", "mini 2"];
+  return v1Class.includes(hw) ? "9900" : "9903";
+};
+
+/**
  * Asks the host (campus) to flash a hex to a connected calliope mini.
  * Only meaningful in `controller >= 2` mode.
  */
