@@ -56,25 +56,50 @@ export const isControllerAppMode = (): boolean =>
   window !== window.parent && getControllerLevel() >= 2;
 
 /**
- * The micro:bit board id the host wants us to build for, from the optional
- * `hw` URL param the host (campus) appends after the connection widget has
- * detected the connected hardware.
+ * Normalise a hardware hint to a micro:bit board id, or null if unrecognised.
  *
  * Calliope Mini 1 & 2 are V1-class silicon (DAL) → micro:bit board id `9900`.
  * Calliope Mini 3 is V2-class (CODAL = micro:bit v2) → `9903`.
  *
- * Accepts the Calliope mini number (`1`/`2`/`3`), the widget's calliope
- * version (`v1`/`v3`), or an explicit board id (`9900`/`9903`). Defaults to
- * `9903` (Mini 3) when the host sends no hint, so a host that hasn't been
- * updated keeps its previous behaviour. Both `9900` and `9903` are registered
- * MicroPython fs sources, so either is buildable.
+ * Accepts the widget's calliope version (`V1`/`V3`), the micro:bit board
+ * version (`V2` = Mini 3), the Calliope mini number (`1`/`2`/`3`), or an
+ * explicit board id. Note `2` = Calliope Mini 2 (V1-class, 9900) whereas `V2`
+ * = micro:bit-class V2 = Mini 3 (9903) — distinct tokens, no collision.
+ */
+const normalizeBoardHint = (raw: string | null | undefined): "9900" | "9903" | null => {
+  if (!raw) return null;
+  const hw = String(raw).toLowerCase().trim();
+  if (["9900", "v1", "1", "2", "mini1", "mini2", "mini 1", "mini 2"].includes(hw)) return "9900";
+  if (["9903", "v2", "v3", "3", "mini3", "mini 3"].includes(hw)) return "9903";
+  return null;
+};
+
+/**
+ * Board version pushed by the host via `postMessage({type:'setBoardVersion',
+ * boardVersion})`. Takes precedence over the `hw` URL param because the device
+ * is usually connected AFTER the editor iframe loads — a URL param set at load
+ * would be stale, and reloading the iframe to change it would reset the editor.
+ */
+let hostBoardId: "9900" | "9903" | null = null;
+if (typeof window !== "undefined" && window !== window.parent) {
+  window.addEventListener("message", (e: MessageEvent) => {
+    const d = e.data as { type?: string; boardVersion?: string; hw?: string } | null;
+    if (d && typeof d === "object" && d.type === "setBoardVersion") {
+      const norm = normalizeBoardHint(d.boardVersion ?? d.hw);
+      if (norm) hostBoardId = norm;
+    }
+  });
+}
+
+/**
+ * The micro:bit board id to build for in controller mode. Prefers a host
+ * `setBoardVersion` postMessage, then the `hw` URL param, then defaults to
+ * `9903` (Mini 3) so an un-updated host keeps its previous behaviour. Both
+ * `9900` and `9903` are registered MicroPython fs sources, so either builds.
  */
 export const getControllerBoardIdString = (): "9900" | "9903" => {
-  const hw = (new URLSearchParams(window.location.search).get("hw") ?? "")
-    .toLowerCase()
-    .trim();
-  const v1Class = ["9900", "v1", "1", "2", "mini1", "mini2", "mini 1", "mini 2"];
-  return v1Class.includes(hw) ? "9900" : "9903";
+  if (hostBoardId) return hostBoardId;
+  return normalizeBoardHint(new URLSearchParams(window.location.search).get("hw")) ?? "9903";
 };
 
 /**
