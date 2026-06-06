@@ -407,8 +407,14 @@ export class FileSystem extends EventEmitter implements FlashDataSource {
       files: files.length,
       storageUsed: fs.getStorageUsed(),
       lines:
+        // Guard `.files`: a controller (campus) workspacesync can resolve an
+        // initial project object without a `files` map, in which case
+        // `cachedInitialProject.files[MAIN_FILE]` threw
+        // "Cannot read properties of undefined (reading 'main.py')" and broke
+        // every flash (the error surfaced in ProjectActions.flash before the
+        // widget was ever called).
         this.cachedInitialProject &&
-        this.cachedInitialProject.files[MAIN_FILE] ===
+        this.cachedInitialProject.files?.[MAIN_FILE] ===
           fromByteArray(currentMainFile)
           ? undefined
           : lineNumFromUint8Array(currentMainFile),

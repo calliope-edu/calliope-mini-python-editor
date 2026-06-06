@@ -216,13 +216,27 @@ export class IframeHost implements Host {
               "'projects' array should contain at least one item."
             );
           }
-          if (typeof data.projects[0] === "string") {
+          const incoming = data.projects[0];
+          if (typeof incoming === "string") {
             resolve({
-              files: projectFilesToBase64({ [MAIN_FILE]: data.projects[0] }),
+              files: projectFilesToBase64({ [MAIN_FILE]: incoming }),
             });
-          }
-          if (typeof data.projects[0] === "object") {
-            resolve(data.projects[0]);
+          } else if (incoming && typeof incoming === "object") {
+            // A controller (campus) can send a project object. Only trust it if
+            // it carries a non-empty `files` map — otherwise downstream code
+            // (statistics(), the initial-write loop) dereferences
+            // `project.files[MAIN_FILE]` and throws. Fall back to an empty
+            // main.py so the editor still initialises instead of crashing on
+            // every flash.
+            if (incoming.files && typeof incoming.files === "object" &&
+                Object.keys(incoming.files).length > 0) {
+              resolve(incoming);
+            } else {
+              resolve({
+                files: projectFilesToBase64({ [MAIN_FILE]: "" }),
+                projectName: incoming.projectName,
+              });
+            }
           }
         }
       });
