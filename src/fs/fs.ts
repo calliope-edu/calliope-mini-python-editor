@@ -15,7 +15,6 @@ import { BoardId } from "../device/board-id";
 import { FlashDataSource, HexGenerationError } from "../device/device";
 import { Logging } from "../logging/logging";
 import {
-  detectRadioImport,
   MicroPythonSource,
   MicroPythonV3Variant,
 } from "../micropython/micropython";
@@ -452,25 +451,19 @@ export class FileSystem extends EventEmitter implements FlashDataSource {
   }
 
   /**
-   * Pick the MicroPython V3 variant matching the current main.py.
+   * Pick the MicroPython V3 variant to flash.
    *
-   * 'radio' if main.py contains `import radio` / `from radio import …`;
-   * 'ble'   otherwise (the default — campus-open BLE-on firmware so
-   *         the widget can re-flash without A+B+Reset).
-   *
-   * Falls back to 'ble' if main.py can't be read (no file yet, decode
-   * fails, etc.). The widget's flashCalliope handles variant switches
-   * via DAL-hash mismatch → DFU fallback; nothing here needs to know.
+   * Always 'radio' (BLE off). The 'ble' build (MICROBIT_BLE_ENABLED=1) is
+   * unusable: with the always-on SoftDevice, the MicroPython filesystem's
+   * boot-time flash writes either fault (APP_MEMACC / panic 071) or hang the
+   * SoftDevice flash op and wedge the chip. The radio build has no SoftDevice
+   * to block/trap flash, so the filesystem works. BLE-DFU is still available
+   * via A+B+Reset (pairing mode, independent of MICROBIT_BLE_ENABLED); the
+   * only thing lost is always-on app-mode BLE.
+   * See firmware/MP_V3_BLE_FLASH_FINDINGS.md for the full root-cause analysis.
    */
   async pickRuntimeVariant(): Promise<MicroPythonV3Variant> {
-    try {
-      if (!(await this.storage.exists("main.py"))) return "ble";
-      const bytes = await this.storage.read("main.py");
-      const text = new TextDecoder("utf-8", { fatal: false }).decode(bytes);
-      return detectRadioImport(text) ? "radio" : "ble";
-    } catch {
-      return "ble";
-    }
+    return "radio";
   }
 
   /**
