@@ -142,8 +142,15 @@ const SideBarHeader = ({
   const searchButtonMode =
     !contentWidth || contentWidth > 405 ? "button" : "icon";
   const paddingX = 14;
+  // In controller mode (embedded in the campus iframe) the Calliope logo is
+  // hidden, so it can no longer supply the header's left inset or the search
+  // dialog's offset. Fall back to a fixed inset so the search button/field and
+  // the dialog keep a left margin instead of clinging to the edge.
+  const controllerLeftInset = 16;
   const modalOffset = faceLogoRef.current
     ? faceLogoRef.current.getBoundingClientRect().right + paddingX
+    : isControllerApp
+    ? controllerLeftInset
     : 0;
   const modalWidth = contentWidth - modalOffset + "px";
   return (
@@ -191,6 +198,7 @@ const SideBarHeader = ({
           }
           alignItems="center"
           justifyContent="space-between"
+          pl={isControllerApp ? `${controllerLeftInset}px` : 0}
           pr={4}
           transition="height .2s"
           position="relative"
