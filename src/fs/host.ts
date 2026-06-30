@@ -12,6 +12,7 @@ import {
   MAIN_FILE,
 } from "./fs";
 import { Logging } from "../logging/logging";
+import { BoardId } from "../device/board-id";
 import {
   defaultInitialProject,
   PythonProject,
@@ -254,6 +255,11 @@ export class IframeHost implements Host {
         switch (event.data.action) {
           case messages.actions.importproject:
             return handleImportProject(fs, event.data);
+          case messages.actions.flash:
+            // Host (campus) asked us to flash the current program (its "Programm
+            // übertragen" button). Build the hex and post it back; the host
+            // (mini-connection-widget) does the actual flashing.
+            return void handleControllerFlashRequest(fs);
           default:
             throw new Error(`Unsupported action: ${event.data.action}`);
         }
@@ -284,6 +290,25 @@ const getControllerHost = (logging: Logging): Window | undefined => {
     logging.error(
       "Cannot detect valid host controller despite controller URL parameter."
     );
+  }
+};
+
+/**
+ * Host-triggered flash (controller=2). Mirrors `ProjectActions.flash()`'s
+ * controller branch: build a single-board Intel HEX for the host-detected board
+ * and post it back via `flash`. Best-effort — if the build fails the host simply
+ * never receives a hex (the editor's own flash button surfaces build errors in a
+ * dialog).
+ */
+const handleControllerFlashRequest = async (fs: FileSystem) => {
+  try {
+    const boardId = BoardId.parse(getControllerBoardIdString());
+    const hexBytes = await fs.fullFlashData(boardId);
+    const hex = new TextDecoder("ascii").decode(hexBytes);
+    const project = await fs.getPythonProject();
+    notifyHostFlash(project.projectName ?? "main", hex);
+  } catch {
+    /* swallow — see doc comment */
   }
 };
 
