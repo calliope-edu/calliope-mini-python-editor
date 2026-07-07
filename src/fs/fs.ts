@@ -441,8 +441,15 @@ export class FileSystem extends EventEmitter implements FlashDataSource {
   }
 
   async toHexForSave(): Promise<string> {
-    const fs = await this.initialize();
-    return fs.getUniversalHex();
+    // Build against the same runtime variant we flash (radio / BLE-off, via
+    // buildFsForVariant) so the downloaded file matches what "transfer to
+    // device" flashes. We deliberately keep the universal-hex format: it stays
+    // portable across board versions, and only the V3 section differs between
+    // variants (the V1/V2 base hex is shared). Using `this.fs` here would ship
+    // the default BLE build instead — the source of the flash/download mismatch.
+    await this.initialize();
+    const variantFs = await this.buildFsForVariant();
+    return variantFs.getUniversalHex();
   }
 
   async clearDirty(): Promise<void> {
