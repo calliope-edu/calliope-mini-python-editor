@@ -7,18 +7,12 @@ import { IntelHexWithId } from "@microbit/microbit-fs";
 import { microbitBoardId } from "@microbit/microbit-universal-hex";
 import microPythonCalliopeV1V2HexUrl from "./calliope-v1v2.hex";
 import microPythonCalliopeV3HexUrl from "./main/calliope-v3.hex";
-// The radio variant. Built from the same micropython-calliope-mini-v3
-// source as calliope-v3.hex but with `DEVICE_BLE=0` and
-// `MICROBIT_BLE_ENABLED=0` in the codal config (so the nRF SoftDevice
-// can release the radio peripheral for MicroPython's `radio` module).
-// BLE and radio can't coexist on the nRF52 — they share the radio
-// HW + SoftDevice slots — so we ship two firmwares and pick based on
-// whether the user's program touches `radio`.
-//
-// During the transition this import may resolve to a placeholder hex
-// (same bytes as the BLE variant) if the radio build hasn't been
-// dropped in yet. The editor logs a console warning on the first flash
-// when that happens. See README for the build recipe.
+// The radio variant — currently main's stock micropython-calliope-mini-v3
+// build (v2.1.2-cmini3, `MICROBIT_BLE_ENABLED=0`), the same firmware the
+// non-campus editors serve. BLE and radio can't coexist on the nRF52 —
+// they share the radio HW + SoftDevice slots — so this variant exists so
+// MicroPython's `radio` module works; see README for background on why
+// pickRuntimeVariant() always selects it.
 import microPythonCalliopeV3RadioHexUrl from "./main/calliope-v3-radio.hex";
 
 /**
@@ -58,9 +52,9 @@ const v3RadioEntry = {
   name: "MicroPython (Calliope mini V3, radio)",
   url: microPythonCalliopeV3RadioHexUrl,
   boardId: microbitBoardId.V2, // 39171 | 0x9903 — same board, different runtime
-  version: "2.1.2b+radio",
+  version: "2.1.2b",
   variant: "radio" as MicroPythonV3Variant,
-  web: "https://github.com/calliope-edu/micropython-calliope-mini-v3/tree/campus-open",
+  web: "https://github.com/calliope-edu/micropython-calliope-mini-v3/tree/oct24-mini3",
 };
 
 export const microPythonConfig = {
