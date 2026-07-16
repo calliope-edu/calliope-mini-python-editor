@@ -260,8 +260,18 @@ export class IframeHost implements Host {
             // übertragen" button). Build the hex and post it back; the host
             // (mini-connection-widget) does the actual flashing.
             return void handleControllerFlashRequest(fs);
+          case "serial_data":
+          case "serial_reset":
+          case "serial_input":
+            // Serial transport messages. They belong to the
+            // IframeDeviceConnection listener in device/iframe-device.ts,
+            // which shares the "pyeditor" message namespace on this window.
+            // Not ours — ignore.
+            return;
           default:
-            throw new Error(`Unsupported action: ${event.data.action}`);
+            // "pyeditor" is a shared message namespace, so an unknown action
+            // must never take this listener down. Warn once per action name.
+            return warnUnsupportedAction(event.data.action);
         }
       }
     });
@@ -310,6 +320,22 @@ const handleControllerFlashRequest = async (fs: FileSystem) => {
   } catch {
     /* swallow — see doc comment */
   }
+};
+
+/**
+ * Warns (once per action name) about a "pyeditor" action this listener does
+ * not handle. Other listeners share the "pyeditor" namespace on the same
+ * window (e.g. the device transport in device/iframe-device.ts), so unknown
+ * actions are expected and must not throw.
+ */
+const warnedUnsupportedActions = new Set<string>();
+const warnUnsupportedAction = (action: unknown): void => {
+  const key = String(action);
+  if (warnedUnsupportedActions.has(key)) {
+    return;
+  }
+  warnedUnsupportedActions.add(key);
+  console.warn(`Unsupported pyeditor action: ${key}`);
 };
 
 /**
