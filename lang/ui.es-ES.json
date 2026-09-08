@@ -1,0 +1,905 @@
+{
+  "about": {
+    "defaultMessage": "Acerca de nosotros"
+  },
+  "about-comic": {
+    "defaultMessage": "Tira cómica de tres viñetas titulada \"MicroPython es genial\" por Mike Rowbit. Una serpiente dibujada presenta a Damien diciendo \"Este es Damien... ha creado MicroPython\". Dos serpientes hablan sobre MicroPython: la serpiente amarilla dice \"MicroPython está diseñado para ordenadores muy pequeños\". \"Como el BBC micro:bit\", responde la serpiente morada. Continúa la serpiente amarilla: \"Pero Python se puede ejecutar en cualquier sitio\". La serpiente morada asiente diciendo \"Como en este 'rack' de servidores que ejecutan enormes paginas web\". Detrás de las serpientes se muestra un \"rack\" de servidores."
+  },
+  "about-microbit": {
+    "defaultMessage": "Hecho con amor por la <link>Micro:bit Educational Foundation y colaboradores</link>"
+  },
+  "about-micropython": {
+    "defaultMessage": "El editor depende de <link>MicroPython</link>, hecho por Damien George y una comunidad de desarrolladores de todo el mundo."
+  },
+  "about-read-less-micropython": {
+    "defaultMessage": "Leer menos sobre MicroPython"
+  },
+  "about-read-more-micropython": {
+    "defaultMessage": "Leer más sobre MicroPython"
+  },
+  "accessibility": {
+    "defaultMessage": "Accesibilidad"
+  },
+  "added-change": {
+    "defaultMessage": "Archivo {changeName} añadido"
+  },
+  "api-description": {
+    "defaultMessage": "Para uso y ejemplos, consulta <link>Referencia</link>"
+  },
+  "api-tab": {
+    "defaultMessage": "API"
+  },
+  "apidocs-baseclass": {
+    "defaultMessage": "{baseClassCount, plural, one {clase base} other {clases base: }}"
+  },
+  "apidocs-classes": {
+    "defaultMessage": "Clases"
+  },
+  "apidocs-fields": {
+    "defaultMessage": "Campos"
+  },
+  "apidocs-functions": {
+    "defaultMessage": "Funciones"
+  },
+  "apidocs-methods": {
+    "defaultMessage": "Métodos"
+  },
+  "back-action": {
+    "defaultMessage": "Volver"
+  },
+  "back-to-main": {
+    "defaultMessage": "volver al código principal"
+  },
+  "cancel-action": {
+    "defaultMessage": "Cancelar"
+  },
+  "change-files": {
+    "defaultMessage": "¿Cambiar archivos?"
+  },
+  "choose-main-add-file": {
+    "defaultMessage": "Añadir archivo {name}"
+  },
+  "choose-main-add-module": {
+    "defaultMessage": "Añadir módulo {name}"
+  },
+  "choose-main-replace-file": {
+    "defaultMessage": "Sustituir archivo {name}"
+  },
+  "choose-main-replace-module": {
+    "defaultMessage": "Sustituir módulo {name}"
+  },
+  "choose-main-source-add-file": {
+    "defaultMessage": "Añadir archivo {target} de {source}"
+  },
+  "choose-main-source-add-main-code": {
+    "defaultMessage": "Añadir código principal de {source}"
+  },
+  "choose-main-source-replace-file": {
+    "defaultMessage": "Sustituir archivo {target} por {source}"
+  },
+  "choose-main-source-replace-main-code": {
+    "defaultMessage": "Sustituir código principal por {source}"
+  },
+  "clear": {
+    "defaultMessage": "Borrar"
+  },
+  "close-action": {
+    "defaultMessage": "Cerrar"
+  },
+  "code-editor": {
+    "defaultMessage": "Editor de código"
+  },
+  "code-example": {
+    "defaultMessage": "Ejemplo de código:"
+  },
+  "confirm-action": {
+    "defaultMessage": "Confirmar"
+  },
+  "confirm-delete": {
+    "defaultMessage": "Confirmar eliminación"
+  },
+  "confirm-replace-body": {
+    "defaultMessage": "¿Sustituir todos los archivos por los del HEX?"
+  },
+  "confirm-replace-reset": {
+    "defaultMessage": "¿Sustituir todos los archivos por el código de inicio predeterminado?"
+  },
+  "confirm-replace-title": {
+    "defaultMessage": "¿Sustituir proyecto?"
+  },
+  "confirm-replace-with-idea": {
+    "defaultMessage": "¿Sustituir todos los archivos por {ideaName}?"
+  },
+  "confirm-save-action": {
+    "defaultMessage": "Confirmar y guardar"
+  },
+  "confirm-save-hint": {
+    "defaultMessage": "Cancela y utiliza Guardar para conservar una copia de tu proyecto."
+  },
+  "connect-action": {
+    "defaultMessage": "Conectar"
+  },
+  "connect-cable-title": {
+    "defaultMessage": "Conectar cable"
+  },
+  "connect-help-alt": {
+    "defaultMessage": "Diálogo de conexión WebUSB con entrada BBC micro:bit con la etiqueta 1 y botón Conectar con la etiqueta 2"
+  },
+  "connect-help-message": {
+    "defaultMessage": "Siguiente ventana emergente:"
+  },
+  "connect-help-one": {
+    "defaultMessage": "Elige tu micro:bit"
+  },
+  "connect-help-title": {
+    "defaultMessage": "Selecciona micro:bit"
+  },
+  "connect-help-two": {
+    "defaultMessage": "Selecciona ‘Conectar’"
+  },
+  "connect-hover": {
+    "defaultMessage": "Conectar al micro:bit a través de WebUSB"
+  },
+  "connect-microbit": {
+    "defaultMessage": "Conéctate al micro:bit para ver la salida serie aquí"
+  },
+  "connect-troubleshoot": {
+    "defaultMessage": "Solucionar problemas de conexión al micro:bit"
+  },
+  "content-load-error": {
+    "defaultMessage": "Algo salió mal. Por seguridad, descarga tu archivo HEX y actualiza la página para recargar."
+  },
+  "cookies-action": {
+    "defaultMessage": "Cookies"
+  },
+  "copied": {
+    "defaultMessage": "Copiado"
+  },
+  "copy-action": {
+    "defaultMessage": "Copiar"
+  },
+  "copy-code-action": {
+    "defaultMessage": "Copiar código"
+  },
+  "copy-snippet-advice": {
+    "defaultMessage": "Código copiado, usa pegar para insertarlo."
+  },
+  "create-action": {
+    "defaultMessage": "Crea"
+  },
+  "create-file-action": {
+    "defaultMessage": "Crear archivo"
+  },
+  "create-python": {
+    "defaultMessage": "Crear un nuevo archivo Python en este proyecto"
+  },
+  "created-file": {
+    "defaultMessage": "{filename} creado"
+  },
+  "delete-action": {
+    "defaultMessage": "Eliminar"
+  },
+  "delete-file-action": {
+    "defaultMessage": "Eliminar {name}"
+  },
+  "deleted-file": {
+    "defaultMessage": "{filename} eliminado"
+  },
+  "disconnect-action": {
+    "defaultMessage": "Desconectar"
+  },
+  "disconnect-hover": {
+    "defaultMessage": "Desconectarse del micro:bit"
+  },
+  "dont-show-again": {
+    "defaultMessage": "No volver a mostrar"
+  },
+  "drag-hover": {
+    "defaultMessage": "Arrastra y suelta"
+  },
+  "edit-file-action": {
+    "defaultMessage": "Editar {name}"
+  },
+  "edit-name-project-hover": {
+    "defaultMessage": "Edita el nombre del proyecto"
+  },
+  "edit-project-name-action": {
+    "defaultMessage": "Editar nombre del proyecto"
+  },
+  "failed-to-build-hex": {
+    "defaultMessage": "No se ha podido generar el archivo HEX"
+  },
+  "feedback": {
+    "defaultMessage": "Comentarios"
+  },
+  "file-actions": {
+    "defaultMessage": "Acciones de archivo {name}"
+  },
+  "file-already-exists": {
+    "defaultMessage": "El archivo ya existe"
+  },
+  "file-name-invalid-character": {
+    "defaultMessage": "El nombre contiene un carácter no válido: {invalid}"
+  },
+  "file-name-length": {
+    "defaultMessage": "El nombre es demasiado largo"
+  },
+  "file-name-lowercase-only": {
+    "defaultMessage": "El nombre debe estar en minúsculas"
+  },
+  "file-name-not-empty": {
+    "defaultMessage": "El nombre no puede estar en blanco"
+  },
+  "file-name-start-number": {
+    "defaultMessage": "El nombre no puede empezar por un número"
+  },
+  "file-name-whitespace": {
+    "defaultMessage": "El nombre no puede incluir espacios"
+  },
+  "firmware-update-link": {
+    "defaultMessage": "Debes <link>actualizar el firmware</link> para poder conectar a este micro:bit."
+  },
+  "firmware-update-message": {
+    "defaultMessage": "La conexión al micro:bit ha fallado porque el firmware del micro:bit es demasiado antiguo."
+  },
+  "firmware-update-title": {
+    "defaultMessage": "Es necesario actualizar el firmware"
+  },
+  "flash-action": {
+    "defaultMessage": "Flashear"
+  },
+  "flash-hover": {
+    "defaultMessage": "Flash el proyecto directamente al micro:bit"
+  },
+  "flashing-code": {
+    "defaultMessage": "Enviando código (flasheando)"
+  },
+  "flashing-full-flash-detail": {
+    "defaultMessage": "El código se está enviando (flasheando) al micro:bit. Esto puede llevar un tiempo la primera vez, pero después será más rápido."
+  },
+  "flashing-micropython": {
+    "defaultMessage": "Flashear MicroPython"
+  },
+  "font-size": {
+    "defaultMessage": "Tamaño de fuente"
+  },
+  "guide-link": {
+    "defaultMessage": "Para obtener más ayuda, consulta la <link>guía del Editor de Python</link>"
+  },
+  "help": {
+    "defaultMessage": "Ayuda"
+  },
+  "help-support": {
+    "defaultMessage": "Ayuda y asistencia"
+  },
+  "highlight-code-structure": {
+    "defaultMessage": "Resaltar la estructura del código"
+  },
+  "highlight-code-structure-full": {
+    "defaultMessage": "Completo"
+  },
+  "highlight-code-structure-none": {
+    "defaultMessage": "Nada"
+  },
+  "highlight-code-structure-simple": {
+    "defaultMessage": "Simple"
+  },
+  "ideas-tab": {
+    "defaultMessage": "Ideas"
+  },
+  "ideas-tab-description": {
+    "defaultMessage": "Prueba estos proyectos y modifícalos para inspirarte"
+  },
+  "insert-code-action": {
+    "defaultMessage": "Insertar código"
+  },
+  "language": {
+    "defaultMessage": "Idioma"
+  },
+  "less-action": {
+    "defaultMessage": "menos"
+  },
+  "load-error-makecode-info": {
+    "defaultMessage": "Este archivo HEX no se puede cargar en el Editor de Python. El Editor de Python no puede abrir archivos hexadecimales creados con Microsoft MakeCode."
+  },
+  "load-error-makecode-link": {
+    "defaultMessage": "Visita <link>https://makecode.microbit.org/</link> para usar este archivo HEX."
+  },
+  "load-error-mixed": {
+    "defaultMessage": "Un archivo HEX únicamente puede cargarse solo. Sustituirá a todos los archivos del proyecto."
+  },
+  "load-error-mpy": {
+    "defaultMessage": "Esta versión del Editor de Python no permite actualmente añadir archivos .mpy."
+  },
+  "load-error-title": {
+    "defaultMessage": "Error al cargar {fileCount, plural, one {archivo} other {archivos}}"
+  },
+  "loaded-file-feedback": {
+    "defaultMessage": "{filename} cargado"
+  },
+  "loading": {
+    "defaultMessage": "Cargando…"
+  },
+  "microbit-hearts-alt": {
+    "defaultMessage": "Placa micro:bit con la cuadrícula LED de 5 por 5 que muestra un corazón"
+  },
+  "micropython-documentation": {
+    "defaultMessage": "Documentación de MicroPython"
+  },
+  "micropython-history": {
+    "defaultMessage": "Descubre cómo llegó MicroPython al micro:bit"
+  },
+  "micropython-source-code": {
+    "defaultMessage": "<linkV1>Código fuente de MicroPython para el micro:bit V1</linkV1> y <linkV2>micro:bit V2</linkV2>"
+  },
+  "more-action": {
+    "defaultMessage": "mas"
+  },
+  "more-connect-options": {
+    "defaultMessage": "Más opciones de conexión"
+  },
+  "more-ideas": {
+    "defaultMessage": "<link>Más ideas</link>"
+  },
+  "more-save-options": {
+    "defaultMessage": "Más opciones para guardar"
+  },
+  "multiple-files-message-one": {
+    "defaultMessage": "Este proyecto contiene {fileCount, plural, other {{fileCount} archivos}} pero solo se ha descargado <strong>main.py</strong>."
+  },
+  "multiple-files-message-two": {
+    "defaultMessage": "Utiliza el botón <strong>Guardar</strong> para descargar el proyecto completo como un archivo HEX. Puedes <strong>Abrir</strong> el archivo HEX para restaurar el proyecto. Si prefieres descargar archivos Python de forma individual, usa la pestaña <strong>Proyecto</strong>."
+  },
+  "multiple-files-title": {
+    "defaultMessage": "Aviso: solo se ha descargado main.py"
+  },
+  "name-project": {
+    "defaultMessage": "Pon un nombre al proyecto"
+  },
+  "name-text": {
+    "defaultMessage": "Nombre"
+  },
+  "name-used-when": {
+    "defaultMessage": "El nombre se usa al guardar un archivo HEX."
+  },
+  "new-file-hint": {
+    "defaultMessage": "Se añadirá la extensión <code>.py</code>."
+  },
+  "next-action": {
+    "defaultMessage": "Siguiente"
+  },
+  "not-found-checklist-one": {
+    "defaultMessage": "¿Está el <strong>micro:bit conectado</strong>? ¿Has <link>seguido estos pasos</link>?"
+  },
+  "not-found-checklist-two": {
+    "defaultMessage": "Si tienes un <strong>micro:bit V1</strong>, puede que necesites <link>actualizar el firmware</link>"
+  },
+  "not-found-message": {
+    "defaultMessage": "No has seleccionado un micro:bit o ha habido un problema al conectar."
+  },
+  "not-found-save-message": {
+    "defaultMessage": "Método alternativo: elige Guardar y sigue los pasos para transferir"
+  },
+  "not-found-title": {
+    "defaultMessage": "No se ha encontrado ningún micro:bit"
+  },
+  "not-found-update-link": {
+    "defaultMessage": "Debes <link>actualizar el firmware</link> para poder conectar a este micro:bit."
+  },
+  "offline-image-alt": {
+    "defaultMessage": "Imagen no disponible sin conexión"
+  },
+  "open-action": {
+    "defaultMessage": "Abrir"
+  },
+  "open-file-action": {
+    "defaultMessage": "Abrir…"
+  },
+  "open-file-dropped": {
+    "defaultMessage": "Abrir archivo al soltarlo"
+  },
+  "open-hover": {
+    "defaultMessage": "Abre un archivo HEX o Python o añade otros archivos"
+  },
+  "options": {
+    "defaultMessage": "Opciones"
+  },
+  "parameter-help": {
+    "defaultMessage": "Ayuda con parámetros"
+  },
+  "parameter-help-automatic": {
+    "defaultMessage": "Automático"
+  },
+  "parameter-help-manual": {
+    "defaultMessage": "({shortcut}) manual"
+  },
+  "permanently-delete": {
+    "defaultMessage": "¿Eliminar {filename} de forma permanente?"
+  },
+  "post-save-message-files": {
+    "defaultMessage": "Contiene todos los archivos de este proyecto (incluyendo cualquier archivo adicional, por ejemplo, para ejecutar accesorios, listados en la pestaña <strong>Proyecto</strong>)."
+  },
+  "post-save-message-one": {
+    "defaultMessage": "Encontrarás el archivo HEX en la carpeta <strong>Descargas</strong> de este ordenador."
+  },
+  "post-save-message-two": {
+    "defaultMessage": "Puedes moverlo para almacenarlo en otra carpeta y utilizar <strong>Abrir</strong> para editarlo más tarde."
+  },
+  "post-save-title": {
+    "defaultMessage": "Proyecto guardado"
+  },
+  "post-save-transfer-hex": {
+    "defaultMessage": "Para ejecutar este archivo HEX en tu micro:bit <link>sigue estos pasos</link>."
+  },
+  "privacy-policy": {
+    "defaultMessage": "Política de privacidad"
+  },
+  "project-actions": {
+    "defaultMessage": "Acciones del proyecto"
+  },
+  "project-header": {
+    "defaultMessage": "Cabecera del proyecto"
+  },
+  "project-name": {
+    "defaultMessage": "Nombre del proyecto"
+  },
+  "project-name-not-empty": {
+    "defaultMessage": "El nombre del proyecto no puede estar en blanco"
+  },
+  "project-tab": {
+    "defaultMessage": "Proyecto"
+  },
+  "project-tab-description": {
+    "defaultMessage": "Ver, crear, añadir y editar los archivos del proyecto"
+  },
+  "python-powered": {
+    "defaultMessage": "Funciona con Python"
+  },
+  "python-tab": {
+    "defaultMessage": "Python"
+  },
+  "quit-anyway": {
+    "defaultMessage": "Algunos de sus cambios no se han guardado. Salir de todos modos?"
+  },
+  "read-less": {
+    "defaultMessage": "Mostrar menos"
+  },
+  "read-more": {
+    "defaultMessage": "Leer más"
+  },
+  "redo": {
+    "defaultMessage": "Rehacer"
+  },
+  "reference-tab": {
+    "defaultMessage": "Referencia"
+  },
+  "replace-action-label": {
+    "defaultMessage": "Sustituir"
+  },
+  "reset-project-action": {
+    "defaultMessage": "Restablecer proyecto"
+  },
+  "reset-project-feedback": {
+    "defaultMessage": "Proyecto restablecido al código de inicio predeterminado"
+  },
+  "reset-project-hover": {
+    "defaultMessage": "Restablece el proyecto al código de inicio predeterminado, descartando tu trabajo"
+  },
+  "results-count": {
+    "defaultMessage": "{count, plural, =0 {Ningún resultado} one {# resultado} other {# resultados}}"
+  },
+  "save-action": {
+    "defaultMessage": "Guardar"
+  },
+  "save-file-action": {
+    "defaultMessage": "Guardar {name}"
+  },
+  "save-hex-action": {
+    "defaultMessage": "Guardar proyecto HEX"
+  },
+  "save-hover": {
+    "defaultMessage": "Guarda el archivo HEX del proyecto en el ordenador"
+  },
+  "save-python-action": {
+    "defaultMessage": "Guardar script de Python"
+  },
+  "search": {
+    "defaultMessage": "Buscar"
+  },
+  "send-action": {
+    "defaultMessage": "Enviar a micro:bit"
+  },
+  "send-hover": {
+    "defaultMessage": "Conectar a través de WebUSB y flashear código al micro:bit"
+  },
+  "serial-collapse": {
+    "defaultMessage": "Ocultar consola serie"
+  },
+  "serial-ctrl-c-action": {
+    "defaultMessage": "Enviar Ctrl + C a REPL"
+  },
+  "serial-ctrl-d-action": {
+    "defaultMessage": "Enviar Ctrl + D para restablecer"
+  },
+  "serial-expand": {
+    "defaultMessage": "Mostrar consola serie"
+  },
+  "serial-flashed": {
+    "defaultMessage": "micro:bit flasheado"
+  },
+  "serial-help-ctrl-c": {
+    "defaultMessage": "Utiliza el atajo de teclado <kbd>Ctrl</kbd> + <kbd>C</kbd> para interrumpir el programa. Después podrás escribir comandos de Python para que los ejecute MicroPython. Es una gran manera de experimentar con algo nuevo."
+  },
+  "serial-help-ctrl-d": {
+    "defaultMessage": "Para reiniciar el programa, pulsa <kbd>Ctrl</kbd> + <kbd>D</kbd>."
+  },
+  "serial-help-intro": {
+    "defaultMessage": "La terminal serie muestra errores y otros resultados del programa que se ejecuta en el micro:bit. Por defecto, muestra el error más reciente del programa; expándelo para ver todos los resultados."
+  },
+  "serial-help-print": {
+    "defaultMessage": "El programa puede imprimir mensajes usando la función <code>print</code>. Prueba a añadir <code>print('micro:bit es increíble')</code> al programa."
+  },
+  "serial-help-title": {
+    "defaultMessage": "Consola serie: sugerencias y consejos"
+  },
+  "serial-hints-and-tips": {
+    "defaultMessage": "Consola serie: sugerencias y consejos"
+  },
+  "serial-menu": {
+    "defaultMessage": "Menú consola serie"
+  },
+  "serial-ready-to-flash": {
+    "defaultMessage": "micro:bit listo para flashear"
+  },
+  "serial-running": {
+    "defaultMessage": "Ejecutando…"
+  },
+  "serial-terminal": {
+    "defaultMessage": "Terminal serie"
+  },
+  "setting-allow-editing-third-party": {
+    "defaultMessage": "Permitir la edición de módulos de terceros"
+  },
+  "setting-allow-editing-third-party-info": {
+    "defaultMessage": "Cambiar los módulos de terceros puede provocar que no funcionen como deberían."
+  },
+  "setting-warn-on-v2-only-features": {
+    "defaultMessage": "Mostrar advertencias sobre funciones exclusivas de la V2"
+  },
+  "setting-warn-on-v2-only-features-info": {
+    "defaultMessage": "Las advertencias se muestran en el editor cuando se conecta un micro:bit V1"
+  },
+  "settings": {
+    "defaultMessage": "Configuración"
+  },
+  "show-api-documentation": {
+    "defaultMessage": "Mostrar documentación de la API"
+  },
+  "show-less": {
+    "defaultMessage": "Mostrar menos"
+  },
+  "show-less-for": {
+    "defaultMessage": "Mostrar menos de {item}"
+  },
+  "show-more": {
+    "defaultMessage": "Mostrar más"
+  },
+  "show-more-for": {
+    "defaultMessage": "Mostrar más de {item}"
+  },
+  "sidebar": {
+    "defaultMessage": "Barra lateral"
+  },
+  "sidebar-collapse": {
+    "defaultMessage": "Ocultar la barra lateral"
+  },
+  "sidebar-expand": {
+    "defaultMessage": "Expandir la barra lateral"
+  },
+  "simulator-accelerometer": {
+    "defaultMessage": "Acelerómetro"
+  },
+  "simulator-actions": {
+    "defaultMessage": "Acciones del simulador"
+  },
+  "simulator-button-a": {
+    "defaultMessage": "Botón A"
+  },
+  "simulator-button-b": {
+    "defaultMessage": "Botón B"
+  },
+  "simulator-button-hold-label": {
+    "defaultMessage": "Mantener pulsado botón {button}"
+  },
+  "simulator-button-press-label": {
+    "defaultMessage": "Pulsar botón {button}"
+  },
+  "simulator-buttons": {
+    "defaultMessage": "Botones"
+  },
+  "simulator-collapse": {
+    "defaultMessage": "Contraer simulador"
+  },
+  "simulator-collapse-module": {
+    "defaultMessage": "Contraer módulo {title}"
+  },
+  "simulator-compass": {
+    "defaultMessage": "Brújula"
+  },
+  "simulator-compass-heading-one": {
+    "defaultMessage": "Cabecera"
+  },
+  "simulator-compass-heading-two": {
+    "defaultMessage": "Fuerza del campo magnético"
+  },
+  "simulator-data-logging-empty": {
+    "defaultMessage": "No hay entradas de registro."
+  },
+  "simulator-data-logging-full": {
+    "defaultMessage": "Registro lleno"
+  },
+  "simulator-data-logging-rows": {
+    "defaultMessage": "{count, plural, =0 {No se han registrado filas} one {# fila registrada} other {# filas registradas}}"
+  },
+  "simulator-data-logging-save-log": {
+    "defaultMessage": "Guardar registro"
+  },
+  "simulator-data-logging-truncated": {
+    "defaultMessage": "No se muestran las filas antiguas"
+  },
+  "simulator-expand": {
+    "defaultMessage": "Expandir simulador"
+  },
+  "simulator-expand-module": {
+    "defaultMessage": "Expandir módulo {title}"
+  },
+  "simulator-gesture-3g": {
+    "defaultMessage": "3g"
+  },
+  "simulator-gesture-6g": {
+    "defaultMessage": "6g"
+  },
+  "simulator-gesture-8g": {
+    "defaultMessage": "8g"
+  },
+  "simulator-gesture-down": {
+    "defaultMessage": "abajo"
+  },
+  "simulator-gesture-face-down": {
+    "defaultMessage": "hacia abajo"
+  },
+  "simulator-gesture-face-up": {
+    "defaultMessage": "hacia arriba"
+  },
+  "simulator-gesture-freefall": {
+    "defaultMessage": "caída libre"
+  },
+  "simulator-gesture-left": {
+    "defaultMessage": "izquierda"
+  },
+  "simulator-gesture-right": {
+    "defaultMessage": "derecha"
+  },
+  "simulator-gesture-select": {
+    "defaultMessage": "Seleccionar gesto"
+  },
+  "simulator-gesture-send": {
+    "defaultMessage": "Enviar gesto"
+  },
+  "simulator-gesture-shake": {
+    "defaultMessage": "agitar"
+  },
+  "simulator-gesture-up": {
+    "defaultMessage": "arriba"
+  },
+  "simulator-hide": {
+    "defaultMessage": "Ocultar simulador"
+  },
+  "simulator-input-hold": {
+    "defaultMessage": "Mantener pulsado"
+  },
+  "simulator-input-press": {
+    "defaultMessage": "Pulsar"
+  },
+  "simulator-light-level": {
+    "defaultMessage": "Nivel de luz"
+  },
+  "simulator-log": {
+    "defaultMessage": "Registro de datos"
+  },
+  "simulator-loud": {
+    "defaultMessage": "Alto"
+  },
+  "simulator-mute": {
+    "defaultMessage": "Silenciar"
+  },
+  "simulator-pin-hold-label": {
+    "defaultMessage": "Mantener pulsado pin {pin}"
+  },
+  "simulator-pin-press-label": {
+    "defaultMessage": "Pulsar pin {pin}"
+  },
+  "simulator-pins": {
+    "defaultMessage": "Pines"
+  },
+  "simulator-quiet": {
+    "defaultMessage": "Silencioso"
+  },
+  "simulator-radio": {
+    "defaultMessage": "Radio"
+  },
+  "simulator-radio-code": {
+    "defaultMessage": "micro:bit enviado:"
+  },
+  "simulator-radio-group-notice": {
+    "defaultMessage": "Grupo de radio configurado a {groupNumber}"
+  },
+  "simulator-radio-message": {
+    "defaultMessage": "Mensaje de radio"
+  },
+  "simulator-radio-message-limit-notice": {
+    "defaultMessage": "No se muestran los mensajes antiguos"
+  },
+  "simulator-radio-no-messages": {
+    "defaultMessage": "No hay mensajes para mostrar"
+  },
+  "simulator-radio-off": {
+    "defaultMessage": "La radio está apagada"
+  },
+  "simulator-radio-send": {
+    "defaultMessage": "Enviar mensaje"
+  },
+  "simulator-radio-user": {
+    "defaultMessage": "Has enviado:"
+  },
+  "simulator-reference-link": {
+    "defaultMessage": "Enlace a la sección de referencia"
+  },
+  "simulator-reset": {
+    "defaultMessage": "Reiniciar"
+  },
+  "simulator-serial-terminal": {
+    "defaultMessage": "Terminal serie del simulador"
+  },
+  "simulator-sound-level": {
+    "defaultMessage": "Nivel de sonido"
+  },
+  "simulator-start-simulator": {
+    "defaultMessage": "Iniciar simulador"
+  },
+  "simulator-stop": {
+    "defaultMessage": "Detener simulador"
+  },
+  "simulator-temperature": {
+    "defaultMessage": "Temperatura"
+  },
+  "simulator-title": {
+    "defaultMessage": "Simulador"
+  },
+  "simulator-touch-logo": {
+    "defaultMessage": "Logotipo táctil"
+  },
+  "simulator-unit-celsius": {
+    "defaultMessage": "degrees Celsius"
+  },
+  "simulator-unit-degrees": {
+    "defaultMessage": "degrees"
+  },
+  "simulator-unit-milli-g": {
+    "defaultMessage": "milli-g"
+  },
+  "simulator-unit-nanotesla": {
+    "defaultMessage": "nanotesla"
+  },
+  "simulator-unmute": {
+    "defaultMessage": "No silenciar"
+  },
+  "software-versions": {
+    "defaultMessage": "Versiones de software"
+  },
+  "start-coding-action": {
+    "defaultMessage": "Empezar a programar"
+  },
+  "support": {
+    "defaultMessage": "Ayuda Técnica"
+  },
+  "terms-of-use": {
+    "defaultMessage": "Términos de uso"
+  },
+  "third-party-module-explanation": {
+    "defaultMessage": "Este archivo es un módulo de terceros y se supone que no se debería editar."
+  },
+  "third-party-module-how-to": {
+    "defaultMessage": "Permite la edición de módulos de terceros en <link>Configuración</link> para modificar este módulo."
+  },
+  "timeout-error-description": {
+    "defaultMessage": "No se puede conectar al micro:bit"
+  },
+  "timeout-error-title": {
+    "defaultMessage": "La conexión ha expirado"
+  },
+  "toolkit-error-loading": {
+    "defaultMessage": "Se ha producido un error al cargar las herramientas."
+  },
+  "toolkit-view-documentation": {
+    "defaultMessage": "Ver documentación de {name}"
+  },
+  "transfer-hex-message-one": {
+    "defaultMessage": "Arrastra el archivo HEX desde la <strong>Carpeta de descargas</strong> a la <strong>Unidad MICROBIT</strong>."
+  },
+  "transfer-hex-message-two": {
+    "defaultMessage": "Puedes <strong>Abrir</strong> el archivo HEX más tarde para editarlo."
+  },
+  "transfer-hex-title": {
+    "defaultMessage": "Transferir archivo HEX guardado a micro:bit"
+  },
+  "try-again-action": {
+    "defaultMessage": "Inténtalo de nuevo"
+  },
+  "undo": {
+    "defaultMessage": "Deshacer"
+  },
+  "unexpected-error-description": {
+    "defaultMessage": "Inténtalo otra vez o <link>solicita asistencia</link>"
+  },
+  "unexpected-error-title": {
+    "defaultMessage": "Inténtalo otra vez o <link>solicita asistencia</link>"
+  },
+  "untitled-project": {
+    "defaultMessage": "Proyecto sin título"
+  },
+  "update-firmware-action": {
+    "defaultMessage": "Actualizar firmware"
+  },
+  "updated-change": {
+    "defaultMessage": "Archivo {changeName} actualizado"
+  },
+  "user-guide": {
+    "defaultMessage": "Guía de usuario"
+  },
+  "visit-dot-org": {
+    "defaultMessage": "visitar microbit.org (abre en una nueva pestaña)"
+  },
+  "warn-on-v2-only-features-action": {
+    "defaultMessage": "Desactivar las advertencias sobre funciones exclusivas de la V2"
+  },
+  "webusb-error-clear-connect-description-1": {
+    "defaultMessage": "Otro proceso está conectado a este dispositivo."
+  },
+  "webusb-error-clear-connect-description-2": {
+    "defaultMessage": "Cierra cualquier otra pestaña que pueda estar usando WebUSB (por ejemplo, MakeCode or Editor de Python), o desconecta y vuelve a conectar el micro:bit antes de volver a intentarlo."
+  },
+  "webusb-error-clear-connect-title": {
+    "defaultMessage": "Otra página o pestaña del navegador está conectada a este micro:bit"
+  },
+  "webusb-error-default-title": {
+    "defaultMessage": "Error WebUSB"
+  },
+  "webusb-error-reconnect-microbit-description": {
+    "defaultMessage": "<p>Por favor, sigue estos pasos y vuelve a intentarlo:</p><ul><li>desconecta el cable USB</li><li>desenchufa la batería si la tiene instalada</li><li>vuelve a conectar el cable USB</li><li>vuelve a conectar el paquete de baterías si estaba conectado</li></ul>"
+  },
+  "webusb-not-supported": {
+    "defaultMessage": "Desafortunadamente, este navegador no admite WebUSB, por lo que el programa se guardará en el ordenador. Sigue los pasos indicados en la siguiente pantalla para transferirlo al micro:bit. Recomendamos Google Chrome o Microsoft Edge para poder conectarte directamente al micro:bit."
+  },
+  "webusb-not-supported-title": {
+    "defaultMessage": "El navegador no es compatible con WebUSB"
+  },
+  "webusb-why-use": {
+    "defaultMessage": "Con WebUSB puedes programar el micro:bit y conectarte a la consola serie directamente desde el editor en línea."
+  },
+  "welcome-message": {
+    "defaultMessage": "Mira nuestra guía breve sobre algunas de las características más importantes o empieza ya a programar."
+  },
+  "welcome-title": {
+    "defaultMessage": "Bienvenido al Editor de Python de micro:bit"
+  },
+  "welcome-video-alt": {
+    "defaultMessage": "vídeo de introducción al editor de Python"
+  },
+  "zoom-in-action": {
+    "defaultMessage": "Aumentar zoom"
+  },
+  "zoom-out-action": {
+    "defaultMessage": "Disminuir zoom"
+  }
+}

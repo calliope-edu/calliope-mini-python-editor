@@ -1,0 +1,905 @@
+{
+  "about": {
+    "defaultMessage": "Maidir"
+  },
+  "about-comic": {
+    "defaultMessage": "Trí greannán painéil dar teideal \"MicroPython Rocks\" le Mike Rowbit. Cuireann nathair chartúin Damien in aithne, ag rá \"Buail le Damien... Chruthaigh sé MicroPython\". Pléann dhá nathracha MicroPython. Deir an nathair bhuí \"Tá MicroPython deartha chun oibriú ar ríomhairí an-bheag.\" \"Cosúil le do micro:bit BBC:bit\" a fhreagraíonn an nathair chorcra.\" Leanann an nathair bhuí ar aghaidh \"Ach is féidir le Python rith áit ar bith\". Aontaíonn an nathair corcra, ag rá \"Cosúil leis an raca freastalaithe seo a ritheann láithreáin ghréasáin ollmhóra\". Taispeánann an cúlra taobh thiar de na nathracha raca freastalaí."
+  },
+  "about-microbit": {
+    "defaultMessage": "Déanta le grá ag an <link>Micro:bit Educational Foundation agus rannpháirtithe</link>"
+  },
+  "about-micropython": {
+    "defaultMessage": "Braitheann an t-eagarthóir ar <link>MicroPython</link> atá déanta ag Damien George agus pobal forbróirí ar fud an domhain."
+  },
+  "about-read-less-micropython": {
+    "defaultMessage": "Léigh níos lú faoi MicroPython"
+  },
+  "about-read-more-micropython": {
+    "defaultMessage": "Léigh níos mó faoi MicroPython"
+  },
+  "accessibility": {
+    "defaultMessage": "Inrochtaineacht"
+  },
+  "added-change": {
+    "defaultMessage": "Cuireadh comhad leis {changeName}"
+  },
+  "api-description": {
+    "defaultMessage": "Le haghaidh úsáide agus samplaí, féach <link>Tagairt</link>"
+  },
+  "api-tab": {
+    "defaultMessage": "API"
+  },
+  "apidocs-baseclass": {
+    "defaultMessage": "{baseClassCount, plural, one {rang bunúsach} two {ranga bunúsacha: } few {ranga bunúsacha: } many {ranga bunúsacha: } other {ranga bunúsacha: }}\n"
+  },
+  "apidocs-classes": {
+    "defaultMessage": "Ranganna"
+  },
+  "apidocs-fields": {
+    "defaultMessage": "Réimsí"
+  },
+  "apidocs-functions": {
+    "defaultMessage": "Feidhmeanna"
+  },
+  "apidocs-methods": {
+    "defaultMessage": "Modhanna"
+  },
+  "back-action": {
+    "defaultMessage": "Ar ais"
+  },
+  "back-to-main": {
+    "defaultMessage": "ar ais go dtí an príomhchód"
+  },
+  "cancel-action": {
+    "defaultMessage": "Cealaigh"
+  },
+  "change-files": {
+    "defaultMessage": "Athraigh comhaid?"
+  },
+  "choose-main-add-file": {
+    "defaultMessage": "Cuir comhad {name} leis"
+  },
+  "choose-main-add-module": {
+    "defaultMessage": "Cuir modúl {name} leis"
+  },
+  "choose-main-replace-file": {
+    "defaultMessage": "Ionadaigh comhad {name}"
+  },
+  "choose-main-replace-module": {
+    "defaultMessage": "Ionadaigh modúl {name}"
+  },
+  "choose-main-source-add-file": {
+    "defaultMessage": "Cuir comhad {target} ó {source}"
+  },
+  "choose-main-source-add-main-code": {
+    "defaultMessage": "Cuir príomhchód ó {source} leis"
+  },
+  "choose-main-source-replace-file": {
+    "defaultMessage": "Ionadaigh comhad {target} le {source}"
+  },
+  "choose-main-source-replace-main-code": {
+    "defaultMessage": "Cuir {source} in ionad an phríomhchóid"
+  },
+  "clear": {
+    "defaultMessage": "Glan"
+  },
+  "close-action": {
+    "defaultMessage": "Dún"
+  },
+  "code-editor": {
+    "defaultMessage": "Eagarthóir cóid"
+  },
+  "code-example": {
+    "defaultMessage": "Sampla cóid:"
+  },
+  "confirm-action": {
+    "defaultMessage": "Deimhnigh"
+  },
+  "confirm-delete": {
+    "defaultMessage": "Deimhnigh scrios"
+  },
+  "confirm-replace-body": {
+    "defaultMessage": "Cuir iad siúd sa heics in ionad gach comhad?"
+  },
+  "confirm-replace-reset": {
+    "defaultMessage": "Cuir an cód tosaithe réamhshocraithe in ionad gach comhaid?"
+  },
+  "confirm-replace-title": {
+    "defaultMessage": "Deimhnigh ionadaigh an tionscadal"
+  },
+  "confirm-replace-with-idea": {
+    "defaultMessage": "Cuir {ideaName} in ionad gach comhaid?"
+  },
+  "confirm-save-action": {
+    "defaultMessage": "Deimhnigh agus sábháil"
+  },
+  "confirm-save-hint": {
+    "defaultMessage": "Cealaigh ansin úsáid Sábháil chun cóip de do thionscadal a choinneáil."
+  },
+  "connect-action": {
+    "defaultMessage": "Ceangail"
+  },
+  "connect-cable-title": {
+    "defaultMessage": "Ceangail cábla"
+  },
+  "connect-help-alt": {
+    "defaultMessage": "Dialóg nasc WebUSB le micro:bit BBC: iontráil giotán lipéadaithe 1 agus Ceangail cnaipe lipéadaithe 2"
+  },
+  "connect-help-message": {
+    "defaultMessage": "Sa chéad phreabfhuinneog eile:"
+  },
+  "connect-help-one": {
+    "defaultMessage": "Roghnaigh do micro:bit"
+  },
+  "connect-help-title": {
+    "defaultMessage": "Roghnaigh micro:bit"
+  },
+  "connect-help-two": {
+    "defaultMessage": "Roghnaigh 'Ceangail'"
+  },
+  "connect-hover": {
+    "defaultMessage": "Ceangail le do micro:bit thar WebUSB"
+  },
+  "connect-microbit": {
+    "defaultMessage": "Ceangail le do micro:bit chun aschur sraitheach a fheiceáil anseo"
+  },
+  "connect-troubleshoot": {
+    "defaultMessage": "Fabhtcheartaigh fadhbanna le nascadh le do micro:bit"
+  },
+  "content-load-error": {
+    "defaultMessage": "Chuaigh rud éigin mícheart. Íoslódáil do chomhad heicsidheachúlach chun é a choinneáil slán, ansin athnuaigh an leathanach chun é a athlódáil."
+  },
+  "cookies-action": {
+    "defaultMessage": "Fianáin"
+  },
+  "copied": {
+    "defaultMessage": "Cóipeáilte"
+  },
+  "copy-action": {
+    "defaultMessage": "Cóipeáil"
+  },
+  "copy-code-action": {
+    "defaultMessage": "Cóipeáil cód"
+  },
+  "copy-snippet-advice": {
+    "defaultMessage": "Cóipeáladh an cód, bain úsáid as greamaigh chun é a chur isteach."
+  },
+  "create-action": {
+    "defaultMessage": "Cruthaigh"
+  },
+  "create-file-action": {
+    "defaultMessage": "Cruthaigh comhad"
+  },
+  "create-python": {
+    "defaultMessage": "Cruthaigh comhad nua Python sa tionscadal seo"
+  },
+  "created-file": {
+    "defaultMessage": "Cruthaithe {filename}"
+  },
+  "delete-action": {
+    "defaultMessage": "Scrios"
+  },
+  "delete-file-action": {
+    "defaultMessage": "Scrios {name}"
+  },
+  "deleted-file": {
+    "defaultMessage": "Scriosta {filename}"
+  },
+  "disconnect-action": {
+    "defaultMessage": "Dícheangail"
+  },
+  "disconnect-hover": {
+    "defaultMessage": "Dícheangail ón micro:bit"
+  },
+  "dont-show-again": {
+    "defaultMessage": "Ná taispeáin é seo arís"
+  },
+  "drag-hover": {
+    "defaultMessage": "Tarraing agus scaoil"
+  },
+  "edit-file-action": {
+    "defaultMessage": "Cuir {name} in eagar"
+  },
+  "edit-name-project-hover": {
+    "defaultMessage": "Cuir ainm do thionscadail in eagar"
+  },
+  "edit-project-name-action": {
+    "defaultMessage": "Cuir ainm an tionscadail in eagar"
+  },
+  "failed-to-build-hex": {
+    "defaultMessage": "Theip ar an gcomhad heicsidheachúlach a thógáil"
+  },
+  "feedback": {
+    "defaultMessage": "Aiseolas"
+  },
+  "file-actions": {
+    "defaultMessage": "{name} gníomhartha comhaid"
+  },
+  "file-already-exists": {
+    "defaultMessage": "Tá an comhad seo ann cheana"
+  },
+  "file-name-invalid-character": {
+    "defaultMessage": "Tá carachtar neamhbhailí san ainm: {invalid}"
+  },
+  "file-name-length": {
+    "defaultMessage": "Tá an t-ainm rófhada"
+  },
+  "file-name-lowercase-only": {
+    "defaultMessage": "Ba chóir go mbeadh an t-ainm go léir cás íochtair"
+  },
+  "file-name-not-empty": {
+    "defaultMessage": "Ní féidir an t-ainm a bheith folamh"
+  },
+  "file-name-start-number": {
+    "defaultMessage": "Ní féidir leis an ainm tosú le huimhir"
+  },
+  "file-name-whitespace": {
+    "defaultMessage": "Ní féidir spásanna a bheith san ainm"
+  },
+  "firmware-update-link": {
+    "defaultMessage": "Ní mór duit <link>do dochtearraí a nuashonrú</link> sular féidir leat ceangal leis an micro:bit seo."
+  },
+  "firmware-update-message": {
+    "defaultMessage": "Theip ar nascadh leis an micro:bit toisc go bhfuil an dochtearraí ar do micro:bit ró-shean."
+  },
+  "firmware-update-title": {
+    "defaultMessage": "Nuashonrú dochtearraí ag teastáil"
+  },
+  "flash-action": {
+    "defaultMessage": "Splanc"
+  },
+  "flash-hover": {
+    "defaultMessage": "Splanc an tionscadal díreach chuig an micro:bit"
+  },
+  "flashing-code": {
+    "defaultMessage": "Cód á sheoladh (ag splancadh)"
+  },
+  "flashing-full-flash-detail": {
+    "defaultMessage": "Tá do chód á sheoladh (á splancadh) chuig do micro:bit. Féadfaidh sé seo tamall a thógáil an chéad uair ach beidh sé níos tapúla ina dhiaidh sin."
+  },
+  "flashing-micropython": {
+    "defaultMessage": "MicroPython a splancadh"
+  },
+  "font-size": {
+    "defaultMessage": "Méid an chló"
+  },
+  "guide-link": {
+    "defaultMessage": "Le haghaidh tuilleadh tacaíochta, féach an <link>treoir Eagarthóir Python</link>"
+  },
+  "help": {
+    "defaultMessage": "Cabhair"
+  },
+  "help-support": {
+    "defaultMessage": "Cabhair & tacaíocht"
+  },
+  "highlight-code-structure": {
+    "defaultMessage": "Aibhsigh struchtúr an chóid"
+  },
+  "highlight-code-structure-full": {
+    "defaultMessage": "Iomlán"
+  },
+  "highlight-code-structure-none": {
+    "defaultMessage": "Dada"
+  },
+  "highlight-code-structure-simple": {
+    "defaultMessage": "Simplí"
+  },
+  "ideas-tab": {
+    "defaultMessage": "Smaointe"
+  },
+  "ideas-tab-description": {
+    "defaultMessage": "Bain triail as na tionscadail seo, athraigh iad agus spreag iad"
+  },
+  "insert-code-action": {
+    "defaultMessage": "Ionsáigh cód"
+  },
+  "language": {
+    "defaultMessage": "Teanga"
+  },
+  "less-action": {
+    "defaultMessage": "Níos lú"
+  },
+  "load-error-makecode-info": {
+    "defaultMessage": "Ní féidir an comhad heicsidheachúlach seo a luchtú in Eagarthóir Python. Ní féidir leis an Eagarthóir Python comhaid heicsidheachúlacha a cruthaíodh le Microsoft MakeCode a oscailt."
+  },
+  "load-error-makecode-link": {
+    "defaultMessage": "Tabhair cuairt ar <link>https://makecode.microbit.org/</link> chun an comhad heicsidheachúlach seo a úsáid."
+  },
+  "load-error-mixed": {
+    "defaultMessage": "Ní féidir comhad heicsidheachúlach a luchtú as a stuaim féin. Tagann sé in ionad gach comhad sa tionscadal."
+  },
+  "load-error-mpy": {
+    "defaultMessage": "Ní thacaíonn an leagan seo den Eagarthóir Python le comhaid .mpy a chur leis faoi láthair."
+  },
+  "load-error-title": {
+    "defaultMessage": "Ní féidir {fileCount, plural, one {comhad} two {comhaid} few {comhaid} many {comhaid} other {comhaid}} a lódáil\n"
+  },
+  "loaded-file-feedback": {
+    "defaultMessage": "Luchtaithe {filename}"
+  },
+  "loading": {
+    "defaultMessage": "Ag lódáil…"
+  },
+  "microbit-hearts-alt": {
+    "defaultMessage": "micro:bit leis an eangach 5 faoi 5 LED ag taispeáint croí"
+  },
+  "micropython-documentation": {
+    "defaultMessage": "Doiciméadú MicroPython"
+  },
+  "micropython-history": {
+    "defaultMessage": "Foghlaim conas a tháinig MicroPython ar an micro:bit"
+  },
+  "micropython-source-code": {
+    "defaultMessage": "Cód foinse MicroPython <linkV1>don micro:bit V1</linkV1> agus <linkV2>micro:bit V2</linkV2>"
+  },
+  "more-action": {
+    "defaultMessage": "Níos mó"
+  },
+  "more-connect-options": {
+    "defaultMessage": "Tuilleadh roghanna ceangail"
+  },
+  "more-ideas": {
+    "defaultMessage": "<link>Tuilleadh smaointe</link>"
+  },
+  "more-save-options": {
+    "defaultMessage": "Tuilleadh roghanna sábhála"
+  },
+  "multiple-files-message-one": {
+    "defaultMessage": "Sa tionscadal seo tá {fileCount, plural, other {{fileCount} files}} ach níor íoslódáladh ach <strong>main.py</strong>."
+  },
+  "multiple-files-message-two": {
+    "defaultMessage": "Bain úsáid as an gcnaipe <strong>Sábháil</strong> chun do thionscadal iomlán a íoslódáil mar chomhad heicsidheachúlach. Is féidir leat an comhad heicsidheachúlach a <strong>oscailt</strong> chun do thionscadal a chur ar ais. Más fearr leat comhaid Python aonair a íoslódáil, bain úsáid as an táb <strong>Tionscadal</strong>."
+  },
+  "multiple-files-title": {
+    "defaultMessage": "Rabhadh: Ní íoslódálfar ach main.py"
+  },
+  "name-project": {
+    "defaultMessage": "Ainmnigh do thionscadal"
+  },
+  "name-text": {
+    "defaultMessage": "Ainm"
+  },
+  "name-used-when": {
+    "defaultMessage": "Úsáidtear an t-ainm nuair a shábhálann tú comhad."
+  },
+  "new-file-hint": {
+    "defaultMessage": "Cuirfimid an síneadh <code>.py</code> ar do shon."
+  },
+  "next-action": {
+    "defaultMessage": "Ar Aghaidh"
+  },
+  "not-found-checklist-one": {
+    "defaultMessage": "An bhfuil do <strong>micro:bit plugáilte isteach</strong>? Ar <link>lean tú na céimeanna seo</link>?"
+  },
+  "not-found-checklist-two": {
+    "defaultMessage": "Má tá <strong>micro:bit V1</strong> agat b'fhéidir go mbeidh ort <link>an dochtearraí a nuashonrú</link>"
+  },
+  "not-found-message": {
+    "defaultMessage": "Níor roghnaigh tú micro:bit, nó bhí fadhb ag nascadh leis."
+  },
+  "not-found-save-message": {
+    "defaultMessage": "Modh malartach: roghnaigh Sábháil ansin lean céimeanna a aistriú"
+  },
+  "not-found-title": {
+    "defaultMessage": "Níor aimsíodh micro:bit"
+  },
+  "not-found-update-link": {
+    "defaultMessage": "Ní mór duit <link>do firmware a nuashonrú sular</link> féidir leat ceangal leis an micro:bit seo."
+  },
+  "offline-image-alt": {
+    "defaultMessage": "Níl an íomhá ar fáil as líne"
+  },
+  "open-action": {
+    "defaultMessage": "Oscail"
+  },
+  "open-file-action": {
+    "defaultMessage": "Oscail…"
+  },
+  "open-file-dropped": {
+    "defaultMessage": "Oscail comhad nuair a thit sé"
+  },
+  "open-hover": {
+    "defaultMessage": "Oscail comhad heicsidheachúlach nó Python nó cuir comhaid eile leis"
+  },
+  "options": {
+    "defaultMessage": "Roghanna"
+  },
+  "parameter-help": {
+    "defaultMessage": "Cabhair pharaiméadair"
+  },
+  "parameter-help-automatic": {
+    "defaultMessage": "Uathoibríoch"
+  },
+  "parameter-help-manual": {
+    "defaultMessage": "Lámhleabhar ({shortcut})"
+  },
+  "permanently-delete": {
+    "defaultMessage": "Scrios {filename} go buan?"
+  },
+  "post-save-message-files": {
+    "defaultMessage": "Cuimsíonn sé seo gach comhad sa tionscadal seo (lena n-áirítear aon chomhaid bhreise, m.sh. gabhálais a reáchtáil, atá liostaithe sa chluaisín <strong>Tionscadail</strong>)."
+  },
+  "post-save-message-one": {
+    "defaultMessage": "Gheobhaidh tú do chomhad heicsidheachúlach i bhfillteán <strong>Íoslódálacha</strong> an ríomhaire seo."
+  },
+  "post-save-message-two": {
+    "defaultMessage": "Is féidir leat é a bhogadh chuig fillteán eile le haghaidh stórála agus a úsáid <strong>Oscailte</strong> chun leanúint ar aghaidh ag eagarthóireacht níos déanaí."
+  },
+  "post-save-title": {
+    "defaultMessage": "Tionscadal sábháilte"
+  },
+  "post-save-transfer-hex": {
+    "defaultMessage": "Chun an comhad heicsidheachúlach seo a rith ar do micro:bit <link>lean na céimeanna seo</link>."
+  },
+  "privacy-policy": {
+    "defaultMessage": "Polasaí Príobháideachais"
+  },
+  "project-actions": {
+    "defaultMessage": "Gníomhartha tionscadail"
+  },
+  "project-header": {
+    "defaultMessage": "Ceanntásc an tionscadail"
+  },
+  "project-name": {
+    "defaultMessage": "Ainm an tionscadail"
+  },
+  "project-name-not-empty": {
+    "defaultMessage": "Ní féidir ainm an tionscadail a fholmhú"
+  },
+  "project-tab": {
+    "defaultMessage": "Tionscadal"
+  },
+  "project-tab-description": {
+    "defaultMessage": "Amharc ar na comhaid i do thionscadal, iad a chruthú, a chur leis agus a chur in eagar"
+  },
+  "python-powered": {
+    "defaultMessage": "Python faoi thiomáint"
+  },
+  "python-tab": {
+    "defaultMessage": "Python"
+  },
+  "quit-anyway": {
+    "defaultMessage": "Níor sábháladh roinnt de na hathruithe. Scoir ar aon nós?"
+  },
+  "read-less": {
+    "defaultMessage": "Léigh níos lú"
+  },
+  "read-more": {
+    "defaultMessage": "Léigh níos mó"
+  },
+  "redo": {
+    "defaultMessage": "Athdhéan"
+  },
+  "reference-tab": {
+    "defaultMessage": "Tagairt"
+  },
+  "replace-action-label": {
+    "defaultMessage": "Ionadaigh"
+  },
+  "reset-project-action": {
+    "defaultMessage": "Athshocraigh tionscadal"
+  },
+  "reset-project-feedback": {
+    "defaultMessage": "Athshocraigh an tionscadal go dtí an cód tosaithe réamhshocraithe"
+  },
+  "reset-project-hover": {
+    "defaultMessage": "Athshocraigh an tionscadal chuig an gcód tosaithe réamhshocraithe, ag caitheamh do chuid oibre"
+  },
+  "results-count": {
+    "defaultMessage": "{count, plural, =0 {Gan torthaí} one {# toradh} two {# thoradh} few {# torthaí} many {# torthaí} other {# torthaí}}\n"
+  },
+  "save-action": {
+    "defaultMessage": "Sábháil"
+  },
+  "save-file-action": {
+    "defaultMessage": "Sábháil {name}"
+  },
+  "save-hex-action": {
+    "defaultMessage": "Sábháil heics an tionscadail"
+  },
+  "save-hover": {
+    "defaultMessage": "Sábháil comhad heicsidheachúlach an tionscadail ar do ríomhaire"
+  },
+  "save-python-action": {
+    "defaultMessage": "Sábháil script Python"
+  },
+  "search": {
+    "defaultMessage": "Cuardaigh"
+  },
+  "send-action": {
+    "defaultMessage": "Seol chuig micro:bit"
+  },
+  "send-hover": {
+    "defaultMessage": "Ceangail trí WebUSB ansin flash cód ar micro:bit"
+  },
+  "serial-collapse": {
+    "defaultMessage": "Folaigh sraithuimhir"
+  },
+  "serial-ctrl-c-action": {
+    "defaultMessage": "Seol Ctrl+C le haghaidh REPL"
+  },
+  "serial-ctrl-d-action": {
+    "defaultMessage": "Seol Ctrl+D le hathshocrú"
+  },
+  "serial-expand": {
+    "defaultMessage": "Taispeáin sraithuimhir"
+  },
+  "serial-flashed": {
+    "defaultMessage": "micro:bit splanctha"
+  },
+  "serial-help-ctrl-c": {
+    "defaultMessage": "Bain úsáid as an aicearra méarchláir <kbd>Ctrl</kbd> + <kbd>C</kbd> chun cur isteach ar do chlár. Ansin is féidir leat orduithe Python a chlóscríobh le haghaidh MicroPython le rith. Is bealach iontach é chun triail a bhaint as rud éigin nua."
+  },
+  "serial-help-ctrl-d": {
+    "defaultMessage": "Chun tús a chur le do chlár ag rith arís bain úsáid as <kbd>Ctrl</kbd> + <kbd>D</kbd>."
+  },
+  "serial-help-intro": {
+    "defaultMessage": "Taispeánann an teirminéal sraitheach earráidí agus aschur eile ón gclár ag rith ar do micro:bit. De réir réamhshocraithe, taispeánann sé an earráid is déanaí ón gclár. Leathnaigh é chun an t-aschur go léir a fheiceáil."
+  },
+  "serial-help-print": {
+    "defaultMessage": "Is féidir le do ríomhchlár teachtaireachtaí a phriontáil ag baint úsáide as an bhfeidhm <code>print</code>. Bain triail as <code>priontáil ('micro:bit is awesome')</code> a chur le do chlár."
+  },
+  "serial-help-title": {
+    "defaultMessage": "Leideanna srathacha agus leideanna"
+  },
+  "serial-hints-and-tips": {
+    "defaultMessage": "Leideanna agus leideanna sraitheach"
+  },
+  "serial-menu": {
+    "defaultMessage": "Roghchlár srathach"
+  },
+  "serial-ready-to-flash": {
+    "defaultMessage": "micro:bit réidh le splanc"
+  },
+  "serial-running": {
+    "defaultMessage": "Ag rith…"
+  },
+  "serial-terminal": {
+    "defaultMessage": "Teirminéal srathach"
+  },
+  "setting-allow-editing-third-party": {
+    "defaultMessage": "Ceadaigh modúil tríú páirtí a chur in eagar"
+  },
+  "setting-allow-editing-third-party-info": {
+    "defaultMessage": "D'fhéadfadh sé go gciallódh athrú modúil tríú páirtí nach n-oibríonn siad mar a bhí beartaithe."
+  },
+  "setting-warn-on-v2-only-features": {
+    "defaultMessage": "Taispeáin rabhaidh faoi ghnéithe V2 amháin"
+  },
+  "setting-warn-on-v2-only-features-info": {
+    "defaultMessage": "Taispeántar rabhaidh san eagarthóir nuair a bhíonn micro:bit V1 ceangailte"
+  },
+  "settings": {
+    "defaultMessage": "Socruithe"
+  },
+  "show-api-documentation": {
+    "defaultMessage": "Taispeáin doiciméadú API"
+  },
+  "show-less": {
+    "defaultMessage": "Taispeáin níos lú"
+  },
+  "show-less-for": {
+    "defaultMessage": "Taispeáin níos lú le haghaidh {item}"
+  },
+  "show-more": {
+    "defaultMessage": "Taispeáin níos mó"
+  },
+  "show-more-for": {
+    "defaultMessage": "Taispeáin níos mó le haghaidh {item}"
+  },
+  "sidebar": {
+    "defaultMessage": "Barra Taoibh"
+  },
+  "sidebar-collapse": {
+    "defaultMessage": "Laghdaigh an barra taoibh"
+  },
+  "sidebar-expand": {
+    "defaultMessage": "Leathnaigh an barra taoibh"
+  },
+  "simulator-accelerometer": {
+    "defaultMessage": "Luasmhéadar"
+  },
+  "simulator-actions": {
+    "defaultMessage": "Gníomhartha Insamhlóir"
+  },
+  "simulator-button-a": {
+    "defaultMessage": "Cnaipe A"
+  },
+  "simulator-button-b": {
+    "defaultMessage": "Cnaipe B"
+  },
+  "simulator-button-hold-label": {
+    "defaultMessage": "Coinnigh cnaipe {button}"
+  },
+  "simulator-button-press-label": {
+    "defaultMessage": "Brúigh cnaipe {button}"
+  },
+  "simulator-buttons": {
+    "defaultMessage": "Cnaipí"
+  },
+  "simulator-collapse": {
+    "defaultMessage": "Laghdaigh an t-insamhlóir"
+  },
+  "simulator-collapse-module": {
+    "defaultMessage": "Laghdaigh an modúl {title}"
+  },
+  "simulator-compass": {
+    "defaultMessage": "Compás"
+  },
+  "simulator-compass-heading-one": {
+    "defaultMessage": "Ceannteideal"
+  },
+  "simulator-compass-heading-two": {
+    "defaultMessage": "Neart réimse maighnéadach"
+  },
+  "simulator-data-logging-empty": {
+    "defaultMessage": "Gan iontrálacha logála."
+  },
+  "simulator-data-logging-full": {
+    "defaultMessage": "Logáil isteach iomlán"
+  },
+  "simulator-data-logging-rows": {
+    "defaultMessage": "{count, plural, =0 {Gan aon ró a logáil} one {# ró logáilte} two {# ró logáilte} few {# ró logáilte} many {# ró logáilte} other {# ró logáilte}}\n"
+  },
+  "simulator-data-logging-save-log": {
+    "defaultMessage": "Sábháil an logchomhad"
+  },
+  "simulator-data-logging-truncated": {
+    "defaultMessage": "Rónna níos sine nach dtaispeántar"
+  },
+  "simulator-expand": {
+    "defaultMessage": "Leathnaigh an t-insamhlóir"
+  },
+  "simulator-expand-module": {
+    "defaultMessage": "Leathnaigh modúl {title}"
+  },
+  "simulator-gesture-3g": {
+    "defaultMessage": "3g"
+  },
+  "simulator-gesture-6g": {
+    "defaultMessage": "6g"
+  },
+  "simulator-gesture-8g": {
+    "defaultMessage": "8g"
+  },
+  "simulator-gesture-down": {
+    "defaultMessage": "síos"
+  },
+  "simulator-gesture-face-down": {
+    "defaultMessage": "aghaidh síos"
+  },
+  "simulator-gesture-face-up": {
+    "defaultMessage": "aghaidh suas"
+  },
+  "simulator-gesture-freefall": {
+    "defaultMessage": "titim saor"
+  },
+  "simulator-gesture-left": {
+    "defaultMessage": "chlé"
+  },
+  "simulator-gesture-right": {
+    "defaultMessage": "dheis"
+  },
+  "simulator-gesture-select": {
+    "defaultMessage": "Roghnaigh gotha"
+  },
+  "simulator-gesture-send": {
+    "defaultMessage": "Seol gotha"
+  },
+  "simulator-gesture-shake": {
+    "defaultMessage": "croith"
+  },
+  "simulator-gesture-up": {
+    "defaultMessage": "suas"
+  },
+  "simulator-hide": {
+    "defaultMessage": "Folaigh Insamhlóir"
+  },
+  "simulator-input-hold": {
+    "defaultMessage": "Coinnigh"
+  },
+  "simulator-input-press": {
+    "defaultMessage": "Preas"
+  },
+  "simulator-light-level": {
+    "defaultMessage": "Leibhéal solais"
+  },
+  "simulator-log": {
+    "defaultMessage": "Loga sonraí"
+  },
+  "simulator-loud": {
+    "defaultMessage": "Ard"
+  },
+  "simulator-mute": {
+    "defaultMessage": "Balbhaigh"
+  },
+  "simulator-pin-hold-label": {
+    "defaultMessage": "Coinnigh bioráin {pin}"
+  },
+  "simulator-pin-press-label": {
+    "defaultMessage": "Brúigh bioráin {pin}"
+  },
+  "simulator-pins": {
+    "defaultMessage": "Bioráin"
+  },
+  "simulator-quiet": {
+    "defaultMessage": "Ciúin"
+  },
+  "simulator-radio": {
+    "defaultMessage": "Raidió"
+  },
+  "simulator-radio-code": {
+    "defaultMessage": "micro:bit seolta:"
+  },
+  "simulator-radio-group-notice": {
+    "defaultMessage": "Grúpa raidió socraithe chuig {groupNumber}"
+  },
+  "simulator-radio-message": {
+    "defaultMessage": "Teachtaireacht raidió"
+  },
+  "simulator-radio-message-limit-notice": {
+    "defaultMessage": "Ní thaispeántar teachtaireachtaí níos sine"
+  },
+  "simulator-radio-no-messages": {
+    "defaultMessage": "Níl teachtaireachtaí le taispeáint"
+  },
+  "simulator-radio-off": {
+    "defaultMessage": "Tá an raidió as"
+  },
+  "simulator-radio-send": {
+    "defaultMessage": "Seol teachtaireacht"
+  },
+  "simulator-radio-user": {
+    "defaultMessage": "Sheol tú:"
+  },
+  "simulator-reference-link": {
+    "defaultMessage": "Nasc chuig an rannóg Tagartha"
+  },
+  "simulator-reset": {
+    "defaultMessage": "Athshocraigh"
+  },
+  "simulator-serial-terminal": {
+    "defaultMessage": "Insamhlóir teirminéal sraitheach"
+  },
+  "simulator-sound-level": {
+    "defaultMessage": "Leibhéal fuaime"
+  },
+  "simulator-start-simulator": {
+    "defaultMessage": "Tosaigh Insamhlóir"
+  },
+  "simulator-stop": {
+    "defaultMessage": "Stop Insamhlóir"
+  },
+  "simulator-temperature": {
+    "defaultMessage": "Teocht"
+  },
+  "simulator-title": {
+    "defaultMessage": "Insamhlóir"
+  },
+  "simulator-touch-logo": {
+    "defaultMessage": "Lógó tadhaill"
+  },
+  "simulator-unit-celsius": {
+    "defaultMessage": "degrees Celsius"
+  },
+  "simulator-unit-degrees": {
+    "defaultMessage": "degrees"
+  },
+  "simulator-unit-milli-g": {
+    "defaultMessage": "milli-g"
+  },
+  "simulator-unit-nanotesla": {
+    "defaultMessage": "nanotesla"
+  },
+  "simulator-unmute": {
+    "defaultMessage": "Díbholadh"
+  },
+  "software-versions": {
+    "defaultMessage": "Leaganacha bogearraí"
+  },
+  "start-coding-action": {
+    "defaultMessage": "Tosaigh códú"
+  },
+  "support": {
+    "defaultMessage": "Tacaíocht"
+  },
+  "terms-of-use": {
+    "defaultMessage": "Téarmaí úsáide"
+  },
+  "third-party-module-explanation": {
+    "defaultMessage": "Is modúl tríú páirtí é an comhad seo agus níl sé i gceist é a chur in eagar."
+  },
+  "third-party-module-how-to": {
+    "defaultMessage": "Ceadaigh modúil tríú páirtí a chur in eagar i <link>Socruithe</link> chun an modúl seo a mhodhnú."
+  },
+  "timeout-error-description": {
+    "defaultMessage": "Ní féidir nascadh leis an micro:bit"
+  },
+  "timeout-error-title": {
+    "defaultMessage": "Ceangal thar am"
+  },
+  "toolkit-error-loading": {
+    "defaultMessage": "Tharla earráid agus an fhoireann uirlisí á luchtú."
+  },
+  "toolkit-view-documentation": {
+    "defaultMessage": "Amharc ar cháipéisíocht {name}"
+  },
+  "transfer-hex-message-one": {
+    "defaultMessage": "Tarraing an comhad heicsidheachúlach ó <strong>d'fhillteán Íoslódálacha</strong> chuig an <strong>tiomántán MICROBIT</strong>."
+  },
+  "transfer-hex-message-two": {
+    "defaultMessage": "Is féidir leat an comhad heicsidheachúlach a <strong>oscailt</strong> níos déanaí chun leanúint ar aghaidh leis an eagarthóireacht."
+  },
+  "transfer-hex-title": {
+    "defaultMessage": "Aistrigh comhad heicsidheachúlach sábháilte go micro:bit"
+  },
+  "try-again-action": {
+    "defaultMessage": "Bain triail as arís"
+  },
+  "undo": {
+    "defaultMessage": "Cealaigh"
+  },
+  "unexpected-error-description": {
+    "defaultMessage": "Bain triail eile as nó <link>ardaigh iarratas tacaíochta</link>"
+  },
+  "unexpected-error-title": {
+    "defaultMessage": "Bain triail eile as nó <link>ardaigh iarratas tacaíochta</link>"
+  },
+  "untitled-project": {
+    "defaultMessage": "Tionscadal gan teideal"
+  },
+  "update-firmware-action": {
+    "defaultMessage": "Nuashonraigh dochtearraí"
+  },
+  "updated-change": {
+    "defaultMessage": "Comhad nuashonraithe {changeName}"
+  },
+  "user-guide": {
+    "defaultMessage": "Treoir d'úsáideoirí"
+  },
+  "visit-dot-org": {
+    "defaultMessage": "tabhair cuairt ar microbit.org (osclaítear i gcluaisín nua)"
+  },
+  "warn-on-v2-only-features-action": {
+    "defaultMessage": "Díchumasaigh rabhaidh faoi ghnéithe V2 amháin"
+  },
+  "webusb-error-clear-connect-description-1": {
+    "defaultMessage": "Tá próiseas eile ceangailte leis an ngléas seo."
+  },
+  "webusb-error-clear-connect-description-2": {
+    "defaultMessage": "Dún aon chluaisíní eile a d'fhéadfadh a bheith ag baint úsáide as WebUSB (m.sh. MakeCode, Eagarthóir Python), nó díphlugáil agus athphlugáil an micro:bit sula mbainfidh tú triail eile as."
+  },
+  "webusb-error-clear-connect-title": {
+    "defaultMessage": "Tá leathanach nó cluaisín brabhsálaí eile ceangailte leis an micro:bit seo"
+  },
+  "webusb-error-default-title": {
+    "defaultMessage": "Earráid WebUSB"
+  },
+  "webusb-error-reconnect-microbit-description": {
+    "defaultMessage": "<p>Lean na céimeanna seo, ansin bain triail eile as:</p> <ul><li>díphlugáil an cábla USB</li><li>díphlugáil an pacáiste ceallraí má tá ceann ceangailte</li><li>athcheangail an cábla USB</li><li>athcheangail an pacáiste ceallraí má bhí ceann ceangailte</li></ul>"
+  },
+  "webusb-not-supported": {
+    "defaultMessage": "Ar an drochuair, ní thacaítear le WebUSB sa bhrabhsálaí seo agus sábhálfar do chlár ar do ríomhaire ina ionad. Lean na céimeanna ar an gcéad scáileán eile chun é a aistriú chuig do micro:bit. Molaimid Google Chrome nó Microsoft Edge ionas gur féidir leat ceangal go díreach le do micro:bit."
+  },
+  "webusb-not-supported-title": {
+    "defaultMessage": "Ní thacaíonn an brabhsálaí seo le WebUSB"
+  },
+  "webusb-why-use": {
+    "defaultMessage": "Le WebUSB is féidir leat do micro:bit a chlárú agus ceangal leis an gconsól sraitheach go díreach ón eagarthóir ar líne."
+  },
+  "welcome-message": {
+    "defaultMessage": "Féach ar ár dtreoir ghearr maidir le cuid de na príomhghnéithe, nó faigh códú ar an bpointe boise."
+  },
+  "welcome-title": {
+    "defaultMessage": "Fáilte go dtí an tEagarthóir Python micro:bit"
+  },
+  "welcome-video-alt": {
+    "defaultMessage": "físeán ag tabhairt isteach Eagarthóir Python"
+  },
+  "zoom-in-action": {
+    "defaultMessage": "Zúmáil isteach"
+  },
+  "zoom-out-action": {
+    "defaultMessage": "Zúmáil amach"
+  }
+}
