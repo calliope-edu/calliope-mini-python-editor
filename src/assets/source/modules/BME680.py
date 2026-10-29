@@ -2,7 +2,16 @@
 
 from calliopemini import *
 
-BME680_ADDR = 0x76
+# Je nach Breakout-Board liegt der Sensor auf 0x76 (SDO an GND) oder 0x77 (SDO an VCC)
+def find_address():
+    found = i2c.scan()
+    for addr in (0x76, 0x77):
+        if addr in found:
+            return addr
+    raise OSError("BME680 nicht gefunden. Gefundene I2C-Adressen: " +
+                  str([hex(a) for a in found]))
+
+BME680_ADDR = find_address()
 
 # -----------------------------
 # Registerzugriff
@@ -53,12 +62,13 @@ def load_calibration():
         p9 -= 1 << 16
     p10 = read_register(0xA0)[0]
 
-    h1_msb = read_register(0xE2)[0]
-    h1_lsb = read_register(0xE3)[0] & 0x0F
+    # 0xE2 teilen sich H1 (Bits 3:0) und H2 (Bits 7:4)
+    h1_msb = read_register(0xE3)[0]
+    h1_lsb = read_register(0xE2)[0] & 0x0F
     h1 = (h1_msb << 4) | h1_lsb
 
     h2_msb = read_register(0xE1)[0]
-    h2_lsb = (read_register(0xE3)[0] & 0xF0) >> 4
+    h2_lsb = (read_register(0xE2)[0] & 0xF0) >> 4
     h2 = (h2_msb << 4) | h2_lsb
 
     h3 = read_register(0xE4)[0]
@@ -102,7 +112,8 @@ def trigger_measurement():
     timeout = 0
     while timeout < 10:
         status = read_register(0x1D)[0]
-        if (status & 0x80) == 0:
+        # Bit 5 (measuring) ist gesetzt, solange die Messung läuft
+        if (status & 0x20) == 0:
             break
         sleep(10)
         timeout += 1
@@ -151,7 +162,8 @@ def compensate_pressure(raw_p, calib, t_fine):
     press = ((press - (var2 / 4096.0)) * 6250.0) / var1
     var1 = (calib["P9"] * press * press) / 2147483648.0
     var2 = (press * calib["P8"]) / 32768.0
-    press = press + ((var1 + var2 + calib["P7"]) / 16.0)
+    var3 = (press / 256.0) ** 3 * (calib["P10"] / 131072.0)
+    press = press + ((var1 + var2 + var3 + calib["P7"] * 128.0) / 16.0)
 
     return press / 100.0
 
