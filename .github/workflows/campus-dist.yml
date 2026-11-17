@@ -70,6 +70,8 @@ jobs:
           fi
           git rm -rqf --ignore-unmatch .
           cp -r ../build/. .
+          # Build output, kept byte for byte: no line-ending conversion on checkout.
+          printf '# Build output, kept byte for byte (no line-ending conversion on checkout).\n* -text\n' > .gitattributes
           printf '{\n  "source": "%s",\n  "branch": "%s",\n  "base": "/editors/python/",\n  "built": "%s"\n}\n' \
             "$SOURCE_SHA" "$SOURCE_REF" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > CAMPUS-BUILD.json
           git add -A
