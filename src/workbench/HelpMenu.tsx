@@ -26,6 +26,7 @@ import { FormattedMessage, useIntl } from "react-intl";
 import { zIndexAboveTerminal } from "../common/zIndex";
 import { deployment } from "../deployment";
 import AboutDialog from "./AboutDialog/AboutDialog";
+import BuildInfoLine from "./BuildInfoLine";
 import WelcomeDialog from "./WelcomeDialog";
 
 interface HelpMenuProps extends ThemingProps<"Menu"> {
@@ -48,10 +49,7 @@ const HelpMenu = ({ size, ...props }: HelpMenuProps) => {
         finalFocusRef={menuButtonRef}
       />
       {welcomeDialogDisclosure.isOpen && (
-        <WelcomeDialog
-          isOpen
-          onClose={welcomeDialogDisclosure.onClose}
-        />
+        <WelcomeDialog isOpen onClose={welcomeDialogDisclosure.onClose} />
       )}
       <Menu {...props}>
         <MenuButton
@@ -134,6 +132,8 @@ const HelpMenu = ({ size, ...props }: HelpMenuProps) => {
             >
               <FormattedMessage id="about" />
             </MenuItem>
+            <MenuDivider />
+            <BuildInfoLine />
           </MenuList>
         </Portal>
       </Menu>

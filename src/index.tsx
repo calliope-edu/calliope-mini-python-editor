@@ -6,7 +6,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import { logBuildInfoWhenEmbedded } from "./build-info";
 import reportWebVitals from "./reportWebVitals";
+
+logBuildInfoWhenEmbedded();
 
 ReactDOM.render(
   <React.StrictMode>

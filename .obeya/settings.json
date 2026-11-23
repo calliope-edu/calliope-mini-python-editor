@@ -1,0 +1,8 @@
+{
+	"setup": "npm ci --ignore-scripts --no-audit --no-fund && npx patch-package",
+	"checks": ["npm run typecheck", "npx cross-env CI=true npm test -- --watchAll=false"],
+	"language": "en",
+	"app": {
+		"run": "A React app (Create React App via craco), no backend, no login. Start the dev server in the background with `npx cross-env PORT=<port> BROWSER=none npx craco start`, taking a free port from 3400 upwards (3000 is the default and often taken; other workspaces run their own). It prints `Local: http://localhost:<port>` once compiled, about a minute on a first start; it reloads the page by itself after a change in `src/`, while a change to `craco.config.js` or `.env` needs a restart. The help menu (question mark at the bottom left) holds the about dialog and the build's version line. To see the editor as Calliope Campus embeds it, open `http://localhost:<port>/?controller=2` inside Campus (run from a calliope-campus workspace as its settings say, debug mode, editor URLs) or build the Campus variant with `npx cross-env PUBLIC_URL=/editors/python npx craco build`. Stop it by its PID (`netstat -ano | findstr :<port>`, then `taskkill /PID <pid> /T /F`), never by name: other workspaces run their own."
+	}
+}

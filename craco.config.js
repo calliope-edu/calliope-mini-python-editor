@@ -6,6 +6,13 @@
 const path = require("path");
 const fs = require("fs");
 const webpack = require('webpack');
+const { buildInfo } = require("./bin/build-info");
+
+// The build's version (src/build-info.ts, docs/build-info.md), compiled in as
+// the same values the workflow writes to BUILD.json.
+if (!process.env.REACT_APP_BUILD_INFO) {
+  process.env.REACT_APP_BUILD_INFO = JSON.stringify(buildInfo());
+}
 
 // Calliope branding is vendored under src/deployment/calliope so the build
 // works without authenticating against GitHub Packages. Upstream micro:bit
