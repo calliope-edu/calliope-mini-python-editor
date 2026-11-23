@@ -38,6 +38,7 @@ import {
 import { ReactNode } from "react";
 import { RiFileCopy2Line, RiGithubFill } from "react-icons/ri";
 import { FormattedMessage, useIntl } from "react-intl";
+import { buildInfo, versionLine } from "../../build-info";
 import ExpandCollapseIcon from "../../common/ExpandCollapseIcon";
 import ModalCloseButton from "../../common/ModalCloseButton";
 import { useDeployment } from "../../deployment";
@@ -50,8 +51,10 @@ import pythonPoweredLogo from "./python-powered.png";
 const versionInfo = [
   {
     name: "Editor",
-    value: process.env.REACT_APP_VERSION,
-    href: "https://github.com/calliope-edu/calliope-mini-python-editor",
+    value: versionLine(buildInfo),
+    href: buildInfo.commit
+      ? `https://github.com/calliope-edu/calliope-mini-python-editor/commit/${buildInfo.commit}`
+      : "https://github.com/calliope-edu/calliope-mini-python-editor",
   },
   ...microPythonConfig.versions.map((mpy) => ({
     name: mpy.name,
