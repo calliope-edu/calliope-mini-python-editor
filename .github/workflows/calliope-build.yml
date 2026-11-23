@@ -1,0 +1,111 @@
+name: calliope-build
+
+# Builds the editor twice and pushes both builds to a build branch, one commit
+# per build:
+#
+#   /                  the editor on its own address (python.calliope.cc)
+#   /editors/python/   the editor as Calliope Campus embeds it: Campus serves it
+#                      itself under that path on its own origin
+#                      (calliope-campus docs/editors.md)
+#
+# Which branch:
+#
+#   tag calliope-vX.Y.Z      → build-live  (python.calliope.cc; Campus pins it)
+#   push to calliope-main    → build-dev   (python-dev.calliope.cc)
+#
+# Each build branch is ready to serve as it is: a Cloudflare Pages project on it
+# needs no build command and the repository root as its output directory. Each
+# commit carries BUILD.json (at the root and in editors/python/) naming the
+# source commit and ref. Campus pins a commit of build-live as its editors/python
+# submodule and moves the pin itself, so nothing built here reaches
+# campus.calliope.cc unreviewed.
+#
+# The build branches only ever grow: Campus release tags pin their older
+# commits, so rewriting them would break those builds.
+
+on:
+  push:
+    branches:
+      - calliope-main
+    tags:
+      - calliope-v*
+  workflow_dispatch:
+
+# One build after the other per build branch, so every build lands in order.
+concurrency:
+  group: calliope-build-${{ github.ref_type }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      # --ignore-scripts skips puppeteer's Chromium download and the native usb
+      # module, which the build does not need; patch-package is the one install
+      # script it does need.
+      - run: npm ci --ignore-scripts --no-audit --no-fund && npx patch-package
+
+      - name: Build for the site root
+        run: npx craco build && mkdir -p "$RUNNER_TEMP/out" && cp -r build/. "$RUNNER_TEMP/out/" && rm -rf build
+        env:
+          # CI=true would turn lint warnings into build errors.
+          CI: 'false'
+          GENERATE_SOURCEMAP: 'false'
+          NODE_OPTIONS: --max-old-space-size=4096
+
+      - name: Build for Campus (/editors/python/)
+        run: npx craco build && mkdir -p "$RUNNER_TEMP/out/editors/python" && cp -r build/. "$RUNNER_TEMP/out/editors/python/"
+        env:
+          # Every asset and the pyright workers are prefixed with this path.
+          PUBLIC_URL: /editors/python
+          CI: 'false'
+          GENERATE_SOURCEMAP: 'false'
+          NODE_OPTIONS: --max-old-space-size=4096
+
+      - name: Push the build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          SOURCE_SHA: ${{ github.sha }}
+          SOURCE_REF: ${{ github.ref_name }}
+          REF_TYPE: ${{ github.ref_type }}
+        run: |
+          set -euo pipefail
+          name=python
+          target=build-dev
+          if [ "$REF_TYPE" = tag ]; then target=build-live; fi
+          short=${SOURCE_SHA:0:7}
+          built=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          out="$RUNNER_TEMP/out"
+          printf '{\n  "name": "%s",\n  "ref": "%s",\n  "source": "%s",\n  "base": "%s",\n  "built": "%s"\n}\n' \
+            "$name" "$SOURCE_REF" "$SOURCE_SHA" "/" "$built" > "$out/BUILD.json"
+          printf '{\n  "name": "%s",\n  "ref": "%s",\n  "source": "%s",\n  "base": "%s",\n  "built": "%s"\n}\n' \
+            "$name" "$SOURCE_REF" "$SOURCE_SHA" "/editors/$name/" "$built" > "$out/editors/$name/BUILD.json"
+          mkdir publish && cd publish
+          git init -q
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git"
+          if git fetch -q --depth 1 origin "$target"; then
+            git checkout -q -b "$target" FETCH_HEAD
+          else
+            git checkout -q --orphan "$target"
+          fi
+          git rm -rqf --ignore-unmatch .
+          cp -r "$out/." .
+          # Build output, kept byte for byte: no line-ending conversion on checkout.
+          printf '# Build output, kept byte for byte (no line-ending conversion on checkout).\n* -text\n' > .gitattributes
+          git add -A
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -q -m "build ${short} from ${SOURCE_REF}" -m "Source: https://github.com/${REPO}/commit/${SOURCE_SHA}"
+          git push -q origin "$target"
+          echo "### ${target}: build ${short} from ${SOURCE_REF}" >> "$GITHUB_STEP_SUMMARY"
