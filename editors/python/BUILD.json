@@ -1,7 +1,9 @@
 {
-  "name": "python",
-  "ref": "calliope-main",
-  "source": "7ea9962197db0d069e47e5b3adbb2aac173e295f",
-  "base": "/editors/python/",
-  "built": "2026-11-23T16:13:49Z"
+  "channel": "dev",
+  "version": "calliope-main",
+  "commit": "be1b2f5fba5876dede9c242606afc51cc12256d2",
+  "builtAt": "2026-11-23T19:51:43Z",
+  "ui": null,
+  "widget": null,
+  "libs": {}
 }
