@@ -14,7 +14,8 @@ name: calliope-build
 #   push to calliope-main    → build-dev   (python-dev.calliope.cc)
 #
 # Each build branch is ready to serve as it is: a Cloudflare Pages project on it
-# needs no build command and the repository root as its output directory. Each
+# needs no build command and the repository root as its output directory
+# (`calliope-python` on build-live, `calliope-python-dev` on build-dev). Each
 # commit carries BUILD.json (at the root and in editors/python/; format in
 # docs/build-info.md) naming channel, version and source commit; both builds
 # compile the same values in, for the help menu's version line. Campus pins a commit of build-live as its editors/python
@@ -59,6 +60,11 @@ jobs:
 
       # One set of build values for both builds and their BUILD.json
       # (bin/build-info.js; craco.config.js compiles them in).
+      #
+      # REACT_APP_STAGE (src/environment.ts): a live build is PRODUCTION, as
+      # python.calliope.cc was when it came from S3, so the languages marked
+      # `preview` in src/settings/settings.tsx stay hidden there; a dev build
+      # is STAGING and offers them.
       - name: Build info
         env:
           REF_TYPE: ${{ github.ref_type }}
@@ -66,8 +72,10 @@ jobs:
           SHA: ${{ github.sha }}
         run: |
           channel=dev
-          if [ "$REF_TYPE" = tag ]; then channel=live; fi
+          stage=STAGING
+          if [ "$REF_TYPE" = tag ]; then channel=live; stage=PRODUCTION; fi
           {
+            echo "REACT_APP_STAGE=$stage"
             echo "BUILD_CHANNEL=$channel"
             echo "BUILD_VERSION=$REF_NAME"
             echo "BUILD_COMMIT=$SHA"

@@ -15,6 +15,14 @@ craco). It runs on its own at python.calliope.cc and inside Calliope Campus at
 - Never commit to `build-live` or `build-dev` by hand; only the workflow
   writes them, and they only ever grow (Campus release tags pin old commits).
 
+## Hosting
+
+- python.calliope.cc and python-dev.calliope.cc are the Cloudflare Pages
+  projects `calliope-python` (production branch `build-live`) and
+  `calliope-python-dev` (`build-dev`); nothing deploys from here but the
+  `calliope-build` workflow. The old AWS S3/CloudFront deploy (`build.yml`,
+  `deployment.js`) is gone.
+
 ## Version
 
 - `BUILD.json` and the help menu's version line follow docs/build-info.md,
